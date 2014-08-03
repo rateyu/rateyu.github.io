@@ -16,6 +16,11 @@
 status后 c --编写注释
 填写注释后 c-c c-c 提交本地版本
 
+*** git push 
+git push origin master ??
+
+
 *** 解决的问题
+alt x -> shell
 全屏显示功能
 
