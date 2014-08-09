@@ -36,5 +36,20 @@ github新建一个 c++工程
 按照index 说明进行提交既可
 
 修改提交好像是两部ok 试一下看看
+提交前 需要增加 文件，否则说没有文件修改，这个比较特殊
+
+ym@ubuntu:~/rateyu.github.io$ git add 2014-08-03-发布github博客.org
 ym@ubuntu:~/testCppHello$ git commit -m "first cpp commit"
 ym@ubuntu:~/testCppHello$ git push -u origin master
+
+
+ym@ubuntu:~/rateyu.github.io$ git add 2014-08-03-发布github博客.org
+ym@ubuntu:~/rateyu.github.io$ git commit -m "修改测试一下看看"
+[master 35b77cc] 修改测试一下看看
+ 1 file changed, 7 insertions(+)
+ym@ubuntu:~/rateyu.github.io$ git push -u origin master
+Username for 'https://github.com': rateyu@gmail.com
+Password for 'https://rateyu@gmail.com@github.com': 
+To https://github.com/rateyu/rateyu.github.io
+   64c81c8..35b77cc  master -> master
+Branch master set up to track remote branch master from origin.
