@@ -24,7 +24,7 @@ git push origin master ??
 alt x -> shell
 全屏显示功能
 
-*** 还是使用git命令比较好 还是老老实实用命令吧
+*** 还是使用git命令比较好
 ym@ubuntu:~/testCppHello$ git init
 ym@ubuntu:~/testCppHello$ git add .
 ym@ubuntu:~/testCppHello$ git commit -m "first cpp commit"
