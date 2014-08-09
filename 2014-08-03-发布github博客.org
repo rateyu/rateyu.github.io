@@ -31,3 +31,10 @@ ym@ubuntu:~/testCppHello$ git commit -m "first cpp commit"
 ym@ubuntu:~/testCppHello$ git remote add origin git@github.com:rateyu/testCppHello.git
 ym@ubuntu:~/testCppHello$ git push -u origin master
 
+*** 通用的提交方式
+github新建一个 c++工程
+按照index 说明进行提交既可
+
+修改提交好像是两部ok 试一下看看
+ym@ubuntu:~/testCppHello$ git commit -m "first cpp commit"
+ym@ubuntu:~/testCppHello$ git push -u origin master
