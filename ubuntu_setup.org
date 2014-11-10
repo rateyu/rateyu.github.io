@@ -19,7 +19,8 @@ jdee：       自动导入jar包  集成编译和运行 调试
 emacs 字体： 家里的输入法字体换爽 公司的字体很差，可以考虑下如何修改
 
 
-* git
+* git环境安装
+
 ** github 集成
 ** github 提交 rateyu@gmail.com
 
@@ -45,12 +46,24 @@ Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id_rsa.pub 中的内容
 
 使用 git clone git@github.com:cocowool/userguide.git userguide 可以将代码复制到本地的 userguide 文件夹中
 
-5. 进行自己的修改，完成后请求原作者合并
-git pull person master
 
-下面是一些比较有用的命令的介绍：
+5. 提交流程
+1) git add .
 
- 
+2) git commit -m "ubuntu 14 环境安装"
+
+*** Please tell me who you are.
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+3) 提交远程代码
+git push -u origin master
+
+其他相关命令参考：
+
+进行自己的修改，完成后请求原作者合并
+git pull person master 
 
 # 创建一个版本库
 git init
