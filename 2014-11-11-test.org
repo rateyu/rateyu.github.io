@@ -50,5 +50,33 @@ c_c c_w 关闭当前tab页
 c 输出当前url地址 
 
 ** emacs send email 配置？？
+** emacs 自动补全磁盘目录 
+** emacs .eamcs.d init.el 配置文件
+#+BEGIN_SRC lisp
+(tool-bar-mode -1)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (deeper-blue))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
+;; 参考 url 说明：     http://github.com/capitaomorte/yasnippet
+(add-to-list 'load-path
+              "~/.emacs.d/elpa/yasnippet-0.8.0")
+(require 'yasnippet)
+(yas-global-mode 1)
 
+;; 神的编辑器 
+;; 1.作者 snippets   https://github.com/eschulte/emacs24-starter-kit
+;; 2.striker         https://github.com/redguardtoo/emacs.d
+
+;; 增加w3m 主页
+(setq w3m-home-page "http://www.baidu.com/")
+#+END_SRC
