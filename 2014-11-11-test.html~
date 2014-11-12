@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="2014-11-11-test"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-11-11T21:49+0800"/>
+<meta name="generated" content="2014-11-11T21:43+0800"/>
 <meta name="author" content="ym"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -198,20 +198,6 @@ for the JavaScript code in this tag.
 
 </pre>
 
-
-
-<pre class="example">CREATE TABLE [dbo].[TableName] 
-(
-Id              INT IDENTITY(1,1)               NOT NULL
-
-CONSTRAINT [PK_] PRIMARY KEY CLUSTERED ([Id]) 
-)
-GO
-
-select * from tablename;
-
-</pre>
-
 </div>
 
 </div>
@@ -289,7 +275,8 @@ c 输出当前url地址
 
 
 
-<pre class="example">(tool-bar-mode -1)
+<pre class="example">
+(tool-bar-mode -1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -323,7 +310,7 @@ c 输出当前url地址
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2014-11-11T21:49+0800</p>
+<p class="date">Date: 2014-11-11T21:43+0800</p>
 <p class="author">Author: ym</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

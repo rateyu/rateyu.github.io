@@ -27,6 +27,19 @@ int main(int argc, char *argv[])
 }
 
 #+END_SRC
+
+#+BEGIN_SRC sql
+CREATE TABLE [dbo].[TableName] 
+(
+Id		INT IDENTITY(1,1)		NOT NULL
+
+CONSTRAINT [PK_] PRIMARY KEY CLUSTERED ([Id]) 
+)
+GO
+
+select * from tablename;
+
+#+END_SRC
 ** emacs w3m 操作步骤
 *** 安装
 sudo apt-get install w3m w3m-el w3m-img
