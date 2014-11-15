@@ -7,7 +7,34 @@
 ** emacs 绘制流程图
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
-** emacs 插入java 代码
+
+** emacs send email 配置？？
+** DONE emacs w3m 操作步骤
+   CLOSED: [2014-11-15 六 22:31]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:31]
+*** 安装
+sudo apt-get install w3m w3m-el w3m-img
+
+*** 增加配置
+(autoload 'w3m "w3m" "interface for w3m on emacs" t)
+(setq w3m-command-arguments '("-cookie" "-F"))
+(setq w3m-use-cookies t)
+;; 目前使用此配置
+(setq w3m-home-page "http://www.google.de/")
+(require 'mime-w3m)
+(setq w3m-default-display-inline-image t)
+(setq w3m-default-toggle-inline-images t)
+
+*** 常用命令
+G 去新的页面
+H 主页
+B 回退
+N 去下一页??
+c_c c_w 关闭当前tab页
+c 输出当前url地址 
+** DONE emacs 插入java 代码
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
 
 #+BEGIN_SRC java
 public class Hello
@@ -40,31 +67,12 @@ GO
 select * from tablename;
 
 #+END_SRC
-** emacs w3m 操作步骤
-*** 安装
-sudo apt-get install w3m w3m-el w3m-img
-
-*** 增加配置
-(autoload 'w3m "w3m" "interface for w3m on emacs" t)
-(setq w3m-command-arguments '("-cookie" "-F"))
-(setq w3m-use-cookies t)
-;; 目前使用此配置
-(setq w3m-home-page "http://www.google.de/")
-(require 'mime-w3m)
-(setq w3m-default-display-inline-image t)
-(setq w3m-default-toggle-inline-images t)
-
-*** 常用命令
-G 去新的页面
-H 主页
-B 回退
-N 去下一页??
-c_c c_w 关闭当前tab页
-c 输出当前url地址 
-
-** emacs send email 配置？？
-** emacs 自动补全磁盘目录 
-** emacs .eamcs.d init.el 配置文件
+** DONE emacs 自动补全磁盘目录 牛人如Steve Purcell ---可以正常使用
+   CLOSED: [2014-11-15 六 22:29]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:29]
+** DONE emacs .eamcs.d init.el 配置文件
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
 #+BEGIN_SRC lisp
 (tool-bar-mode -1)
 (custom-set-variables
@@ -93,3 +101,13 @@ c 输出当前url地址
 ;; 增加w3m 主页
 (setq w3m-home-page "http://www.baidu.com/")
 #+END_SRC
+** DONE emacs 启动将 caps_lock <--> ctrl_R 放入 /etc/init.d/rc.local (具体参考effective emacs)
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+xmodmap /home/ym/.xmodmap
+** DONE emacs 超级有效的
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+   effective emacs
+   emacs 神 总结
+   牛人如Steve Purcell  2.4 版本在ubuntu 14--emacs 2.4 可以正常使用 万岁！！！
