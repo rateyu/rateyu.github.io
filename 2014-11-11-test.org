@@ -1,6 +1,12 @@
 
 * 草稿
 
+** 我的主要目标
+   陈硕 网络编程
+   socket函数3个
+   echo  proxy
+   tcpdump使用 ipython
+
 ** github 编写博客网站
 博客模板
 
@@ -9,6 +15,15 @@
 http://emacser.com/emacs-ditaa.htm
 
 ** emacs send email 配置？？
+** emacs 查看新闻组 rss
+** TODO yasnippets ant maven
+   jdk ok
+   编写java ok
+   emacs jdee 安装成功
+   全局键位切换 ok  方法如下：
+   1:/profile
+   2:参考：http://www.pcwaishe.cn/thread-274372-1-1.html
+   3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
 ** DONE emacs w3m 操作步骤
    CLOSED: [2014-11-15 六 22:31]
    - State "DONE"       from "STARTED"    [2014-11-15 六 22:31]
