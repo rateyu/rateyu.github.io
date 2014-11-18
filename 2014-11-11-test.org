@@ -7,23 +7,52 @@
    echo  proxy
    tcpdump使用 ipython
 
-** github 编写博客网站
+** github 编写博客网站 git分支问题？？？
 博客模板
+** TODO yasnippets ant maven 
+   jdk ok
+   编写java ok
+   全局键位切换 ok  方法如下：
+   1:/profile
+   2:参考：http://www.pcwaishe.cn/thread-274372-1-1.html
+   3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
+
 
 ** emacs 绘制流程图
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
 
-** emacs send email 配置？？
-** emacs 查看新闻组 rss
-** TODO yasnippets ant maven
-   jdk ok
-   编写java ok
-   emacs jdee 安装成功
-   全局键位切换 ok  方法如下：
-   1:/profile
-   2:参考：http://www.pcwaishe.cn/thread-274372-1-1.html
-   3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
+** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
+** emacs 查看新闻组 rss  *类鸟*
+** DONE jde 常用方法总结
+   CLOSED: [2014-11-18 二 22:16]
+   - State "DONE"       from "STARTED"    [2014-11-18 二 22:16]
+   emacs jdee 安装成功 jde快速定位调用关系
+
+   查找源代码
+用命令jde-find，很牛的，试试看。
+当然也可以切换到eshell,然后直接用grep -n -R '关键字' ./
+
+   智能提示
+在需要提示的地方按下组合键：C-c C-v C-. 注意，三个按键都需要按住Ctrl键。
+智能提示有几种方式（弹出窗口用于桌面版本，其他两种可以用于服务器纯字符界面），具体参见官方文档。
+
+   源代码跳转
+在需要跳转的地方按下组合键：Ctrl c v y
+前提是你正确配置了源代码路径。
+
+   注释生成
+在方法或者类的那行按下：Ctrl c v j
+注意，在有模板类的情况下无法使用。遗憾啊！
+
+   import语句
+命令jde-import-organize 可以帮助重新组织当前java文件里面的import语句。而且也跟据字典顺序进行排序。排序可以定制，参考JDEE文档。
+命令jde-import-kill-extra-imports 可以删除当前Java文件里面多余的import语句。
+命令jde-import-all, C-c C-v z 可以导入当前java文件所有缺少的import语句
+   
+参考url
+http://blog.csdn.net/csfreebird/article/details/7028174
+http://blog.csdn.net/pfanaya/article/details/6991703
 ** DONE emacs w3m 操作步骤
    CLOSED: [2014-11-15 六 22:31]
    - State "DONE"       from "STARTED"    [2014-11-15 六 22:31]
