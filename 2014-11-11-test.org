@@ -12,18 +12,18 @@
 ** TODO yasnippets ant maven 
    jdk ok
    编写java ok
-   全局键位切换 ok  方法如下：
+
+** 全局键位切换 ok  方法如下：
    1:/profile
    2:参考：http://www.pcwaishe.cn/thread-274372-1-1.html
    3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
-
 
 ** emacs 绘制流程图
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
 
 ** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
-** emacs 查看新闻组 rss  *类鸟*
+** emacs 查看新闻组 rss  *雷鸟*
 ** DONE jde 常用方法总结
    CLOSED: [2014-11-18 二 22:16]
    - State "DONE"       from "STARTED"    [2014-11-18 二 22:16]
