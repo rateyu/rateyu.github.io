@@ -1,6 +1,5 @@
 
 * 草稿
-
 ** 我的主要目标
    陈硕 网络编程
    socket函数3个
@@ -9,6 +8,10 @@
 
 ** github 编写博客网站 git分支问题？？？
 博客模板
+http://blog.csdn.net/on_1y/article/details/19259435
+
+https://github.com/barryclark/jekyll-now
+
 ** TODO yasnippets ant maven 
    jdk ok
    编写java ok
@@ -24,6 +27,7 @@ http://emacser.com/emacs-ditaa.htm
 
 ** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
 ** emacs 查看新闻组 rss  *雷鸟*
+** DONE 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码
 ** DONE jde 常用方法总结
    CLOSED: [2014-11-18 二 22:16]
    - State "DONE"       from "STARTED"    [2014-11-18 二 22:16]
@@ -75,7 +79,7 @@ H 主页
 B 回退
 N 去下一页??
 c_c c_w 关闭当前tab页
-c 输出当前url地址 
+c 输出当前url地址 B
 ** DONE emacs 插入java 代码
    CLOSED: [2014-11-15 六 22:30]
    - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
