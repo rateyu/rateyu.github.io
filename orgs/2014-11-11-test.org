@@ -1,17 +1,15 @@
 
 * 草稿
-** 我的主要目标
-   陈硕 网络编程
-   socket函数3个
-   echo  proxy
-   tcpdump使用 ipython
-
+** 主要目标
+   - 陈硕 网络编程 
+   - socket函数3个 
+   - echo chat  proxy 
+   - tcpdump使用 ipython 
 ** github 编写博客网站 git分支问题？？？
 博客模板
 http://blog.csdn.net/on_1y/article/details/19259435
 
 https://github.com/barryclark/jekyll-now
-
 ** TODO yasnippets ant maven 
    jdk ok
    编写java ok
@@ -21,13 +19,14 @@ https://github.com/barryclark/jekyll-now
    2:参考：http://www.pcwaishe.cn/thread-274372-1-1.html
    3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
 
-** emacs 绘制流程图
+** emacs 绘制流程图 yz
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
 
 ** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
 ** emacs 查看新闻组 rss  *雷鸟*
 ** DONE 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码
+** redis 非常简单，按照主页的说明就可以使用了，
 ** DONE jde 常用方法总结
    CLOSED: [2014-11-18 二 22:16]
    - State "DONE"       from "STARTED"    [2014-11-18 二 22:16]
