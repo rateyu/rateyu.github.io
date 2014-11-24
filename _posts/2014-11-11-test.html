@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 草稿
+title: 草稿 2014-11-25
 ---
+
 
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -12,7 +13,7 @@ title: 草稿
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="2014-11-11-test"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-11-23T21:22+0800"/>
+<meta name="generated" content="2014-11-25T06:53+0800"/>
 <meta name="author" content="ym"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -129,28 +130,29 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec-1">1 草稿</a>
 <ul>
-<li><a href="#sec-1-1">1.1 主要目标</a></li>
-<li><a href="#sec-1-2">1.2 github 编写博客网站 git分支问题？？？</a></li>
+<li><a href="#sec-1-1">1.1 定位内存泄露问题</a></li>
+<li><a href="#sec-1-2">1.2 主要学习目标</a></li>
 <li><a href="#sec-1-3">1.3 yasnippets ant maven</a></li>
-<li><a href="#sec-1-4">1.4 全局键位切换 ok  方法如下：</a></li>
-<li><a href="#sec-1-5">1.5 emacs 绘制流程图 yz</a></li>
-<li><a href="#sec-1-6">1.6 emacs send email 配置？？ 替代方法 先使用 <b>雷鸟</b></a></li>
-<li><a href="#sec-1-7">1.7 emacs 查看新闻组 rss  <b>雷鸟</b></a></li>
-<li><a href="#sec-1-8">1.8 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码</a></li>
-<li><a href="#sec-1-9">1.9 redis 非常简单，按照主页的说明就可以使用了，</a></li>
-<li><a href="#sec-1-10">1.10 jde 常用方法总结</a></li>
-<li><a href="#sec-1-11">1.11 emacs w3m 操作步骤</a>
+<li><a href="#sec-1-4">1.4 emacs 绘制流程图 yz</a></li>
+<li><a href="#sec-1-5">1.5 emacs send email 配置？？ 替代方法 先使用 <b>雷鸟</b></a></li>
+<li><a href="#sec-1-6">1.6 emacs 查看新闻组 rss  <b>雷鸟</b></a></li>
+<li><a href="#sec-1-7">1.7 redis 非常简单，按照主页的说明就可以使用了</a></li>
+<li><a href="#sec-1-8">1.8 全局键位切换 ok  方法如下：</a></li>
+<li><a href="#sec-1-9">1.9 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码</a></li>
+<li><a href="#sec-1-10">1.10 github 编写博客网站 git分支问题 这个问题终于搞定了</a></li>
+<li><a href="#sec-1-11">1.11 jde 常用方法总结 启动太慢，不好用</a></li>
+<li><a href="#sec-1-12">1.12 emacs w3m 操作步骤</a>
 <ul>
-<li><a href="#sec-1-11-1">1.11.1 安装</a></li>
-<li><a href="#sec-1-11-2">1.11.2 增加配置</a></li>
-<li><a href="#sec-1-11-3">1.11.3 常用命令</a></li>
+<li><a href="#sec-1-12-1">1.12.1 安装</a></li>
+<li><a href="#sec-1-12-2">1.12.2 增加配置</a></li>
+<li><a href="#sec-1-12-3">1.12.3 常用命令</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-12">1.12 emacs 插入java 代码</a></li>
-<li><a href="#sec-1-13">1.13 emacs 自动补全磁盘目录 牛人如Steve Purcell &mdash;可以正常使用</a></li>
-<li><a href="#sec-1-14">1.14 emacs .eamcs.d init.el 配置文件</a></li>
-<li><a href="#sec-1-15">1.15 emacs 启动将 caps<sub>lock</sub> &lt;&ndash;&gt; ctrl<sub>R</sub> 放入 /etc/init.d/rc.local (具体参考effective emacs)</a></li>
-<li><a href="#sec-1-16">1.16 emacs 超级有效的</a></li>
+<li><a href="#sec-1-13">1.13 emacs 插入java 代码</a></li>
+<li><a href="#sec-1-14">1.14 emacs 自动补全磁盘目录 牛人如Steve Purcell &mdash;可以正常使用</a></li>
+<li><a href="#sec-1-15">1.15 emacs .eamcs.d init.el 配置文件</a></li>
+<li><a href="#sec-1-16">1.16 emacs 启动将 caps<sub>lock</sub> &lt;&ndash;&gt; ctrl<sub>R</sub> 放入 /etc/init.d/rc.local (具体参考effective emacs)</a></li>
+<li><a href="#sec-1-17">1.17 emacs 超级有效的</a></li>
 </ul>
 </li>
 </ul>
@@ -165,35 +167,38 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 主要目标</h3>
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 定位内存泄露问题</h3>
 <div class="outline-text-3" id="text-1-1">
 
 <ul>
-<li>陈硕 网络编程 
+<li>压力测试工具很重要
 </li>
-<li>socket函数3个 
+<li>如何检查泄露，标准是三么
 </li>
-<li>echo chat  proxy 
-</li>
-<li>tcpdump使用 ipython 
+<li>c++ java定位 方法
 </li>
 </ul>
-
 
 </div>
 
 </div>
 
 <div id="outline-container-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> github 编写博客网站 git分支问题？？？</h3>
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 主要学习目标</h3>
 <div class="outline-text-3" id="text-1-2">
 
-<p>博客模板
-<a href="http://blog.csdn.net/on_1y/article/details/19259435">http://blog.csdn.net/on_1y/article/details/19259435</a>
-</p>
-<p>
-<a href="https://github.com/barryclark/jekyll-now">https://github.com/barryclark/jekyll-now</a>
-</p></div>
+<ul>
+<li>socket函数3个 
+</li>
+<li>echo chat  proxy 
+</li>
+<li>tcpdump使用 ipython 
+</li>
+<li>陈硕 网络编程 
+</li>
+</ul>
+
+</div>
 
 </div>
 
@@ -209,30 +214,80 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-1-4" class="outline-3">
-<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 全局键位切换 ok  方法如下：</h3>
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> emacs 绘制流程图 yz</h3>
 <div class="outline-text-3" id="text-1-4">
 
-<p>   1:/profile
-   2:参考：<a href="http://www.pcwaishe.cn/thread-274372-1-1.html">http://www.pcwaishe.cn/thread-274372-1-1.html</a>
-   3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
+<p>参考url地址：
+<a href="http://emacser.com/emacs-ditaa.htm">http://emacser.com/emacs-ditaa.htm</a>
 </p>
+<p>
+<a href="http://blog.csdn.net/occupy8/article/details/14450453">http://blog.csdn.net/occupy8/article/details/14450453</a>
+</p>
+<p>
+<a href="http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html">http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html</a>
+</p>
+<p>
+ org-mode 支持的语言
+目前（版本号：7.9.3d）支持以下语言：
+语言    标识符
+Asymptote       asymptote
+Emacs Calc      calc
+C++     C++
+CSS     css
+Graphviz        dot
+gnuplot gnuplot
+Java    java
+Javascript      js
+Ledger  ledger
+Lilypond        lilypond
+Mscgen  mscgen
+Octave  octave
+Oz      oz
+Plantuml        plantuml
+R       R
+Sass    sass
+GNU Screen      screen
+SQL     sql
+Awk     awk
+C       C
+Clojure clojure
+ditaa   ditaa
+Emacs Lisp      emacs-lisp
+Haskell haskell
+LaTeX   latex
+Lisp    lisp
+MATLAB  matlab
+Objective Caml  ocaml
+Org mode        org
+Perl    perl
+Python  python
+Ruby    ruby
+Scheme  scheme
+shell   sh
+SQLite  sqlite
+</p>
+<p>
+6 其他方案
+</p>
+<p>
+感谢 Celad Evra 的提醒，org-mode 自带的 Easy Templates 也提供了快速插入代码块的功能： 输入 &lt;s TAB 即可（但不提供语言标识符的补全），具体细节请见 org-mode 的文档。
+</p>
+
+
 </div>
 
 </div>
 
 <div id="outline-container-1-5" class="outline-3">
-<h3 id="sec-1-5"><span class="section-number-3">1.5</span> emacs 绘制流程图 yz</h3>
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> emacs send email 配置？？ 替代方法 先使用 <b>雷鸟</b></h3>
 <div class="outline-text-3" id="text-1-5">
 
-<p>参考url地址：
-<a href="http://emacser.com/emacs-ditaa.htm">http://emacser.com/emacs-ditaa.htm</a>
-</p>
 </div>
 
 </div>
 
 <div id="outline-container-1-6" class="outline-3">
-<h3 id="sec-1-6"><span class="section-number-3">1.6</span> emacs send email 配置？？ 替代方法 先使用 <b>雷鸟</b></h3>
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> emacs 查看新闻组 rss  <b>雷鸟</b></h3>
 <div class="outline-text-3" id="text-1-6">
 
 </div>
@@ -240,23 +295,33 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-1-7" class="outline-3">
-<h3 id="sec-1-7"><span class="section-number-3">1.7</span> emacs 查看新闻组 rss  <b>雷鸟</b></h3>
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> redis 非常简单，按照主页的说明就可以使用了</h3>
 <div class="outline-text-3" id="text-1-7">
+
 
 </div>
 
 </div>
 
 <div id="outline-container-1-8" class="outline-3">
-<h3 id="sec-1-8"><span class="section-number-3">1.8</span> <span class="done DONE">DONE</span> 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码</h3>
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> <span class="done DONE">DONE</span> 全局键位切换 ok  方法如下：</h3>
 <div class="outline-text-3" id="text-1-8">
 
-</div>
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-25 二 06:36</span></span><br/>
+</p><ul>
+<li>State "DONE"       from "STARTED" <span class="timestamp-wrapper"> <span class="timestamp">2014-11-25 二 06:36</span></span>
+</li>
+</ul>
+
+<p>   1:/profile
+   2:参考：<a href="http://www.pcwaishe.cn/thread-274372-1-1.html">http://www.pcwaishe.cn/thread-274372-1-1.html</a>
+   3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
+</p></div>
 
 </div>
 
 <div id="outline-container-1-9" class="outline-3">
-<h3 id="sec-1-9"><span class="section-number-3">1.9</span> redis 非常简单，按照主页的说明就可以使用了，</h3>
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> <span class="done DONE">DONE</span> 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码</h3>
 <div class="outline-text-3" id="text-1-9">
 
 </div>
@@ -264,8 +329,39 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-1-10" class="outline-3">
-<h3 id="sec-1-10"><span class="section-number-3">1.10</span> <span class="done DONE">DONE</span> jde 常用方法总结</h3>
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> <span class="done DONE">DONE</span> github 编写博客网站 git分支问题 这个问题终于搞定了</h3>
 <div class="outline-text-3" id="text-1-10">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-25 二 06:33</span></span><br/>
+</p><ul>
+<li>State "DONE"       from "STARTED" <span class="timestamp-wrapper"> <span class="timestamp">2014-11-25 二 06:33</span></span>
+
+<p>
+     困扰的问题是：
+     jekyll编译错误，貌似html没有加头
+</p></li>
+</ul>
+
+<p>---
+layout: default
+title: 草稿
+---
+</p>
+
+
+<p>
+   博客模板
+<a href="http://blog.csdn.net/on_1y/article/details/19259435">http://blog.csdn.net/on_1y/article/details/19259435</a>
+</p>
+<p>
+<a href="https://github.com/barryclark/jekyll-now">https://github.com/barryclark/jekyll-now</a>
+</p></div>
+
+</div>
+
+<div id="outline-container-1-11" class="outline-3">
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> <span class="done DONE">DONE</span> jde 常用方法总结 启动太慢，不好用</h3>
+<div class="outline-text-3" id="text-1-11">
 
 <p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-18 二 22:16</span></span><br/>
 </p><ul>
@@ -309,9 +405,9 @@ for the JavaScript code in this tag.
 
 </div>
 
-<div id="outline-container-1-11" class="outline-3">
-<h3 id="sec-1-11"><span class="section-number-3">1.11</span> <span class="done DONE">DONE</span> emacs w3m 操作步骤</h3>
-<div class="outline-text-3" id="text-1-11">
+<div id="outline-container-1-12" class="outline-3">
+<h3 id="sec-1-12"><span class="section-number-3">1.12</span> <span class="done DONE">DONE</span> emacs w3m 操作步骤</h3>
+<div class="outline-text-3" id="text-1-12">
 
 <p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-15 六 22:31</span></span><br/>
 </p><ul>
@@ -322,9 +418,9 @@ for the JavaScript code in this tag.
 
 </div>
 
-<div id="outline-container-1-11-1" class="outline-4">
-<h4 id="sec-1-11-1"><span class="section-number-4">1.11.1</span> 安装</h4>
-<div class="outline-text-4" id="text-1-11-1">
+<div id="outline-container-1-12-1" class="outline-4">
+<h4 id="sec-1-12-1"><span class="section-number-4">1.12.1</span> 安装</h4>
+<div class="outline-text-4" id="text-1-12-1">
 
 <p>sudo apt-get install w3m w3m-el w3m-img
 </p>
@@ -332,9 +428,9 @@ for the JavaScript code in this tag.
 
 </div>
 
-<div id="outline-container-1-11-2" class="outline-4">
-<h4 id="sec-1-11-2"><span class="section-number-4">1.11.2</span> 增加配置</h4>
-<div class="outline-text-4" id="text-1-11-2">
+<div id="outline-container-1-12-2" class="outline-4">
+<h4 id="sec-1-12-2"><span class="section-number-4">1.12.2</span> 增加配置</h4>
+<div class="outline-text-4" id="text-1-12-2">
 
 <p>(autoload 'w3m "w3m" "interface for w3m on emacs" t)
 (setq w3m-command-arguments '("-cookie" "-F"))
@@ -349,9 +445,9 @@ for the JavaScript code in this tag.
 
 </div>
 
-<div id="outline-container-1-11-3" class="outline-4">
-<h4 id="sec-1-11-3"><span class="section-number-4">1.11.3</span> 常用命令</h4>
-<div class="outline-text-4" id="text-1-11-3">
+<div id="outline-container-1-12-3" class="outline-4">
+<h4 id="sec-1-12-3"><span class="section-number-4">1.12.3</span> 常用命令</h4>
+<div class="outline-text-4" id="text-1-12-3">
 
 <p>G 去新的页面
 H 主页
@@ -364,9 +460,9 @@ c 输出当前url地址 B
 
 </div>
 
-<div id="outline-container-1-12" class="outline-3">
-<h3 id="sec-1-12"><span class="section-number-3">1.12</span> <span class="done DONE">DONE</span> emacs 插入java 代码</h3>
-<div class="outline-text-3" id="text-1-12">
+<div id="outline-container-1-13" class="outline-3">
+<h3 id="sec-1-13"><span class="section-number-3">1.13</span> <span class="done DONE">DONE</span> emacs 插入java 代码</h3>
+<div class="outline-text-3" id="text-1-13">
 
 <p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-15 六 22:30</span></span><br/>
 </p><ul>
@@ -378,9 +474,9 @@ c 输出当前url地址 B
 
 
 
-<pre class="src src-java"><span style="color: #b0c4de;">public</span> <span style="color: #00bfff;">class</span> <span style="color: #98f5ff;">Hello</span>
+<pre class="src src-java"><span style="color: #00bfff;">public</span> <span style="color: #00bfff;">class</span> <span style="color: #98f5ff;">Hello</span>
 {
-    <span style="color: #b0c4de;">public</span> <span style="color: #b0c4de;">static</span> <span style="color: #98f5ff;">void</span> <span style="color: #daa520;">main</span>(<span style="color: #98f5ff;">String</span> [] <span style="color: #4eee94;">args</span>)
+    <span style="color: #00bfff;">public</span> <span style="color: #00bfff;">static</span> <span style="color: #98f5ff;">void</span> <span style="color: #daa520;">main</span>(<span style="color: #98f5ff;">String</span> [] <span style="color: #4eee94;">args</span>)
     {
          System.out.println(<span style="color: #deb887;">"hello world"</span>);
     }
@@ -415,9 +511,9 @@ select * from tablename;
 
 </div>
 
-<div id="outline-container-1-13" class="outline-3">
-<h3 id="sec-1-13"><span class="section-number-3">1.13</span> <span class="done DONE">DONE</span> emacs 自动补全磁盘目录 牛人如Steve Purcell &mdash;可以正常使用</h3>
-<div class="outline-text-3" id="text-1-13">
+<div id="outline-container-1-14" class="outline-3">
+<h3 id="sec-1-14"><span class="section-number-3">1.14</span> <span class="done DONE">DONE</span> emacs 自动补全磁盘目录 牛人如Steve Purcell &mdash;可以正常使用</h3>
+<div class="outline-text-3" id="text-1-14">
 
 <p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-15 六 22:29</span></span><br/>
 </p><ul>
@@ -429,9 +525,9 @@ select * from tablename;
 
 </div>
 
-<div id="outline-container-1-14" class="outline-3">
-<h3 id="sec-1-14"><span class="section-number-3">1.14</span> <span class="done DONE">DONE</span> emacs .eamcs.d init.el 配置文件</h3>
-<div class="outline-text-3" id="text-1-14">
+<div id="outline-container-1-15" class="outline-3">
+<h3 id="sec-1-15"><span class="section-number-3">1.15</span> <span class="done DONE">DONE</span> emacs .eamcs.d init.el 配置文件</h3>
+<div class="outline-text-3" id="text-1-15">
 
 <p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-15 六 22:30</span></span><br/>
 </p><ul>
@@ -444,29 +540,29 @@ select * from tablename;
 
 <pre class="src src-lisp"><span style="color: #8c8c8c;">(</span>tool-bar-mode -1<span style="color: #8c8c8c;">)</span>
 <span style="color: #8c8c8c;">(</span>custom-set-variables
- <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">custom-set-variables was added by Custom.</span>
- <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">If you edit it by hand, you could mess it up, so be careful.</span>
- <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">Your init file should contain only one such instance.</span>
- <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">If there is more than one, they won't work right.</span>
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '<span style="color: #93a8c6;">(</span>custom-enabled-themes <span style="color: #b0b1a3;">(</span>quote <span style="color: #97b098;">(</span>deeper-blue<span style="color: #97b098;">)</span><span style="color: #b0b1a3;">)</span><span style="color: #93a8c6;">)</span><span style="color: #8c8c8c;">)</span>
 <span style="color: #8c8c8c;">(</span>custom-set-faces
- <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">custom-set-faces was added by Custom.</span>
- <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">If you edit it by hand, you could mess it up, so be careful.</span>
- <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">Your init file should contain only one such instance.</span>
- <span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">If there is more than one, they won't work right.</span>
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  <span style="color: #8c8c8c;">)</span>
 
-<span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">&#21442;&#32771; url &#35828;&#26126;&#65306;     http://github.com/capitaomorte/yasnippet</span>
+;; &#21442;&#32771; url &#35828;&#26126;&#65306;     http://github.com/capitaomorte/yasnippet
 <span style="color: #8c8c8c;">(</span>add-to-list 'load-path
               <span style="color: #deb887;">"~/.emacs.d/elpa/yasnippet-0.8.0"</span><span style="color: #8c8c8c;">)</span>
-<span style="color: #8c8c8c;">(</span><span style="color: #00bfff;">require</span> '<span style="color: #a2cd5a;">yasnippet</span><span style="color: #8c8c8c;">)</span>
+<span style="color: #8c8c8c;">(</span>require 'yasnippet<span style="color: #8c8c8c;">)</span>
 <span style="color: #8c8c8c;">(</span>yas-global-mode 1<span style="color: #8c8c8c;">)</span>
 
-<span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">&#31070;&#30340;&#32534;&#36753;&#22120; </span>
-<span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">1.&#20316;&#32773; snippets   https://github.com/eschulte/emacs24-starter-kit</span>
-<span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">2.striker         https://github.com/redguardtoo/emacs.d</span>
+;; &#31070;&#30340;&#32534;&#36753;&#22120; 
+;; 1.&#20316;&#32773; snippets   https://github.com/eschulte/emacs24-starter-kit
+;; 2.striker         https://github.com/redguardtoo/emacs.d
 
-<span style="color: #7f7f7f;">;; </span><span style="color: #7f7f7f;">&#22686;&#21152;w3m &#20027;&#39029;</span>
+;; &#22686;&#21152;w3m &#20027;&#39029;
 <span style="color: #8c8c8c;">(</span>setq w3m-home-page <span style="color: #deb887;">"http://www.baidu.com/"</span><span style="color: #8c8c8c;">)</span>
 </pre>
 
@@ -474,9 +570,9 @@ select * from tablename;
 
 </div>
 
-<div id="outline-container-1-15" class="outline-3">
-<h3 id="sec-1-15"><span class="section-number-3">1.15</span> <span class="done DONE">DONE</span> emacs 启动将 caps<sub>lock</sub> &lt;&ndash;&gt; ctrl<sub>R</sub> 放入 /etc/init.d/rc.local (具体参考effective emacs)</h3>
-<div class="outline-text-3" id="text-1-15">
+<div id="outline-container-1-16" class="outline-3">
+<h3 id="sec-1-16"><span class="section-number-3">1.16</span> <span class="done DONE">DONE</span> emacs 启动将 caps<sub>lock</sub> &lt;&ndash;&gt; ctrl<sub>R</sub> 放入 /etc/init.d/rc.local (具体参考effective emacs)</h3>
+<div class="outline-text-3" id="text-1-16">
 
 <p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-15 六 22:30</span></span><br/>
 </p><ul>
@@ -489,9 +585,9 @@ select * from tablename;
 
 </div>
 
-<div id="outline-container-1-16" class="outline-3">
-<h3 id="sec-1-16"><span class="section-number-3">1.16</span> <span class="done DONE">DONE</span> emacs 超级有效的</h3>
-<div class="outline-text-3" id="text-1-16">
+<div id="outline-container-1-17" class="outline-3">
+<h3 id="sec-1-17"><span class="section-number-3">1.17</span> <span class="done DONE">DONE</span> emacs 超级有效的</h3>
+<div class="outline-text-3" id="text-1-17">
 
 <p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">CLOSED: </span> <span class="timestamp">2014-11-15 六 22:30</span></span><br/>
 </p><ul>
@@ -508,7 +604,7 @@ select * from tablename;
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2014-11-23T21:22+0800</p>
+<p class="date">Date: 2014-11-25T06:53+0800</p>
 <p class="author">Author: ym</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
