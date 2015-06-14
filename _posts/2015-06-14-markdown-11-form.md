@@ -36,7 +36,7 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 
 8. 图片（Images）
 图片的处理方式和链接的处理方式，非常的类似。
-内联方式：![alt text](/path/to/img.jpg "Title")
+内联方式：![alt text](/images/Monokai-Extended-Markdown-Extended.png "Title")
 引用方式：
 ![alt text][id2] 
 
