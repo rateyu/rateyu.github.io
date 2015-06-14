@@ -39,11 +39,11 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 内联方式：![alt text](/path/to/img.jpg "Title")
 引用方式：
 ![alt text][id2] 
-[id2]: ./images/markdown20150614.png "my_markdown" 
+
+[id2]:/images/markdown20150614.png "my_markdown" 
 
 >     如何快速打印路径下的文件？
 
-[id]: /path/to/img.jpg "Title"
 
 9. 代码（HTML中所谓的Code）
 实现方式有两种：
