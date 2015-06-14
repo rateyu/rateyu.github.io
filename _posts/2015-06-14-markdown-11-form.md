@@ -2,10 +2,6 @@ Markdown 11种基本语法
 ===
 现在是我在学习Markdown时做的笔记。学完这些Markdown的基本使用已经不成问题。
 
- 
-
- 
-
 1. 标题设置（让字体变大，和word的标题意思一样）
 在Markdown当中设置标题，有两种方式：
 第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。
@@ -13,6 +9,7 @@ Markdown 11种基本语法
 
 2. 块注释（blockquote）
 通过在文字开头添加“>”表示块注释。（当>和文字之间添加五个blank时，块注释的文字会有变化。）
+
 >     块注释
 
 3. 斜体
@@ -55,20 +52,11 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 实现方式如下：
 hello[^hello]
 
-
 [^hello]: hi
 
 11. 下划线
 在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）
 
-
- 
-
- 
-
-References： 
-
-以上内容根据官方文档基本文档进行整理。http://daringfireball.net/projects/markdown/basics
-Markdown官方网站：http://daringfireball.net/projects/markdown/ 
-
-推荐一款在线的Markdown编辑器：https://stackedit.io/ 
+[以上内容根据官方文档基本文档进行整理](http://daringfireball.net/projects/markdown/basics)
+[Markdown官方网站](http://daringfireball.net/projects/markdown/)
+[推荐一款在线的Markdown编辑器](https://stackedit.io/)
