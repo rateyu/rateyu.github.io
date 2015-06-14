@@ -53,6 +53,11 @@ git clone git@github.com:rateyu/rateyu.github.io.git ./blog2015
 > 运行命令$git clone https://github.com/jenkinsci/gerrit-trigger-plugin.git
 > 此种方式只有读的权限
 
+sublime txt 3 github使用说明
+安装 包管理器
+git quick commit
+git push current branch
+
 
 5. 提交流程
 1) git add .
