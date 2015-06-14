@@ -5,7 +5,7 @@
    - 如何检查泄露，标准是三么
    - c++ java定位 方法
 ** 主要学习目标
-   - socket函数3个 
+   - socket函数3个  epoll 内部实现机制研究，存在红黑树算法实现
    - echo chat  proxy 
    - tcpdump使用 ipython 
    - 陈硕 网络编程 
