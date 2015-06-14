@@ -42,6 +42,7 @@ I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
 
 [id2]: /images/markdown20150614.png "my_markdown" 
 
+>     png 上传时 使用的 git add . ，好不容易才上传上去的，需要注意了
 >     如何快速打印路径下的文件？
 
 
