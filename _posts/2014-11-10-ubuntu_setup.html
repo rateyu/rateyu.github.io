@@ -1,21 +1,14 @@
----
-layout: default
-title: ubuntu setup && env
----
-
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<title>2014-11-10-ubuntu<sub>setup</sub></title>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta name="title" content="2014-11-10-ubuntu<sub>setup</sub>"/>
-<meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-11-23T21:09+0800"/>
-<meta name="author" content="ym"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>2014-11-10-ubuntu&lt;sub&gt;setup&lt;/sub&gt;</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="2014-11-10-ubuntu&lt;sub&gt;setup&lt;/sub&gt;">
+<meta name="generator" content="Org-mode">
+<meta name="generated" content="2015-06-28T15:54+0800">
+<meta name="author" content="ym">
+<meta name="description" content="">
+<meta name="keywords" content="">
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   html { font-family: Times, serif; font-size: 12pt; }
@@ -227,8 +220,8 @@ github
 </li>
 </ol>
 
-<p>git config &ndash;global user.name = "用户名或者用户ID"
-git config &ndash;global user.email = "邮箱"
+<p>git config –global user.name = "用户名或者用户ID"
+git config –global user.email = "邮箱"
 这两个选项会在以后的使用过程中自动添加到代码中。
 </p>
 <ol>
@@ -248,7 +241,10 @@ git config &ndash;global user.email = "邮箱"
 <p>在 github.com 的界面中 选择右上角的 Account Settings，然后选择 SSH Public Keys ，选择新加。
 Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id<sub>rsa</sub>.pub 中的内容，完成后，可以再使用 ssh -v git@github.com 进行测试。看到下面的信息表示验证成功。
 </p>
-
+<p>
+注意：此处要重启os，比较奇怪
+emacs -nw  不使用x11界面
+</p>
 <ol>
 <li>复制代码
 </li>
@@ -258,12 +254,25 @@ Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id<sub>rsa</sub>.pub �
 <p>
 使用 git clone git@github.com:cocowool/userguide.git userguide 可以将代码复制到本地的 userguide 文件夹中
 </p>
+<p>
+git clone git@github.com:rateyu/rateyu.github.io.git ./blog2015
+此种方式有读写权限
+</p>
+<p>
+&gt; 运行命令$git clone <a href="https://github.com/jenkinsci/gerrit-trigger-plugin.git">https://github.com/jenkinsci/gerrit-trigger-plugin.git</a>
+&gt; 此种方式只有读的权限
+</p>
+<p>
+sublime txt 3 github使用说明
+安装 包管理器
+git quick commit
+git push current branch
+</p>
 
 <ol>
 <li>提交流程
 </li>
 <li>git add .
-
 </li>
 <li>git commit -m "ubuntu 14 环境安装"
 </li>
@@ -278,8 +287,8 @@ Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id<sub>rsa</sub>.pub �
 <div class="outline-text-4" id="text-2-2-1">
 
 <p>Run
-  git config &ndash;global user.email "you@example.com"
-  git config &ndash;global user.name "Your Name"
+  git config –global user.email "you@example.com"
+  git config –global user.name "Your Name"
 </p>
 <ol>
 <li>提交远程代码
@@ -335,11 +344,12 @@ git status
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2014-11-23T21:09+0800</p>
+<p class="date">Date: 2015-06-28T15:54+0800</p>
 <p class="author">Author: ym</p>
-<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<p class="creator"><a href="http://orgmode.org/">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
 
 </div>
-</body>
-</html>
+
+
+</body></html>
