@@ -1,4 +1,4 @@
-git add .
-git commit -m "commit auto"
+git status
+git commit -a
 git push -u origin master
 
