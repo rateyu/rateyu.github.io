@@ -16,6 +16,7 @@
 ** emacs 绘制流程图 yz
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
+打开链接地址: c_c c_o
 
 http://blog.csdn.net/occupy8/article/details/14450453
 
@@ -63,7 +64,6 @@ SQLite	sqlite
 6 其他方案
 
 感谢 Celad Evra 的提醒，org-mode 自带的 Easy Templates 也提供了快速插入代码块的功能： 输入 <s TAB 即可（但不提供语言标识符的补全），具体细节请见 org-mode 的文档。
-
 
 
 ** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
