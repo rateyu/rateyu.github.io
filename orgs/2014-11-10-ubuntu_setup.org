@@ -42,8 +42,8 @@ git config --global user.email = "邮箱"
 在 github.com 的界面中 选择右上角的 Account Settings，然后选择 SSH Public Keys ，选择新加。
 Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id_rsa.pub 中的内容，完成后，可以再使用 ssh -v git@github.com 进行测试。看到下面的信息表示验证成功。
 
-注意：此处要重启os，比较奇怪
-emacs -nw  不使用x11界面
+- 注意：此处要重启os，比较奇怪
+- emacs -nw  不使用x11界面
 
 4. 复制代码
 
