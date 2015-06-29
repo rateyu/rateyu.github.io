@@ -1,4 +1,3 @@
-
 * 安装ubuntu系统
 
 ** 无线驱动无法使用 安装的两种方法：
@@ -18,7 +17,6 @@ emacs 插件
 yasnippets：  snippets c++ java
 jdee：       自动导入jar包  集成编译和运行 调试
 emacs 字体： 家里的输入法字体换爽 公司的字体很差，可以考虑下如何修改
-
 
 * git环境安装
 
