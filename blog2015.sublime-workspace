@@ -8,18 +8,10 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2015-06-14-系统持续集成.md",
+			"file": "_posts/2015-06-29-my-think.md",
 			"settings":
 			{
-				"buffer_size": 98,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2015-06-14-markdown-11-form.md",
-			"settings":
-			{
-				"buffer_size": 1455,
+				"buffer_size": 203,
 				"line_ending": "Unix"
 			}
 		},
@@ -72,7 +64,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -101,12 +93,12 @@
 	],
 	"file_history":
 	[
+		"/home/ym/blog2015/_posts/2015-06-14-系统持续集成.md",
 		"/home/ym/.config/sublime-text-3/Packages/User/Markdown (Standard).sublime-settings",
 		"/home/ym/blog2015/orgs/20150614_my_im.md",
 		"/home/ym/.config/sublime-text-3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
 		"/home/ym/.config/sublime-text-3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
 		"/home/ym/.config/sublime-text-3/Packages/Markdown Slideshow/Default.sublime-keymap",
-		"/home/ym/blog2015/_posts/2015-06-14-系统持续集成.md",
 		"/home/ym/myblog/rateyu.github.io/orgs/2014-08-03-发布github博客.org",
 		"/home/ym/myblog/rateyu.github.io/orgs/20150614-test.md",
 		"/home/ym/myblog/rateyu.github.io/orgs/2014-11-11-test.org",
@@ -147,24 +139,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2015-06-14-系统持续集成.md",
+					"file": "_posts/2015-06-29-my-think.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 98,
+						"buffer_size": 203,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								85,
-								85
+								8,
+								8
 							]
 						],
 						"settings":
@@ -174,44 +166,14 @@
 							"target": "disk"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2015-06-14-markdown-11-form.md",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1455,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"parser": "markdown",
-							"syntax": "Packages/MarkdownEditing/Markdown (Standard).tmLanguage",
-							"target": "browser"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "_posts/2014-11-10-ubuntu_setup.html",
 					"semi_transient": false,
 					"settings":
@@ -237,7 +199,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -323,7 +285,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 280.0,
 	"status_bar_visible": true,
 	"template_settings":
