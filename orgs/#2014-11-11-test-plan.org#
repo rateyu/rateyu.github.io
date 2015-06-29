@@ -1,0 +1,227 @@
+
+* 草稿
+** 定位内存泄露问题
+   - 压力测试工具很重要
+   - 如何检查泄露，标准是三么
+   - c++ java定位 方法
+** 主要学习目标
+   - socket函数3个  epoll 内部实现机制研究，存在红黑树算法实现
+   - echo chat  proxy 
+   - tcpdump使用 ipython 
+   - 陈硕 网络编程 
+** TODO yasnippets ant maven 
+   jdk ok
+   编写java ok
+
+** emacs 绘制流程图 yz
+参考url地址：
+http://emacser.com/emacs-ditaa.htm
+打开链接地址: c_c c_o
+
+http://blog.csdn.net/occupy8/article/details/14450453
+
+http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
+
+ org-mode 支持的语言
+目前（版本号：7.9.3d）支持以下语言：
+语言	标识符
+Asymptote	asymptote
+Emacs Calc	calc
+C++	C++
+CSS	css
+Graphviz	dot
+gnuplot	gnuplot
+Java	java
+Javascript	js
+Ledger	ledger
+Lilypond	lilypond
+Mscgen	mscgen
+Octave	octave
+Oz	oz
+Plantuml	plantuml
+R	R
+Sass	sass
+GNU Screen	screen
+SQL	sql
+Awk	awk
+C	C
+Clojure	clojure
+ditaa	ditaa
+Emacs Lisp	emacs-lisp
+Haskell	haskell
+LaTeX	latex
+Lisp	lisp
+MATLAB	matlab
+Objective Caml	ocaml
+Org mode	org
+Perl	perl
+Python	python
+Ruby	ruby
+Scheme	scheme
+shell	sh
+SQLite	sqlite
+
+6 其他方案
+
+感谢 Celad Evra 的提醒，org-mode 自带的 Easy Templates 也提供了快速插入代码块的功能： 输入 <s TAB 即可（但不提供语言标识符的补全），具体细节请见 org-mode 的文档。
+
+
+** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
+** emacs 查看新闻组 rss  *雷鸟*
+** redis 非常简单，按照主页的说明就可以使用了
+
+** DONE 全局键位切换 ok  方法如下：
+   CLOSED: [2014-11-25 二 06:36]
+   - State "DONE"       from "STARTED"    [2014-11-25 二 06:36]
+   1:/profile
+   2:参考：http://www.pcwaishe.cn/thread-274372-1-1.html
+   3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
+** DONE 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码
+** DONE github 编写博客网站 git分支问题 这个问题终于搞定了
+   CLOSED: [2014-11-25 二 06:33]
+   - State "DONE"       from "STARTED"    [2014-11-25 二 06:33]
+
+     困扰的问题是：
+     jekyll编译错误，貌似html没有加头
+---
+layout: default
+title: 草稿
+---
+
+     
+
+   博客模板
+http://blog.csdn.net/on_1y/article/details/19259435
+
+https://github.com/barryclark/jekyll-now
+** DONE jde 常用方法总结 启动太慢，不好用
+   CLOSED: [2014-11-18 二 22:16]
+   - State "DONE"       from "STARTED"    [2014-11-18 二 22:16]
+   emacs jdee 安装成功 jde快速定位调用关系
+
+   查找源代码
+用命令jde-find，很牛的，试试看。
+当然也可以切换到eshell,然后直接用grep -n -R '关键字' ./
+
+   智能提示
+在需要提示的地方按下组合键：C-c C-v C-. 注意，三个按键都需要按住Ctrl键。
+智能提示有几种方式（弹出窗口用于桌面版本，其他两种可以用于服务器纯字符界面），具体参见官方文档。
+
+   源代码跳转
+在需要跳转的地方按下组合键：Ctrl c v y
+前提是你正确配置了源代码路径。
+
+   注释生成
+在方法或者类的那行按下：Ctrl c v j
+注意，在有模板类的情况下无法使用。遗憾啊！
+
+   import语句
+命令jde-import-organize 可以帮助重新组织当前java文件里面的import语句。而且也跟据字典顺序进行排序。排序可以定制，参考JDEE文档。
+命令jde-import-kill-extra-imports 可以删除当前Java文件里面多余的import语句。
+命令jde-import-all, C-c C-v z 可以导入当前java文件所有缺少的import语句
+   
+参考url
+http://blog.csdn.net/csfreebird/article/details/7028174
+http://blog.csdn.net/pfanaya/article/details/6991703
+** DONE emacs w3m 操作步骤
+   CLOSED: [2014-11-15 六 22:31]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:31]
+*** 安装
+sudo apt-get install w3m w3m-el w3m-img
+
+*** 增加配置
+(autoload 'w3m "w3m" "interface for w3m on emacs" t)
+(setq w3m-command-arguments '("-cookie" "-F"))
+(setq w3m-use-cookies t)
+;; 目前使用此配置
+(setq w3m-home-page "http://www.google.de/")
+(require 'mime-w3m)
+(setq w3m-default-display-inline-image t)
+(setq w3m-default-toggle-inline-images t)
+
+*** 常用命令
+G 去新的页面
+H 主页
+B 回退
+N 去下一页??
+c_c c_w 关闭当前tab页
+c 输出当前url地址 B
+** DONE emacs 插入java 代码
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+
+#+BEGIN_SRC java
+public class Hello
+{
+    public static void main(String [] args)
+    {
+         System.out.println("hello world");
+    }
+}
+#+END_SRC
+
+
+#+BEGIN_SRC c++
+int main(int argc, char *argv[])
+{
+  return 0;
+}
+
+#+END_SRC
+
+#+BEGIN_SRC sql
+CREATE TABLE [dbo].[TableName] 
+(
+Id		INT IDENTITY(1,1)		NOT NULL
+
+CONSTRAINT [PK_] PRIMARY KEY CLUSTERED ([Id]) 
+)
+GO
+
+select * from tablename;
+
+#+END_SRC
+** DONE emacs 自动补全磁盘目录 牛人如Steve Purcell ---可以正常使用
+   CLOSED: [2014-11-15 六 22:29]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:29]
+** DONE emacs .eamcs.d init.el 配置文件
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+#+BEGIN_SRC lisp
+(tool-bar-mode -1)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (deeper-blue))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; 参考 url 说明：     http://github.com/capitaomorte/yasnippet
+(add-to-list 'load-path
+              "~/.emacs.d/elpa/yasnippet-0.8.0")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;; 神的编辑器 
+;; 1.作者 snippets   https://github.com/eschulte/emacs24-starter-kit
+;; 2.striker         https://github.com/redguardtoo/emacs.d
+
+;; 增加w3m 主页
+(setq w3m-home-page "http://www.baidu.com/")
+#+END_SRC
+** DONE emacs 启动将 caps_lock <--> ctrl_R 放入 /etc/init.d/rc.local (具体参考effective emacs)
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+xmodmap /home/ym/.xmodmap
+** DONE emacs 超级有效的
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+   effective emacs
+   emacs 神 总结
+   牛人如Steve Purcell  2.4 版本在ubuntu 14--emacs 2.4 可以正常使用 万岁！！！
