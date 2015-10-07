@@ -22,6 +22,22 @@ http://blog.csdn.net/occupy8/article/details/14450453
 
 http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
 
+
+块操作
+选中
+c_x r d
+
+复制　粘贴
+a_w c_y
+
+书签
+c_x r m 标记书签
+c_x r l 列出
+c_x r b 跳转
+
+
+c_x b
+
  org-mode 支持的语言
 目前（版本号：7.9.3d）支持以下语言：
 语言	标识符
@@ -225,3 +241,5 @@ xmodmap /home/ym/.xmodmap
    effective emacs
    emacs 神 总结
    牛人如Steve Purcell  2.4 版本在ubuntu 14--emacs 2.4 可以正常使用 万岁！！！
+
+
