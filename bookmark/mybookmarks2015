@@ -1,0 +1,45 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("家庭生活2015"
+ (filename . "~/blog2015/orgs/2015-10-24-生活家庭.org")
+ (front-context-string . "* 家庭生活\n** 肝损伤 早期")
+ (rear-context-string)
+ (position . 2))
+("emacs skill"
+ (filename . "~/blog2015/orgs/2014-11-11-test-plan.org")
+ (front-context-string . "* 草稿\n** 定位内存泄露问题")
+ (rear-context-string)
+ (position . 1))
+("自动部署持续集成"
+ (filename . "~/blog2015/orgs/2015-10-07-自动部署环境和代码管理.org")
+ (front-context-string . "* 总目录\n\n** 目前发布的文")
+ (rear-context-string)
+ (position . 1))
+("github使用技巧"
+ (filename . "~/blog2015/orgs/2014-08-03-发布github博客.org")
+ (front-context-string . "ym@ubuntu:~/test")
+ (rear-context-string . "ello$ git add .\n")
+ (position . 471))
+("我的思考2015"
+ (filename . "~/blog2015/orgs/2015-06-29-my-think.md")
+ (front-context-string . "# 人生综合\n\n- 富兰克林\n\n")
+ (rear-context-string)
+ (position . 1))
+("我的简历2015"
+ (filename . "~/blog2015/orgs/2015-06-29-myjianli-2015.md")
+ (front-context-string . "# 2015-06-29-今年下")
+ (rear-context-string)
+ (position . 1))
+("markdown 基本语法"
+ (filename . "~/blog2015/orgs/2015-06-14-markdown-11-form.md")
+ (front-context-string . "Markdown 11种基本语法")
+ (rear-context-string)
+ (position . 1))
+("ubuntu 环境安装&必装软件"
+ (filename . "~/blog2015/orgs/2014-11-10-ubuntu_setup.org")
+ (front-context-string . "* 安装ubuntu系统 && ")
+ (rear-context-string)
+ (position . 1))
+)

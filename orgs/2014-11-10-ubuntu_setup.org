@@ -10,12 +10,14 @@ http://www.linuxidc.com/Linux/2014-05/102128.htm
 
 ** 必装软件
 emacs 强大的不用我讲了
+emacs +w3m  网页也可以文本编辑
 chromium 浏览器非常好用
 
-emacs 插件
+** emacs 插件
 
 yasnippets：  snippets c++ java
 jdee：       自动导入jar包  集成编译和运行 调试
+这个装起来比较笨重 不好用
 emacs 字体： 家里的输入法字体换爽 公司的字体很差，可以考虑下如何修改
 
 ** git环境安装
@@ -110,7 +112,6 @@ git show #可以看某次的变更
  
 # 若想知道目前工作树的状态，可以輸入
 git status
-
 
 
 参考url地址：

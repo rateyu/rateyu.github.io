@@ -1,13 +1,4 @@
-* 草稿
-** 定位内存泄露问题
-   - 压力测试工具很重要
-   - 如何检查泄露，标准是三么
-   - c++ java定位 方法
-** 主要学习目标
-   - socket函数3个  epoll 内部实现机制研究，存在红黑树算法实现
-   - echo chat  proxy 
-   - tcpdump使用 ipython 
-   - 陈硕 网络编程 
+* emacs学习
 ** TODO yasnippets ant maven 
    jdk ok
    编写java ok
@@ -20,7 +11,7 @@ alt_x grep-find 很强的搜索工具
 alt_x rgrep 支持文件的过滤,支持递归目录,支持二进制文件查找
 http://blog.csdn.net/winterttr/article/details/7348279
 
-** markdown安装方法
+** emacs markdown安装方法
 下载markdown el
 安装markdown
 sudo apt-get install markdown
@@ -53,7 +44,14 @@ Quick Tips
    * C-h m Magit的使用帮助信息
 
 
-** emacs 绘制流程图 yz
+** emacs org skill
+
+http://higrid.net/c-art-orgmode_basic.htm
+
+emacs tag 标记  :tag:标记:
+预定义的tag标记
+
+** emacs 绘制流程图 yz 打开链接地址
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
 打开链接地址: c_c c_o
