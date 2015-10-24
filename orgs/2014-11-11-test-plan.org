@@ -15,6 +15,12 @@
 ** emacs 24.3.1 + github rateyu starter-kit-master
 ubuntu 14.04.3 lts
 
+** markdown安装方法
+下载markdown el
+安装markdown
+sudo apt-get install markdown
+
+http://blog.sina.com.cn/s/blog_7d266fb00101ec7r.html
 *** 问题无ｍａｇｉｔ包
 从这里可以下载最新版：https://github.com/magit/magit/downloads
 解压：
