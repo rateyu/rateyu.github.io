@@ -12,13 +12,19 @@
    jdk ok
    编写java ok
 
+
 ** emacs 24.3.1 + github rateyu starter-kit-master
 ubuntu 14.04.3 lts
+
+** emacs 检索代码
+alt_x grep-find 很强的搜索工具
+alt_x rgrep 支持文件的过滤,支持递归目录,支持二进制文件查找
 
 ** markdown安装方法
 下载markdown el
 安装markdown
 sudo apt-get install markdown
+sudo apt-get install emacs-goodies-el
 
 http://blog.sina.com.cn/s/blog_7d266fb00101ec7r.html
 *** 问题无ｍａｇｉｔ包
@@ -57,14 +63,14 @@ http://blog.csdn.net/occupy8/article/details/14450453
 http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
 
 
-emacs w3m　打开网页后
+** emacs w3m　打开网页后 控制是否显示图片 (很好用哦)
 使用　ｃ　复制当前的ｕｒｌ路径非常方便
 图形界面中使用　Ｔ　控制是否显示图片　非常方便
 使用　Ｍ_T 全局打开和关闭　图片
 
 
 
-隐藏工具栏的命令
+** emacs 隐藏工具栏的命令
 (tool-bar-mode 0)  
 (menu-bar-mode 0)  
 (scroll-bar-mode 0)  
@@ -77,7 +83,7 @@ http://blog.sina.com.cn/s/blog_a3052b4a0100ycrl.html
 (2012-03-17 13:27:25)
  熟练使用emacs-w3m三部曲（3）　
  此处配置w3m有用，
-3：书签
+** emacs 使用书签
 a：添加当前页到书签
 M-a：添加该URL到书签
 v:显示书签
