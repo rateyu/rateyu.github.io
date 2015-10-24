@@ -66,6 +66,8 @@ http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
 图形界面中使用　Ｔ　控制是否显示图片　非常方便
 使用　Ｍ_T 全局打开和关闭　图片
 
+= 查看网页头
+\ 查看源码
 
 
 ** emacs 隐藏工具栏的命令
