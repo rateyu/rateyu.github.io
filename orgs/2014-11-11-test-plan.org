@@ -12,13 +12,13 @@
    jdk ok
    编写java ok
 
-
 ** emacs 24.3.1 + github rateyu starter-kit-master
 ubuntu 14.04.3 lts
 
 ** emacs 检索代码
 alt_x grep-find 很强的搜索工具
 alt_x rgrep 支持文件的过滤,支持递归目录,支持二进制文件查找
+http://blog.csdn.net/winterttr/article/details/7348279
 
 ** markdown安装方法
 下载markdown el
