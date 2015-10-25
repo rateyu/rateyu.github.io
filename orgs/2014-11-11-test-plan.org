@@ -17,6 +17,7 @@ http://blog.csdn.net/winterttr/article/details/7348279
 sudo apt-get install markdown
 sudo apt-get install emacs-goodies-el
 
+
 http://blog.sina.com.cn/s/blog_7d266fb00101ec7r.html
 *** 问题无ｍａｇｉｔ包
 从这里可以下载最新版：https://github.com/magit/magit/downloads
@@ -51,6 +52,29 @@ http://higrid.net/c-art-orgmode_basic.htm
 emacs tag 标记  :tag:标记:
 预定义的tag标记
 
+** emacs tramp ssh
+C-X C-F /ssh:crazybaby@192.168.38.129:
+http://ju.outofmemory.cn/entry/1274 emacs tramp使用
+http://lifegoo.pluskid.org/wiki/EmacsTRAMP.html
+
+执行远程机器的shell命令
+M_! 直接敲free -g 执行远程机器的命令
+M_x eshell *执行远程机器的命令行* top命令无法执行?
+
+Welcome to the Emacs shell
+/sshx:ym@192.168.1.15:/home/ym $ (+ 1 3)
+4
+
+
+** 实用运维小技巧
+serverlist列表
+http://heylinux.com/archives/3047.html
+
+
+** emacs 远程调试
+http://blog.163.com/yu_hongchang/blog/static/39894138201161502312927/
+
+
 ** emacs 绘制流程图 yz 打开链接地址
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
@@ -60,7 +84,7 @@ http://blog.csdn.net/occupy8/article/details/14450453
 
 http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
 
-
+** emacs c_x b 快速新建缓冲区
 ** emacs w3m　打开网页后 控制是否显示图片 (很好用哦)
 使用　ｃ　复制当前的ｕｒｌ路径非常方便
 图形界面中使用　Ｔ　控制是否显示图片　非常方便
@@ -243,6 +267,10 @@ public class Hello
     }
 }
 #+END_SRC
+说明 执行 c_c c_c 执行org中的块代码,但是没有成功为什么
+
+(+ 1 3)
+快捷键 如何执行获取结果?
 
 
 #+BEGIN_SRC c++
