@@ -1,0 +1,5 @@
+* es 环境搭建
+** 下载zip包 
+https://www.elastic.co/downloads/elasticsearch
+** 运行
+** 测试
