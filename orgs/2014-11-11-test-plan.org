@@ -93,6 +93,23 @@ http://www.cr173.com/html/20624_1.html
 ** emacs 远程调试
 http://blog.163.com/yu_hongchang/blog/static/39894138201161502312927/
 
+** linux ctrl和 caps修改键位
+
+$ cat ~/.keymaprc 
+remove Control = Control_R
+remove mod1 = Alt_R
+keysym Control_R = Alt_R
+keysym Alt_R = Control_R
+add Control = Control_R
+add mod1 = Alt_R
+
+然后执行 $ xmodmap ~/.keymaprc
+为了更加修改按键，不想很次都输入xmodmap ~/.keymaprc这么长的命令，可以将命令写入文本，放到$PATH路径下，下面是我的做法
+$ touch swkey
+$ echo "xmodmap ~/.keymaprc" >  swkey
+$ chmod +x swkey
+$ sudo mv swkey /usr/bin
+$ swkey  #现在想交换两个按键就直接输入这个命令,无论在什么路径下都可以，也不用记文件路径，会比较方便
 
 ** emacs 绘制流程图 yz 打开链接地址
 参考url地址：
