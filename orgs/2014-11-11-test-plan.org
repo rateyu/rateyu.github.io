@@ -66,6 +66,12 @@ Welcome to the Emacs shell
 4
 
 
+** emacs 多个shell创建
+c_x c_w 写入shell的名字 另存为一个shell名称
+然后再开启就没有问题了
+
+** emacs c_x c_f 远程登陆文件夹 a_x shell 执行 /bin/bash 远程命令开启终端 (ubuntu 14亲测可用,windows未成功)
+
 ** 实用运维小技巧
 serverlist列表
 http://heylinux.com/archives/3047.html

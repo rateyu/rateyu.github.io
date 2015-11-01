@@ -69,6 +69,17 @@ mvn -v
 
 
 
+** git 更新代码的命令
+别人使用git提交代码。我怎么更新代码啊？
+直接pull不行。因为我本地也添加代码了。。直接pull会导致代码覆盖
+
+可以用git stash 放到栈中去，然后git pull下来，然后有需要在git stash pop (从栈中提取代码出来)，但是这一步要仔细，可能代码会和你pull下来的东西有冲突
+．还有一种方法是先建立一个新的分支，然后pull那里的代码下来看一下.
+可以用git stash 放到栈中去，然后git pull下来，然后有需要在git stash pop (从栈中提取代码出来)，但是这一步要仔细，可能代码会和你pull下来的东西有冲突
+．还有一种方法是先建立一个新的分支，然后pull那里的代码下来看一下.
+
+
+
 ** java snippet java编写代码
 ** java 增加依赖的包  cmake使用
 
@@ -104,6 +115,8 @@ mvn compile
 运行项目：
 mvn exec:java -Dexec.mainClass="hello.HelloWorld"
 
+mv test 运行测试工程
+
 输出如下：
 如果不想直接运行 .class 文件，可以将其打包：
 
@@ -115,3 +128,29 @@ mvn exec:java -Dexec.mainClass="hello.HelloWorld"
 mvn install
 此时，你的项目代码将会经过编译、测试、打包并拷贝到本地依赖库，提供给其
 他项目引用。
+
+** 给pom.xml增加本地包 :TODO:
+点击pom.xml文件.我们可以看到下面有7个标签.
+
+[9e90a6]
+
+分别是
+Overview:显示maven项目的一些基本信息.
+Dependencies:添加jar包的页面,很重要!
+Plugins:添加maven插件的页面.比如tomcat-maven-plugin等.
+Reporting:从没用过,无视~
+Dependency Hierarchy:用于显示jar包的依赖关系.没事的时候可以看看jar包的依
+赖关系.
+Effective POM:显示maven的编译路径,plugin之类的.也可以无视.
+pom.xml:导入jar包的信息,可以在其中进行修改.重要
+
+** java ant 工程编译 
+http://www.cnblogs.com/xiaona/archive/2013/09/05/a03c0f8371a43c13a32ae7536785eb17.html
+http://www.blogjava.net/shenh062326/archive/2011/08/07/355937.html
+
+
+http://www.thinksaas.cn/group/topic/166099/
+ant 实现 java自动构建
+
+ant 打包java工程
+http://blog.csdn.net/erli11/article/details/30491719
