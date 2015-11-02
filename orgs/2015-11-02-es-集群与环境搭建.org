@@ -1,0 +1,21 @@
+* 环境基础搭建很简单
+** 基础搭建
+1:安装
+Installation
+
+"Download":https://www.elastic.co/downloads/elasticsearch and unzip the Elasticsearch official distribution.
+Run @bin/elasticsearch@ on unix, or @bin\elasticsearch.bat@ on windows.
+Run @curl -X GET http://localhost:9200/@.
+
+2: 添加数据
+curl -XPUT 'http://localhost:9200/twitter/user/kimchy' -d '{ "name" : "Shay Banon" }'
+
+3:查询数据
+curl -XGET 'http://localhost:9200/twitter/user/kimchy?pretty=true'
+
+curl -XGET 'http://localhost:9200/twitter/tweet/_search?q=user:kimchy&pretty=true'
+
+** es 配置详解
+
+http://cache.baiducontent.com/c?m=9d78d513d99400b8589c830e7c01a4120e258a744ca4c4523f8a9c12d52219564615fea6677f415d849b272d5aef5e5c9dab70257c5437b7ec99d515c0ebcc757a95243e7a1d874413&p=9c769a47918a11a05bed95371c0cbb&newp=882a9645d7dd09fc57efdd35545da5231610db2151d4d415619c&user=baidu&fm=sc&query=es+%BC%AF%C8%BA&qid=cf986db700001322&p1=7
+

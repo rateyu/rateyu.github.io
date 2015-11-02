@@ -379,7 +379,12 @@ xmodmap /home/ym/.xmodmap
    effective emacs
    emacs 神 总结
    牛人如Steve Purcell  2.4 版本在ubuntu 14--emacs 2.4 可以正常使用 万岁！！！
-** 任务测试 GTD
+** TODO 任务测试 GTD
+   SCHEDULED: <2015-11-01 日 18:00>
 http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html
+test 
+<2015-11-01 日>--<2015-11-01 日>
 
-
+预计任务时间的最基本方法是使用Column视图。执行「C-c C-x C-c」命令切换到                                                                             
+这个视图：                                                                                                                                          
+http://www.360doc.com/content/11/1107/18/7735641_162571835.shtml
