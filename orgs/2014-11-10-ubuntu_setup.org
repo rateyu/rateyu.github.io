@@ -116,3 +116,20 @@ git status
 
 参考url地址：
 http://www.cnblogs.com/cocowool/archive/2010/10/19/1855616.html
+** ubuntu 14 访问win7 
+Ubuntu14.04 远程连接Win7 报错：无法连接到RDP服务器
+
+ym@ym-HP430G2:~$ cd .freerdp/
+ym@ym-HP430G2:~/.freerdp$ ls
+certs  known_hosts
+ym@ym-HP430G2:~/.freerdp$ rm -rf known_hosts 
+ym@ym-HP430G2:~/.freerdp$ ls
+certs
+ym@ym-HP430G2:~/.freerdp$ swkey 
+ym@ym-HP430G2:~/.freerdp$ 
+
+** ubuntu 访问win7
+rdp 方式访问
+用户名密码
+还有域名
+http://www.th7.cn/system/lin/201410/72661.shtml
