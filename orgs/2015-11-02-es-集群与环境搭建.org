@@ -19,3 +19,8 @@ curl -XGET 'http://localhost:9200/twitter/tweet/_search?q=user:kimchy&pretty=tru
 
 http://cache.baiducontent.com/c?m=9d78d513d99400b8589c830e7c01a4120e258a744ca4c4523f8a9c12d52219564615fea6677f415d849b272d5aef5e5c9dab70257c5437b7ec99d515c0ebcc757a95243e7a1d874413&p=9c769a47918a11a05bed95371c0cbb&newp=882a9645d7dd09fc57efdd35545da5231610db2151d4d415619c&user=baidu&fm=sc&query=es+%BC%AF%C8%BA&qid=cf986db700001322&p1=7
 
+** es 环境搭建
+*** 下载zip包 
+https://www.elastic.co/downloads/elasticsearch
+*** 运行
+*** 测试

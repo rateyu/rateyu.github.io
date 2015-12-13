@@ -387,4 +387,47 @@ http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html
 http://v.youku.com/v_show/id_XNTc0NTUyMDU2.html
 http://v.youku.com/v_show/id_XNDU5NzQwODgw.html
 
+** emacs mew 邮件管理
+http://emacser.com/mew.htm
 
+** mew 问题＆常用命令快捷键
+搜索中文有问题
+
+此url的配置 ubuntu14测试，完全可以使用，非常好
+http://blog.chinaunix.net/uid-12573107-id-4573993.html
+
+### 打开邮件中的链接地址
+c_c c_o
+
+i 接收邮件
+n
+p 上一个下一个
+
+h  返回邮件列表（从邮件正文）
+v  只显示邮件列表，即关闭邮件正文
+.   重新分析邮件，对于MIME类型的邮件比较有用。 
+
+grep-find 中文可以搜索
+
+w                                撰写新邮件
+a                                 回复邮件，不带引用
+A                                 回复邮件，带引用
+f                                   转发邮件
+r                                   重新发送邮件
+SPC                            阅读邮件
+y                                  保存文件（可以保存信件全文、信件正文、附件）
+C-c C-l                       转换当前邮件的编码格式
+C-c C-a                      加入地址薄
+C-u C-c C-a              比 C-c C-a 多加入昵称和名字
+C-c C-q                      不保存退出
+C-c C-a                      准备插入附件
+mew-attach-copy     用复制方式加入附件
+mew-attach-link       用链接方式加入附件
+mew-attach-delete  删除附件
+C-c C-c                      发送邮件
+C-c RET                     保存邮件到发送队列
+C                                 如果设置了多个邮箱，用 C 命令切换
+Q                                 退出Mew
+
+
+http://lifegoo.pluskid.org/wiki/Mew.html
