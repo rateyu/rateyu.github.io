@@ -1,4 +1,29 @@
 *　2015 总结　２０１５年１２月１３日
+* ubuntu jetbrain android
+
+** ubuntu 安装虚拟android设备
+http://blog.chinaunix.net/uid-25885064-id-3354792.html
+  
+** jetbrain 创建android工程
+http://blog.csdn.net/kiwi_coder/article/details/8041360
+需要安装三个  sdk tools/sdk platform-tools/android平台 
+
+** 增加安装两个包:
+error android apt compiler cannot run program aapt
+试试这个包lib32z1-dev 使用此包问题解决
+lib32stdc++6
+
+** 下一步如何使用里面的控件　以及如何串联一个项目？？
+** 学习jetbrain 教程
+
+gridview使用
+   http://blog.csdn.net/leichelle/article/details/7951290
+
+GitHub上最火的40个Android开源项目
+http://www.open-open.com/lib/view/open1388317199516.html
+
+http://blog.csdn.net/liang5630/article/details/37723455
+
 ** 关于颜小君的季度问题
 
 *** 维护工作，质量较低
