@@ -1,5 +1,5 @@
 *　2015 总结　２０１５年１２月１３日
-* ubuntu jetbrain android
+** ubuntu jetbrain android
 
 ** ubuntu 安装虚拟android设备
 http://blog.chinaunix.net/uid-25885064-id-3354792.html
