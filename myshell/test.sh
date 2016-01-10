@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# shell 脚本 面试 大全 参考
 today=`date --date='0 days ago' +%Y%m%d`
 echo "$today"
 
