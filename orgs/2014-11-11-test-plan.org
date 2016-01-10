@@ -467,3 +467,13 @@ http://www.oschina.net/question/12_63776
    此文再看下
    http://blog.csdn.net/pfanaya/article/details/7669364
    http://www.cnblogs.com/longdouhzt/archive/2012/09/27/2706358.html
+** Ubuntu LaTex添加UTF8中文支持解决方法
+latex中文乱码问题处理
+   http://www.linuxidc.com/Linux/2015-07/120625.htm
+ubuntu 安装中文字体
+http://blog.163.com/bjcclzw@126/blog/static/129968414201281124457883/
+检查 主机字体
+fc-list :lang=zh-cn
+
+** latex 文献写作
+http://blog.sina.com.cn/s/blog_5e16f1770100ogl0.html
