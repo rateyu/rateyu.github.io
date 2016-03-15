@@ -477,3 +477,18 @@ fc-list :lang=zh-cn
 
 ** latex 文献写作
 http://blog.sina.com.cn/s/blog_5e16f1770100ogl0.html
+** linux shell github项目
+http://blog.jobbole.com/46942/
+http://www.zhihu.com/question/28182203
+http://justcoding.iteye.com/blog/1943504
+http://www.haiyun.me/archives/shell-check-server-mail.html
+
+** 网站收集
+友情链接
+Enjoy Diy
+IT热血青年
+Magento架构师
+爱T-blog
+爱积累爱分享
+简明现代魔法
+海底苍鹰

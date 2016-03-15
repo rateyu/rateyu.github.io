@@ -1,5 +1,7 @@
 * 安装ubuntu系统 && git 环境安装
 
+** 安装中文语言包
+sudo apt-get install language-pack-zh-hans
 ** 无线驱动无法使用 安装的两种方法：
 1. 连接网络 直到重启安装无线驱动结束
 2. 安装mint驱动程序
