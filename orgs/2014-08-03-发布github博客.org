@@ -13,6 +13,8 @@
 
 *** git-status 不同的方式提交，注释怎么提交上去的？
 
+*** git open-open 命令使用說明
+http://www.open-open.com/lib/view/open1335879873983.html
 status后 c --编写注释
 填写注释后 c-c c-c 提交本地版本
 
