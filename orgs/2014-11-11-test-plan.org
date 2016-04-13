@@ -11,6 +11,9 @@ $git merge origin/master //把更新的内容合并到本地分支
 url:
 http://caibaojian.com/use-github.html
 
+** intellij 快捷键
+方法和tab页切换  alt 上下左右
+http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
 ** andoird keyboard  google is ok   bluetooth
 ** emacs 24.3.1 + github rateyu starter-kit-master
 ubuntu 14.04.3 lts
