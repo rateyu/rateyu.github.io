@@ -2,6 +2,8 @@
 ** w3m lynx比较  极客
    w3m 鼠标选中开启 m键
    http://baike.baidu.com/link?url=svyvDxdIOGWORw7A4Spn2pqP1SMiEgevMzMQAznLiYYFPL9UEqLGU2JG9yDUa9GvSdsciYb1WtGO5LeDC3nPaq
+   c_c c_n c_p 下一个上一个
+   c_c c_w     关闭
 ** TODO yasnippets ant maven 
    jdk ok
    编写java ok
