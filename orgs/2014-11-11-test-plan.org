@@ -56,6 +56,10 @@ Quick Tips
    * I ignore file this will add the file to .git/infor/exclude
    * C-h m Magit的使用帮助信息
 
+** emacs gnus 阅读新闻组
+输入gnus后  ^ 选择新闻组服务器
+需要研究如何订阅rss
+如何阅读邮件的设置？
 
 ** emacs org skill
 
