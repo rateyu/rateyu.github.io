@@ -1,4 +1,6 @@
 * emacs学习
+** w3m lynx比较  极客
+   http://baike.baidu.com/link?url=svyvDxdIOGWORw7A4Spn2pqP1SMiEgevMzMQAznLiYYFPL9UEqLGU2JG9yDUa9GvSdsciYb1WtGO5LeDC3nPaq
 ** TODO yasnippets ant maven 
    jdk ok
    编写java ok
