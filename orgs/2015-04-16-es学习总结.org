@@ -1,0 +1,10 @@
+* es 学习总结
+架构
+学习es好长时间了
+现在做个总结
+
+英文非常重要
+
+native 技术学习
+http://wiki.jikexueyuan.com/project/react-native/
+

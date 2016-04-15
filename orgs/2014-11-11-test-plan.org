@@ -3,7 +3,38 @@
    w3m 鼠标选中开启 m键
    http://baike.baidu.com/link?url=svyvDxdIOGWORw7A4Spn2pqP1SMiEgevMzMQAznLiYYFPL9UEqLGU2JG9yDUa9GvSdsciYb1WtGO5LeDC3nPaq
    c_c c_n c_p 下一个上一个
+   c_c c_e 创建一个新的tab
+   G new tab
    c_c c_w     关闭
+** w3m 单独命令快捷键
+
+单独在w3m中阅读
+精读需求的文章 使用emacs-w3m
+
+H 帮助显示kjj
+b 向上翻页
+空格 向下翻页
+
+c 拷贝超链接 无法使用
+   
+L:列出页面中所有的超链接及其地址.
+I:显示当前超链接所指向的图片.
+U:输入URL
+Enter:进入该超链接所指向的目地的.
+
+三.多标签
+
+T:新建一个标签页.
+Ctrl+t:在最标签页打开当前链接.
+Ctrl+q:关闭当前标签页.
+{,}:到前一个,后一个标签页.
+Esc+t:打开各标签页列表.
+
+四.书签
+
+Esc+b:打开书签列表.
+Esc+a:将当前页加入书签.
+
 ** TODO yasnippets ant maven 
    jdk ok
    编写java ok
