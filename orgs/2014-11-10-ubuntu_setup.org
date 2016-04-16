@@ -1,4 +1,7 @@
 * 安装ubuntu系统 && git 环境安装
+** w3m显示乱码问题处理
+安装完字符集后，访问百度网址正常
+http://www.linuxidc.com/Linux/2014-02/96939.htm
 
 ** 安装中文语言包
 sudo apt-get install language-pack-zh-hans

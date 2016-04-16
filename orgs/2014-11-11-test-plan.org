@@ -8,8 +8,17 @@
    c_c c_w     关闭
 ** w3m 单独命令快捷键
 
+emacs - w3m
+c_c c_n/p
+c_c c_w
+T
+
 单独在w3m中阅读
 精读需求的文章 使用emacs-w3m
+
+B/Alt+↓:返回到上一个Buffer.
+s:打开各Buffer列表.
+S:保存当前Buffer到文件.
 
 H 帮助显示kjj
 b 向上翻页
