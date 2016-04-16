@@ -1,4 +1,8 @@
 * emacs学习
+** emacs ssh bwg
+/method:user@host#port:filename
+ssh:root@138.128.221.221#222:/root/
+
 ** w3m lynx比较  极客
    w3m 鼠标选中开启 m键
    http://baike.baidu.com/link?url=svyvDxdIOGWORw7A4Spn2pqP1SMiEgevMzMQAznLiYYFPL9UEqLGU2JG9yDUa9GvSdsciYb1WtGO5LeDC3nPaq
