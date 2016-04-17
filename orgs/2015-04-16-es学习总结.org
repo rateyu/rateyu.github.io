@@ -8,3 +8,19 @@
 native 技术学习
 http://wiki.jikexueyuan.com/project/react-native/
 
+笔记本省电技巧
+http://forum.ubuntu.org.cn/viewtopic.php?t=446411
+www.kuqin.com/linux/20090429/48866.html
+http://tieba.baidu.com/p/4309559869
+http://zhan.renren.com/gentoolinux?tagId=160556&checked=true
+http://www.zhihu.com/question/20128034
+http://www.zhihu.com/question/19672940
+
+不适用x桌面
+http://tieba.baidu.com/p/2703740447
+http://blog.sina.com.cn/s/blog_83a04ee201013oeh.html
+www.linuxidc.com/Linux/2014-04/100086.htm
+sudo apt-get install
+laptop-mode-tools
+
+http://www.linuxidc.com/Linux/2016-04/130122.htm

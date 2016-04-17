@@ -3,6 +3,16 @@
 安装完字符集后，访问百度网址正常
 http://www.linuxidc.com/Linux/2014-02/96939.htm
 
+中文输入
+http://blog.csdn.net/flywindmouse/article/details/13527769
+
+http://www.guokr.com/blog/749084/
+http://rutine.blog.163.com/blog/static/7908087220144155448206/
+http://www.linuxidc.com/Linux/2015-01/111975.htm
+
+** arclinux got
+http://jingyan.baidu.com/article/59a015e3a9170ef7948865f3.html
+
 ** 安装中文语言包
 sudo apt-get install language-pack-zh-hans
 ** 无线驱动无法使用 安装的两种方法：

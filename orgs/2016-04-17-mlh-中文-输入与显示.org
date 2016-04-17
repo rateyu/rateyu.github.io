@@ -1,0 +1,17 @@
+ 最近安装了ubuntu 14.04 最新的操作系统。体验了一下很不错，对于笔记本电池发热问题改善明显，之前12.10版，电池发热厉害的狠。下面说说正题。
+      在ubuntu tty 环境下，中文不能正常显示，也不能使用中文输入法。为此可用下面的方法来解决这个问题：
+1. fcitx 一个输入法框架。
+2. fcitx-sogoupinyin 搜狗输入法，搜狗输入法是基于fcitx实现的。
+3. im-switch 输入法切换组件。
+4. fbterm 终端仿真机，tty终端不支持中文，就是通过fbterm虚拟终端来实现中文显示和输入问题。
+5. fcitx-frontend-fbterm 这个组件是fbterm支持fcitx输入法所需，叫fcitx-fbterm输入法。
+
+第一，批量安装需要的软件：
+sudo apt-get install fcitx fcitx-sogoupinyin im-switch fbterm fcitx-fronten-fbterm
+第二，配置用户目录下的.fbtermrc文件
+修改字体为 font-name=Ubuntu Mono， fbterm默认的字体不好看，fc-list 可查看其他的字体
+修改字体大小为 font-size=18
+修改问题编码为 text-encodings=utf8
+修改输入法为 input-method=fcitx-fbterm
+
+至此软件环境部署完毕，下面可以试试效果了
