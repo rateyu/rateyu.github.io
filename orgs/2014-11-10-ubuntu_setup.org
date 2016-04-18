@@ -1,4 +1,65 @@
 * 安装ubuntu系统 && git 环境安装
+** yong tty
+  ** yong拼音输入法搞定了，尝试了下还可以，这下可以强制不上网页了，专注文字
+  ** 之前没有安装成功，理由是安装在32位，安装64位就可以了
+
+三：下载并安装小小拼音输入法(yong),由于该软件在Linux下只提供7z压缩
+包文件,所以需下载并安装p7zip工具包.
+(1). 安装p7zip:
+下载地址:
+http://sourceforge.net/projects/p7zip/files/p7zip/9.20.1/p7zip_9.20.1_src_all.tar.bz2/download
+
+make 7z
+sudo ./install.sh
+
+(2). 下载并解压yong:
+下载地址:http://u.115.com/file/bh1ojcho
+
+解压：
+7z x yong-lin-1.7.0-1.7z
+
+(3). 安装：
+sudo mv yong /usr/local
+cd /usr/local/yong
+sudo ./yong-tool.sh --install
+
+(4). 修改配置文件"~/.yong/yong.ini",修改默认输入法为pinyin:
+
+[IM]
+default=6
+中英文切换键改为左SHIFT:
+[key]
+CNen=LSHIFT
+
+四：接着,修改fbterm的配置文件"~/.fbtermrc",使fbterm使用yong作为
+其默认的输入法:
+
+
+
+input-method=yong
+免费下载地址在 http://linux.linuxidc.com/             升启动                                
+                                                    * Apache Tomcat 8.0.32 发布下载         
+用户名与密码都是www.linuxidc.com                    * Gitlab 8.4.4 发布下载，Git 代码托管平 
+                                                      台                                    
+具体下载目录在 /pub/小小输入法(yong输入法)/                                                 
+                                                                                            
+使用方法：                                                                                  
+                                                                                            
+安装：                                                                                      
+进安装目录，执行命令                                                                        
+sudo ./yong-tool.sh –install                                                                
+                                                                                            
+卸载：                                                                                      
+sudo ./yong-tool.sh –uninstall                    本周热门                                  
+                                                                                            
+选择作为默认输入法：                                                                        
+./yong-tool.sh –select                                                                      
+                                                    * Linux公社下载FTP资源的请到FTP服务中心 
+具体事项你可以参考压缩包里面的yong.chm，当然你先      激活会                                
+要安装一个chm阅读器如chmsee                         * 免费才最贵：揭露「免费」Windows 10 的 
+sudo apt-get install chmsee                           真实成                                
+
+
 ** w3m显示乱码问题处理
 安装完字符集后，访问百度网址正常
 http://www.linuxidc.com/Linux/2014-02/96939.htm
