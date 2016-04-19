@@ -1,4 +1,20 @@
 * 安装ubuntu系统 && git 环境安装
+
+** ubuntu 亮度调节方法
+sudo vim /etc/rc.local
+
+[Center]
+
+5 我们许在exit 0 前面增加一句命令即可：
+
+echo 109 > /sys/class/backlight/intel_backlight/brightness
+
+以后开机即可会设置亮度为109.
+
+** ubuntu 无线网络开关设置
+ifdown
+ifup
+
 ** yong tty
   ** yong拼音输入法搞定了，尝试了下还可以，这下可以强制不上网页了，专注文字
   ** 之前没有安装成功，理由是安装在32位，安装64位就可以了
