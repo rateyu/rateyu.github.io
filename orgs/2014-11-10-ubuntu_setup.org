@@ -2,7 +2,11 @@
 
 ** yong快捷键使用
 一键切换到 输入法  ctrl_`
+注意删除 不使用的输入法会更快
+/root/.yong/yong.ini 这个是缓存文件 修改/usr/local/yong/路径下的文件不
+起作用的
 
+** fbterm 搜狗输入法安装？
 
 ** ubuntu 亮度调节方法
 sudo vim /etc/rc.local
