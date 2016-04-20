@@ -1,14 +1,16 @@
-<!--?xml version="1.0" encoding="utf-8"?-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
-<title>2014-11-10-ubuntu&lt;sub&gt;setup&lt;/sub&gt;</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="title" content="2014-11-10-ubuntu&lt;sub&gt;setup&lt;/sub&gt;">
-<meta name="generator" content="Org-mode">
-<meta name="generated" content="2015-06-28T15:54+0800">
-<meta name="author" content="ym">
-<meta name="description" content="">
-<meta name="keywords" content="">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>2014-11-10-ubuntu<sub>setup</sub></title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="2014-11-10-ubuntu<sub>setup</sub>"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2016-04-20T22:43+0800"/>
+<meta name="author" content="ym"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   html { font-family: Times, serif; font-size: 12pt; }
@@ -120,20 +122,31 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1 安装ubuntu系统</a>
+<li><a href="#sec-1">1 安装ubuntu系统 &amp;&amp; git 环境安装</a>
 <ul>
-<li><a href="#sec-1-1">1.1 无线驱动无法使用 安装的两种方法：</a></li>
-<li><a href="#sec-1-2">1.2 必装软件</a></li>
+<li><a href="#sec-1-1">1.1 grub配置 命令行模式启动</a></li>
+<li><a href="#sec-1-2">1.2 fbterm 搜狗输入法安装？</a></li>
+<li><a href="#sec-1-3">1.3 yong快捷键使用</a></li>
+<li><a href="#sec-1-4">1.4 ubuntu 亮度调节方法</a></li>
+<li><a href="#sec-1-5">1.5 查卡主机最大亮度</a></li>
+<li><a href="#sec-1-6">1.6 ubuntu 无线网络开关设置</a></li>
+<li><a href="#sec-1-7">1.7 yong tty</a></li>
+<li><a href="#sec-1-8">1.8 w3m显示乱码问题处理</a></li>
+<li><a href="#sec-1-9">1.9 arclinux got</a></li>
+<li><a href="#sec-1-10">1.10 安装中文语言包</a></li>
+<li><a href="#sec-1-11">1.11 无线驱动无法使用 安装的两种方法：</a></li>
+<li><a href="#sec-1-12">1.12 必装软件</a></li>
+<li><a href="#sec-1-13">1.13 telnet 乱码</a></li>
+<li><a href="#sec-1-14">1.14 emacs 插件</a></li>
+<li><a href="#sec-1-15">1.15 git环境安装</a>
+<ul>
+<li><a href="#sec-1-15-1">1.15.1 github 集成</a></li>
+<li><a href="#sec-1-15-2">1.15.2 github 提交 rateyu@gmail.com</a></li>
+<li><a href="#sec-1-15-3">1.15.3 Please tell me who you are.</a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2 git环境安装</a>
-<ul>
-<li><a href="#sec-2-1">2.1 github 集成</a></li>
-<li><a href="#sec-2-2">2.2 github 提交 rateyu@gmail.com</a>
-<ul>
-<li><a href="#sec-2-2-1">2.2.1 Please tell me who you are.</a></li>
-</ul>
-</li>
+<li><a href="#sec-1-16">1.16 ubuntu 14 访问win7</a></li>
+<li><a href="#sec-1-17">1.17 ubuntu 访问win7</a></li>
 </ul>
 </li>
 </ul>
@@ -141,16 +154,253 @@ for the JavaScript code in this tag.
 </div>
 
 <div id="outline-container-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> 安装ubuntu系统</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> 安装ubuntu系统 &amp;&amp; git 环境安装</h2>
 <div class="outline-text-2" id="text-1">
 
-
-
+<p>  进入fbterm模式
+  进入ym用户
+  敲emacs 进入编辑环境
+  进入码字大模式！！
+</p>
 </div>
 
 <div id="outline-container-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 无线驱动无法使用 安装的两种方法：</h3>
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> grub配置 命令行模式启动</h3>
 <div class="outline-text-3" id="text-1-1">
+
+<p>   emacs /etc/default/grub
+   千万注意 需要更新  update-grub2
+   否则无效
+</p></div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> fbterm 搜狗输入法安装？</h3>
+<div class="outline-text-3" id="text-1-2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> yong快捷键使用</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>一键切换到 输入法  ctrl<sub>`</sub>
+注意删除 不使用的输入法会更快
+<i>root</i>.yong/yong.ini 这个是缓存文件 修改/usr/local/yong/路径下的文件不
+起作用的
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> ubuntu 亮度调节方法</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>sudo vim /etc/rc.local
+</p>
+<p>
+[Center]
+</p>
+<p>
+5 我们许在exit 0 前面增加一句命令即可：
+</p>
+<p>
+echo 109 &gt; /sys/class/backlight/intel<sub>backlight</sub>/brightness
+</p>
+
+
+<p>
+以后开机即可会设置亮度为109.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 查卡主机最大亮度</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<p>1 查看自己的系统亮度的最大值：
+</p>
+<p>
+cd /sys/class/backlight
+</p>
+<p>
+[Center]
+</p>
+<p>
+（笔记本的显卡型号不同-&gt;亮度调节文件夹名会不同）。
+</p>
+<p>
+2 我的是intel<sub>backlight</sub>
+</p>
+<p>
+cd intel<sub>backlight</sub>
+</p>
+<p>
+[Center]
+</p>
+<p>
+3 来到这里，你肯定知道：max<sub>brightness</sub> 系统可以调节的最大亮度值。
+bightness就是你正使用的亮度值了。
+</p>
+<p>
+cat max<sub>brightness</sub>
+</p>
+<p>
+cat brightness
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> ubuntu 无线网络开关设置</h3>
+<div class="outline-text-3" id="text-1-6">
+
+<p>ifconfig wlan0 down
+ifconfig wlan0 up   
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> yong tty</h3>
+<div class="outline-text-3" id="text-1-7">
+
+<p>  ** yong拼音输入法搞定了，尝试了下还可以，这下可以强制不上网页了，专注文字
+  ** 之前没有安装成功，理由是安装在32位，安装64位就可以了
+</p>
+<p>
+三：下载并安装小小拼音输入法(yong),由于该软件在Linux下只提供7z压缩
+包文件,所以需下载并安装p7zip工具包.
+(1). 安装p7zip:
+下载地址:
+<a href="http://sourceforge.net/projects/p7zip/files/p7zip/9.20.1/p7zip_9.20.1_src_all.tar.bz2/download">http://sourceforge.net/projects/p7zip/files/p7zip/9.20.1/p7zip_9.20.1_src_all.tar.bz2/download</a>
+</p>
+<p>
+make 7z
+sudo ./install.sh
+</p>
+<p>
+(2). 下载并解压yong:
+下载地址:<a href="http://u.115.com/file/bh1ojcho">http://u.115.com/file/bh1ojcho</a>
+</p>
+<p>
+解压：
+7z x yong-lin-1.7.0-1.7z
+</p>
+<p>
+(3). 安装：
+sudo mv yong /usr/local
+cd /usr/local/yong
+sudo ./yong-tool.sh &ndash;install
+</p>
+<p>
+(4). 修改配置文件"~/.yong/yong.ini",修改默认输入法为pinyin:
+</p>
+<p>
+[IM]
+default=6
+中英文切换键改为左SHIFT:
+[key]
+CNen=LSHIFT
+</p>
+<p>
+四：接着,修改fbterm的配置文件"~/.fbtermrc",使fbterm使用yong作为
+其默认的输入法:
+</p>
+
+
+<p>
+input-method=yong
+免费下载地址在 <a href="http://linux.linuxidc.com/">http://linux.linuxidc.com/</a>             升启动                                
+</p><ul>
+<li>Apache Tomcat 8.0.32 发布下载         
+</li>
+</ul>
+
+<p>用户名与密码都是www.linuxidc.com                    * Gitlab 8.4.4 发布下载，Git 代码托管平 
+                                                      台                                    
+具体下载目录在 <i>pub/小小输入法(yong输入法)</i>                                                 
+</p>
+<p>                                                                                            
+使用方法：                                                                                  
+</p>
+<p>                                                                                            
+安装：                                                                                      
+进安装目录，执行命令                                                                        
+sudo ./yong-tool.sh –install                                                                
+</p>
+<p>                                                                                            
+卸载：                                                                                      
+sudo ./yong-tool.sh –uninstall                    本周热门                                  
+</p>
+<p>                                                                                            
+选择作为默认输入法：                                                                        
+./yong-tool.sh –select                                                                      
+</p><ul>
+<li>Linux公社下载FTP资源的请到FTP服务中心 
+</li>
+</ul>
+
+<p>具体事项你可以参考压缩包里面的yong.chm，当然你先      激活会                                
+要安装一个chm阅读器如chmsee                         * 免费才最贵：揭露「免费」Windows 10 的 
+sudo apt-get install chmsee                           真实成                                
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> w3m显示乱码问题处理</h3>
+<div class="outline-text-3" id="text-1-8">
+
+<p>安装完字符集后，访问百度网址正常
+<a href="http://www.linuxidc.com/Linux/2014-02/96939.htm">http://www.linuxidc.com/Linux/2014-02/96939.htm</a>
+</p>
+<p>
+中文输入
+<a href="http://blog.csdn.net/flywindmouse/article/details/13527769">http://blog.csdn.net/flywindmouse/article/details/13527769</a>
+</p>
+<p>
+<a href="http://www.guokr.com/blog/749084/">http://www.guokr.com/blog/749084/</a>
+<a href="http://rutine.blog.163.com/blog/static/7908087220144155448206/">http://rutine.blog.163.com/blog/static/7908087220144155448206/</a>
+<a href="http://www.linuxidc.com/Linux/2015-01/111975.htm">http://www.linuxidc.com/Linux/2015-01/111975.htm</a>
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> arclinux got</h3>
+<div class="outline-text-3" id="text-1-9">
+
+<p><a href="http://jingyan.baidu.com/article/59a015e3a9170ef7948865f3.html">http://jingyan.baidu.com/article/59a015e3a9170ef7948865f3.html</a>
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-10" class="outline-3">
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> 安装中文语言包</h3>
+<div class="outline-text-3" id="text-1-10">
+
+<p>sudo apt-get install language-pack-zh-hans
+</p></div>
+
+</div>
+
+<div id="outline-container-1-11" class="outline-3">
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> 无线驱动无法使用 安装的两种方法：</h3>
+<div class="outline-text-3" id="text-1-11">
 
 <ol>
 <li>连接网络 直到重启安装无线驱动结束
@@ -169,46 +419,65 @@ for the JavaScript code in this tag.
 
 </div>
 
-<div id="outline-container-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 必装软件</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-1-12" class="outline-3">
+<h3 id="sec-1-12"><span class="section-number-3">1.12</span> 必装软件</h3>
+<div class="outline-text-3" id="text-1-12">
 
 <p>emacs 强大的不用我讲了
+emacs +w3m  网页也可以文本编辑
 chromium 浏览器非常好用
 </p>
-<p>
-emacs 插件
+</div>
+
+</div>
+
+<div id="outline-container-1-13" class="outline-3">
+<h3 id="sec-1-13"><span class="section-number-3">1.13</span> telnet 乱码</h3>
+<div class="outline-text-3" id="text-1-13">
+
+<p>local 是 utf-8 的时候 telnet gbk编码的bbs 会出现乱码
 </p>
+<p>
+解决方法 : 使用 luit
+luit -encoding gbk telnet bbs.tsinghua.edu.cn 
+</p></div>
+
+</div>
+
+<div id="outline-container-1-14" class="outline-3">
+<h3 id="sec-1-14"><span class="section-number-3">1.14</span> emacs 插件</h3>
+<div class="outline-text-3" id="text-1-14">
+
+
 <p>
 yasnippets：  snippets c++ java
 jdee：       自动导入jar包  集成编译和运行 调试
+这个装起来比较笨重 不好用
 emacs 字体： 家里的输入法字体换爽 公司的字体很差，可以考虑下如何修改
 </p>
-
-</div>
 </div>
 
 </div>
 
-<div id="outline-container-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> git环境安装</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-1-15" class="outline-3">
+<h3 id="sec-1-15"><span class="section-number-3">1.15</span> git环境安装</h3>
+<div class="outline-text-3" id="text-1-15">
 
 
 
 </div>
 
-<div id="outline-container-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> github 集成</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-1-15-1" class="outline-4">
+<h4 id="sec-1-15-1"><span class="section-number-4">1.15.1</span> github 集成</h4>
+<div class="outline-text-4" id="text-1-15-1">
 
 </div>
 
 </div>
 
-<div id="outline-container-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> github 提交 rateyu@gmail.com</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-1-15-2" class="outline-4">
+<h4 id="sec-1-15-2"><span class="section-number-4">1.15.2</span> github 提交 rateyu@gmail.com</h4>
+<div class="outline-text-4" id="text-1-15-2">
 
 
 
@@ -220,8 +489,8 @@ github
 </li>
 </ol>
 
-<p>git config –global user.name = "用户名或者用户ID"
-git config –global user.email = "邮箱"
+<p>git config &ndash;global user.name = "用户名或者用户ID"
+git config &ndash;global user.email = "邮箱"
 这两个选项会在以后的使用过程中自动添加到代码中。
 </p>
 <ol>
@@ -241,14 +510,15 @@ git config –global user.email = "邮箱"
 <p>在 github.com 的界面中 选择右上角的 Account Settings，然后选择 SSH Public Keys ，选择新加。
 Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id<sub>rsa</sub>.pub 中的内容，完成后，可以再使用 ssh -v git@github.com 进行测试。看到下面的信息表示验证成功。
 </p>
-<p>
-注意：此处要重启os，比较奇怪
-emacs -nw  不使用x11界面
-</p>
-<ol>
+<ul>
+<li>注意：此处要重启os，比较奇怪
+</li>
+<li>emacs -nw  不使用x11界面
+
+</li>
 <li>复制代码
 </li>
-</ol>
+</ul>
 
 
 <p>
@@ -279,16 +549,17 @@ git push current branch
 </ol>
 
 
+</div>
 
 </div>
 
-<div id="outline-container-2-2-1" class="outline-4">
-<h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> Please tell me who you are.</h4>
-<div class="outline-text-4" id="text-2-2-1">
+<div id="outline-container-1-15-3" class="outline-4">
+<h4 id="sec-1-15-3"><span class="section-number-4">1.15.3</span> Please tell me who you are.</h4>
+<div class="outline-text-4" id="text-1-15-3">
 
 <p>Run
-  git config –global user.email "you@example.com"
-  git config –global user.name "Your Name"
+  git config &ndash;global user.email "you@example.com"
+  git config &ndash;global user.name "Your Name"
 </p>
 <ol>
 <li>提交远程代码
@@ -333,23 +604,53 @@ git show #可以看某次的变更
 git status
 </p>
 
-
 <p>
 参考url地址：
 <a href="http://www.cnblogs.com/cocowool/archive/2010/10/19/1855616.html">http://www.cnblogs.com/cocowool/archive/2010/10/19/1855616.html</a>
 </p></div>
 </div>
+
+</div>
+
+<div id="outline-container-1-16" class="outline-3">
+<h3 id="sec-1-16"><span class="section-number-3">1.16</span> ubuntu 14 访问win7</h3>
+<div class="outline-text-3" id="text-1-16">
+
+<p>Ubuntu14.04 远程连接Win7 报错：无法连接到RDP服务器
+</p>
+<p>
+ym@ym-HP430G2:~$ cd .freerdp/
+ym@ym-HP430G2:~/.freerdp$ ls
+certs  known<sub>hosts</sub>
+ym@ym-HP430G2:~/.freerdp$ rm -rf known<sub>hosts</sub> 
+ym@ym-HP430G2:~/.freerdp$ ls
+certs
+ym@ym-HP430G2:~/.freerdp$ swkey 
+ym@ym-HP430G2:~/.freerdp$ 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-17" class="outline-3">
+<h3 id="sec-1-17"><span class="section-number-3">1.17</span> ubuntu 访问win7</h3>
+<div class="outline-text-3" id="text-1-17">
+
+<p>rdp 方式访问
+用户名密码
+还有域名
+<a href="http://www.th7.cn/system/lin/201410/72661.shtml">http://www.th7.cn/system/lin/201410/72661.shtml</a>
+</p></div>
 </div>
 </div>
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2015-06-28T15:54+0800</p>
+<p class="date">Date: 2016-04-20T22:43+0800</p>
 <p class="author">Author: ym</p>
-<p class="creator"><a href="http://orgmode.org/">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
 
 </div>
-
-
-</body></html>
+</body>
+</html>

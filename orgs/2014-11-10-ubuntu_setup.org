@@ -1,23 +1,18 @@
 * 安装ubuntu系统 && git 环境安装
-
-
-  
   进入fbterm模式
   进入ym用户
   敲emacs 进入编辑环境
   进入码字大模式！！
 ** grub配置 命令行模式启动
-
    emacs /etc/default/grub
    千万注意 需要更新  update-grub2
    否则无效
+** fbterm 搜狗输入法安装？
 ** yong快捷键使用
 一键切换到 输入法  ctrl_`
 注意删除 不使用的输入法会更快
 /root/.yong/yong.ini 这个是缓存文件 修改/usr/local/yong/路径下的文件不
 起作用的
-
-** fbterm 搜狗输入法安装？
 
 ** ubuntu 亮度调节方法
 sudo vim /etc/rc.local
