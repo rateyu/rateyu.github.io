@@ -1,15 +1,46 @@
 * emacs学习
+
+** emacs 帮助快捷键
+********Emacs帮助************
+C-h ?        :得到关于帮助的完整列表
+M-x apropos    :想做一件事情，但是不知道如何去做。可以用上面的命令，然后关键字甚至是正则表达式， Emacs就会搜索帮助中一切相关的信息。会得到一个列
+表，每一项都有超链接和简要的说明。
+C-h k        :别人告诉我一个快捷键，我想知道它具体是怎么回事。可以用上面的命令，然后把那个键按一遍，Emacs就会告诉你是怎么回事了。
+C-h f        :上面的命令，然后输入你要查询的命令（即按下M-x然后能输入的那些命令）
+C-h v        :上面的命令，然后输入变更名，可以查看变更的说明和光前值。
+C-h m        :可以得到当前所有mode的一个总体说明。
+C-h b         :查看当前buffer所有可用的快捷键
+C-h t        :打开学习向导 
+C-h w         :查看某命令对应的快捷键
+<快捷键序列> C-h    :查看当前buffer中以<快捷键序列>开头的所有快捷键列表。例如想看所有以C-x开头的快捷键就输入C-x C-h就可以了。
+find-function    :查看Emacs函数的代码。M-x find-function。
+find-variable    :查看变量的代码。
+describe-face    :查看face的文档
+find-face-definition    :查看face的代码
+神的编辑器 快捷键总结
+http://www.cr173.com/html/20624_1.html
+
+** emacs 远程调试
+http://blog.163.com/yu_hongchang/blog/static/39894138201161502312927/
+
 ** emacs ssh bwg
 /method:user@host#port:filename
 ssh:root@138.128.221.221#222:/root/
 
-** w3m lynx比较  极客
-   w3m 鼠标选中开启 m键
-   http://baike.baidu.com/link?url=svyvDxdIOGWORw7A4Spn2pqP1SMiEgevMzMQAznLiYYFPL9UEqLGU2JG9yDUa9GvSdsciYb1WtGO5LeDC3nPaq
-   c_c c_n c_p 下一个上一个
-   c_c c_e 创建一个新的tab
-   G new tab
-   c_c c_w     关闭
+** emacs c_x c_f 远程登陆文件夹 a_x shell 执行 /bin/bash 远程命令开启终端 (ubuntu 14亲测可用,windows未成功)
+
+** emacs tramp ssh
+C-X C-F /ssh:crazybaby@192.168.38.129:
+http://ju.outofmemory.cn/entry/1274 emacs tramp使用
+http://lifegoo.pluskid.org/wiki/EmacsTRAMP.html
+
+执行远程机器的shell命令
+M_! 直接敲free -g 执行远程机器的命令
+M_x eshell *执行远程机器的命令行* top命令无法执行?
+
+Welcome to the Emacs shell
+/sshx:ym@192.168.1.15:/home/ym $ (+ 1 3)
+4
 ** w3m 单独命令快捷键
 
 emacs - w3m
@@ -48,8 +79,38 @@ Esc+t:打开各标签页列表.
 
 Esc+b:打开书签列表.
 Esc+a:将当前页加入书签.
+** DONE emacs w3m 操作步骤
+   CLOSED: [2014-11-15 六 22:31]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:31]
+*** 安装
+sudo apt-get install w3m w3m-el w3m-img
 
-** TODO yasnippets ant maven 
+*** 增加配置
+(autoload 'w3m "w3m" "interface for w3m on emacs" t)
+(setq w3m-command-arguments '("-cookie" "-F"))
+(setq w3m-use-cookies t)
+;; 目前使用此配置
+(setq w3m-home-page "http://www.google.de/")
+(require 'mime-w3m)
+(setq w3m-default-display-inline-image t)
+(setq w3m-default-toggle-inline-images t)
+
+*** 常用命令
+G 去新的页面
+H 主页
+B 回退
+N 去下一页??
+c_c c_w 关闭当前tab页
+c 输出当前url地址 B
+** w3m lynx比较  极客
+   w3m 鼠标选中开启 m键
+   http://baike.baidu.com/link?url=svyvDxdIOGWORw7A4Spn2pqP1SMiEgevMzMQAznLiYYFPL9UEqLGU2JG9yDUa9GvSdsciYb1WtGO5LeDC3nPaq
+   c_c c_n c_p 下一个上一个
+   c_c c_e 创建一个新的tab
+   G new tab
+   c_c c_w     关闭
+
+** yasnippets ant maven 
    jdk ok
    编写java ok
 ** git hub 更新代码
@@ -60,10 +121,6 @@ $git fetch origin    //获取远程更新
 $git merge origin/master //把更新的内容合并到本地分支
 url:
 http://caibaojian.com/use-github.html
-
-** intellij 快捷键
-方法和tab页切换  alt 上下左右
-http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
 ** andoird keyboard  google is ok   bluetooth
 ** emacs 24.3.1 + github rateyu starter-kit-master
 ubuntu 14.04.3 lts
@@ -106,11 +163,6 @@ Quick Tips
    * I ignore file this will add the file to .git/infor/exclude
    * C-h m Magit的使用帮助信息
 
-** emacs gnus 阅读新闻组
-输入gnus后  ^ 选择新闻组服务器
-需要研究如何订阅rss
-如何阅读邮件的设置？
-
 ** emacs org skill
 
 http://higrid.net/c-art-orgmode_basic.htm
@@ -118,52 +170,13 @@ http://higrid.net/c-art-orgmode_basic.htm
 emacs tag 标记  :tag:标记:
 预定义的tag标记
 
-** emacs tramp ssh
-C-X C-F /ssh:crazybaby@192.168.38.129:
-http://ju.outofmemory.cn/entry/1274 emacs tramp使用
-http://lifegoo.pluskid.org/wiki/EmacsTRAMP.html
-
-执行远程机器的shell命令
-M_! 直接敲free -g 执行远程机器的命令
-M_x eshell *执行远程机器的命令行* top命令无法执行?
-
-Welcome to the Emacs shell
-/sshx:ym@192.168.1.15:/home/ym $ (+ 1 3)
-4
-
-
 ** emacs 多个shell创建
 c_x c_w 写入shell的名字 另存为一个shell名称
 然后再开启就没有问题了
 
-** emacs c_x c_f 远程登陆文件夹 a_x shell 执行 /bin/bash 远程命令开启终端 (ubuntu 14亲测可用,windows未成功)
-
 ** 实用运维小技巧
 serverlist列表
 http://heylinux.com/archives/3047.html
-
-** emacs 帮助快捷键
-********Emacs帮助************
-C-h ?        :得到关于帮助的完整列表
-M-x apropos    :想做一件事情，但是不知道如何去做。可以用上面的命令，然后关键字甚至是正则表达式， Emacs就会搜索帮助中一切相关的信息。会得到一个列
-表，每一项都有超链接和简要的说明。
-C-h k        :别人告诉我一个快捷键，我想知道它具体是怎么回事。可以用上面的命令，然后把那个键按一遍，Emacs就会告诉你是怎么回事了。
-C-h f        :上面的命令，然后输入你要查询的命令（即按下M-x然后能输入的那些命令）
-C-h v        :上面的命令，然后输入变更名，可以查看变更的说明和光前值。
-C-h m        :可以得到当前所有mode的一个总体说明。
-C-h b         :查看当前buffer所有可用的快捷键
-C-h t        :打开学习向导 
-C-h w         :查看某命令对应的快捷键
-<快捷键序列> C-h    :查看当前buffer中以<快捷键序列>开头的所有快捷键列表。例如想看所有以C-x开头的快捷键就输入C-x C-h就可以了。
-find-function    :查看Emacs函数的代码。M-x find-function。
-find-variable    :查看变量的代码。
-describe-face    :查看face的文档
-find-face-definition    :查看face的代码
-神的编辑器 快捷键总结
-http://www.cr173.com/html/20624_1.html
-
-** emacs 远程调试
-http://blog.163.com/yu_hongchang/blog/static/39894138201161502312927/
 
 ** linux ctrl和 caps修改键位
 
@@ -182,15 +195,6 @@ $ echo "xmodmap ~/.keymaprc" >  swkey
 $ chmod +x swkey
 $ sudo mv swkey /usr/bin
 $ swkey  #现在想交换两个按键就直接输入这个命令,无论在什么路径下都可以，也不用记文件路径，会比较方便
-
-** emacs 绘制流程图 yz 打开链接地址
-参考url地址：
-http://emacser.com/emacs-ditaa.htm
-打开链接地址: c_c c_o
-
-http://blog.csdn.net/occupy8/article/details/14450453
-
-http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
 
 ** emacs c_x b 快速新建缓冲区
 ** emacs w3m　打开网页后 控制是否显示图片 (很好用哦)
@@ -281,10 +285,17 @@ SQLite	sqlite
 
 感谢 Celad Evra 的提醒，org-mode 自带的 Easy Templates 也提供了快速插入代码块的功能： 输入 <s TAB 即可（但不提供语言标识符的补全），具体细节请见 org-mode 的文档。
 
+** emacs 绘制流程图 yz 打开链接地址
+参考url地址：
+http://emacser.com/emacs-ditaa.htm
+打开链接地址: c_c c_o
+
+http://blog.csdn.net/occupy8/article/details/14450453
+
+http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
+
 
 ** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
-** emacs 查看新闻组 rss  *雷鸟*
-** redis 非常简单，按照主页的说明就可以使用了
 
 ** DONE 全局键位切换 ok  方法如下：
    CLOSED: [2014-11-25 二 06:36]
@@ -339,29 +350,6 @@ https://github.com/barryclark/jekyll-now
 参考url
 http://blog.csdn.net/csfreebird/article/details/7028174
 http://blog.csdn.net/pfanaya/article/details/6991703
-** DONE emacs w3m 操作步骤
-   CLOSED: [2014-11-15 六 22:31]
-   - State "DONE"       from "STARTED"    [2014-11-15 六 22:31]
-*** 安装
-sudo apt-get install w3m w3m-el w3m-img
-
-*** 增加配置
-(autoload 'w3m "w3m" "interface for w3m on emacs" t)
-(setq w3m-command-arguments '("-cookie" "-F"))
-(setq w3m-use-cookies t)
-;; 目前使用此配置
-(setq w3m-home-page "http://www.google.de/")
-(require 'mime-w3m)
-(setq w3m-default-display-inline-image t)
-(setq w3m-default-toggle-inline-images t)
-
-*** 常用命令
-G 去新的页面
-H 主页
-B 回退
-N 去下一页??
-c_c c_w 关闭当前tab页
-c 输出当前url地址 B
 ** DONE emacs 插入java 代码
    CLOSED: [2014-11-15 六 22:30]
    - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
@@ -445,16 +433,21 @@ xmodmap /home/ym/.xmodmap
    effective emacs
    emacs 神 总结
    牛人如Steve Purcell  2.4 版本在ubuntu 14--emacs 2.4 可以正常使用 万岁！！！
-** 任务测试 GTD
-http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html
 
 
 ** emacs gtd 时间管理
 http://v.youku.com/v_show/id_XNTc0NTUyMDU2.html
 http://v.youku.com/v_show/id_XNDU5NzQwODgw.html
+** 任务测试 GTD
+http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html
 
 ** emacs mew 邮件管理
 http://emacser.com/mew.htm
+
+** emacs gnus 阅读新闻组
+输入gnus后  ^ 选择新闻组服务器
+需要研究如何订阅rss?/
+如何阅读邮件的设置？
 
 ** mew 问题＆常用命令快捷键
 搜索中文有问题
@@ -497,6 +490,8 @@ Q                                 退出Mew
 
 
 http://lifegoo.pluskid.org/wiki/Mew.html
+** emacs 查看新闻组 rss  *雷鸟*
+
 ** pdf emacs
 sudo apt-get install  texlive-latex-recommended
 latex-cjk-chinese
@@ -549,6 +544,7 @@ http://www.zhihu.com/question/28182203
 http://justcoding.iteye.com/blog/1943504
 http://www.haiyun.me/archives/shell-check-server-mail.html
 
+
 ** 网站收集
 友情链接
 Enjoy Diy
@@ -558,3 +554,8 @@ Magento架构师
 爱积累爱分享
 简明现代魔法
 海底苍鹰
+
+** intellij 快捷键
+方法和tab页切换  alt 上下左右
+http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
+** redis 非常简单，按照主页的说明就可以使用了
