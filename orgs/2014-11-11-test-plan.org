@@ -16,6 +16,7 @@ emacs - w3m
 c_c c_n/p
 c_c c_w
 T
+G 打开新大url
 
 单独在w3m中阅读
 精读需求的文章 使用emacs-w3m
