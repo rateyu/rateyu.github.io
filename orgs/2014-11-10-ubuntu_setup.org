@@ -3,6 +3,8 @@
   进入ym用户
   敲emacs 进入编辑环境
   进入码字大模式！！
+** TODO emacs - w3m 重新安装 太难用了
+
 ** grub配置 命令行模式启动
    emacs /etc/default/grub
    千万注意 需要更新  update-grub2
@@ -269,3 +271,17 @@ rdp 方式访问
 用户名密码
 还有域名
 http://www.th7.cn/system/lin/201410/72661.shtml
+** ubuntu shell fish
+整理几个好用的 Ubuntu 工具(Sublime Text, Jupiter, Tweak, MyUnity,
+Guake, Fish, dnsmasq)
+Ubuntu完全教程，让你成为Ubuntu高手！
+http://www.cnblogs.com/dutlei/archive/2012/11/20/2778327.html
+
+sudo apt-get install fish
+
+从bash进入fish直接输入fish就行了
+安装好第一步是修改 OS 默认 shell：
+
+复制代码代码如下:
+
+chsh -s /usr/bin/fish

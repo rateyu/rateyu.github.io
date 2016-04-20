@@ -1,5 +1,5 @@
 * emacs学习
-
+** emacs-w3m 集成不好的问题
 ** emacs 帮助快捷键
 ********Emacs帮助************
 C-h ?        :得到关于帮助的完整列表
@@ -491,7 +491,6 @@ Q                                 退出Mew
 
 http://lifegoo.pluskid.org/wiki/Mew.html
 ** emacs 查看新闻组 rss  *雷鸟*
-
 ** pdf emacs
 sudo apt-get install  texlive-latex-recommended
 latex-cjk-chinese
