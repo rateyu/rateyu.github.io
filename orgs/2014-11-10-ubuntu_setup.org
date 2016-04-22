@@ -3,8 +3,51 @@
   进入ym用户
   敲emacs 进入编辑环境
   进入码字大模式！！
-** TODO emacs - w3m 重新安装 太难用了
+** ubuntu 非ｒｏｏｔ关机　不输入密码
+进入终端，执行sudo visudo
 
+在#User privilege specification下面会罗列一些规则，我们现在需要做的是对我们的用户进行一些操作。假如我们的用户名为nenew
+
+在文件的最后一行添加：
+
+
+   在#User privilege specification下面会罗列一些规则，我们现在需要做的是对我们的用户进行一些操作。假如我们的用户名为nenew
+
+在文件的最后一行添加：
+
+nenew    ALL=(ALL) NOPASSWD: ALL
+
+然后保存退出，执行
+
+sudo usermod -aG admin nenew
+
+重启下看看nenew帐号执行sudo还需要密码么？这里我们需要了解顺序这个问题，在ubuntu的wiki上有比较详细的介绍。
+
+%admin ALL=(ALL) ALL
+这行只是让admin组的用户拥有可以像任何帐号一样执行命令的能力，但是还是需要有密码的，因此我们需要把我们的nenew用户加入到admin组中，所以有sudo usermod
+-aG admin nenew ，然后是对其进行NOPASSWD定义，这行一定要在%admin ALL=(ALL) ALL 这行后面，才会生效。
+
+文章发玩之后很多朋友提出不安全问题来，确实，这样是存在安全隐患的。奶牛此文的目的也只是想让各位了解下sudoers的那个生效的顺序，当然，我们可以把最后的
+
+nenew    ALL=(ALL) NOPASSWD: ALL 更改为对于命令进行限制，例如对于关机命令取消密码
+
+nenew    ALL=(ALL) NOPASSWS: /sbin/shutdown, /sbin/halt, /sbin/reboot
+
+更详细的说明请看:
+
+https://help.ubuntu.com/community/Sudoers
+
+http://www.gratisoft.us/sudo/sudoers.man.html
+
+注意：如果你添加了一行在root的下面，这样的话修改是不会生效的，因为%admin ALL=(ALL) ALL这行的策略会覆盖掉nenew的这条策略，又变成需要密码，所以你可以
+把nenew这句话搬到admin这句话的后面，立马生效。
+
+** ubuntu suse zsh oh autojump && fish 安装与使用；脚本灰常好用
+   autojump <--> fish popd pushd dirs 
+
+** TODO emacs - w3m 重新安装 太难用了
+每次都对 c_c c_k
+重新再装一遍
 ** grub配置 命令行模式启动
    emacs /etc/default/grub
    千万注意 需要更新  update-grub2
@@ -17,17 +60,21 @@
 起作用的
 
 ** ubuntu 亮度调节方法
-sudo vim /etc/rc.local
 
-[Center]
+Ubuntu / Debian 系统有一个通病，那就是每次开机，系统都会把你的屏幕亮度调到最大值。 我很惊讶为什么到了14.04版本这个问题还是没有修复。 不过我们可以通过脚本让Ubuntu每次启动时都把亮度设置成一个固定的值。
 
-5 我们许在exit 0 前面增加一句命令即可：
+首先查看一下你的屏幕亮度值的范围：
 
-echo 109 > /sys/class/backlight/intel_backlight/brightness
+sudo cat /sys/class/backlight/acpi_video0/max_brightness
 
+我的是15，也就是说亮度值可以在 0 ~ 15之间。
 
+修改 /etc/rc.local ,在最后的 exit 0 之前添加：
 
-以后开机即可会设置亮度为109.
+echo 3 > /sys/class/backlight/acpi_video0/brightness
+
+系统完成启动最后会执行这个脚本，因此每次开机，都会把亮度值设置成3
+
 
 ** 查卡主机最大亮度
 1 查看自己的系统亮度的最大值：
