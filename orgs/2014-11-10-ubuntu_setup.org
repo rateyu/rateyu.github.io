@@ -4,7 +4,13 @@
   敲emacs 进入编辑环境
   进入码字大模式！！
 ** ubuntu 挂载硬盘
-buntu自动挂载硬盘方法
+
+查看分区 sudo blkdi
+重要命令      lsblk
+sudo parted /dev/sde print
+http://www.169it.com/article/3218336418.html
+
+   buntu自动挂载硬盘方法
 首先建立挂载目录
 例如：
 sudo mkdir /movie #根目录下建立movie文件夹
