@@ -27,9 +27,30 @@ vmrun start "D:\vm-linux\ubuntu-zeromq\Ubuntu 64-bit 129 zeromq-python-nodejs.vm
 vmrun start "D:\vm-linux\ubuntu-mq\Ubuntu 64-bit 124 mq.vmx"
 
 windows 关机命令
-shutdown -s -t 30
+shutdown -s -t 3
 
 开发个程序控制 windows 10 机器上的虚拟机
+** nmap 探测主机
+http://blog.chinaunix.net/uid-25885064-id-3483813.html
+服务和端口
+nmap -PS 192.168.1.234　
+用nmap对局域网扫描一遍，然后查看arp缓存表就可以知道局域内ip对应的mac了。
+nmap比较强大也可以直接扫描mac地址和端口。执行扫描之后就可以 cat
+/proc/net/arp查看arp缓存表了
+
+ym@ym-HP430G2:~$ cat /proc/net/arp
+IP address       HW type     Flags       HW address            Mask     Device
+192.168.1.15     0x1         0x2         1c:e6:2b:e2:82:b1     *        wlan0
+192.168.1.119    0x1         0x2         9c:21:6a:05:1d:fe     *        wlan0
+192.168.1.16     0x1         0x2         00:1f:d0:28:a3:3a     *        wlan0
+192.168.1.100    0x1         0x2         70:73:cb:23:ec:61     *        wlan0
+192.168.1.1      0x1         0x2         00:27:19:4e:e7:76     *        wlan0
+192.168.1.66     0x1         0x2         00:1f:3b:c9:68:59     *        wlan0
+192.168.1.18     0x1         0x2         74:d4:35:19:a0:9c     *        wlan0
+192.168.1.2      0x1         0x2         58:44:98:b8:5b:6f     *        wlan0
+192.168.1.10     0x1         0x2         00:18:de:80:14:3b     *        wlan0
+192.168.1.4      0x1         0x2         74:51:ba:fb:cd:1b     *        wlan0
+
 
 ** ubuntu 挂载硬盘
 
