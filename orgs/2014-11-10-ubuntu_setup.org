@@ -3,6 +3,34 @@
   进入ym用户
   敲emacs 进入编辑环境
   进入码字大模式！！
+** win 10 安装sshd cygwin
+咖啡厅 等公网防火墙关闭
+参考 url地址  注意，no选项
+http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html
+
+
+** win 10 tomcat serv
+   SCHEDULED: <2016-04-24 日>
+http://tomcat.apache.org/tomcat-8.0-doc/windows-service-howto.html#Installing_services
+
+http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html
+C:\Program Files \(x86\)\VMware\VMware Workstation\vmrun.exe start "D:\vm-linux\suse11\SUSE Linux Enterprise 11.vmx"
+
+
+/cygdrive/c/Program Files (x86)/VMware/VMware Workstation/vmrun.exe
+stop  "/cygdrive/d/vm-linux/suse11/SUSE Linux Enterprise 11.vmx"
+
+vmrun start "D:\vm-linux\suse13\SUSE Linux Enterprise 13.vmx"
+
+vmrun start "D:\vm-linux\ubuntu-zeromq\Ubuntu 64-bit 129 zeromq-python-nodejs.vmx"
+
+vmrun start "D:\vm-linux\ubuntu-mq\Ubuntu 64-bit 124 mq.vmx"
+
+windows 关机命令
+shutdown -s -t 30
+
+开发个程序控制 windows 10 机器上的虚拟机
+
 ** ubuntu 挂载硬盘
 
 查看分区 sudo blkdi
