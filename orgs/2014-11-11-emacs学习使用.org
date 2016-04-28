@@ -1,4 +1,39 @@
 * emacs学习
+
+**  emacs 设置说明 非常有用的设置，完成左右窗口的切换
+
+(global-set-key (kbd "C-<left>")  'windmove-left)
+(global-set-key (kbd "C-<right>") 'windmove-right)
+(global-set-key (kbd "C-<up>")    'windmove-up)
+(global-set-key (kbd "C-<down>")  'windmove-down)
+
+http://blog.csdn.net/sw2wolf/article/details/8223073
+
+** emacs winner-mode使用
+c_x 左右箭头
+
+那就用windmove吧。Emacs自带这个包，只要在你的.emacs中加入:
+
+(windmove-default-keybindings)
+
+然后就可以用S-<up>、S-<right>跳转到上面、右边的窗口了。
+
+如果你用shift-selection-mode或者cua-mode，那么不想用Shift来做窗口跳转的话，将上面的配置改为:
+
+(windmove-default-keybindings 'meta)
+
+或者
+
+(windmove-default-keybindings 'super)
+
+
+(global-set-key [s-left] (ignore-error-wrapper 'windmove-left))
+(global-set-key [s-right] (ignore-error-wrapper 'windmove-right))
+(global-set-key [s-up] (ignore-error-wrapper 'windmove-up))
+(global-set-key [s-down] (ignore-error-wrapper 'windmove-down))
+
+
+
 ** emacs-w3m 集成不好的问题
 ** emacs 帮助快捷键
 ********Emacs帮助************

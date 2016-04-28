@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="2014-11-10-ubuntu<sub>setup</sub>"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2016-04-20T22:43+0800"/>
+<meta name="generated" content="2016-04-28T22:17+0800"/>
 <meta name="author" content="ym"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -106,7 +106,97 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js">
+/**
+ *
+ * @source: http://orgmode.org/mathjax/MathJax.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ * Copyright (C) 2012-2013  MathJax
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ */
 
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code below.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code below is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code below.
+*/
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
 </head>
 <body>
 
@@ -124,29 +214,44 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec-1">1 安装ubuntu系统 &amp;&amp; git 环境安装</a>
 <ul>
-<li><a href="#sec-1-1">1.1 grub配置 命令行模式启动</a></li>
-<li><a href="#sec-1-2">1.2 fbterm 搜狗输入法安装？</a></li>
-<li><a href="#sec-1-3">1.3 yong快捷键使用</a></li>
-<li><a href="#sec-1-4">1.4 ubuntu 亮度调节方法</a></li>
-<li><a href="#sec-1-5">1.5 查卡主机最大亮度</a></li>
-<li><a href="#sec-1-6">1.6 ubuntu 无线网络开关设置</a></li>
-<li><a href="#sec-1-7">1.7 yong tty</a></li>
-<li><a href="#sec-1-8">1.8 w3m显示乱码问题处理</a></li>
-<li><a href="#sec-1-9">1.9 arclinux got</a></li>
-<li><a href="#sec-1-10">1.10 安装中文语言包</a></li>
-<li><a href="#sec-1-11">1.11 无线驱动无法使用 安装的两种方法：</a></li>
-<li><a href="#sec-1-12">1.12 必装软件</a></li>
-<li><a href="#sec-1-13">1.13 telnet 乱码</a></li>
-<li><a href="#sec-1-14">1.14 emacs 插件</a></li>
-<li><a href="#sec-1-15">1.15 git环境安装</a>
+<li><a href="#sec-1-1">1.1 ubuntu命令行操作</a></li>
+<li><a href="#sec-1-2">1.2 win 10 安装sshd cygwin</a></li>
+<li><a href="#sec-1-3">1.3 win 10 tomcat serv</a></li>
+<li><a href="#sec-1-4">1.4 nmap 探测主机</a></li>
+<li><a href="#sec-1-5">1.5 ubuntu 挂载硬盘</a></li>
+<li><a href="#sec-1-6">1.6 ubuntu 非ｒｏｏｔ关机　不输入密码</a></li>
+<li><a href="#sec-1-7">1.7 ubuntu suse zsh oh autojump &amp;&amp; fish 安装与使用；脚本灰常好用</a></li>
+<li><a href="#sec-1-8">1.8 fish 设置</a></li>
+<li><a href="#sec-1-9">1.9 ubuntu 修改端口和密码</a></li>
+<li><a href="#sec-1-10">1.10 emacs - w3m 重新安装 太难用了</a></li>
+<li><a href="#sec-1-11">1.11 grub配置 命令行模式启动</a></li>
+<li><a href="#sec-1-12">1.12 fbterm 搜狗输入法安装？</a></li>
+<li><a href="#sec-1-13">1.13 yong快捷键使用</a></li>
+<li><a href="#sec-1-14">1.14 ubuntu 亮度调节方法</a></li>
+<li><a href="#sec-1-15">1.15 查卡主机最大亮度</a></li>
+<li><a href="#sec-1-16">1.16 ubuntu 无线网络开关设置</a></li>
+<li><a href="#sec-1-17">1.17 yong tty</a></li>
+<li><a href="#sec-1-18">1.18 w3m显示乱码问题处理</a></li>
+<li><a href="#sec-1-19">1.19 arclinux got</a></li>
+<li><a href="#sec-1-20">1.20 安装中文语言包</a></li>
+<li><a href="#sec-1-21">1.21 无线驱动无法使用 安装的两种方法：</a></li>
+<li><a href="#sec-1-22">1.22 必装软件</a></li>
+<li><a href="#sec-1-23">1.23 telnet 乱码</a></li>
+<li><a href="#sec-1-24">1.24 emacs 插件</a></li>
+<li><a href="#sec-1-25">1.25 git环境安装</a>
 <ul>
-<li><a href="#sec-1-15-1">1.15.1 github 集成</a></li>
-<li><a href="#sec-1-15-2">1.15.2 github 提交 rateyu@gmail.com</a></li>
-<li><a href="#sec-1-15-3">1.15.3 Please tell me who you are.</a></li>
+<li><a href="#sec-1-25-1">1.25.1 github 集成</a></li>
+<li><a href="#sec-1-25-2">1.25.2 github 提交 rateyu@gmail.com</a></li>
+<li><a href="#sec-1-25-3">1.25.3 Please tell me who you are.</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-16">1.16 ubuntu 14 访问win7</a></li>
-<li><a href="#sec-1-17">1.17 ubuntu 访问win7</a></li>
+<li><a href="#sec-1-26">1.26 ubuntu 14 访问win7</a></li>
+<li><a href="#sec-1-27">1.27 ubuntu 访问win7</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 未解决的问题</a>
+<ul>
+<li><a href="#sec-2-1">2.1 ubuntu shell fish</a></li>
 </ul>
 </li>
 </ul>
@@ -157,16 +262,309 @@ for the JavaScript code in this tag.
 <h2 id="sec-1"><span class="section-number-2">1</span> 安装ubuntu系统 &amp;&amp; git 环境安装</h2>
 <div class="outline-text-2" id="text-1">
 
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> ubuntu命令行操作</h3>
+<div class="outline-text-3" id="text-1-1">
+
 <p>  进入fbterm模式
   进入ym用户
   敲emacs 进入编辑环境
   进入码字大模式！！
+</p></div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> win 10 安装sshd cygwin</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>咖啡厅 等公网防火墙关闭
+参考 url地址  注意，no选项
+<a href="http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html">http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html</a>
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> win 10 tomcat serv</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>    <span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2016-04-24 日</span></span><br/>
+<a href="http://tomcat.apache.org/tomcat-8.0-doc/windows-service-howto.html#Installing_services">http://tomcat.apache.org/tomcat-8.0-doc/windows-service-howto.html#Installing_services</a>
+</p>
+<p>
+<a href="http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html">http://www.cnblogs.com/tippoint/archive/2012/10/18/2729078.html</a>
+C:\Program Files \(x86\)\VMware\VMware Workstation\vmrun.exe start "D:\vm-linux\suse11\SUSE Linux Enterprise 11.vmx"
+</p>
+
+<p>
+/cygdrive/c/Program Files (x86)/VMware/VMware Workstation/vmrun.exe
+stop  "/cygdrive/d/vm-linux/suse11/SUSE Linux Enterprise 11.vmx"
+</p>
+<p>
+vmrun start "D:\vm-linux\suse13\SUSE Linux Enterprise 13.vmx"
+</p>
+<p>
+vmrun start "D:\vm-linux\ubuntu-zeromq\Ubuntu 64-bit 129 zeromq-python-nodejs.vmx"
+</p>
+<p>
+vmrun start "D:\vm-linux\ubuntu-mq\Ubuntu 64-bit 124 mq.vmx"
+</p>
+<p>
+windows 关机命令
+shutdown -s -t 3
+</p>
+<p>
+开发个程序控制 windows 10 机器上的虚拟机
+</p></div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> nmap 探测主机</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p><a href="http://blog.chinaunix.net/uid-25885064-id-3483813.html">http://blog.chinaunix.net/uid-25885064-id-3483813.html</a>
+服务和端口
+nmap -PS 192.168.1.234　
+nmap -sP 192.168.1.0/24
+</p>
+<p>
+用nmap对局域网扫描一遍，然后查看arp缓存表就可以知道局域内ip对应的mac了。
+nmap比较强大也可以直接扫描mac地址和端口。执行扫描之后就可以 cat
+/proc/net/arp查看arp缓存表了
+</p>
+<p>
+ym@ym-HP430G2:~$ cat /proc/net/arp
+IP address       HW type     Flags       HW address            Mask     Device
+192.168.1.15     0x1         0x2         1c:e6:2b:e2:82:b1     *        wlan0
+192.168.1.119    0x1         0x2         9c:21:6a:05:1d:fe     *        wlan0
+192.168.1.16     0x1         0x2         00:1f:d0:28:a3:3a     *        wlan0
+192.168.1.100    0x1         0x2         70:73:cb:23:ec:61     *        wlan0
+192.168.1.1      0x1         0x2         00:27:19:4e:e7:76     *        wlan0
+192.168.1.66     0x1         0x2         00:1f:3b:c9:68:59     *        wlan0
+192.168.1.18     0x1         0x2         74:d4:35:19:a0:9c     *        wlan0
+192.168.1.2      0x1         0x2         58:44:98:b8:5b:6f     *        wlan0
+192.168.1.10     0x1         0x2         00:18:de:80:14:3b     *        wlan0
+192.168.1.4      0x1         0x2         74:51:ba:fb:cd:1b     *        wlan0
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> ubuntu 挂载硬盘</h3>
+<div class="outline-text-3" id="text-1-5">
+
+
+<p>
+查看分区 sudo blkdi
+重要命令      lsblk
+sudo parted /dev/sde print
+<a href="http://www.169it.com/article/3218336418.html">http://www.169it.com/article/3218336418.html</a>
+</p>
+<p>
+   buntu自动挂载硬盘方法
+首先建立挂载目录
+例如：
+sudo mkdir /movie #根目录下建立movie文件夹
+sudo mkdir /work   #根目录下建立work文件夹
+</p>
+<p>
+然后查看硬盘信息
+sudo fdisk -l
+</p>
+<p>
+Disk /dev/sda: 500.1 GB, 500107862016 bytes
+255 heads, 63 sectors/track, 60801 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Disk identifier: 0x6fd074d4
+</p>
+<p>
+   Device Boot      Start         End      Blocks   Id System
+/dev/sda1   *           1        3251    26113626    7 HPFS/NTFS
+/dev/sda2            3252       48177   360868095    f W95 Ext'd (LBA)
+/dev/sda3           48178       60801   101402280   83 Linux
+/dev/sda5            3252        8414    41471766    7 HPFS/NTFS
+/dev/sda6            8415       21800   107523013+   7 HPFS/NTFS
+/dev/sda7           21801       47934   209921323+   7 HPFS/NTFS
+/dev/sda8           47935       48177     1951866   82 Linux swap / Solaris
+</p>
+<p>
+Disk /dev/sdb: 320.0 GB, 320072933376 bytes
+255 heads, 63 sectors/track, 38913 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Disk identifier: 0x4fd353d4
+</p>
+<p>
+   Device Boot      Start         End      Blocks   Id System
+/dev/sdb1               1       12876   103425446    7 HPFS/NTFS
+/dev/sdb2           12876       38914   209151681    7 HPFS/NTFS
+</p>
+<p>
+这里要把sda7 sdb2自动挂载在work和movie下
+</p>
+<p>
+修改fstab文件
+sudo vim /etc/fstab
+</p>
+<p>
+sw              0       0
+/dev/scd0       /media/cdrom0   udf,iso9660 user,noauto,exec,utf8 0       0
+/dev/fd0        /media/floppy0 auto    rw,user,noauto,exec,utf8 0       0
+/dev/sda6       /doc            auto                             0        0
+/dev/sdb1       /xp             auto                             0        0
+/dev/sda7       /work           auto                             0       0
+/dev/sdb2       /movie          auto                             0       0
+</p>
+<p>
+加黑是手动加入的
+保存退出重新启动就ok了
 </p>
 </div>
 
-<div id="outline-container-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> grub配置 命令行模式启动</h3>
-<div class="outline-text-3" id="text-1-1">
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> ubuntu 非ｒｏｏｔ关机　不输入密码</h3>
+<div class="outline-text-3" id="text-1-6">
+
+<p>进入终端，执行sudo visudo
+</p>
+<p>
+在#User privilege specification下面会罗列一些规则，我们现在需要做的是对我们的用户进行一些操作。假如我们的用户名为nenew
+</p>
+<p>
+在文件的最后一行添加：
+</p>
+
+<p>
+   在#User privilege specification下面会罗列一些规则，我们现在需要做的是对我们的用户进行一些操作。假如我们的用户名为nenew
+</p>
+<p>
+在文件的最后一行添加：
+</p>
+<p>
+nenew    ALL=(ALL) NOPASSWD: ALL
+</p>
+<p>
+然后保存退出，执行
+</p>
+<p>
+sudo usermod -aG admin nenew
+</p>
+<p>
+重启下看看nenew帐号执行sudo还需要密码么？这里我们需要了解顺序这个问题，在ubuntu的wiki上有比较详细的介绍。
+</p>
+<p>
+%admin ALL=(ALL) ALL
+这行只是让admin组的用户拥有可以像任何帐号一样执行命令的能力，但是还是需要有密码的，因此我们需要把我们的nenew用户加入到admin组中，所以有sudo usermod
+-aG admin nenew ，然后是对其进行NOPASSWD定义，这行一定要在%admin ALL=(ALL) ALL 这行后面，才会生效。
+</p>
+<p>
+文章发玩之后很多朋友提出不安全问题来，确实，这样是存在安全隐患的。奶牛此文的目的也只是想让各位了解下sudoers的那个生效的顺序，当然，我们可以把最后的
+</p>
+<p>
+nenew    ALL=(ALL) NOPASSWD: ALL 更改为对于命令进行限制，例如对于关机命令取消密码
+</p>
+<p>
+nenew    ALL=(ALL) NOPASSWS: /sbin/shutdown, /sbin/halt, /sbin/reboot
+</p>
+<p>
+更详细的说明请看:
+</p>
+<p>
+<a href="https://help.ubuntu.com/community/Sudoers">https://help.ubuntu.com/community/Sudoers</a>
+</p>
+<p>
+<a href="http://www.gratisoft.us/sudo/sudoers.man.html">http://www.gratisoft.us/sudo/sudoers.man.html</a>
+</p>
+<p>
+注意：如果你添加了一行在root的下面，这样的话修改是不会生效的，因为%admin ALL=(ALL) ALL这行的策略会覆盖掉nenew的这条策略，又变成需要密码，所以你可以
+把nenew这句话搬到admin这句话的后面，立马生效。
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> ubuntu suse zsh oh autojump &amp;&amp; fish 安装与使用；脚本灰常好用</h3>
+<div class="outline-text-3" id="text-1-7">
+
+<p>   autojump &lt;&ndash;&gt; fish popd pushd dirs 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> fish 设置</h3>
+<div class="outline-text-3" id="text-1-8">
+
+<p>当然如果你实在想配置，输入 fish<sub>config</sub> 命令会启动 web 管理界面。
+</p>
+<p>
+什么？逼格太低，非要手动配置。OK， ~/.config/fish/config.fish这就是 fish 的配置文件，类似于 bash 的.bashrc。
+</p>
+<p>
+我喜欢配置三件东西：
+</p>
+<p>
+1.问候语（配置config.fish）：
+</p>
+
+<p>
+复制代码
+代码如下:
+set fish<sub>greeting</sub> 'Talk is cheap. Show me the code.'
+</p>
+<p>
+2.命令行提示（在web界面配置，完成后会生成~/.config/fish/functions/fish<sub>prompt</sub>.fish）：
+</p>
+<p>
+<a href="http://www.jb51.net/LINUXjishu/408682.html">http://www.jb51.net/LINUXjishu/408682.html</a>
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> ubuntu 修改端口和密码</h3>
+<div class="outline-text-3" id="text-1-9">
+
+<p>/etc/ssh/sshd<sub>config</sub>
+</p><ol>
+<li>修改 root 密码
+</li>
+</ol>
+
+<p>sudo passwd root
+[root@localhost /]#service ssh restart
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-10" class="outline-3">
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> emacs - w3m 重新安装 太难用了</h3>
+<div class="outline-text-3" id="text-1-10">
+
+<p>每次都对 c<sub>c</sub> c<sub>k</sub>
+重新再装一遍
+</p></div>
+
+</div>
+
+<div id="outline-container-1-11" class="outline-3">
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> grub配置 命令行模式启动</h3>
+<div class="outline-text-3" id="text-1-11">
 
 <p>   emacs /etc/default/grub
    千万注意 需要更新  update-grub2
@@ -175,17 +573,17 @@ for the JavaScript code in this tag.
 
 </div>
 
-<div id="outline-container-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> fbterm 搜狗输入法安装？</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-1-12" class="outline-3">
+<h3 id="sec-1-12"><span class="section-number-3">1.12</span> fbterm 搜狗输入法安装？</h3>
+<div class="outline-text-3" id="text-1-12">
 
 </div>
 
 </div>
 
-<div id="outline-container-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> yong快捷键使用</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-1-13" class="outline-3">
+<h3 id="sec-1-13"><span class="section-number-3">1.13</span> yong快捷键使用</h3>
+<div class="outline-text-3" id="text-1-13">
 
 <p>一键切换到 输入法  ctrl<sub>`</sub>
 注意删除 不使用的输入法会更快
@@ -196,33 +594,40 @@ for the JavaScript code in this tag.
 
 </div>
 
-<div id="outline-container-1-4" class="outline-3">
-<h3 id="sec-1-4"><span class="section-number-3">1.4</span> ubuntu 亮度调节方法</h3>
-<div class="outline-text-3" id="text-1-4">
-
-<p>sudo vim /etc/rc.local
-</p>
-<p>
-[Center]
-</p>
-<p>
-5 我们许在exit 0 前面增加一句命令即可：
-</p>
-<p>
-echo 109 &gt; /sys/class/backlight/intel<sub>backlight</sub>/brightness
-</p>
+<div id="outline-container-1-14" class="outline-3">
+<h3 id="sec-1-14"><span class="section-number-3">1.14</span> ubuntu 亮度调节方法</h3>
+<div class="outline-text-3" id="text-1-14">
 
 
 <p>
-以后开机即可会设置亮度为109.
+Ubuntu / Debian 系统有一个通病，那就是每次开机，系统都会把你的屏幕亮度调到最大值。 我很惊讶为什么到了14.04版本这个问题还是没有修复。 不过我们可以通过脚本让Ubuntu每次启动时都把亮度设置成一个固定的值。
 </p>
+<p>
+首先查看一下你的屏幕亮度值的范围：
+</p>
+<p>
+sudo cat /sys/class/backlight/acpi<sub>video0</sub>/max<sub>brightness</sub>
+</p>
+<p>
+我的是15，也就是说亮度值可以在 0 ~ 15之间。
+</p>
+<p>
+修改 /etc/rc.local ,在最后的 exit 0 之前添加：
+</p>
+<p>
+echo 3 &gt; /sys/class/backlight/acpi<sub>video0</sub>/brightness
+</p>
+<p>
+系统完成启动最后会执行这个脚本，因此每次开机，都会把亮度值设置成3
+</p>
+
 </div>
 
 </div>
 
-<div id="outline-container-1-5" class="outline-3">
-<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 查卡主机最大亮度</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-1-15" class="outline-3">
+<h3 id="sec-1-15"><span class="section-number-3">1.15</span> 查卡主机最大亮度</h3>
+<div class="outline-text-3" id="text-1-15">
 
 <p>1 查看自己的系统亮度的最大值：
 </p>
@@ -259,9 +664,9 @@ cat brightness
 
 </div>
 
-<div id="outline-container-1-6" class="outline-3">
-<h3 id="sec-1-6"><span class="section-number-3">1.6</span> ubuntu 无线网络开关设置</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-1-16" class="outline-3">
+<h3 id="sec-1-16"><span class="section-number-3">1.16</span> ubuntu 无线网络开关设置</h3>
+<div class="outline-text-3" id="text-1-16">
 
 <p>ifconfig wlan0 down
 ifconfig wlan0 up   
@@ -270,9 +675,9 @@ ifconfig wlan0 up
 
 </div>
 
-<div id="outline-container-1-7" class="outline-3">
-<h3 id="sec-1-7"><span class="section-number-3">1.7</span> yong tty</h3>
-<div class="outline-text-3" id="text-1-7">
+<div id="outline-container-1-17" class="outline-3">
+<h3 id="sec-1-17"><span class="section-number-3">1.17</span> yong tty</h3>
+<div class="outline-text-3" id="text-1-17">
 
 <p>  ** yong拼音输入法搞定了，尝试了下还可以，这下可以强制不上网页了，专注文字
   ** 之前没有安装成功，理由是安装在32位，安装64位就可以了
@@ -359,9 +764,9 @@ sudo apt-get install chmsee                           真实成
 
 </div>
 
-<div id="outline-container-1-8" class="outline-3">
-<h3 id="sec-1-8"><span class="section-number-3">1.8</span> w3m显示乱码问题处理</h3>
-<div class="outline-text-3" id="text-1-8">
+<div id="outline-container-1-18" class="outline-3">
+<h3 id="sec-1-18"><span class="section-number-3">1.18</span> w3m显示乱码问题处理</h3>
+<div class="outline-text-3" id="text-1-18">
 
 <p>安装完字符集后，访问百度网址正常
 <a href="http://www.linuxidc.com/Linux/2014-02/96939.htm">http://www.linuxidc.com/Linux/2014-02/96939.htm</a>
@@ -379,9 +784,9 @@ sudo apt-get install chmsee                           真实成
 
 </div>
 
-<div id="outline-container-1-9" class="outline-3">
-<h3 id="sec-1-9"><span class="section-number-3">1.9</span> arclinux got</h3>
-<div class="outline-text-3" id="text-1-9">
+<div id="outline-container-1-19" class="outline-3">
+<h3 id="sec-1-19"><span class="section-number-3">1.19</span> arclinux got</h3>
+<div class="outline-text-3" id="text-1-19">
 
 <p><a href="http://jingyan.baidu.com/article/59a015e3a9170ef7948865f3.html">http://jingyan.baidu.com/article/59a015e3a9170ef7948865f3.html</a>
 </p>
@@ -389,18 +794,18 @@ sudo apt-get install chmsee                           真实成
 
 </div>
 
-<div id="outline-container-1-10" class="outline-3">
-<h3 id="sec-1-10"><span class="section-number-3">1.10</span> 安装中文语言包</h3>
-<div class="outline-text-3" id="text-1-10">
+<div id="outline-container-1-20" class="outline-3">
+<h3 id="sec-1-20"><span class="section-number-3">1.20</span> 安装中文语言包</h3>
+<div class="outline-text-3" id="text-1-20">
 
 <p>sudo apt-get install language-pack-zh-hans
 </p></div>
 
 </div>
 
-<div id="outline-container-1-11" class="outline-3">
-<h3 id="sec-1-11"><span class="section-number-3">1.11</span> 无线驱动无法使用 安装的两种方法：</h3>
-<div class="outline-text-3" id="text-1-11">
+<div id="outline-container-1-21" class="outline-3">
+<h3 id="sec-1-21"><span class="section-number-3">1.21</span> 无线驱动无法使用 安装的两种方法：</h3>
+<div class="outline-text-3" id="text-1-21">
 
 <ol>
 <li>连接网络 直到重启安装无线驱动结束
@@ -419,9 +824,9 @@ sudo apt-get install chmsee                           真实成
 
 </div>
 
-<div id="outline-container-1-12" class="outline-3">
-<h3 id="sec-1-12"><span class="section-number-3">1.12</span> 必装软件</h3>
-<div class="outline-text-3" id="text-1-12">
+<div id="outline-container-1-22" class="outline-3">
+<h3 id="sec-1-22"><span class="section-number-3">1.22</span> 必装软件</h3>
+<div class="outline-text-3" id="text-1-22">
 
 <p>emacs 强大的不用我讲了
 emacs +w3m  网页也可以文本编辑
@@ -431,11 +836,14 @@ chromium 浏览器非常好用
 
 </div>
 
-<div id="outline-container-1-13" class="outline-3">
-<h3 id="sec-1-13"><span class="section-number-3">1.13</span> telnet 乱码</h3>
-<div class="outline-text-3" id="text-1-13">
+<div id="outline-container-1-23" class="outline-3">
+<h3 id="sec-1-23"><span class="section-number-3">1.23</span> telnet 乱码</h3>
+<div class="outline-text-3" id="text-1-23">
 
 <p>local 是 utf-8 的时候 telnet gbk编码的bbs 会出现乱码
+</p>
+<p>
+设置终端字符集为 gbk
 </p>
 <p>
 解决方法 : 使用 luit
@@ -444,9 +852,9 @@ luit -encoding gbk telnet bbs.tsinghua.edu.cn
 
 </div>
 
-<div id="outline-container-1-14" class="outline-3">
-<h3 id="sec-1-14"><span class="section-number-3">1.14</span> emacs 插件</h3>
-<div class="outline-text-3" id="text-1-14">
+<div id="outline-container-1-24" class="outline-3">
+<h3 id="sec-1-24"><span class="section-number-3">1.24</span> emacs 插件</h3>
+<div class="outline-text-3" id="text-1-24">
 
 
 <p>
@@ -459,25 +867,25 @@ emacs 字体： 家里的输入法字体换爽 公司的字体很差，可以考
 
 </div>
 
-<div id="outline-container-1-15" class="outline-3">
-<h3 id="sec-1-15"><span class="section-number-3">1.15</span> git环境安装</h3>
-<div class="outline-text-3" id="text-1-15">
+<div id="outline-container-1-25" class="outline-3">
+<h3 id="sec-1-25"><span class="section-number-3">1.25</span> git环境安装</h3>
+<div class="outline-text-3" id="text-1-25">
 
 
 
 </div>
 
-<div id="outline-container-1-15-1" class="outline-4">
-<h4 id="sec-1-15-1"><span class="section-number-4">1.15.1</span> github 集成</h4>
-<div class="outline-text-4" id="text-1-15-1">
+<div id="outline-container-1-25-1" class="outline-4">
+<h4 id="sec-1-25-1"><span class="section-number-4">1.25.1</span> github 集成</h4>
+<div class="outline-text-4" id="text-1-25-1">
 
 </div>
 
 </div>
 
-<div id="outline-container-1-15-2" class="outline-4">
-<h4 id="sec-1-15-2"><span class="section-number-4">1.15.2</span> github 提交 rateyu@gmail.com</h4>
-<div class="outline-text-4" id="text-1-15-2">
+<div id="outline-container-1-25-2" class="outline-4">
+<h4 id="sec-1-25-2"><span class="section-number-4">1.25.2</span> github 提交 rateyu@gmail.com</h4>
+<div class="outline-text-4" id="text-1-25-2">
 
 
 
@@ -553,9 +961,9 @@ git push current branch
 
 </div>
 
-<div id="outline-container-1-15-3" class="outline-4">
-<h4 id="sec-1-15-3"><span class="section-number-4">1.15.3</span> Please tell me who you are.</h4>
-<div class="outline-text-4" id="text-1-15-3">
+<div id="outline-container-1-25-3" class="outline-4">
+<h4 id="sec-1-25-3"><span class="section-number-4">1.25.3</span> Please tell me who you are.</h4>
+<div class="outline-text-4" id="text-1-25-3">
 
 <p>Run
   git config &ndash;global user.email "you@example.com"
@@ -612,9 +1020,9 @@ git status
 
 </div>
 
-<div id="outline-container-1-16" class="outline-3">
-<h3 id="sec-1-16"><span class="section-number-3">1.16</span> ubuntu 14 访问win7</h3>
-<div class="outline-text-3" id="text-1-16">
+<div id="outline-container-1-26" class="outline-3">
+<h3 id="sec-1-26"><span class="section-number-3">1.26</span> ubuntu 14 访问win7</h3>
+<div class="outline-text-3" id="text-1-26">
 
 <p>Ubuntu14.04 远程连接Win7 报错：无法连接到RDP服务器
 </p>
@@ -632,21 +1040,56 @@ ym@ym-HP430G2:~/.freerdp$
 
 </div>
 
-<div id="outline-container-1-17" class="outline-3">
-<h3 id="sec-1-17"><span class="section-number-3">1.17</span> ubuntu 访问win7</h3>
-<div class="outline-text-3" id="text-1-17">
+<div id="outline-container-1-27" class="outline-3">
+<h3 id="sec-1-27"><span class="section-number-3">1.27</span> ubuntu 访问win7</h3>
+<div class="outline-text-3" id="text-1-27">
 
 <p>rdp 方式访问
 用户名密码
 还有域名
 <a href="http://www.th7.cn/system/lin/201410/72661.shtml">http://www.th7.cn/system/lin/201410/72661.shtml</a>
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 未解决的问题</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> ubuntu shell fish</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<p>整理几个好用的 Ubuntu 工具(Sublime Text, Jupiter, Tweak, MyUnity,
+Guake, Fish, dnsmasq)
+Ubuntu完全教程，让你成为Ubuntu高手！
+<a href="http://www.cnblogs.com/dutlei/archive/2012/11/20/2778327.html">http://www.cnblogs.com/dutlei/archive/2012/11/20/2778327.html</a>
+</p>
+<p>
+sudo apt-get install fish
+</p>
+<p>
+从bash进入fish直接输入fish就行了
+安装好第一步是修改 OS 默认 shell：
+</p>
+<p>
+复制代码代码如下:
+</p>
+<p>
+chsh -s /usr/bin/fish
 </p></div>
 </div>
 </div>
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2016-04-20T22:43+0800</p>
+<p class="date">Date: 2016-04-28T22:17+0800</p>
 <p class="author">Author: ym</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

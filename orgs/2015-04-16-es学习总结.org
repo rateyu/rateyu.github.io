@@ -3,7 +3,15 @@
 学习es好长时间了
 现在做个总结
 
+** 爬虫技术nutch
+爬虫原理 webdb保存page和链接 segment index组成
+部署爬虫和es集群 搭建自己的搜索环境
+
+研究我Lucene源码
+时间序列 infoq
+
 英文非常重要
+每天学习英文 句子，编程要好，英文一定要好
 
 native 技术学习
 http://wiki.jikexueyuan.com/project/react-native/

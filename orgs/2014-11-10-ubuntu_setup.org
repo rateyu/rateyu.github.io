@@ -1,4 +1,5 @@
 * 安装ubuntu系统 && git 环境安装
+** ubuntu命令行操作
   进入fbterm模式
   进入ym用户
   敲emacs 进入编辑环境
@@ -34,6 +35,8 @@ shutdown -s -t 3
 http://blog.chinaunix.net/uid-25885064-id-3483813.html
 服务和端口
 nmap -PS 192.168.1.234　
+nmap -sP 192.168.1.0/24
+
 用nmap对局域网扫描一遍，然后查看arp缓存表就可以知道局域内ip对应的mac了。
 nmap比较强大也可以直接扫描mac地址和端口。执行扫描之后就可以 cat
 /proc/net/arp查看arp缓存表了
@@ -168,7 +171,13 @@ set fish_greeting 'Talk is cheap. Show me the code.'
 http://www.jb51.net/LINUXjishu/408682.html
 
 
-** TODO emacs - w3m 重新安装 太难用了
+** ubuntu 修改端口和密码
+/etc/ssh/sshd_config
+1. 修改 root 密码
+sudo passwd root
+[root@localhost /]#service ssh restart
+
+** emacs - w3m 重新安装 太难用了
 每次都对 c_c c_k
 重新再装一遍
 ** grub配置 命令行模式启动
@@ -319,6 +328,8 @@ chromium 浏览器非常好用
 ** telnet 乱码
 local 是 utf-8 的时候 telnet gbk编码的bbs 会出现乱码
 
+设置终端字符集为 gbk
+
 解决方法 : 使用 luit
 luit -encoding gbk telnet bbs.tsinghua.edu.cn 
 ** emacs 插件
@@ -441,6 +452,9 @@ rdp 方式访问
 用户名密码
 还有域名
 http://www.th7.cn/system/lin/201410/72661.shtml
+
+
+* 未解决的问题
 ** ubuntu shell fish
 整理几个好用的 Ubuntu 工具(Sublime Text, Jupiter, Tweak, MyUnity,
 Guake, Fish, dnsmasq)
