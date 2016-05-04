@@ -1,5 +1,5 @@
 * emacs学习
-
+** emacs rgrep 搜索命令使用
 **  emacs 设置说明 非常有用的设置，完成左右窗口的切换
 
 (global-set-key (kbd "C-<left>")  'windmove-left)

@@ -1,4 +1,9 @@
 * 安装ubuntu系统 && git 环境安装
+** apache 配置文件
+http://blog.chinaunix.net/uid-21807675-id-1814871.html
+** ubuntu 修改文件夹用户组
+chown -P ym:ym folder
+
 ** ubuntu命令行操作
   进入fbterm模式
   进入ym用户
