@@ -1,4 +1,17 @@
 * 安装ubuntu系统 && git 环境安装
+** android studio 开发登陆模块完成
+自动生成的程序
+如何发布版本 gradle
+gradle 多渠道打包功能
+http://www.cnblogs.com/xgjblog/p/5461245.html
+
+** android studio 2
+ide生成登陆界面
+编写登录界面
+
+http://www.server110.com/kvm/201401/4879.html
+kvm not found
+
 ** apache 配置文件
 http://blog.chinaunix.net/uid-21807675-id-1814871.html
 ** ubuntu 修改文件夹用户组
