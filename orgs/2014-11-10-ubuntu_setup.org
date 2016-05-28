@@ -386,6 +386,11 @@ Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id_rsa.pub 中的内容
 
 使用 git clone git@github.com:cocowool/userguide.git userguide 可以将代码复制到本地的 userguide 文件夹中
 
+
+git config --global user.email=rateyu@gmail.com
+ssh-keygen -C 'rateyu@gmail.com' -t rsa
+cat .ssh/id_rsa.pub
+
 git clone git@github.com:rateyu/rateyu.github.io.git ./blog2015
 此种方式有读写权限
 

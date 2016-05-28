@@ -1,0 +1,30 @@
+* doxygen使用
+** 生成类关系和函数调用
+sudo apt-get install doxygen doxygen-doc doxygen-gui graphviz
+
+doxygen -s -g
+配置文件设置
+
+############配置文件的部分内容#############
+#给出所有文档的输出目录
+OUTPUT_DIRECTORY       = doc
+#设置使用的语言
+OUTPUT_LANGUAGE = Chinese
+#生成chm格式的压缩html文档
+GENERATE_HTMLHELP      = YES
+#生成latex文档
+GENERATE_LATEX         = YES
+#生成rtf文档
+GENERATE_RTF           = YES
+#指定doxygen分析的输入文件(目录)
+INPUT                  = src lib
+#指定分析的文件的类型（扩展名）
+INCLUDE_FILE_PATTERNS  = *.cpp *.h
+#递归查找INPUT中的文件
+RECURSIVE              = YES
+#处理完一个函数的文档之后，对函数调用的函数也列出相关的链接。
+REFERENCES_RELATION    = YES
+#INCLUDE_PATH           = #这个不需要改
+
+
+doxygen 生成说明文档
