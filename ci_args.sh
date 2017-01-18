@@ -4,6 +4,8 @@ echo "******************************"
 
 sh mv_html2post.sh
 echo "copy files md and html"
+sed -i '/24.5.1/'d ./orgs/*.html
+
 git add -A
 git status
 git commit -m "$1"
