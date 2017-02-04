@@ -323,7 +323,10 @@ SQLite	sqlite
 ** emacs 绘制流程图 yz 打开链接地址
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
-打开链接地址: c_c c_o
+需要在w3m中使用 打开链接地址: c_c c_o
+dot -Tpng g1.dot >g1.png
+http://blog.csdn.net/brian_9988/article/details/11552325
+[[file:../dot/example.png]]
 
 http://blog.csdn.net/occupy8/article/details/14450453
 
