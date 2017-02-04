@@ -593,3 +593,13 @@ Magento架构师
 方法和tab页切换  alt 上下左右
 http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
 ** redis 非常简单，按照主页的说明就可以使用了
+** emacs 另一个窗口操作
+　C-M-v (scroll-other-window)，用来滚动下一个窗口。
+　　上一章我们看到有些命令加了C-x 4这个前缀，这一类命令都是用来操作多窗口的。
+　　C-x 4 b bufname (switch-to-buffer-other-window) 在另一个窗口打开缓冲。
+　　C-x 4 C-o bufname (display-buffer) 在另一个窗口打开缓冲，但不选中那个窗口。
+　　C-x 4 f filename (find-file-other-window) 在另一个窗口打开文件。
+　　C-x 4 d directory (dired-other-window) 在另一个窗口打开文件夹。
+　　C-x 4 m (mail-other-window) 在另一个窗口写邮件。
+　　C-x 4 r filename (find-file-read-only-other-window) 在另一个窗口以只读方式打开文件。
+ 　　这一类的命令默认是垂直拆分窗口。
