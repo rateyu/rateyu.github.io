@@ -326,7 +326,8 @@ http://emacser.com/emacs-ditaa.htm
 需要在w3m中使用 打开链接地址: c_c c_o
 dot -Tpng g1.dot >g1.png
 http://blog.csdn.net/brian_9988/article/details/11552325
-[[file:../dot/example.png]]
+[[file:../../../dot/example.png]]
+[[file:./dot/example.png]]
 
 http://blog.csdn.net/occupy8/article/details/14450453
 
