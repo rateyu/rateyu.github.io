@@ -603,3 +603,5 @@ http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
 　　C-x 4 m (mail-other-window) 在另一个窗口写邮件。
 　　C-x 4 r filename (find-file-read-only-other-window) 在另一个窗口以只读方式打开文件。
  　　这一类的命令默认是垂直拆分窗口。
+** emacs org 换行设置
++ (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))

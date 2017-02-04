@@ -5,6 +5,7 @@ echo "******************************"
 sed -i '/24.5.1/'d ./orgs/*.html
 sed -i '/Validate/'d ./orgs/*.html
 sed -i '/emacs-lisp/'d ./orgs/*.html
+sed -i '/Author/'d ./orgs/*.html
 
 
 sh mv_html2post.sh
