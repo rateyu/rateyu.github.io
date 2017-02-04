@@ -329,7 +329,17 @@ http://www.linuxidc.com/Linux/2015-01/111975.htm
 http://jingyan.baidu.com/article/59a015e3a9170ef7948865f3.html
 
 ** 安装中文语言包
-sudo apt-get install language-pack-zh-hans
++ sudo apt-get install language-pack-zh-hans
++ Ubuntu默认的中文字符编码
+Ubuntu默认的中文字符编码为zh_CN.UTF-8，这个可以在
+/etc/environment中看到：
+sudo gedit /etc/environment
+可以看到如下内容：
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+LANG="zh_CN.UTF-8"
+LANGUAGE="zh_CN:zh:en_US:en"
+
+
 ** 无线驱动无法使用 安装的两种方法：
 1. 连接网络 直到重启安装无线驱动结束
 2. 安装mint驱动程序
