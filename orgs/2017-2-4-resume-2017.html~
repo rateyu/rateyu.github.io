@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>2017-2-4-resume-2017</title>
-<!-- 2017-02-04 六 02:07 -->
+<!-- 2017-02-04 六 04:08 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="root" />
@@ -204,23 +204,36 @@ for the JavaScript code in this tag.
 </li>
 </ul>
 </li>
-<li>团队协作
+<li>能力萃取-讲故事
 </li>
 <li>做决策、解决问题的能力
 </li>
 <li>计划组织优先处理工作
 </li>
-<li>团队内外沟通
+<li>高感性 共情、设计整合意义好玩、讲故事
+<ul class="org-ul">
+<li>表达能力，如何放大一件事情的价值  有结果、可交付、可复制
 </li>
-<li>创建编辑书面报告
+<li>讲故事的能力
+<ul class="org-ul">
+<li>金字塔原理讲故事典型套路：SCQA 背景、冲突、疑问和回答
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li>推销和影响他人
 </li>
-<li>项目标准化的能力
+<li>创建编辑书面报告
 </li>
 <li>专业技术能力
 </li>
-<li>高感性 共情、设计整合意义好玩、讲故事
+
+<li>团队内外沟通
+</li>
+<li>团队协作
+</li>
+<li>项目标准化的能力
 </li>
 </ul>
 </div>
@@ -289,12 +302,6 @@ for the JavaScript code in this tag.
 </li>
 </ul>
 </li>
-<li>讲故事的能力
-<ul class="org-ul">
-<li>金字塔原理讲故事典型套路：SCQA 背景、冲突、疑问和回答
-</li>
-</ul>
-</li>
 </ul>
 </div>
 </div>
@@ -302,7 +309,7 @@ for the JavaScript code in this tag.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: root</p>
-<p class="date">Created: 2017-02-04 六 02:07</p>
+<p class="date">Created: 2017-02-04 六 04:08</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
