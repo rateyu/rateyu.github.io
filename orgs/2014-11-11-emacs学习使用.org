@@ -605,3 +605,6 @@ http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
  　　这一类的命令默认是垂直拆分窗口。
 ** emacs org 换行设置
 + (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+** emacs w3m设置 baidu主页
+;; 设置w3m主页
+(setq w3m-home-page "http://www.baidu.com")
