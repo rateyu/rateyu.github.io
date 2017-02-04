@@ -323,15 +323,14 @@ SQLite	sqlite
 ** emacs 绘制流程图 yz 打开链接地址
 参考url地址：
 http://emacser.com/emacs-ditaa.htm
-需要在w3m中使用 打开链接地址: c_c c_o
-dot -Tpng g1.dot >g1.png
-http://blog.csdn.net/brian_9988/article/details/11552325
++ 需要在w3m中使用 打开链接地址: c_c c_o
++ dot -Tpng g1.dot >g1.png
++ 图片示例：【【file: ../ ../ ../ dot / example.png】】
 [[file:../../../dot/example.png]]
-[[file:./dot/example.png]]
-
-http://blog.csdn.net/occupy8/article/details/14450453
-
-http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
++ 参考地址：
+  + http://blog.csdn.net/brian_9988/article/details/11552325
+  + http://blog.csdn.net/occupy8/article/details/14450453
+  + http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
 
 
 ** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
