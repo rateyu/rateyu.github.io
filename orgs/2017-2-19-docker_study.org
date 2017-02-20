@@ -1,0 +1,5 @@
+* docker 学习笔记
+** ubuntu16安装docker
+# sudo apt intall docker.io
+# docker 命令结构图
+# docker 子命令分类 容器 镜像

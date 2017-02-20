@@ -1,0 +1,11 @@
+* python django学习
+** 简单的helloworld -创建第一个项目
+http://www.runoob.com/django/django-first-app.html
+** *django 利用模板实现分离文档表现形式和内容*
+** django 数据库支持提供统一多调用api
+** django 表单post和get方法
+** *django admin 管理工具 这个功能貌似可以研究下*
+
+** emacs org mode 教程
+http://www.360doc.com/content/14/1219/13/20545288_434126794.shtml
+http://www.cnblogs.com/Open_Source/archive/2011/07/17/2108747.html
