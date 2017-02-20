@@ -1,0 +1,59 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Feb 20 22:27:29 2017
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22698 64721 954619 82000) (desktop . "206") "ym@ym-HP-ProBook-430-G2" nil nil ((((font-backend xft x) (font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1") (font-parameter . "Ubuntu Mono 13") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (foreground-color . "black") (background-color . "white") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 9) (right-fringe . 9) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (fullscreen . fullheight) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (alpha) (horizontal-scroll-bars . t) (display-type . color) (background-mode . light) (cursor-color . "black") (sticky) (environment) (frameset--id . "25BE-63B3-98C7-6F4C") (frameset--mini t . t) (height . 55) (width . 104) (modeline . t) (minibuffer . t) (unsplittable) (left . 950) (top . 14) (icon-name) (visibility . t) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 144) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 36) (min-pixel-width-safe . 18)) vc (pixel-width . 960) (pixel-height . 987) (total-width . 107) (total-height . 55) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 960) (pixel-height . 501) (total-width . 107) (total-height . 28) (normal-height . 0.5) (normal-width . 1.0) (buffer "2017-2-10_python_study.org" (selected) (hscroll . 0) (fringes 9 9 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 209) (start . 1))) (leaf (last . t) (pixel-width . 960) (pixel-height . 486) (total-width . 107) (total-height . 27) (normal-height . 0.5) (normal-width . 1.0) (buffer "*shell*" (selected . t) (hscroll . 0) (fringes 9 9 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 852) (start . 1)))))])
+(setq comint-input-ring nil)
+(setq compile-history nil)
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history '("shell" "w3m" "shell"))
+(setq face-name-history nil)
+(setq file-name-history '("/home/ym/blog2017/orgs/2014-11-11-emacs懷习懯箲用.org" "/home/ym/blog2017/orgs/2017-2-10_python_study.org" "/home/ym/blog2017/orgs/2017-2-4-resume-2017.org" "~/.emacs.d/init.el" "~/.emacs.d/elpa/magit-20170204.1624/magit-autoloads.el" "~/.emacs.d/elpa/git-commit-20170128.745/git-commit-autoloads.el" "~/.emacs.d/elpa/with-editor-20170111.609/with-editor-autoloads.el" "~/.emacs.d/elpa/magit-popup-20170128.745/magit-popup-autoloads.el" "~/.emacs.d/elpa/async-20161103.1036/async-autoloads.el" "~/.emacs.d/elpa/vc-darcs-20151225.1228/vc-darcs-autoloads.el" "~/.emacs.d/elpa/darcsum-20140315.2110/darcsum-autoloads.el" "~/.emacs.d/elpa/guide-key-20150107.2235/guide-key-autoloads.el" "~/.emacs.d/elpa/popwin-20150315.600/popwin-autoloads.el" "~/.emacs.d/elpa/s-20160928.636/s-autoloads.el" "~/.emacs.d/elpa/highlight-escape-sequences-20161028.1617/highlight-escape-sequences-autoloads.el" "~/.emacs.d/elpa/whole-line-or-region-20110901.130/whole-line-or-region-autoloads.el" "~/.emacs.d/elpa/move-dup-20161026.742/move-dup-autoloads.el" "~/.emacs.d/elpa/fill-column-indicator-20151030.1233/fill-column-indicator-autoloads.el" "~/.emacs.d/elpa/page-break-lines-20161205.2251/page-break-lines-autoloads.el" "~/.emacs.d/elpa/multiple-cursors-20161021.1431/multiple-cursors-autoloads.el" "~/.emacs.d/elpa/ace-jump-mode-20140616.115/ace-jump-mode-autoloads.el" "~/.emacs.d/elpa/expand-region-20170122.2241/expand-region-autoloads.el" "~/.emacs.d/elpa/browse-kill-ring-20160125.9/browse-kill-ring-autoloads.el" "~/.emacs.d/elpa/highlight-symbol-20160102.1209/highlight-symbol-autoloads.el" "~/.emacs.d/elpa/undo-tree-20161012.701/undo-tree-autoloads.el" "~/.emacs.d/elpa/whitespace-cleanup-mode-20150603.447/whitespace-cleanup-mode-autoloads.el" "~/.emacs.d/elpa/unfill-20160816.2300/unfill-autoloads.el" "~/.emacs.d/elpa/mmm-mode-20150828.1716/mmm-mode-autoloads.el" "~/.emacs.d/elpa/default-text-scale-20150227.956/default-text-scale-autoloads.el" "~/.emacs.d/elpa/session-20120510.1700/session-autoloads.el" "~/.emacs.d/elpa/switch-window-20160229.334/switch-window-autoloads.el" "~/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete-autoloads.el" "~/.emacs.d/elpa/popup-20160709.729/popup-autoloads.el" "~/.emacs.d/elpa/idomenu-20141123.1320/idomenu-autoloads.el" "~/.emacs.d/elpa/smex-20151212.1409/smex-autoloads.el" "~/.emacs.d/elpa/ido-ubiquitous-20160623.815/ido-ubiquitous-autoloads.el" "~/.emacs.d/elpa/ido-completing-read+-20161211.910/ido-completing-read+-autoloads.el"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq ido-buffer-history '("*w3m*<2>" "*shell*" "2017-2-4-resume-2017.org" "init.el"))
+(setq ido-last-directory-list '(("/home/ym/blog2017/" . "orgs/")))
+(setq ido-work-directory-list '("/home/ym/blog2017/orgs/"))
+(setq ido-work-file-list '("2014-11-11-emacs懷习懯箲用.org" "2017-2-10_python_study.org" "2017-2-4-resume-2017.org"))
+(setq minibuffer-history nil)
+(setq org-refile-history nil)
+(setq org-tags-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((48 . "http://www.360doc.com/content/14/1219/13/20545288_434126794.shtml")))
+(setq search-ring '("x"))
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/ym/blog2017/orgs/2017-2-10_python_study.org"
+  "2017-2-10_python_study.org"
+  'org-mode
+  '(anzu-mode auto-complete-mode global-auto-revert-mode whitespace-cleanup-mode undo-tree-mode page-break-lines-mode whole-line-or-region-mode hes-mode guide-key-mode)
+  209
+  '(321 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "/home/ym/blog2017/orgs/2014-11-11-emacs懷习懯箲用.org"
+  "2014-11-11-emacs懷习懯箲用.org"
+  'org-mode
+  '(anzu-mode auto-complete-mode global-auto-revert-mode whitespace-cleanup-mode undo-tree-mode page-break-lines-mode whole-line-or-region-mode hes-mode guide-key-mode)
+  10700
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
+
