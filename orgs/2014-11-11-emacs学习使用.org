@@ -79,9 +79,9 @@ Welcome to the Emacs shell
 ** w3m 单独命令快捷键
 
 emacs - w3m
-c_c c_n/p
-c_c c_w
-T
+c_c c_n/p 下上tab页
+c_c c_w 关闭tab页
+T 显示图片 在ubuntu 桌面系统运行emacs方可使用，putty无法使用，比较郁闷
 G 打开新大url
 
 单独在w3m中阅读
@@ -101,6 +101,8 @@ L:列出页面中所有的超链接及其地址.
 I:显示当前超链接所指向的图片.
 U:输入URL
 Enter:进入该超链接所指向的目地的.
+
+
 
 三.多标签
 
@@ -491,7 +493,7 @@ http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html
 ** emacs mew 邮件管理
 http://emacser.com/mew.htm
 
-** emacs gnus 阅读新闻组
+** Emacs gnus 阅读新闻组
 输入gnus后  ^ 选择新闻组服务器
 需要研究如何订阅rss?/
 如何阅读邮件的设置？
@@ -620,3 +622,26 @@ http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
 ** emacs w3m设置 baidu主页
 ;; 设置w3m主页
 (setq w3m-home-page "http://www.baidu.com")
+** emacs 记录自己的工作区和恢复工作区
+- 保存窗口配置信息 c_x r w 将窗口配置信息保存到Register中
+- 将窗口配置信息从Register中还原
+  - c_x r j
+** emacs 书签设置
+- c_x r m 设置书签
+- c_x r b 调到某个书签
+
+
+** emacs 快速补全
+- a_/
+** emacs 网址
+http://everet.org/thinking-of-emacs.html
+
+** 在另一个窗口操作
+- c_x 4 b 在另一个窗口打开缓冲区
+- c_x 4 c_o 在另一个窗口打开缓冲区 但不选中那个窗口
+- c_x 4 m 在另外一个窗口写邮件
+** emacs mew 发送接收邮件 完成可以收发邮件
+- https://www.cnblogs.com/pandachen/p/4049602.html 此方法可行
+- sudo apt install stunnel4
+- sudo apt install mew
+- 安装完毕 将mew 下的配置文件 .emacs stunnel4.conf拷贝到根目录即可使用了 ok
