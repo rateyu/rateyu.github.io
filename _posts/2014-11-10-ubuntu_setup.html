@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>2014-11-10-ubuntu_setup</title>
-<!-- 2018-04-07 Sat 21:59 -->
+<!-- 2018-04-08 Sun 01:57 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="root" />
@@ -230,6 +230,7 @@ for the JavaScript code in this tag.
 <li><a href="#sec-2-1">2.1. ubuntu shell fish</a></li>
 </ul>
 </li>
+<li><a href="#sec-3">3. windows putty设置 自动登录ubuntu</a></li>
 </ul>
 </div>
 </div>
@@ -1190,9 +1191,28 @@ chsh -s /usr/bin/fish
 </div>
 </div>
 </div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> windows putty设置 自动登录ubuntu</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>输入默认登录的用户名
+</li>
+<li>使用puttygen生成私钥和公钥
+<ul class="org-ul">
+<li>私钥本机使用 公钥放置到ubuntu .ssh/authorized<sub>keys</sub> 中
+</li>
+</ul>
+</li>
+<li>putty 设置认证登录，选择刚才的私钥文件,一般是ppk文件
+</li>
+<li>公钥放置到linux的authorized<sub>keys中，就可以使用putty远程访问了</sub>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2018-04-07 Sat 21:59</p>
+<p class="date">Created: 2018-04-08 Sun 01:57</p>
 </div>
 </body>
 </html>

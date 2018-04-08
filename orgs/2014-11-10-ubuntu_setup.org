@@ -506,3 +506,9 @@ sudo apt-get install fish
 复制代码代码如下:
 
 chsh -s /usr/bin/fish
+* windows putty设置 自动登录ubuntu
+- 输入默认登录的用户名
+- 使用puttygen生成私钥和公钥
+  - 私钥本机使用 公钥放置到ubuntu .ssh/authorized_keys 中
+- putty 设置认证登录，选择刚才的私钥文件,一般是ppk文件
+- 公钥放置到linux的authorized_keys中，就可以使用putty远程访问了
