@@ -379,6 +379,7 @@ github
 git config --global user.name = "用户名或者用户ID"
 git config --global user.email = "邮箱"
 这两个选项会在以后的使用过程中自动添加到代码中。
+git config --list 查看配置信息
 
 2. 创建验证用的公钥
 这个是比较复杂和困扰大多数人的地方，因为 git 是通过 ssh 的方式访问资源库的，所以需要在本地创建验证用的文件。
