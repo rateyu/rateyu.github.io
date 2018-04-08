@@ -95,7 +95,9 @@ H 帮助显示kjj
 b 向上翻页
 空格 向下翻页
 
-c 拷贝超链接 无法使用
+c 拷贝超链接
+- 使用c_y 进行复制粘贴（注意）
+  http://rateyu.github.io/2014/11/11/emacs%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8.html
    
 L:列出页面中所有的超链接及其地址.
 I:显示当前超链接所指向的图片.
@@ -494,7 +496,7 @@ http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html
 http://emacser.com/mew.htm
 
 ** Emacs gnus 阅读新闻组
-输入gnus后  ^ 选择新闻组服务器
+   输入gnus后  ^ 选择新闻组服务器
 需要研究如何订阅rss?/
 如何阅读邮件的设置？
 
@@ -640,8 +642,3 @@ http://everet.org/thinking-of-emacs.html
 - c_x 4 b 在另一个窗口打开缓冲区
 - c_x 4 c_o 在另一个窗口打开缓冲区 但不选中那个窗口
 - c_x 4 m 在另外一个窗口写邮件
-** emacs mew 发送接收邮件 完成可以收发邮件
-- https://www.cnblogs.com/pandachen/p/4049602.html 此方法可行
-- sudo apt install stunnel4
-- sudo apt install mew
-- 安装完毕 将mew 下的配置文件 .emacs stunnel4.conf拷贝到根目录即可使用了 ok
