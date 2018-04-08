@@ -200,6 +200,14 @@ Quick Tips
 
 ** emacs org skill
 
+<s + TAB
+1. test1
+2. test2
+列表符号  - + * 1. 1
+1. ssdfdf
+2. xs
+
+
 http://higrid.net/c-art-orgmode_basic.htm
 
 emacs tag 标记  :tag:标记:
@@ -278,6 +286,7 @@ c_x r b 跳转
 c_x b
 
  org-mode 支持的语言
+ <s + TAB
 目前（版本号：7.9.3d）支持以下语言：
 语言	标识符
 Asymptote	asymptote
