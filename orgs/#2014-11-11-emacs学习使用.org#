@@ -623,7 +623,7 @@ http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
 + (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
 ** emacs w3m设置 baidu主页
 ;; 设置w3m主页
-(setq w3m-home-page "http://www.baidu.com")
+(setq w3m-home-hpage "http://www.baidu.com")
 ** emacs 记录自己的工作区和恢复工作区
 - 保存窗口配置信息 c_x r w 将窗口配置信息保存到Register中
 - 将窗口配置信息从Register中还原
