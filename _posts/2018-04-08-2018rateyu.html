@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>2018-04-08-2018rateyu</title>
-<!-- 2018-04-10 Tue 19:13 -->
+<!-- 2018-04-17 Tue 18:37 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="root" />
@@ -151,27 +151,27 @@ for the JavaScript code in this tag.
 <li><a href="#sec-1-1-4">1.1.4. 高性能网络 1传输selector模型&amp; 协议thrift&amp; 线程 主从reactor  2堆外拷贝&amp;内存池&amp;主从reactor&amp;串行无锁 3volatile一写多读&amp;原子类cas&amp;容器安全&amp;读写锁</a></li>
 <li><a href="#sec-1-1-5">1.1.5. 开源软件  ES &amp;netty &amp;influxdb &amp;hbase &amp;hadoop<sub>spark</sub> &amp;zookepper &amp;kafka</a></li>
 <li><a href="#sec-1-1-6">1.1.6. ES 1B树&amp;倒排索引 2存储 termindex(trie)-&gt;termdiction-&gt;postingList(bitmap/skipLIst) 3分布式 index a<sub>shrds</sub> (segment&amp;block)&amp;b<sub>replication</sub> 4 0停机&amp;高亮&amp;加权&amp;单点</a></li>
-<li><a href="#sec-1-1-7">1.1.7. 数据结构、算法&amp;数学 平衡二叉树&amp;b树&amp;红黑树&amp;布隆</a></li>
+<li><a href="#sec-1-1-7">1.1.7. 数据结构、算法&amp;数学  线性结构 快速排序&amp; 平衡二叉树&amp;b树&amp;红黑树&amp;布隆(垃圾邮件消重) &amp;倒排索引 ES&amp; 工具使用于什么场景 有什么缺点 性能优化</a></li>
 <li><a href="#sec-1-1-8">1.1.8. 死磕源码  map&amp; 高效map遍历</a></li>
 <li><a href="#sec-1-1-9">1.1.9. 别人的10倍 提升一个量级</a></li>
-<li><a href="#sec-1-1-10">1.1.10. spring<sub>boot</sub></a></li>
-<li><a href="#sec-1-1-11">1.1.11. docker</a></li>
-<li><a href="#sec-1-1-12">1.1.12. 错误排查 500服务器错误，严格检查错误日志排查问题</a></li>
-<li><a href="#sec-1-1-13">1.1.13. mybatis+前端界面</a></li>
-<li><a href="#sec-1-1-14">1.1.14. 沟通</a></li>
+<li><a href="#sec-1-1-10">1.1.10. 目前系统架构 agentserver &amp;autotask</a></li>
+<li><a href="#sec-1-1-11">1.1.11. 业务监控问题 业务监控设计 主要逻辑和数据结构算法</a></li>
+<li><a href="#sec-1-1-12">1.1.12. spring<sub>boot</sub></a></li>
+<li><a href="#sec-1-1-13">1.1.13. docker</a></li>
+<li><a href="#sec-1-1-14">1.1.14. 错误排查 500服务器错误，严格检查错误日志排查问题</a></li>
+<li><a href="#sec-1-1-15">1.1.15. mybatis+前端界面</a></li>
+<li><a href="#sec-1-1-16">1.1.16. 沟通</a></li>
 </ul>
 </li>
 <li><a href="#sec-1-2">1.2. 工作问题</a>
 <ul>
 <li><a href="#sec-1-2-1">1.2.1. 汇报本周三个问题 本月惊喜</a></li>
 <li><a href="#sec-1-2-2">1.2.2. 拒绝算法（灯亮） 问题本质是什么 &amp; 别人可否 &amp;引出别的问题</a></li>
-<li><a href="#sec-1-2-3">1.2.3. 目前系统架构 agentserver &amp;autotask</a></li>
-<li><a href="#sec-1-2-4">1.2.4. 服务器的升级问题</a></li>
-<li><a href="#sec-1-2-5">1.2.5. 服务器的管理问题</a></li>
-<li><a href="#sec-1-2-6">1.2.6. mysql数据库管理问题 性能优化</a></li>
-<li><a href="#sec-1-2-7">1.2.7. 云主机的管理问题</a></li>
-<li><a href="#sec-1-2-8">1.2.8. 云主机的升级问题 下载自解压安装</a></li>
-<li><a href="#sec-1-2-9">1.2.9. 业务监控问题</a></li>
+<li><a href="#sec-1-2-3">1.2.3. 服务器的升级问题</a></li>
+<li><a href="#sec-1-2-4">1.2.4. 服务器的管理问题</a></li>
+<li><a href="#sec-1-2-5">1.2.5. mysql数据库管理问题 性能优化</a></li>
+<li><a href="#sec-1-2-6">1.2.6. 云主机的管理问题</a></li>
+<li><a href="#sec-1-2-7">1.2.7. 云主机的升级问题 下载自解压安装</a></li>
 </ul>
 </li>
 <li><a href="#sec-1-3">1.3. 其他特长</a>
@@ -191,13 +191,15 @@ for the JavaScript code in this tag.
 <li><a href="#sec-1-5">1.5. 新学习</a>
 <ul>
 <li><a href="#sec-1-5-1">1.5.1. 理财 月线买入&amp;净收益同比增高</a></li>
-<li><a href="#sec-1-5-2">1.5.2. 吴军 诺依曼顶层设计&amp; 精深死磕 笨而不关键掉链子 &amp;数据结构与算法 对象属性 艺术大师与工程师的相似性 结构设计</a></li>
-<li><a href="#sec-1-5-3">1.5.3. 数学之美 简单数学基础</a></li>
-<li><a href="#sec-1-5-4">1.5.4. 超个 比早上聪明些</a></li>
-<li><a href="#sec-1-5-5">1.5.5. 30天特训</a></li>
-<li><a href="#sec-1-5-6">1.5.6. 元认知</a></li>
-<li><a href="#sec-1-5-7">1.5.7. 原则 目标 算法</a></li>
-<li><a href="#sec-1-5-8">1.5.8. 逻辑思维 不断扩大自己的认知地图 了解别人认知地图的相同与不同</a></li>
+<li><a href="#sec-1-5-2">1.5.2. 吴军 笨慢 数据结构算法</a></li>
+<li><a href="#sec-1-5-3">1.5.3. 数学之美</a></li>
+<li><a href="#sec-1-5-4">1.5.4. 简单数学基础</a></li>
+<li><a href="#sec-1-5-5">1.5.5. 超个 比早上聪明些</a></li>
+<li><a href="#sec-1-5-6">1.5.6. 30天特训</a></li>
+<li><a href="#sec-1-5-7">1.5.7. 元认知 笑来</a></li>
+<li><a href="#sec-1-5-8">1.5.8. 原则 目标 算法</a></li>
+<li><a href="#sec-1-5-9">1.5.9. 逻辑思维 不断扩大自己的认知地图 了解别人认知地图的相同与不同</a></li>
+<li><a href="#sec-1-5-10">1.5.10. 提高职场价值 信任 大局观 工作重点</a></li>
 </ul>
 </li>
 <li><a href="#sec-1-6">1.6. 运动锻炼 李笑来</a>
@@ -237,7 +239,7 @@ for the JavaScript code in this tag.
 <h4 id="sec-1-1-6"><span class="section-number-4">1.1.6</span> ES 1B树&amp;倒排索引 2存储 termindex(trie)-&gt;termdiction-&gt;postingList(bitmap/skipLIst) 3分布式 index a<sub>shrds</sub> (segment&amp;block)&amp;b<sub>replication</sub> 4 0停机&amp;高亮&amp;加权&amp;单点</h4>
 </div>
 <div id="outline-container-sec-1-1-7" class="outline-4">
-<h4 id="sec-1-1-7"><span class="section-number-4">1.1.7</span> 数据结构、算法&amp;数学 平衡二叉树&amp;b树&amp;红黑树&amp;布隆</h4>
+<h4 id="sec-1-1-7"><span class="section-number-4">1.1.7</span> 数据结构、算法&amp;数学  线性结构 快速排序&amp; 平衡二叉树&amp;b树&amp;红黑树&amp;布隆(垃圾邮件消重) &amp;倒排索引 ES&amp; 工具使用于什么场景 有什么缺点 性能优化</h4>
 </div>
 <div id="outline-container-sec-1-1-8" class="outline-4">
 <h4 id="sec-1-1-8"><span class="section-number-4">1.1.8</span> 死磕源码  map&amp; 高效map遍历</h4>
@@ -246,19 +248,25 @@ for the JavaScript code in this tag.
 <h4 id="sec-1-1-9"><span class="section-number-4">1.1.9</span> 别人的10倍 提升一个量级</h4>
 </div>
 <div id="outline-container-sec-1-1-10" class="outline-4">
-<h4 id="sec-1-1-10"><span class="section-number-4">1.1.10</span> spring<sub>boot</sub></h4>
+<h4 id="sec-1-1-10"><span class="section-number-4">1.1.10</span> 目前系统架构 agentserver &amp;autotask</h4>
 </div>
 <div id="outline-container-sec-1-1-11" class="outline-4">
-<h4 id="sec-1-1-11"><span class="section-number-4">1.1.11</span> docker</h4>
+<h4 id="sec-1-1-11"><span class="section-number-4">1.1.11</span> 业务监控问题 业务监控设计 主要逻辑和数据结构算法</h4>
 </div>
 <div id="outline-container-sec-1-1-12" class="outline-4">
-<h4 id="sec-1-1-12"><span class="section-number-4">1.1.12</span> 错误排查 500服务器错误，严格检查错误日志排查问题</h4>
+<h4 id="sec-1-1-12"><span class="section-number-4">1.1.12</span> spring<sub>boot</sub></h4>
 </div>
 <div id="outline-container-sec-1-1-13" class="outline-4">
-<h4 id="sec-1-1-13"><span class="section-number-4">1.1.13</span> mybatis+前端界面</h4>
+<h4 id="sec-1-1-13"><span class="section-number-4">1.1.13</span> docker</h4>
 </div>
 <div id="outline-container-sec-1-1-14" class="outline-4">
-<h4 id="sec-1-1-14"><span class="section-number-4">1.1.14</span> 沟通</h4>
+<h4 id="sec-1-1-14"><span class="section-number-4">1.1.14</span> 错误排查 500服务器错误，严格检查错误日志排查问题</h4>
+</div>
+<div id="outline-container-sec-1-1-15" class="outline-4">
+<h4 id="sec-1-1-15"><span class="section-number-4">1.1.15</span> mybatis+前端界面</h4>
+</div>
+<div id="outline-container-sec-1-1-16" class="outline-4">
+<h4 id="sec-1-1-16"><span class="section-number-4">1.1.16</span> 沟通</h4>
 </div>
 </div>
 <div id="outline-container-sec-1-2" class="outline-3">
@@ -268,7 +276,7 @@ for the JavaScript code in this tag.
 <h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> 汇报本周三个问题 本月惊喜</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <p>
--2018-4-8 1优化监控邮件 2数据库优化参数升级 3沟通几个adsl问题 4编写代码支持自动上传备份功能 5支持各自的ip启停服务
+&#x2013; 2018-4-8 1优化监控邮件 2数据库优化参数升级 3沟通几个adsl问题 4编写代码支持自动上传备份功能 5支持各自的ip启停服务
 </p>
 </div>
 </div>
@@ -276,27 +284,22 @@ for the JavaScript code in this tag.
 <h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> 拒绝算法（灯亮） 问题本质是什么 &amp; 别人可否 &amp;引出别的问题</h4>
 </div>
 <div id="outline-container-sec-1-2-3" class="outline-4">
-<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> 目前系统架构 agentserver &amp;autotask</h4>
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> 服务器的升级问题</h4>
 </div>
 <div id="outline-container-sec-1-2-4" class="outline-4">
-<h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> 服务器的升级问题</h4>
+<h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> 服务器的管理问题</h4>
 </div>
 <div id="outline-container-sec-1-2-5" class="outline-4">
-<h4 id="sec-1-2-5"><span class="section-number-4">1.2.5</span> 服务器的管理问题</h4>
+<h4 id="sec-1-2-5"><span class="section-number-4">1.2.5</span> mysql数据库管理问题 性能优化</h4>
 </div>
 <div id="outline-container-sec-1-2-6" class="outline-4">
-<h4 id="sec-1-2-6"><span class="section-number-4">1.2.6</span> mysql数据库管理问题 性能优化</h4>
+<h4 id="sec-1-2-6"><span class="section-number-4">1.2.6</span> 云主机的管理问题</h4>
 </div>
 <div id="outline-container-sec-1-2-7" class="outline-4">
-<h4 id="sec-1-2-7"><span class="section-number-4">1.2.7</span> 云主机的管理问题</h4>
-</div>
-<div id="outline-container-sec-1-2-8" class="outline-4">
-<h4 id="sec-1-2-8"><span class="section-number-4">1.2.8</span> 云主机的升级问题 下载自解压安装</h4>
-</div>
-<div id="outline-container-sec-1-2-9" class="outline-4">
-<h4 id="sec-1-2-9"><span class="section-number-4">1.2.9</span> 业务监控问题</h4>
+<h4 id="sec-1-2-7"><span class="section-number-4">1.2.7</span> 云主机的升级问题 下载自解压安装</h4>
 </div>
 </div>
+
 
 <div id="outline-container-sec-1-3" class="outline-3">
 <h3 id="sec-1-3"><span class="section-number-3">1.3</span> 其他特长</h3>
@@ -333,25 +336,41 @@ for the JavaScript code in this tag.
 <h4 id="sec-1-5-1"><span class="section-number-4">1.5.1</span> 理财 月线买入&amp;净收益同比增高</h4>
 </div>
 <div id="outline-container-sec-1-5-2" class="outline-4">
-<h4 id="sec-1-5-2"><span class="section-number-4">1.5.2</span> 吴军 诺依曼顶层设计&amp; 精深死磕 笨而不关键掉链子 &amp;数据结构与算法 对象属性 艺术大师与工程师的相似性 结构设计</h4>
+<h4 id="sec-1-5-2"><span class="section-number-4">1.5.2</span> 吴军 笨慢 数据结构算法</h4>
+<div class="outline-text-4" id="text-1-5-2">
+<p>
+&#x2013; 诺依曼顶层设计&amp; 精深死磕 笨而不关键掉链子 &amp;数据结构与算法 对象属性 艺术大师与工程师的相似性 结构设计
+</p>
+</div>
 </div>
 <div id="outline-container-sec-1-5-3" class="outline-4">
-<h4 id="sec-1-5-3"><span class="section-number-4">1.5.3</span> 数学之美 简单数学基础</h4>
+<h4 id="sec-1-5-3"><span class="section-number-4">1.5.3</span> 数学之美</h4>
 </div>
 <div id="outline-container-sec-1-5-4" class="outline-4">
-<h4 id="sec-1-5-4"><span class="section-number-4">1.5.4</span> 超个 比早上聪明些</h4>
+<h4 id="sec-1-5-4"><span class="section-number-4">1.5.4</span> 简单数学基础</h4>
 </div>
 <div id="outline-container-sec-1-5-5" class="outline-4">
-<h4 id="sec-1-5-5"><span class="section-number-4">1.5.5</span> 30天特训</h4>
+<h4 id="sec-1-5-5"><span class="section-number-4">1.5.5</span> 超个 比早上聪明些</h4>
 </div>
 <div id="outline-container-sec-1-5-6" class="outline-4">
-<h4 id="sec-1-5-6"><span class="section-number-4">1.5.6</span> 元认知</h4>
+<h4 id="sec-1-5-6"><span class="section-number-4">1.5.6</span> 30天特训</h4>
 </div>
 <div id="outline-container-sec-1-5-7" class="outline-4">
-<h4 id="sec-1-5-7"><span class="section-number-4">1.5.7</span> 原则 目标 算法</h4>
+<h4 id="sec-1-5-7"><span class="section-number-4">1.5.7</span> 元认知 笑来</h4>
 </div>
 <div id="outline-container-sec-1-5-8" class="outline-4">
-<h4 id="sec-1-5-8"><span class="section-number-4">1.5.8</span> 逻辑思维 不断扩大自己的认知地图 了解别人认知地图的相同与不同</h4>
+<h4 id="sec-1-5-8"><span class="section-number-4">1.5.8</span> 原则 目标 算法</h4>
+</div>
+<div id="outline-container-sec-1-5-9" class="outline-4">
+<h4 id="sec-1-5-9"><span class="section-number-4">1.5.9</span> 逻辑思维 不断扩大自己的认知地图 了解别人认知地图的相同与不同</h4>
+</div>
+<div id="outline-container-sec-1-5-10" class="outline-4">
+<h4 id="sec-1-5-10"><span class="section-number-4">1.5.10</span> 提高职场价值 信任 大局观 工作重点</h4>
+<div class="outline-text-4" id="text-1-5-10">
+<p>
+&#x2013; 大小老板同事客户 考察期信任&amp;  长期规划重点工作，帮助减负和定优先级 _不重新发明轮子 成为改进者 及时复盘 &amp; 大局观 目的措施 分解处理 整体细节 &amp; 赞美=做的好 为什么好 感受 驱动=工作节点 推老板 同事 客户 项目前进，对同事自身有好处 信任=稳定的行为预期 释放善意 敢于捍卫权利 做到有原则 敢反击 &amp; 正面能力挂钩 职场老师（目标 问题） 营销业绩 &amp; 外部晋升 &amp;职场老水手
+</p>
+</div>
 </div>
 </div>
 <div id="outline-container-sec-1-6" class="outline-3">
@@ -370,7 +389,7 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2018-04-10 Tue 19:13</p>
+<p class="date">Created: 2018-04-17 Tue 18:37</p>
 </div>
 </body>
 </html>
