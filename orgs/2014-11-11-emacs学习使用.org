@@ -648,3 +648,9 @@ http://everet.org/thinking-of-emacs.html
 - f 本窗口查看文件
 - o 另外窗口查看文件
 
+** emacs 卡顿问题
+通过修改字体为宋体 解决卡顿问题
+** emacs 快速调出菜单
+通过alt+`  或者 f10（仿真菜单 putty里面可以使用）
+** putty使用 linux emacs 卡顿问题
+(set-language-environment "UTF-8")
