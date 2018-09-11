@@ -1,0 +1,15 @@
+
+* git学习
+head 指向当前分支
+master 主分支
+
+创建dev分支 head指向dev
+提交dev后 dev前进一步，master不变
+master指针指向 dev，完成合并
+完成后 可以删除dev指针
+
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000
+
+
+Your GitHub Pages site is currently being built from the master branch
+
