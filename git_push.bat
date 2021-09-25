@@ -1,6 +1,6 @@
 cd D:\github\rateyu.github.io
-git add -A
+git add .
 git status
-git commit -m ':tada: update'
-git push
+git commit -m ":tada: update"
+git push origin master
 pause
