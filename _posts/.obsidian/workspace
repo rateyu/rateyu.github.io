@@ -1,0 +1,112 @@
+{
+  "main": {
+    "id": "191cef1f92bf6843",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a75c74ef959e2fb",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "2021-10-27-大数据大纲.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6fd46830be645ecc",
+    "type": "split",
+    "children": [
+      {
+        "id": "316989122901f668",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3f281194f027df0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2c05c358f7d941d3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d46b13c98f3b9dd6",
+    "type": "split",
+    "children": [
+      {
+        "id": "aff369cf2a22c688",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7298f14d486ec764",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2021-10-27-大数据大纲.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "5ccba6b0c70ae749",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2021-10-27-大数据大纲.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "5a75c74ef959e2fb",
+  "lastOpenFiles": [
+    "2021-10-27-大数据大纲.md",
+    "2021-10-28-大数据节点论文学习-导读.md",
+    "2021-10-27-大数据论文学习-gfs1-读取.md",
+    "2021-9-25-如何架构设计秒杀系统.md",
+    "files/Pasted image 20211028081150.png",
+    "2015-06-29-myjianli-2015.md",
+    "202110272325.md",
+    "未命名.md",
+    "2018-09-07-学习markdown.md",
+    "2018-9-7-ansible学习.md"
+  ]
+}
