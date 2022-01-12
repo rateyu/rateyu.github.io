@@ -15,6 +15,7 @@ feign + ribbon 负载均衡
 
 ![image-20220112222717918](https://raw.githubusercontent.com/rateyu/picserver/main/image-20220112222717918.png)
 
+![eureka问题](https://raw.githubusercontent.com/rateyu/picserver/main/20220112225030.png)
 Error starting Tomcat context
 
 Multiple Spring Boot run configurations were detected.
