@@ -1,5 +1,9 @@
 
 * myplan
 好久没有更新了，今年看能坚持多久！
-** 计划
-
+** magit使用：
+进入magit界面，按以下键：
+s：add 增加
+cc：commit 添加注释
+ctrl c + ctrl c ：确认提交
+P p：push推送到远程
