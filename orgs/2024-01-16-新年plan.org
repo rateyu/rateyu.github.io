@@ -1,9 +1,20 @@
-
-* myplan
+* 111
 好久没有更新了，今年看能坚持多久！
 ** magit使用：
+编辑完org，要导出ctrl c，ctrl e ，h导出html文件
+执行sh mv_html2post.sh
+
 进入magit界面，按以下键：
 s：add 增加
 cc：commit 添加注释
 ctrl c + ctrl c ：确认提交
 P p：push推送到远程
+
+帮助信息：ctrl h,m
+
+快速查看blame
+git blame
+比如我要看当前区域的代码是 who/which commit 提交的。这种都是临时性的需求，因此它是通过特殊 command(C-c M-g b) 以开关的形式操作的（不然看起来太乱了）
+
+magit-find-file,我们可以比如绑定到C-x m f,它可以指定访问某个分支中某个文件，且是放到一个临时的 buffer，只能说极其好用
+
