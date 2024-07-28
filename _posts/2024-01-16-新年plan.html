@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-01-16 Tue 21:07 -->
+<!-- 2024-07-28 Sun 23:12 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="myu" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,80 +191,55 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
-<div id="table-of-contents">
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf97a588">1. myplan</a>
+<li><a href="#orgd24f275">1. emacs magit,org-mod</a>
 <ul>
-<li><a href="#orgb8cecab">1.1. magit使用：</a></li>
+<li><a href="#org61d0add">1.1. org导出html文件</a></li>
+<li><a href="#org11acd90">1.2. magit使用</a></li>
+<li><a href="#orgfa84b60">1.3. magit 常用命令</a></li>
+<li><a href="#org931ffa3">1.4. emacs基本使用</a></li>
+<li><a href="#org705bf99">1.5. dired文件夹模式</a></li>
+<li><a href="#orgbadfde3">1.6. org-mod</a></li>
+<li><a href="#orge14e2eb">1.7. vim emacs 快捷键比较</a></li>
+<li><a href="#orgdc44263">1.8. 安装自定义的theme</a></li>
+<li><a href="#orgfcd78ea">1.9. 如何设计并实现一个百万并发的服务端程序架构</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf97a588" class="outline-2">
-<h2 id="orgf97a588"><span class="section-number-2">1</span> myplan</h2>
+<div id="outline-container-orgd24f275" class="outline-2">
+<h2 id="orgd24f275"><span class="section-number-2">1.</span> emacs magit,org-mod</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 好久没有更新了，今年看能坚持多久！
 </p>
 </div>
-<div id="outline-container-orgb8cecab" class="outline-3">
-<h3 id="orgb8cecab"><span class="section-number-3">1.1</span> magit使用：</h3>
+<div id="outline-container-org61d0add" class="outline-3">
+<h3 id="org61d0add"><span class="section-number-3">1.1.</span> org导出html文件</h3>
 <div class="outline-text-3" id="text-1-1">
+<p>
+编辑完org，要导出ctrl c，ctrl e ，h导出html文件
+执行sh mv<sub>html2post.sh</sub>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org11acd90" class="outline-3">
+<h3 id="org11acd90"><span class="section-number-3">1.2.</span> magit使用</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+此处需要梯子，否则安装很麻烦
+</p>
+
 <p>
 进入magit界面，按以下键：
 s：add 增加
@@ -271,14 +247,220 @@ cc：commit 添加注释
 ctrl c + ctrl c ：确认提交
 P p：push推送到远程
 </p>
+
+<p>
+帮助信息：ctrl h,m
+</p>
 </div>
+</div>
+
+<div id="outline-container-orgfa84b60" class="outline-3">
+<h3 id="orgfa84b60"><span class="section-number-3">1.3.</span> magit 常用命令</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+magit-status
+绑定的命令：ctrl x g
+s stage;u unstage
+c , c commit
+推送 push为 P,u 即可完成远程仓库的推送
+</p>
+
+<p>
+滚动另外一个窗口的屏幕向下/向上 ctrl cmd v/ctrl shift cmd v
+</p>
+
+
+<p>
+magit-find-file,我们可以比如绑定到C-x m f,它可以指定访问某个分支中某个文件，且是放到一个临时的 buffer，只能说极其好用
+</p>
+
+
+<p>
+h 显示帮助命令
+magit使用的文档，日文版本的，感觉还不错
+<a href="https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce">https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org931ffa3" class="outline-3">
+<h3 id="org931ffa3"><span class="section-number-3">1.4.</span> emacs基本使用</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+显示文件夹后，在另外窗口打开文件
+ctrl x 4 b
+ctrl x f ctrl o，焦点不过去
+</p>
+
+<p>
+复制文本内容
+ctrl shift @，选择文本内容
+ctrl w 剪切，cmd w 复制
+ctrl y 粘贴
+</p>
+</div>
+</div>
+
+<div id="outline-container-org705bf99" class="outline-3">
+<h3 id="org705bf99"><span class="section-number-3">1.5.</span> dired文件夹模式</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+选中文件后，在另外窗口打开，直接 按 o 即可
+焦点不过去，直接查看， ctrl o
+查看帮助命令，h
+</p>
+
+
+<p>
+快速查看blame
+git blame
+比如我要看当前区域的代码是 who/which commit 提交的。这种都是临时性的需求，因此它是通过特殊 command(C-c M-g b) 以开关的形式操作的（不然看起来太乱了）
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgbadfde3" class="outline-3">
+<h3 id="orgbadfde3"><span class="section-number-3">1.6.</span> org-mod</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+cmd 左右，升级降级标题
+<a href="https://www.cnblogs.com/GarfieldEr007/p/5588979.html">org教程</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge14e2eb" class="outline-3">
+<h3 id="orge14e2eb"><span class="section-number-3">1.7.</span> vim emacs 快捷键比较</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+oemacs 与 vim 命令对比(网上摘录)
+</p>
+<hr />
+<p>
+exit:                           C-x C-c         :qa /:wq /:xa /:q!
+Get back/command mode:          C-g             &lt;esc&gt;
+Backward(left):                 C-b             h
+Forward(right):                 C-f             l
+Next(down):                     C-n             j
+Previous(up):                   C-p             k
+stArt of line(^):               C-a             0
+End of line($):                 C-e             $
+mUltiple commands:              C-u nnn cmd     nnn cmd
+Multiple commands:              M-digitkey cmd
+save File:                      C-x C-s         :w
+beginning of buffer:            M-&lt;             1G
+end of buffer:                  M-&gt;             G
+<b>scroll forward 1 screen</b>:        C-v             ^F
+scroll forward 1/2 screen:                      ^D
+scroll forward 1 line:                          ^E
+<b>scroll backward 1 screen</b>:       M-v             ^B
+scroll backward 1/2 screen:                     ^U
+scroll backward 1 line:                         ^Y
+scroll the other window:        M-C-v
+delete under cursor:            C-d             x
+delete from cursor to eol:      C-k             D
+iSearch forward:                C-s
+isearch Reverse:                C-r
+Search forward:                 C-s enter       /
+search Reverse:                 C-r enter       ?
+isearch regexp:                 M-C-s
+isearch backward regexp:        M-C-r
+search regexp:                  M-C-s enter     /
+search backward regexp:         M-C-r enter     ?
+Help:                           C-h C-h         :help
+Help Apropos:                   C-h a
+Help key Bindings:              C-h b           :help [key]
+Help Info:                      C-h i
+Help Major mode:                C-h m
+Help tutorial:                  C-h t           :help howto
+Undo:                           C-_             u
+Redo:                           C-f             ^R
+Mark cursor position:           C-x r SPC       m{a-zA-Z}
+eXchange Mark and position:     C-x C-x
+goto mark in current file:      C-x r j         '{a-z}
+goto mark in any file:                          '{A-Z}
+<b>copy region</b>:                    M-w             {visual}y
+kill region:                    C-w             {visual}d
+<b>Yank and keep buffer</b>:           C-y
+Yank from kill buffer:          M-y             p
+convert region to Upper:        C-x C-u         {visual}U
+convert region to Lower:        C-x C-l         {visual}u
+Insert special char:            C-q octalnum/keystroke
+                                                ^V decimal/keystroke
+<b>replace</b>:                        M-x replace-string      :%s/aaa/bbb/g
+replace regexp:                 M-x replace-regexp      :%s/aaa/bbb/g
+query replace:                  M-%                     :%s/aaa/bbb/gc
+query replace:                  M-x query-replace
+query replace regexp:           M-x query-replace-regexp
+Open file:                      C-x C-f         :r file
+Save file:                      C-x C-s         :w
+Save all buffers:               C-x s           :wa
+Save as:                        C-x C-w file    :w file
+Prompt for buffer:              C-x b
+List buffers:                   C-x C-b         :buffers
+Toggle read-only:               C-x C-q         :set ro
+Prompt and kill buffer:         C-x k
+Split vertical:                 C-x 2           :split
+Split horizontal:               C-x 3           :vsplit (ver. 6)
+Move to other window:           C-x o           ^Wp
+Delete this window:             C-x 0           :q
+Delete other window(s):         C-x 1           ^Wo
+run shell in bg:                M-x compile
+kill shell run in bg:           M-x kill-compilation
+run make:                                       :make Makefile
+check error message:            C-x`            :echo errmsg
+run shell and record:           M-x shell       :!script -a tmp
+&#x2026;clean BS, &#x2026;                                :!col -b &lt;tmp &gt;record
+&#x2026;save/recall shell record:    C-x C-w record  :r record
+run shell:                      M-! sh          :sh
+run command:                    M-! cmd         :!cmd
+run command and insert:         C-u M-! cmd     :r!cmd
+run filter:                     M-| file        {visual}:w file
+run filter and insert:          C-u M-| filter  {visual}:!filter
+show option                                     :se[t] {option}?
+reset option to default                         :se[t] {option}&amp;
+reset boolean option                            :se[t] no{option}
+toggle boolean option                           :se[t] inv{option}
+wrap text at column 72                          :se tw=72
+do not wrap                                     :se tw=0
+autoindent                                      :se ai
+expand tab                                      :se et
+————————————————
+</p>
+
+<p>
+                            版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+                        
+原文链接：<a href="https://blog.csdn.net/hejinjing_tom_com/article/details/51700911">https://blog.csdn.net/hejinjing_tom_com/article/details/51700911</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdc44263" class="outline-3">
+<h3 id="orgdc44263"><span class="section-number-3">1.8.</span> 安装自定义的theme</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+github下载文件，zenburn-theme.el
+</p>
+
+<p>
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'zenburn t)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfcd78ea" class="outline-3">
+<h3 id="orgfcd78ea"><span class="section-number-3">1.9.</span> 如何设计并实现一个百万并发的服务端程序架构</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: myu</p>
-<p class="date">Created: 2024-01-16 Tue 21:07</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2024-07-28 Sun 23:12</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
