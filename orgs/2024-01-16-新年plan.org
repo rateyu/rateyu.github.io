@@ -20,6 +20,7 @@ magit-status
 绑定的命令：ctrl x g
 s stage;u unstage
 c , c commit
+推送 push为 P,u 即可完成远程仓库的推送
 
 滚动另外一个窗口的屏幕向下/向上 ctrl cmd v/ctrl shift cmd v
 
@@ -30,6 +31,7 @@ ctrl x f ctrl o，焦点不过去
 
 ** dired文件夹模式
 选中文件后，在另外窗口打开，直接 按 o 即可
+查看帮助命令，h
 
 
 
