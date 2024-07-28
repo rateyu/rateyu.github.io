@@ -43,6 +43,9 @@ ctrl shift @，选择文本内容
 ctrl w 剪切，cmd w 复制
 ctrl y 粘贴
 
+C-c C-l	编辑链接（此处为小写L）
+C-c C-o	打开链接（相当有用）
+
 ** dired文件夹模式
 选中文件后，在另外窗口打开，直接 按 o 即可
 焦点不过去，直接查看， ctrl o
