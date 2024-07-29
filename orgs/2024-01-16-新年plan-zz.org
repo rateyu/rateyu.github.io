@@ -19,6 +19,8 @@ ctrl c + ctrl c ：确认提交
 P p：push推送到远程
 帮助信息：ctrl h,m
 
+L head , 空格查看，光标不移动；回车查看，光标移动
+
 ** magit 常用命令
 magit-status
 绑定的命令：ctrl x g
