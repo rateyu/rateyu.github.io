@@ -1,0 +1,656 @@
+* emacs学习
+** emacs rgrep 搜索命令使用
+**  emacs 设置说明 非常有用的设置，完成左右窗口的切换
+
+(global-set-key (kbd "C-<left>")  'windmove-left)
+(global-set-key (kbd "C-<right>") 'windmove-right)
+(global-set-key (kbd "C-<up>")    'windmove-up)
+(global-set-key (kbd "C-<down>")  'windmove-down)
+
+http://blog.csdn.net/sw2wolf/article/details/8223073
+
+** emacs winner-mode使用
+c_x 左右箭头
+
+那就用windmove吧。Emacs自带这个包，只要在你的.emacs中加入:
+
+(windmove-default-keybindings)
+
+然后就可以用S-<up>、S-<right>跳转到上面、右边的窗口了。
+
+如果你用shift-selection-mode或者cua-mode，那么不想用Shift来做窗口跳转的话，将上面的配置改为:
+
+(windmove-default-keybindings 'meta)
+
+或者
+
+(windmove-default-keybindings 'super)
+
+
+(global-set-key [s-left] (ignore-error-wrapper 'windmove-left))
+(global-set-key [s-right] (ignore-error-wrapper 'windmove-right))
+(global-set-key [s-up] (ignore-error-wrapper 'windmove-up))
+(global-set-key [s-down] (ignore-error-wrapper 'windmove-down))
+
+
+
+** emacs-w3m 集成不好的问题
+** emacs 帮助快捷键
+********Emacs帮助************
+C-h ?        :得到关于帮助的完整列表
+M-x apropos    :想做一件事情，但是不知道如何去做。可以用上面的命令，然后关键字甚至是正则表达式， Emacs就会搜索帮助中一切相关的信息。会得到一个列
+表，每一项都有超链接和简要的说明。
+C-h k        :别人告诉我一个快捷键，我想知道它具体是怎么回事。可以用上面的命令，然后把那个键按一遍，Emacs就会告诉你是怎么回事了。
+C-h f        :上面的命令，然后输入你要查询的命令（即按下M-x然后能输入的那些命令）
+C-h v        :上面的命令，然后输入变更名，可以查看变更的说明和光前值。
+C-h m        :可以得到当前所有mode的一个总体说明。
+C-h b         :查看当前buffer所有可用的快捷键
+C-h t        :打开学习向导 
+C-h w         :查看某命令对应的快捷键
+<快捷键序列> C-h    :查看当前buffer中以<快捷键序列>开头的所有快捷键列表。例如想看所有以C-x开头的快捷键就输入C-x C-h就可以了。
+find-function    :查看Emacs函数的代码。M-x find-function。
+find-variable    :查看变量的代码。
+describe-face    :查看face的文档
+find-face-definition    :查看face的代码
+神的编辑器 快捷键总结
+http://www.cr173.com/html/20624_1.html
+
+** emacs 远程调试
+http://blog.163.com/yu_hongchang/blog/static/39894138201161502312927/
+
+** emacs ssh bwg
+/method:user@host#port:filename
+ssh:root@138.128.221.221#222:/root/
+
+** emacs c_x c_f 远程登陆文件夹 a_x shell 执行 /bin/bash 远程命令开启终端 (ubuntu 14亲测可用,windows未成功)
+
+** emacs tramp ssh
+C-X C-F /ssh:crazybaby@192.168.38.129:
+http://ju.outofmemory.cn/entry/1274 emacs tramp使用
+http://lifegoo.pluskid.org/wiki/EmacsTRAMP.html
+
+执行远程机器的shell命令
+M_! 直接敲free -g 执行远程机器的命令
+M_x eshell *执行远程机器的命令行* top命令无法执行?
+
+Welcome to the Emacs shell
+/sshx:ym@192.168.1.15:/home/ym $ (+ 1 3)
+4
+** w3m 单独命令快捷键
+
+emacs - w3m
+c_c c_n/p 下上tab页
+c_c c_w 关闭tab页
+T 显示图片 在ubuntu 桌面系统运行emacs方可使用，putty无法使用，比较郁闷
+G 打开新大url
+
+单独在w3m中阅读
+精读需求的文章 使用emacs-w3m
+
+B/Alt+↓:返回到上一个Buffer.
+s:打开各Buffer列表.
+S:保存当前Buffer到文件.
+
+H 帮助显示kjj
+b 向上翻页
+空格 向下翻页
+
+c 拷贝超链接
+- 使用c_y 进行复制粘贴（注意）
+  http://rateyu.github.io/2014/11/11/emacs%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8.html
+   
+L:列出页面中所有的超链接及其地址.
+I:显示当前超链接所指向的图片.
+U:输入URL
+Enter:进入该超链接所指向的目地的.
+
+
+
+三.多标签
+
+T:新建一个标签页.
+Ctrl+t:在最标签页打开当前链接.
+Ctrl+q:关闭当前标签页.
+{,}:到前一个,后一个标签页.
+Esc+t:打开各标签页列表.
+
+四.书签
+
+Esc+b:打开书签列表.
+Esc+a:将当前页加入书签.
+** DONE emacs w3m 操作步骤
+   CLOSED: [2014-11-15 六 22:31]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:31]
+*** 安装
+sudo apt-get install w3m w3m-el w3m-img
+
+*** 增加配置
+(autoload 'w3m "w3m" "interface for w3m on emacs" t)
+(setq w3m-command-arguments '("-cookie" "-F"))
+(setq w3m-use-cookies t)
+;; 目前使用此配置
+(setq w3m-home-page "http://www.google.de/")
+(require 'mime-w3m)
+(setq w3m-default-display-inline-image t)
+(setq w3m-default-toggle-inline-images t)
+
+*** 常用命令
+G 去新的页面
+H 主页
+B 回退
+N 去下一页??
+c_c c_w 关闭当前tab页
+c 输出当前url地址 B
+** w3m lynx比较  极客
+   w3m 鼠标选中开启 m键
+   http://baike.baidu.com/link?url=svyvDxdIOGWORw7A4Spn2pqP1SMiEgevMzMQAznLiYYFPL9UEqLGU2JG9yDUa9GvSdsciYb1WtGO5LeDC3nPaq
+   c_c c_n c_p 下一个上一个
+   c_c c_e 创建一个新的tab
+   G new tab
+   c_c c_w     关闭
+
+** yasnippets ant maven 
+   jdk ok
+   编写java ok
+** git hub 更新代码
+clone代码到本地：
+$git clone git@github.com:WadeLeng/hello-world.git blog2016
+假如本地已经存在了代码，而仓库里有更新，把更改的合并到本地的项目：
+$git fetch origin    //获取远程更新
+$git merge origin/master //把更新的内容合并到本地分支
+url:
+http://caibaojian.com/use-github.html
+** andoird keyboard  google is ok   bluetooth
+** emacs 24.3.1 + github rateyu starter-kit-master
+ubuntu 14.04.3 lts
+
+** emacs 检索代码
+alt_x grep-find 很强的搜索工具
+alt_x rgrep 支持文件的过滤,支持递归目录,支持二进制文件查找
+http://blog.csdn.net/winterttr/article/details/7348279
+
+** emacs markdown安装方法
+下载markdown el
+安装markdown
+sudo apt-get install markdown
+sudo apt-get install emacs-goodies-el
+
+
+http://blog.sina.com.cn/s/blog_7d266fb00101ec7r.html
+*** 问题无ｍａｇｉｔ包
+从这里可以下载最新版：https://github.com/magit/magit/downloads
+解压：
+ tar zxvf magit-1.1.1.tar.gz
+进入目录后，运行：
+make && sudo make install
+
+Quick Tips
+
+   * M-x magit-status switch to the status buffer of that repository
+     使用这个命令查看Git的状态，在git中的命令为git status
+   * s to stage files 把untracked或者unstaged文件的状态改成stage模式，
+   * c to commit (type in your commit message then C-c C-c to save
+     the message and commit)  把所有staged文件都commit到索引仓库中
+   * P P to do a git push Update remote refs along with associated
+     objects
+   * F F to do a git pull Fetch from and merge with another
+     repository or a local branch
+   * TAB  Toggle hidden status of current section 用来转换显示当前文件
+     的一些信息
+   * i ignore file this will add the filename to the .gitignore
+     file. 忽略当前文件的版本控制，如一些临时文件
+   * I ignore file this will add the file to .git/infor/exclude
+   * C-h m Magit的使用帮助信息
+
+** emacs org skill
+
+<s + TAB
+1. test1
+2. test2
+列表符号  - + * 1. 1
+1. ssdfdf
+2. xs
+
+
+http://higrid.net/c-art-orgmode_basic.htm
+
+emacs tag 标记  :tag:标记:
+预定义的tag标记
+
+** emacs 多个shell创建
+c_x c_w 写入shell的名字 另存为一个shell名称
+然后再开启就没有问题了
+
+** 实用运维小技巧
+serverlist列表
+http://heylinux.com/archives/3047.html
+
+** linux ctrl和 caps修改键位
+
+$ cat ~/.keymaprc 
+remove Control = Control_R
+remove mod1 = Alt_R
+keysym Control_R = Alt_R
+keysym Alt_R = Control_R
+add Control = Control_R
+add mod1 = Alt_R
+
+然后执行 $ xmodmap ~/.keymaprc
+为了更加修改按键，不想很次都输入xmodmap ~/.keymaprc这么长的命令，可以将命令写入文本，放到$PATH路径下，下面是我的做法
+$ touch swkey
+$ echo "xmodmap ~/.keymaprc" >  swkey
+$ chmod +x swkey
+$ sudo mv swkey /usr/bin
+$ swkey  #现在想交换两个按键就直接输入这个命令,无论在什么路径下都可以，也不用记文件路径，会比较方便
+
+** emacs c_x b 快速新建缓冲区
+** emacs w3m　打开网页后 控制是否显示图片 (很好用哦)
+使用　ｃ　复制当前的ｕｒｌ路径非常方便
+图形界面中使用　Ｔ　控制是否显示图片　非常方便
+使用　Ｍ_T 全局打开和关闭　图片
+
+= 查看网页头
+\ 查看源码
+
+
+** emacs 隐藏工具栏的命令
+(tool-bar-mode 0)  
+(menu-bar-mode 0)  
+(scroll-bar-mode 0)  
+
+
+C-x 5 o 切换至其他窗口
+emacs快捷键
+http://blog.sina.com.cn/s/blog_a3052b4a0100ycrl.html
+
+(2012-03-17 13:27:25)
+ 熟练使用emacs-w3m三部曲（3）　
+ 此处配置w3m有用，
+** emacs 使用书签
+a：添加当前页到书签
+M-a：添加该URL到书签
+v:显示书签
+E：编辑书签
+C-k：删除书签
+C-_：撤销书签
+
+块操作
+选中
+c_x r d
+
+复制　粘贴
+a_w c_y
+
+书签
+c_x r m 标记书签
+c_x r l 列出
+c_x r b 跳转
+
+
+c_x b
+
+ org-mode 支持的语言
+ <s + TAB
+目前（版本号：7.9.3d）支持以下语言：
+语言	标识符
+Asymptote	asymptote
+Emacs Calc	calc
+C++	C++
+CSS	css
+Graphviz	dot
+gnuplot	gnuplot
+Java	java
+Javascript	js
+Ledger	ledger
+Lilypond	lilypond
+Mscgen	mscgen
+Octave	octave
+Oz	oz
+Plantuml	plantuml
+R	R
+Sass	sass
+GNU Screen	screen
+SQL	sql
+Awk	awk
+C	C
+Clojure	clojure
+ditaa	ditaa
+Emacs Lisp	emacs-lisp
+Haskell	haskell
+LaTeX	latex
+Lisp	lisp
+MATLAB	matlab
+Objective Caml	ocaml
+Org mode	org
+Perl	perl
+Python	python
+Ruby	ruby
+Scheme	scheme
+shell	sh
+SQLite	sqlite
+
+6 其他方案
+
+感谢 Celad Evra 的提醒，org-mode 自带的 Easy Templates 也提供了快速插入代码块的功能： 输入 <s TAB 即可（但不提供语言标识符的补全），具体细节请见 org-mode 的文档。
+
+** emacs 绘制流程图 yz 打开链接地址
+参考url地址：
+http://emacser.com/emacs-ditaa.htm
++ 需要在w3m中使用 打开链接地址: c_c c_o
++ dot -Tpng g1.dot >g1.png
++ 图片示例：【【file: ../ ../ ../ dot / example.png】】
+[[file:../../../dot/example.png]]
++ 参考地址：
+  + http://blog.csdn.net/brian_9988/article/details/11552325
+  + http://blog.csdn.net/occupy8/article/details/14450453
+  + http://users.skynet.be/ppareit/projects/graphviz-dot-mode/graphviz-dot-mode.html
+
+
+** emacs send email 配置？？ 替代方法 先使用 *雷鸟*
+
+** DONE 全局键位切换 ok  方法如下：
+   CLOSED: [2014-11-25 二 06:36]
+   - State "DONE"       from "STARTED"    [2014-11-25 二 06:36]
+   1:/profile
+   2:参考：http://www.pcwaishe.cn/thread-274372-1-1.html
+   3:实在还是不行，执行命令，手动切换 xmodmap /home/ym/xmodmap.sh
+** DONE 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码
+** DONE github 编写博客网站 git分支问题 这个问题终于搞定了
+   CLOSED: [2014-11-25 二 06:33]
+   - State "DONE"       from "STARTED"    [2014-11-25 二 06:33]
+
+     困扰的问题是：
+     jekyll编译错误，貌似html没有加头
+---
+layout: default
+title: 草稿
+---
+
+     
+
+   博客模板
+http://blog.csdn.net/on_1y/article/details/19259435
+
+https://github.com/barryclark/jekyll-now
+** DONE jde 常用方法总结 启动太慢，不好用
+   CLOSED: [2014-11-18 二 22:16]
+   - State "DONE"       from "STARTED"    [2014-11-18 二 22:16]
+   emacs jdee 安装成功 jde快速定位调用关系
+
+   查找源代码
+用命令jde-find，很牛的，试试看。
+当然也可以切换到eshell,然后直接用grep -n -R '关键字' ./
+
+   智能提示
+在需要提示的地方按下组合键：C-c C-v C-. 注意，三个按键都需要按住Ctrl键。
+智能提示有几种方式（弹出窗口用于桌面版本，其他两种可以用于服务器纯字符界面），具体参见官方文档。
+
+   源代码跳转
+在需要跳转的地方按下组合键：Ctrl c v y
+前提是你正确配置了源代码路径。
+
+   注释生成
+在方法或者类的那行按下：Ctrl c v j
+注意，在有模板类的情况下无法使用。遗憾啊！
+
+   import语句
+命令jde-import-organize 可以帮助重新组织当前java文件里面的import语句。而且也跟据字典顺序进行排序。排序可以定制，参考JDEE文档。
+命令jde-import-kill-extra-imports 可以删除当前Java文件里面多余的import语句。
+命令jde-import-all, C-c C-v z 可以导入当前java文件所有缺少的import语句
+   
+参考url
+http://blog.csdn.net/csfreebird/article/details/7028174
+http://blog.csdn.net/pfanaya/article/details/6991703
+** DONE emacs 插入java 代码
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+
+#+BEGIN_SRC java
+public class Hello
+{
+    public static void main(String [] args)
+    {
+         System.out.println("hello world");
+    }
+}
+#+END_SRC
+说明 执行 c_c c_c 执行org中的块代码,但是没有成功为什么
+
+(+ 1 3)
+快捷键 如何执行获取结果?
+
+
+#+BEGIN_SRC c++
+int main(int argc, char *argv[])
+{
+  return 0;
+}
+
+#+END_SRC
+
+#+BEGIN_SRC sql
+CREATE TABLE [dbo].[TableName] 
+(
+Id		INT IDENTITY(1,1)		NOT NULL
+
+CONSTRAINT [PK_] PRIMARY KEY CLUSTERED ([Id]) 
+)
+GO
+
+select * from tablename;
+
+#+END_SRC
+** DONE emacs 自动补全磁盘目录 牛人如Steve Purcell ---可以正常使用
+   CLOSED: [2014-11-15 六 22:29]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:29]
+** DONE emacs .eamcs.d init.el 配置文件
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+#+BEGIN_SRC lisp
+(tool-bar-mode -1)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (deeper-blue))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; 参考 url 说明：     http://github.com/capitaomorte/yasnippet 
+(add-to-list 'load-path
+              "~/.emacs.d/elpa/yasnippet-0.8.0")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;; 神的编辑器 
+;; 1.作者 snippets   https://github.com/eschulte/emacs24-starter-kit
+;; 2.striker         https://github.com/redguardtoo/emacs.d
+
+;; 增加w3m 主页
+(setq w3m-home-page "http://www.baidu.com/")
+#+END_SRC
+** DONE emacs 启动将 caps_lock <--> ctrl_R 放入 /etc/init.d/rc.local (具体参考effective emacs)
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+xmodmap /home/ym/.xmodmap
+** DONE emacs 超级有效的
+   CLOSED: [2014-11-15 六 22:30]
+   - State "DONE"       from "STARTED"    [2014-11-15 六 22:30]
+   effective emacs
+   emacs 神 总结
+   牛人如Steve Purcell  2.4 版本在ubuntu 14--emacs 2.4 可以正常使用 万岁！！！
+
+
+** emacs gtd 时间管理
+http://v.youku.com/v_show/id_XNTc0NTUyMDU2.html
+http://v.youku.com/v_show/id_XNDU5NzQwODgw.html
+** 任务测试 GTD
+http://www.cnblogs.com/holbrook/archive/2012/04/17/2454619.html
+
+** emacs mew 邮件管理
+http://emacser.com/mew.htm
+
+** Emacs gnus 阅读新闻组
+   输入gnus后  ^ 选择新闻组服务器
+需要研究如何订阅rss?/
+如何阅读邮件的设置？
+
+** mew 问题＆常用命令快捷键 (重要)
+搜索中文有问题
+
+此url的配置 ubuntu14测试，完全可以使用，非常好
+http://blog.chinaunix.net/uid-12573107-id-4573993.html
+
+### 打开邮件中的链接地址
+c_c c_o
+
+i 接收邮件
+n
+p 上一个下一个
+
+h  返回邮件列表（从邮件正文）
+v  只显示邮件列表，即关闭邮件正文
+.   重新分析邮件，对于MIME类型的邮件比较有用。 
+
+grep-find 中文可以搜索
+
+w                                撰写新邮件
+a                                 回复邮件，不带引用
+A                                 回复邮件，带引用
+f                                   转发邮件
+r                                   重新发送邮件
+SPC                            阅读邮件
+y                                  保存文件（可以保存信件全文、信件正文、附件）
+C-c C-l                       转换当前邮件的编码格式
+C-c C-a                      加入地址薄
+C-u C-c C-a              比 C-c C-a 多加入昵称和名字
+C-c C-q                      不保存退出
+C-c C-a                      准备插入附件
+mew-attach-copy     用复制方式加入附件
+mew-attach-link       用链接方式加入附件
+mew-attach-delete  删除附件
+C-c C-c                      发送邮件
+C-c RET                     保存邮件到发送队列
+C                                 如果设置了多个邮箱，用 C 命令切换
+Q                                 退出Mew
+
+
+http://lifegoo.pluskid.org/wiki/Mew.html
+** emacs 查看新闻组 rss  *雷鸟*
+** pdf emacs
+sudo apt-get install  texlive-latex-recommended
+latex-cjk-chinese
+
+http://blog.csdn.net/wuyao721/article/details/7669993
+http://blog.csdn.net/aka_xingwenpeng/article/details/16944919
+** emacs yasnippet
+http://www.linuxdiyf.com/bbs/thread-189639-1-1.html
+
+
+
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation]
+#+BEAMER_FRAME_LEVEL: 1
+
+#+BEAMER_HEADER_EXTRA: \usetheme{default}\usecolortheme{default}
+#+COLUMNS: %45ITEM %10BEAMER_env(Env) %10BEAMER_envargs(Env Args) %4BEAMER_col(Col) %8BEAMER_extra(Extra)
+#+PROPERTY: BEAMER_col_ALL 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0 :ETC
+** 乘法计算
+
+(* 0.36 3.7)
+c_x c_e
+显示计算结果
+
+在草稿里输入　c_j　直接输出结果
+
+** ubuntu latex
+sudo apt-get install texlive-full
+http://www.oschina.net/question/12_63776
+
+** 已经可以导出　但是中文无法导出？
+   beamer 模板搜索
+
+   此文再看下
+   http://blog.csdn.net/pfanaya/article/details/7669364
+   http://www.cnblogs.com/longdouhzt/archive/2012/09/27/2706358.html
+** Ubuntu LaTex添加UTF8中文支持解决方法
+latex中文乱码问题处理
+   http://www.linuxidc.com/Linux/2015-07/120625.htm
+ubuntu 安装中文字体
+http://blog.163.com/bjcclzw@126/blog/static/129968414201281124457883/
+检查 主机字体
+fc-list :lang=zh-cn
+
+** latex 文献写作
+http://blog.sina.com.cn/s/blog_5e16f1770100ogl0.html
+** linux shell github项目
+http://blog.jobbole.com/46942/
+http://www.zhihu.com/question/28182203
+http://justcoding.iteye.com/blog/1943504
+http://www.haiyun.me/archives/shell-check-server-mail.html
+
+
+** 网站收集
+友情链接
+Enjoy Diy
+IT热血青年
+Magento架构师
+爱T-blog
+爱积累爱分享
+简明现代魔法
+海底苍鹰
+
+** intellij 快捷键
+方法和tab页切换  alt 上下左右
+http://www.cnblogs.com/bluestorm/archive/2013/05/20/3087889.html
+** redis 非常简单，按照主页的说明就可以使用了
+** emacs 另一个窗口操作
+　C-M-v (scroll-other-window)，用来滚动下一个窗口。
+　　上一章我们看到有些命令加了C-x 4这个前缀，这一类命令都是用来操作多窗口的。
+　　C-x 4 b bufname (switch-to-buffer-other-window) 在另一个窗口打开缓冲。
+　　C-x 4 C-o bufname (display-buffer) 在另一个窗口打开缓冲，但不选中那个窗口。
+　　C-x 4 f filename (find-file-other-window) 在另一个窗口打开文件。
+　　C-x 4 d directory (dired-other-window) 在另一个窗口打开文件夹。
+　　C-x 4 m (mail-other-window) 在另一个窗口写邮件。
+　　C-x 4 r filename (find-file-read-only-other-window) 在另一个窗口以只读方式打开文件。
+ 　　这一类的命令默认是垂直拆分窗口。
+** emacs org 换行设置
++ (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+** emacs w3m设置 baidu主页
+;; 设置w3m主页
+(setq w3m-home-page "http://www.baidu.com")
+** emacs 记录自己的工作区和恢复工作区
+- 保存窗口配置信息 c_x r w 将窗口配置信息保存到Register中
+- 将窗口配置信息从Register中还原
+  - c_x r j
+** emacs 书签设置
+- c_x r m 设置书签
+- c_x r b 调到某个书签
+
+
+** emacs 快速补全
+- a_/
+** emacs 网址
+http://everet.org/thinking-of-emacs.html
+
+** 在另一个窗口操作
+- c_x 4 b 在另一个窗口打开缓冲区
+- c_x 4 c_o 在另一个窗口打开缓冲区 但不选中那个窗口
+- c_x 4 m 在另外一个窗口写邮件
+** eamcs 文件夹管理
+- g 刷新
+- s 切换名称排序
+- f 本窗口查看文件
+- o 另外窗口查看文件
+
+** emacs 卡顿问题
+通过修改字体为宋体 解决卡顿问题
+** emacs 快速调出菜单
+通过alt+`  或者 f10（仿真菜单 putty里面可以使用）
+** putty使用 linux emacs 卡顿问题
+(set-language-environment "UTF-8")
