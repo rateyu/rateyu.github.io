@@ -107,18 +107,18 @@ C-c a m 按标签搜索多个文件 需要把文件加入全局agenda
 ctrl c & ctrl n
 
 ** eww文本浏览器
-eww 提示输入浏览网址
-G   重新输入并载入网址
-g   重载
-b/B   添加/显示书签
-&   外部浏览器打开url
-q   退出
-l/r 后退/前进
->/< 文件末尾和开头
-w   拷贝文章url
-S   list buffers
-s   switch buffer
-cmd ret 创建新buffer
+1. eww 提示输入浏览网址
+2. G   重新输入并载入网址
+3. g   重载
+4. b/B   添加/显示书签
+5. &   外部浏览器打开url
+6. q   退出
+7. l/r 后退/前进
+8. >/< 文件末尾和开头
+9. w   拷贝文章url
+10. S   list
+11. s   switch buffer
+12. cmd ret 创建新buffer
 
 ** vim emacs 快捷键比较
 #+BEGIN_SRC txt
