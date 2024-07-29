@@ -70,6 +70,11 @@ cmd shift ！；执行程序，命令行比较少
 [[https://www.cnblogs.com/GarfieldEr007/p/5588979.html][- org教程]]
 [[https://www.jianshu.com/p/78ef59327e2d][- org教程2]]
 
+[[https://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html#sec-4-2][org教程3]]
+ctrl c，ctrl l ；插入链接
+ctrl c，' ;插入代码??
+
+
 *** org文件导出为html文件
 1. org导出html文件
 2. 编辑完org，要导出ctrl c，ctrl e ，h导出html文件
@@ -88,7 +93,7 @@ cmd shift ！；执行程序，命令行比较少
 1. cmd 左右，升级降级标题
 2. 上线两个列表交换位置，cmd shift 上/下
 3. 循环改变标志符号 ctrl c -
-4. 标题间跳转
+ppp4. 标题间跳转
 - C-c C-n	下个标题
 - C-c C-p	上个标题
 - C-c C-f	下个同级的标题
