@@ -54,7 +54,7 @@ C-c C-o	打开链接（相当有用）
 滚动另外一个窗口的屏幕向下/向上 ctrl cmd v/ctrl shift cmd v
 
 ** dired文件夹模式
-1. 选中文件后，在另外窗口打开，直接 按 o 即可
+1. 选中文件后，在另外窗口打开，直接 按 o 即可; f 直接在当前缓冲区查看文件
 2. 焦点不过去，直接查看， ctrl o
 3. 查看帮助命令，h
 4. 快速查看blame
@@ -63,6 +63,8 @@ C-c C-o	打开链接（相当有用）
 
 C-c *	将本行设置为标题/正文
 
+cmd shift &; 异步执行程序
+cmd shift ！；执行程序，命令行比较少
 
 ** org-mod
 [[https://www.cnblogs.com/GarfieldEr007/p/5588979.html][- org教程]]
@@ -104,6 +106,19 @@ C-c a m 按标签搜索多个文件 需要把文件加入全局agenda
 支持新建templage
 ctrl c & ctrl n
 
+** eww文本浏览器
+eww 提示输入浏览网址
+G   重新输入并载入网址
+g   重载
+b/B   添加/显示书签
+&   外部浏览器打开url
+q   退出
+l/r 后退/前进
+>/< 文件末尾和开头
+w   拷贝文章url
+S   list buffers
+s   switch buffer
+cmd ret 创建新buffer
 
 ** vim emacs 快捷键比较
 #+BEGIN_SRC txt
