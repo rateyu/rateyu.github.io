@@ -250,8 +250,16 @@ github下载文件，zenburn-theme.el
 
 ** 如何设计并实现一个百万并发的服务端程序架构
 
+** emacs grep 命令
+
+grep --color=auto -nH --null -e "images" -r
+递归-r
+
 ** emacs快速粘贴图片到org文件中
 
+html文件中应该是绝对路径
+/images/11.png
+**需要手工修改**，此处需要注意
 
 #+DOWNLOADED: screenshot @ 2024-08-14 23:19:36
 [[file:emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png]]
