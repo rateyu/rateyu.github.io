@@ -261,5 +261,7 @@ html文件中应该是绝对路径
 /images/11.png
 **需要手工修改**，此处需要注意
 
+脚本要修改，copy的目标路径，html文件的png改为绝对路径
+
 #+DOWNLOADED: screenshot @ 2024-08-14 23:19:36
 [[file:emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png]]
