@@ -12,6 +12,10 @@ ps: 经过测试，发现如下配置也可以安装，修改源
         ("melpa" . "https://melpa.org/packages/")))
 #+END_SRC
 
+快速唤出方式
+mysrc + tab 键
+
+
 + 进入magit界面，按以下键：
 s：add 增加
 cc：commit 添加注释
@@ -62,6 +66,18 @@ C-c C-o	打开链接（相当有用）
 4. 快速查看blame
 5. git blame
 比如我要看当前区域的代码是 who/which commit 提交的。这种都是临时性的需求，因此它是通过特殊 command(C-c M-g b) 以开关的形式操作的（不然看起来太乱了）
+
+= 比较文件
+v 查看文件
+D 删除文件
+C 拷贝
+R 重命名
+Z 压缩
+w 复制文件名
+m 标记
+u 取消标记
++ 新建目录
+
 
 C-c *	将本行设置为标题/正文
 
@@ -233,3 +249,9 @@ github下载文件，zenburn-theme.el
 (load-theme 'zenburn t)
 
 ** 如何设计并实现一个百万并发的服务端程序架构
+
+** emacs快速粘贴图片到org文件中
+
+
+#+DOWNLOADED: screenshot @ 2024-08-14 23:19:36
+[[file:emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png]]
