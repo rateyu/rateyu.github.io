@@ -44,8 +44,7 @@ https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce
 ctrl x 4 b
 ctrl x f ctrl o，焦点不过去
 
-- 复制文本内容
-ctrl shift @，选择文本内容
+- 复制文本内容ctrl shift @，选择文本内容
 ctrl w 剪切，cmd w 复制
 ctrl y 粘贴
 
@@ -263,5 +262,19 @@ html文件中应该是绝对路径
 
 脚本要修改，copy的目标路径，html文件的png改为绝对路径
 
+显示与不显示图片的快捷键
+C-c C-x C-v：切换图片的内联显示（toggle inline images）。这个命令可以让你在显示和隐藏图片之间切换。
+
 #+DOWNLOADED: screenshot @ 2024-08-14 23:19:36
+#+ATTR_ORG: :width 60%
 [[file:emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png]]
+
+** 如何给shell添加书签
+emacs shell添加书签未成功，eshell尝试了下可以的
+eshell是emacs内置shell，完全emacs lisp编写，更集成与emacs环境
+注意要使用 cd /ssh:myu@192.168.1.13:/ 方式打开，没有cd 无法显示正常的文件颜色
+如下图示例
+
+
+#+DOWNLOADED: screenshot @ 2024-08-18 06:46:51
+[[file:emacs_magit,org-mod/2024-08-18_06-46-51_screenshot.png]]
