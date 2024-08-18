@@ -266,7 +266,7 @@ html文件中应该是绝对路径
 C-c C-x C-v：切换图片的内联显示（toggle inline images）。这个命令可以让你在显示和隐藏图片之间切换。
 
 #+DOWNLOADED: screenshot @ 2024-08-14 23:19:36
-#+ATTR_ORG: :width 60%
+-- #+ATTR_ORG: :width 60%
 [[file:emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png]]
 
 ** 如何给shell添加书签
@@ -275,6 +275,43 @@ eshell是emacs内置shell，完全emacs lisp编写，更集成与emacs环境
 注意要使用 cd /ssh:myu@192.168.1.13:/ 方式打开，没有cd 无法显示正常的文件颜色
 如下图示例
 
+M-x eshell: 启动 Emacs 自己的 shell 实现，它完全用 Emacs Lisp 写成，更加集成 Emacs 功能。
+M-x term: 这个命令提供了一个更接近传统终端的环境，支持复杂的文本界面，比如那些用于文本编辑器或音乐播放器的界面。
+M-x ansi-term: 类似于 term，但它更好地支持 ANSI 转义序列，更适合需要运行交互式程序的情况
+```
+(defun my-new-eshell ()
+  "Open a new uniquely named eshell instance."
+  (interactive)
+  (let ((eshell-buffer-index (1+ (length (seq-filter (lambda (buf)
+                                                       (string-prefix-p "*eshell*" (buffer-name buf)))
+                                                     (buffer-list))))))
+    (eshell eshell-buffer-index)))
 
+```
+将这个函数添加到书签中：
+首先，确保你已经安装并加载了 bookmark 模块。
+使用 M-x bookmark-set 命令创建一个新书签，当提示你命名书签时，你可以命名为 “New Eshell”。
+打开书签列表 (M-x bookmark-bmenu-list)，找到你刚才创建的书签，然后按 e 来编辑这个书签。
+将 filename 改为你的 Emacs Lisp 文件位置，并将 handler 设置为 my-new-eshell。
+
+- 打开新的eshell
+通过 C-u M-x eshell 完成。这样做会提示你输入一个缓冲区编号
+
+	    
 #+DOWNLOADED: screenshot @ 2024-08-18 06:46:51
+-- #+ATTR_ORG: :width 60%
 [[file:emacs_magit,org-mod/2024-08-18_06-46-51_screenshot.png]]
+
+** eshell 命令行ps -ef | grpe java后，无法显示全命令行参数
+
+```
+(add-hook 'eshell-mode-hook
+          (lambda ()
+            (setq truncate-lines nil)))
+
+ps -ef | grep java | less -S
+
+```
+
+ps: sudo -s 切换到root账号后
+再ps，可以显示全部命令，并且可以换行
