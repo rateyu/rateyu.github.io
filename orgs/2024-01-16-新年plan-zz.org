@@ -1,3 +1,4 @@
+#+OPTIONS: \n:t
 * emacs magit,org-mod
 好久没有更新了，今年看能坚持多久！
 
@@ -58,6 +59,10 @@ C-c C-o	打开链接（相当有用）
 - 滚动屏幕
 滚动另外一个窗口的屏幕向下/向上 ctrl cmd v/ctrl shift cmd v
 
+- rgrep命令搜索文件中的字符串
+- find-dired, -iname "*学习*"，搜索所有文件名
+- 上面两个命令同时支持中文和 不区分大小写，爽了
+
 ** dired文件夹模式
 1. 选中文件后，在另外窗口打开，直接 按 o 即可; f 直接在当前缓冲区查看文件
 2. 焦点不过去，直接查看， ctrl o
@@ -83,6 +88,16 @@ C-c *	将本行设置为标题/正文
 cmd shift &; 异步执行程序
 cmd shift ！；执行程序，命令行比较少
 
+** emacs windows上使用
+1. 使用git命令要用eshell方式，其它方式有乱码，没有找到方法如何修改
+2. eshell中定义alias，快速命令 gs -3 => git log -3
+#+begin_quote
+需要在eshell中执行，alias gs 'git log $*'
+每次只执行一次，emacs会自动记忆这个配置，内容保存在.eamcs.d/eshell/alias文件中
+
+ps:ctrl c + ctrl , => 快速调用引用 并选择要插入的内容
+#+end_quote
+ 
 ** org-mod
 [[https://www.cnblogs.com/GarfieldEr007/p/5588979.html][- org教程]]
 [[https://www.jianshu.com/p/78ef59327e2d][- org教程2]]
@@ -117,6 +132,12 @@ ppp4. 标题间跳转
 - C-c C-b	上个同级的标题
 - C-c C-u	回到上层标题
 
+*** org中到处的文件如何自动把回车放进去
+#+begin_quote
+在文件开头加上
+\#+OPTIONS: \n:t
+或者 (setq org-export-preserve-breaks t)
+#+end_quote
 ** 标签搜索
 
 建立好了tag系统，可以将相关信息收集到一个表中
@@ -315,3 +336,12 @@ ps -ef | grep java | less -S
 
 ps: sudo -s 切换到root账号后
 再ps，可以显示全部命令，并且可以换行
+
+** tcpdump和wirdshark
+#+begin_src shell
+  tcpdump -n -X -s 0 host 192.168.1.7 -w tt.pcap
+  - 为命令参数， host为过滤命令
+  读pcap文件
+  tcpdump -n -X -r tt.pcap
+#+end_src
+总结下它们使用命令的联系和区别
