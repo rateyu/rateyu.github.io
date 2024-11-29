@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-08-18 Sun 20:42 -->
+<!-- 2024-11-29 Fri 22:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -193,6 +193,27 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -200,50 +221,53 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7097084">1. emacs magit,org-mod</a>
+<li><a href="#orgda8b99a">1. emacs magit,org-mod</a>
 <ul>
-<li><a href="#orgc9fe607">1.1. magit使用</a></li>
-<li><a href="#org0f82118">1.2. magit 常用命令</a></li>
-<li><a href="#orga9d4e4f">1.3. emacs基本使用</a></li>
-<li><a href="#orgdfa2c6c">1.4. dired文件夹模式</a></li>
-<li><a href="#orgc41ddeb">1.5. org-mod</a>
+<li><a href="#org3cb4d40">1.1. magit使用</a></li>
+<li><a href="#org1befdc1">1.2. magit 常用命令</a></li>
+<li><a href="#orgeaba066">1.3. emacs基本使用</a></li>
+<li><a href="#org1b88942">1.4. dired文件夹模式</a></li>
+<li><a href="#org9dc53b7">1.5. emacs windows上使用</a></li>
+<li><a href="#org4876770">1.6. org-mod</a>
 <ul>
-<li><a href="#org4035141">1.5.1. org文件导出为html文件</a></li>
-<li><a href="#org2d89903">1.5.2. 列表和checkbox使用</a></li>
-<li><a href="#orgd61235a">1.5.3. 其它：</a></li>
+<li><a href="#orgc39120a">1.6.1. org文件导出为html文件</a></li>
+<li><a href="#org8337ab9">1.6.2. 列表和checkbox使用</a></li>
+<li><a href="#orge018bb3">1.6.3. 其它：</a></li>
+<li><a href="#org66f6a7f">1.6.4. org中到处的文件如何自动把回车放进去</a></li>
 </ul>
 </li>
-<li><a href="#org9f4752a">1.6. 标签搜索</a></li>
-<li><a href="#org3448d50">1.7. yasnippet</a></li>
-<li><a href="#org6abda5c">1.8. eww文本浏览器</a></li>
-<li><a href="#orgaf05cb2">1.9. vim emacs 快捷键比较</a></li>
-<li><a href="#org0fe4ca6">1.10. 安装自定义的theme</a></li>
-<li><a href="#org784b6d7">1.11. 如何设计并实现一个百万并发的服务端程序架构</a></li>
-<li><a href="#org63a3ac5">1.12. emacs grep 命令</a></li>
-<li><a href="#orgf157463">1.13. emacs快速粘贴图片到org文件中</a></li>
-<li><a href="#orgf682355">1.14. 如何给shell添加书签</a></li>
-<li><a href="#org6290a6c">1.15. eshell 命令行ps -ef | grpe java后，无法显示全命令行参数</a></li>
+<li><a href="#orgda84fb3">1.7. 标签搜索</a></li>
+<li><a href="#org080edd5">1.8. yasnippet</a></li>
+<li><a href="#org457c52b">1.9. eww文本浏览器</a></li>
+<li><a href="#org7b252fd">1.10. vim emacs 快捷键比较</a></li>
+<li><a href="#orgf3b743d">1.11. 安装自定义的theme</a></li>
+<li><a href="#org2e44e9e">1.12. 如何设计并实现一个百万并发的服务端程序架构</a></li>
+<li><a href="#org60db604">1.13. emacs grep 命令</a></li>
+<li><a href="#org98ae0d2">1.14. emacs快速粘贴图片到org文件中</a></li>
+<li><a href="#org07b0491">1.15. 如何给shell添加书签</a></li>
+<li><a href="#org8dbce00">1.16. eshell 命令行ps -ef | grpe java后，无法显示全命令行参数</a></li>
+<li><a href="#orgdbf7e99">1.17. tcpdump和wirdshark</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7097084" class="outline-2">
-<h2 id="org7097084"><span class="section-number-2">1.</span> emacs magit,org-mod</h2>
+<div id="outline-container-orgda8b99a" class="outline-2">
+<h2 id="orgda8b99a"><span class="section-number-2">1.</span> emacs magit,org-mod</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-好久没有更新了，今年看能坚持多久！
+好久没有更新了，今年看能坚持多久！<br />
 </p>
 </div>
 
-<div id="outline-container-orgc9fe607" class="outline-3">
-<h3 id="orgc9fe607"><span class="section-number-3">1.1.</span> magit使用</h3>
+<div id="outline-container-org3cb4d40" class="outline-3">
+<h3 id="org3cb4d40"><span class="section-number-3">1.1.</span> magit使用</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
-<li>此处需要梯子，否则安装很麻烦</li>
+<li>此处需要梯子，否则安装很麻烦<br /></li>
 </ul>
 <p>
-ps: 经过测试，发现如下配置也可以安装，修改源
+ps: 经过测试，发现如下配置也可以安装，修改源<br />
 </p>
 
 <div class="org-src-container">
@@ -255,252 +279,291 @@ ps: 经过测试，发现如下配置也可以安装，修改源
 </div>
 
 <p>
-快速唤出方式
-mysrc + tab 键
+快速唤出方式<br />
+mysrc + tab 键<br />
 </p>
 
 
 <ul class="org-ul">
-<li>进入magit界面，按以下键：</li>
+<li>进入magit界面，按以下键：<br /></li>
 </ul>
 <p>
-s：add 增加
-cc：commit 添加注释
-ctrl c + ctrl c ：确认提交
-P p：push推送到远程
-帮助信息：ctrl h,m
+s：add 增加<br />
+cc：commit 添加注释<br />
+ctrl c + ctrl c ：确认提交<br />
+P p：push推送到远程<br />
+帮助信息：ctrl h,m<br />
 </p>
 
 <p>
-L head , 空格查看，光标不移动；回车查看，光标移动
+L head , 空格查看，光标不移动；回车查看，光标移动<br />
 </p>
 </div>
 </div>
 
-<div id="outline-container-org0f82118" class="outline-3">
-<h3 id="org0f82118"><span class="section-number-3">1.2.</span> magit 常用命令</h3>
+<div id="outline-container-org1befdc1" class="outline-3">
+<h3 id="org1befdc1"><span class="section-number-3">1.2.</span> magit 常用命令</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
-magit-status
-绑定的命令：ctrl x g
-s stage;u unstage
-c , c commit
-推送 push为 P,u 即可完成远程仓库的推送
+magit-status<br />
+绑定的命令：ctrl x g<br />
+s stage;u unstage<br />
+c , c commit<br />
+ctrl c,ctrl c 提交<br />
+推送 push为 P,u 即可完成远程仓库的推送<br />
 </p>
 
 <p>
-magit-find-file,我们可以比如绑定到C-x m f,它可以指定访问某个分支中某个文件，且是放到一个临时的 buffer，只能说极其好用
+magit-find-file,我们可以比如绑定到C-x m f,它可以指定访问某个分支中某个文件，且是放到一个临时的 buffer，只能说极其好用<br />
 </p>
 
 
 <p>
-h 显示帮助命令
-magit使用的文档，日文版本的，感觉还不错
-<a href="https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce">https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce</a>
+h 显示帮助命令<br />
+magit使用的文档，日文版本的，感觉还不错<br />
+<a href="https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce">https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce</a><br />
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga9d4e4f" class="outline-3">
-<h3 id="orga9d4e4f"><span class="section-number-3">1.3.</span> emacs基本使用</h3>
+<div id="outline-container-orgeaba066" class="outline-3">
+<h3 id="orgeaba066"><span class="section-number-3">1.3.</span> emacs基本使用</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
-<li>显示文件夹后，在另外窗口打开文件</li>
+<li>显示文件夹后，在另外窗口打开文件<br /></li>
 </ul>
 <p>
-ctrl x 4 b
-ctrl x f ctrl o，焦点不过去
+ctrl x 4 b<br />
+ctrl x f ctrl o，焦点不过去<br />
 </p>
 
 <ul class="org-ul">
-<li>复制文本内容ctrl shift @，选择文本内容</li>
+<li>复制文本内容ctrl shift @，选择文本内容<br /></li>
 </ul>
 <p>
-ctrl w 剪切，cmd w 复制
-ctrl y 粘贴
+ctrl w 剪切，cmd w 复制<br />
+ctrl y 粘贴<br />
 </p>
 
 <ul class="org-ul">
-<li>链接</li>
+<li>链接<br /></li>
 </ul>
 <p>
-C-c C-l	编辑链接（此处为小写L）
-C-c C-o	打开链接（相当有用）
+C-c C-l	编辑链接（此处为小写L）<br />
+C-c C-o	打开链接（相当有用）<br />
 </p>
 
 <p>
-具体怎么改你得看org-structure-template-alist的文档（C-h v org-structure-template-alist）
+具体怎么改你得看org-structure-template-alist的文档（C-h v org-structure-template-alist）<br />
 </p>
 
 
 <ul class="org-ul">
-<li>滚动屏幕</li>
+<li>滚动屏幕<br /></li>
 </ul>
 <p>
-滚动另外一个窗口的屏幕向下/向上 ctrl cmd v/ctrl shift cmd v
+滚动另外一个窗口的屏幕向下/向上 ctrl cmd v/ctrl shift cmd v<br />
 </p>
+
+<ul class="org-ul">
+<li>rgrep命令搜索文件中的字符串<br /></li>
+<li>find-dired, -iname "<b>学习</b>"，搜索所有文件名<br /></li>
+<li>上面两个命令同时支持中文和 不区分大小写，爽了<br /></li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-orgdfa2c6c" class="outline-3">
-<h3 id="orgdfa2c6c"><span class="section-number-3">1.4.</span> dired文件夹模式</h3>
+<div id="outline-container-org1b88942" class="outline-3">
+<h3 id="org1b88942"><span class="section-number-3">1.4.</span> dired文件夹模式</h3>
 <div class="outline-text-3" id="text-1-4">
 <ol class="org-ol">
-<li>选中文件后，在另外窗口打开，直接 按 o 即可; f 直接在当前缓冲区查看文件</li>
-<li>焦点不过去，直接查看， ctrl o</li>
-<li>查看帮助命令，h</li>
-<li>快速查看blame</li>
-<li>git blame</li>
+<li>选中文件后，在另外窗口打开，直接 按 o 即可; f 直接在当前缓冲区查看文件<br /></li>
+<li>焦点不过去，直接查看， ctrl o<br /></li>
+<li>查看帮助命令，h<br /></li>
+<li>快速查看blame<br /></li>
+<li>git blame<br /></li>
 </ol>
 <p>
-比如我要看当前区域的代码是 who/which commit 提交的。这种都是临时性的需求，因此它是通过特殊 command(C-c M-g b) 以开关的形式操作的（不然看起来太乱了）
+比如我要看当前区域的代码是 who/which commit 提交的。这种都是临时性的需求，因此它是通过特殊 command(C-c M-g b) 以开关的形式操作的（不然看起来太乱了）<br />
 </p>
 
 <p>
-= 比较文件
-v 查看文件
-D 删除文件
-C 拷贝
-R 重命名
-Z 压缩
-w 复制文件名
-m 标记
-u 取消标记
+= 比较文件<br />
+v 查看文件<br />
+D 删除文件<br />
+C 拷贝<br />
+R 重命名<br />
+Z 压缩<br />
+w 复制文件名<br />
+m 标记<br />
+u 取消标记<br />
 </p>
 <ul class="org-ul">
-<li>新建目录</li>
+<li>新建目录<br /></li>
 </ul>
 
 
 <p>
-C-c *	将本行设置为标题/正文
+C-c *	将本行设置为标题/正文<br />
 </p>
 
 <p>
-cmd shift &amp;; 异步执行程序
-cmd shift ！；执行程序，命令行比较少
+cmd shift &amp;; 异步执行程序<br />
+cmd shift ！；执行程序，命令行比较少<br />
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc41ddeb" class="outline-3">
-<h3 id="orgc41ddeb"><span class="section-number-3">1.5.</span> org-mod</h3>
+<div id="outline-container-org9dc53b7" class="outline-3">
+<h3 id="org9dc53b7"><span class="section-number-3">1.5.</span> emacs windows上使用</h3>
 <div class="outline-text-3" id="text-1-5">
+<ol class="org-ol">
+<li>使用git命令要用eshell方式，其它方式有乱码，没有找到方法如何修改<br /></li>
+<li>eshell中定义alias，快速命令 gs -3 =&gt; git log -3<br /></li>
+</ol>
+<blockquote>
 <p>
-<a href="https://www.cnblogs.com/GarfieldEr007/p/5588979.html">- org教程</a>
-<a href="https://www.jianshu.com/p/78ef59327e2d">- org教程2</a>
+需要在eshell中执行，alias gs 'git log $*'<br />
+每次只执行一次，emacs会自动记忆这个配置，内容保存在.eamcs.d/eshell/alias文件中<br />
 </p>
 
 <p>
-<a href="https://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html#sec-4-2">org教程3</a>
-ctrl c，ctrl l ；插入链接
-ctrl c，' ;插入代码??
+ps:ctrl c + ctrl , =&gt; 快速调用引用 并选择要插入的内容<br />
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org4876770" class="outline-3">
+<h3 id="org4876770"><span class="section-number-3">1.6.</span> org-mod</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+<a href="https://www.cnblogs.com/GarfieldEr007/p/5588979.html">- org教程</a><br />
+<a href="https://www.jianshu.com/p/78ef59327e2d">- org教程2</a><br />
+</p>
+
+<p>
+<a href="https://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html#sec-4-2">org教程3</a><br />
+ctrl c，ctrl l ；插入链接<br />
+ctrl c，' ;插入代码??<br />
 </p>
 </div>
 
 
-<div id="outline-container-org4035141" class="outline-4">
-<h4 id="org4035141"><span class="section-number-4">1.5.1.</span> org文件导出为html文件</h4>
-<div class="outline-text-4" id="text-1-5-1">
+<div id="outline-container-orgc39120a" class="outline-4">
+<h4 id="orgc39120a"><span class="section-number-4">1.6.1.</span> org文件导出为html文件</h4>
+<div class="outline-text-4" id="text-1-6-1">
 <ol class="org-ol">
-<li>org导出html文件</li>
-<li>编辑完org，要导出ctrl c，ctrl e ，h导出html文件</li>
-<li>执行sh mv<sub>html2post.sh</sub></li>
+<li>org导出html文件<br /></li>
+<li>编辑完org，要导出ctrl c，ctrl e ，h导出html文件<br /></li>
+<li>执行sh mv<sub>html2post.sh</sub><br /></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-org2d89903" class="outline-4">
-<h4 id="org2d89903"><span class="section-number-4">1.5.2.</span> 列表和checkbox使用</h4>
-<div class="outline-text-4" id="text-1-5-2">
+<div id="outline-container-org8337ab9" class="outline-4">
+<h4 id="org8337ab9"><span class="section-number-4">1.6.2.</span> 列表和checkbox使用</h4>
+<div class="outline-text-4" id="text-1-6-2">
 <ol class="org-ol">
-<li>cmd shift ret &#x2013; checkbox
+<li>cmd shift ret &#x2013; checkbox<br />
 <ul class="org-ul">
-<li><code>[0/1]</code>
+<li><code>[0/1]</code><br />
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> </li>
 
-<li><code>[100%]</code>
+<li><code>[100%]</code><br />
 <ul class="org-ul">
 <li class="on"><code>[X]</code> </li>
 </ul></li>
 </ul></li>
 </ul></li>
-<li>改变状态方法，ctrl c,ctrl c</li>
-<li>todo ctrl shift ret</li>
+<li>改变状态方法，ctrl c,ctrl c<br /></li>
+<li>todo ctrl shift ret<br /></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orgd61235a" class="outline-4">
-<h4 id="orgd61235a"><span class="section-number-4">1.5.3.</span> 其它：</h4>
-<div class="outline-text-4" id="text-1-5-3">
+<div id="outline-container-orge018bb3" class="outline-4">
+<h4 id="orge018bb3"><span class="section-number-4">1.6.3.</span> 其它：</h4>
+<div class="outline-text-4" id="text-1-6-3">
 <ol class="org-ol">
-<li>cmd 左右，升级降级标题</li>
-<li>上线两个列表交换位置，cmd shift 上/下</li>
-<li>循环改变标志符号 ctrl c -</li>
+<li>cmd 左右，升级降级标题<br /></li>
+<li>上线两个列表交换位置，cmd shift 上/下<br /></li>
+<li>循环改变标志符号 ctrl c -<br /></li>
 </ol>
 <p>
-ppp4. 标题间跳转
+ppp4. 标题间跳转<br />
 </p>
 <ul class="org-ul">
-<li>C-c C-n	下个标题</li>
-<li>C-c C-p	上个标题</li>
-<li>C-c C-f	下个同级的标题</li>
-<li>C-c C-b	上个同级的标题</li>
-<li>C-c C-u	回到上层标题</li>
+<li>C-c C-n	下个标题<br /></li>
+<li>C-c C-p	上个标题<br /></li>
+<li>C-c C-f	下个同级的标题<br /></li>
+<li>C-c C-b	上个同级的标题<br /></li>
+<li>C-c C-u	回到上层标题<br /></li>
 </ul>
 </div>
 </div>
-</div>
 
-<div id="outline-container-org9f4752a" class="outline-3">
-<h3 id="org9f4752a"><span class="section-number-3">1.6.</span> 标签搜索</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-org66f6a7f" class="outline-4">
+<h4 id="org66f6a7f"><span class="section-number-4">1.6.4.</span> org中到处的文件如何自动把回车放进去</h4>
+<div class="outline-text-4" id="text-1-6-4">
+<blockquote>
 <p>
-建立好了tag系统，可以将相关信息收集到一个表中
+在文件开头加上<br />
+\#+OPTIONS: \n:t<br />
+或者 (setq org-export-preserve-breaks t)<br />
 </p>
-
-<p>
-C-c / m 或 C-c \ 标准检索， 按照tag进行检索
-C-c a m 按标签搜索多个文件 需要把文件加入全局agenda  
-</p>
+</blockquote>
 </div>
 </div>
-
-<div id="outline-container-org3448d50" class="outline-3">
-<h3 id="org3448d50"><span class="section-number-3">1.7.</span> yasnippet</h3>
+</div>
+<div id="outline-container-orgda84fb3" class="outline-3">
+<h3 id="orgda84fb3"><span class="section-number-3">1.7.</span> 标签搜索</h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
-支持新建templage
-ctrl c &amp; ctrl n
+建立好了tag系统，可以将相关信息收集到一个表中<br />
+</p>
+
+<p>
+C-c / m 或 C-c \ 标准检索， 按照tag进行检索<br />
+C-c a m 按标签搜索多个文件 需要把文件加入全局agenda<br />
 </p>
 </div>
 </div>
 
-<div id="outline-container-org6abda5c" class="outline-3">
-<h3 id="org6abda5c"><span class="section-number-3">1.8.</span> eww文本浏览器</h3>
+<div id="outline-container-org080edd5" class="outline-3">
+<h3 id="org080edd5"><span class="section-number-3">1.8.</span> yasnippet</h3>
 <div class="outline-text-3" id="text-1-8">
+<p>
+支持新建templage<br />
+ctrl c &amp; ctrl n<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org457c52b" class="outline-3">
+<h3 id="org457c52b"><span class="section-number-3">1.9.</span> eww文本浏览器</h3>
+<div class="outline-text-3" id="text-1-9">
 <ol class="org-ol">
-<li>eww 提示输入浏览网址</li>
-<li>G   重新输入并载入网址</li>
-<li>g   重载</li>
-<li>b/B   添加/显示书签</li>
-<li>&amp;   外部浏览器打开url</li>
-<li>q   退出</li>
-<li>l/r 后退/前进</li>
-<li>&gt;/&lt; 文件末尾和开头</li>
-<li>w   拷贝文章url</li>
-<li>S   list</li>
-<li>s   switch buffer</li>
-<li>cmd ret 创建新buffer</li>
+<li>eww 提示输入浏览网址<br /></li>
+<li>G   重新输入并载入网址<br /></li>
+<li>g   重载<br /></li>
+<li>b/B   添加/显示书签<br /></li>
+<li>&amp;   外部浏览器打开url<br /></li>
+<li>q   退出<br /></li>
+<li>l/r 后退/前进<br /></li>
+<li>&gt;/&lt; 文件末尾和开头<br /></li>
+<li>w   拷贝文章url<br /></li>
+<li>S   list<br /></li>
+<li>s   switch buffer<br /></li>
+<li>cmd ret 创建新buffer<br /></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orgaf05cb2" class="outline-3">
-<h3 id="orgaf05cb2"><span class="section-number-3">1.9.</span> vim emacs 快捷键比较</h3>
-<div class="outline-text-3" id="text-1-9">
+<div id="outline-container-org7b252fd" class="outline-3">
+<h3 id="org7b252fd"><span class="section-number-3">1.10.</span> vim emacs 快捷键比较</h3>
+<div class="outline-text-3" id="text-1-10">
 <div class="org-src-container">
 <pre class="src src-txt">oemacs 与 vim 命令对比(网上摘录)
 -----------------------------------------------------------------
@@ -602,128 +665,144 @@ expand tab                                      :se et
 </div>
 </div>
 
-<div id="outline-container-org0fe4ca6" class="outline-3">
-<h3 id="org0fe4ca6"><span class="section-number-3">1.10.</span> 安装自定义的theme</h3>
-<div class="outline-text-3" id="text-1-10">
+<div id="outline-container-orgf3b743d" class="outline-3">
+<h3 id="orgf3b743d"><span class="section-number-3">1.11.</span> 安装自定义的theme</h3>
+<div class="outline-text-3" id="text-1-11">
 <p>
-github下载文件，zenburn-theme.el
+github下载文件，zenburn-theme.el<br />
 </p>
 
 <p>
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'zenburn t)
-</p>
-</div>
-</div>
-
-<div id="outline-container-org784b6d7" class="outline-3">
-<h3 id="org784b6d7"><span class="section-number-3">1.11.</span> 如何设计并实现一个百万并发的服务端程序架构</h3>
-</div>
-
-<div id="outline-container-org63a3ac5" class="outline-3">
-<h3 id="org63a3ac5"><span class="section-number-3">1.12.</span> emacs grep 命令</h3>
-<div class="outline-text-3" id="text-1-12">
-<p>
-grep &#x2013;color=auto -nH &#x2013;null -e "images" -r
-递归-r
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")<br />
+(load-theme 'zenburn t)<br />
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgf157463" class="outline-3">
-<h3 id="orgf157463"><span class="section-number-3">1.13.</span> emacs快速粘贴图片到org文件中</h3>
+<div id="outline-container-org2e44e9e" class="outline-3">
+<h3 id="org2e44e9e"><span class="section-number-3">1.12.</span> 如何设计并实现一个百万并发的服务端程序架构</h3>
+</div>
+
+<div id="outline-container-org60db604" class="outline-3">
+<h3 id="org60db604"><span class="section-number-3">1.13.</span> emacs grep 命令</h3>
 <div class="outline-text-3" id="text-1-13">
 <p>
-html文件中应该是绝对路径
-/images/11.png
-**需要手工修改**，此处需要注意
-</p>
-
-<p>
-脚本要修改，copy的目标路径，html文件的png改为绝对路径
-</p>
-
-<p>
-显示与不显示图片的快捷键
-C-c C-x C-v：切换图片的内联显示（toggle inline images）。这个命令可以让你在显示和隐藏图片之间切换。
-</p>
-
-<p>
-&#x2013; #+ATTR<sub>ORG</sub>: :width 60%
-<img src="/emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png" alt="2024-08-14_23-19-36_screenshot.png" />
+grep &#x2013;color=auto -nH &#x2013;null -e "images" -r<br />
+递归-r<br />
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgf682355" class="outline-3">
-<h3 id="orgf682355"><span class="section-number-3">1.14.</span> 如何给shell添加书签</h3>
+<div id="outline-container-org98ae0d2" class="outline-3">
+<h3 id="org98ae0d2"><span class="section-number-3">1.14.</span> emacs快速粘贴图片到org文件中</h3>
 <div class="outline-text-3" id="text-1-14">
 <p>
-emacs shell添加书签未成功，eshell尝试了下可以的
-eshell是emacs内置shell，完全emacs lisp编写，更集成与emacs环境
-注意要使用 cd <i>ssh:myu@192.168.1.13:</i> 方式打开，没有cd 无法显示正常的文件颜色
-如下图示例
+html文件中应该是绝对路径<br />
+/images/11.png<br />
+**需要手工修改**，此处需要注意<br />
 </p>
 
 <p>
-M-x eshell: 启动 Emacs 自己的 shell 实现，它完全用 Emacs Lisp 写成，更加集成 Emacs 功能。
-M-x term: 这个命令提供了一个更接近传统终端的环境，支持复杂的文本界面，比如那些用于文本编辑器或音乐播放器的界面。
-M-x ansi-term: 类似于 term，但它更好地支持 ANSI 转义序列，更适合需要运行交互式程序的情况
-```
-(defun my-new-eshell ()
-  "Open a new uniquely named eshell instance."
-  (interactive)
-  (let ((eshell-buffer-index (1+ (length (seq-filter (lambda (buf)
-                                                       (string-prefix-p "<b>eshell</b>" (buffer-name buf)))
-                                                     (buffer-list))))))
-    (eshell eshell-buffer-index)))
+脚本要修改，copy的目标路径，html文件的png改为绝对路径<br />
 </p>
 
 <p>
-```
-将这个函数添加到书签中：
-首先，确保你已经安装并加载了 bookmark 模块。
-使用 M-x bookmark-set 命令创建一个新书签，当提示你命名书签时，你可以命名为 “New Eshell”。
-打开书签列表 (M-x bookmark-bmenu-list)，找到你刚才创建的书签，然后按 e 来编辑这个书签。
-将 filename 改为你的 Emacs Lisp 文件位置，并将 handler 设置为 my-new-eshell。
+显示与不显示图片的快捷键<br />
+C-c C-x C-v：切换图片的内联显示（toggle inline images）。这个命令可以让你在显示和隐藏图片之间切换。<br />
+</p>
+
+<p>
+&#x2013; #+ATTR<sub>ORG</sub>: :width 60%<br />
+<img src="/emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png" alt="2024-08-14_23-19-36_screenshot.png" /><br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07b0491" class="outline-3">
+<h3 id="org07b0491"><span class="section-number-3">1.15.</span> 如何给shell添加书签</h3>
+<div class="outline-text-3" id="text-1-15">
+<p>
+emacs shell添加书签未成功，eshell尝试了下可以的<br />
+eshell是emacs内置shell，完全emacs lisp编写，更集成与emacs环境<br />
+注意要使用 cd <i>ssh:myu@192.168.1.13:</i> 方式打开，没有cd 无法显示正常的文件颜色<br />
+如下图示例<br />
+</p>
+
+<p>
+M-x eshell: 启动 Emacs 自己的 shell 实现，它完全用 Emacs Lisp 写成，更加集成 Emacs 功能。<br />
+M-x term: 这个命令提供了一个更接近传统终端的环境，支持复杂的文本界面，比如那些用于文本编辑器或音乐播放器的界面。<br />
+M-x ansi-term: 类似于 term，但它更好地支持 ANSI 转义序列，更适合需要运行交互式程序的情况<br />
+```<br />
+(defun my-new-eshell ()<br />
+  "Open a new uniquely named eshell instance."<br />
+  (interactive)<br />
+  (let ((eshell-buffer-index (1+ (length (seq-filter (lambda (buf)<br />
+                                                       (string-prefix-p "<b>eshell</b>" (buffer-name buf)))<br />
+                                                     (buffer-list))))))<br />
+    (eshell eshell-buffer-index)))<br />
+</p>
+
+<p>
+```<br />
+将这个函数添加到书签中：<br />
+首先，确保你已经安装并加载了 bookmark 模块。<br />
+使用 M-x bookmark-set 命令创建一个新书签，当提示你命名书签时，你可以命名为 “New Eshell”。<br />
+打开书签列表 (M-x bookmark-bmenu-list)，找到你刚才创建的书签，然后按 e 来编辑这个书签。<br />
+将 filename 改为你的 Emacs Lisp 文件位置，并将 handler 设置为 my-new-eshell。<br />
 </p>
 
 <ul class="org-ul">
-<li>打开新的eshell</li>
+<li>打开新的eshell<br /></li>
 </ul>
 <p>
-通过 C-u M-x eshell 完成。这样做会提示你输入一个缓冲区编号
+通过 C-u M-x eshell 完成。这样做会提示你输入一个缓冲区编号<br />
 </p>
 
 
 <p>
-&#x2013; #+ATTR<sub>ORG</sub>: :width 60%
-<img src="/emacs_magit,org-mod/2024-08-18_06-46-51_screenshot.png" alt="2024-08-18_06-46-51_screenshot.png" />
+&#x2013; #+ATTR<sub>ORG</sub>: :width 60%<br />
+<img src="/emacs_magit,org-mod/2024-08-18_06-46-51_screenshot.png" alt="2024-08-18_06-46-51_screenshot.png" /><br />
 </p>
 </div>
 </div>
 
-<div id="outline-container-org6290a6c" class="outline-3">
-<h3 id="org6290a6c"><span class="section-number-3">1.15.</span> eshell 命令行ps -ef | grpe java后，无法显示全命令行参数</h3>
-<div class="outline-text-3" id="text-1-15">
+<div id="outline-container-org8dbce00" class="outline-3">
+<h3 id="org8dbce00"><span class="section-number-3">1.16.</span> eshell 命令行ps -ef | grpe java后，无法显示全命令行参数</h3>
+<div class="outline-text-3" id="text-1-16">
 <p>
-```
-(add-hook 'eshell-mode-hook
-          (lambda ()
-            (setq truncate-lines nil)))
+```<br />
+(add-hook 'eshell-mode-hook<br />
+          (lambda ()<br />
+            (setq truncate-lines nil)))<br />
 </p>
 
 <p>
-ps -ef | grep java | less -S
+ps -ef | grep java | less -S<br />
 </p>
 
 <p>
-```
+```<br />
 </p>
 
 <p>
-ps: sudo -s 切换到root账号后
-再ps，可以显示全部命令，并且可以换行
+ps: sudo -s 切换到root账号后<br />
+再ps，可以显示全部命令，并且可以换行<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdbf7e99" class="outline-3">
+<h3 id="orgdbf7e99"><span class="section-number-3">1.17.</span> tcpdump和wirdshark</h3>
+<div class="outline-text-3" id="text-1-17">
+<div class="org-src-container">
+<pre class="src src-shell">tcpdump -n -X -s 0 host 192.168.1.7 -w tt.pcap
+- 为命令参数， host为过滤命令
+读pcap文件
+tcpdump -n -X -r tt.pcap
+</pre>
+</div>
+<p>
+总结下它们使用命令的联系和区别<br />
 </p>
 </div>
 </div>
@@ -731,7 +810,7 @@ ps: sudo -s 切换到root账号后
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: myu</p>
-<p class="date">Created: 2024-08-18 Sun 20:42</p>
+<p class="date">Created: 2024-11-29 Fri 22:41</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -31,6 +31,7 @@ magit-status
 绑定的命令：ctrl x g
 s stage;u unstage
 c , c commit
+ctrl c,ctrl c 提交
 推送 push为 P,u 即可完成远程仓库的推送
 
 magit-find-file,我们可以比如绑定到C-x m f,它可以指定访问某个分支中某个文件，且是放到一个临时的 buffer，只能说极其好用
