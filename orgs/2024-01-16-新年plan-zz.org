@@ -54,6 +54,8 @@ ctrl y 粘贴
 C-c C-l	编辑链接（此处为小写L）
 C-c C-o	打开链接（相当有用）
 
+ctrl / 非常有用的撤销功能
+
 具体怎么改你得看org-structure-template-alist的文档（C-h v org-structure-template-alist）
 
 
