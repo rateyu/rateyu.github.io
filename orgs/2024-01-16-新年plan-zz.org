@@ -348,3 +348,34 @@ ps: sudo -s 切换到root账号后
   tcpdump -n -X -r tt.pcap
 #+end_src
 总结下它们使用命令的联系和区别
+
+
+** DONE macbook截图工具
+:LOGBOOK:
+CLOCK: [2024-12-04 Wed 22:13]--[2024-12-04 Wed 22:13] =>  0:00
+:END:
+ctrl shift cmd 4 截图到剪贴板
+ctrl y 粘贴到org文档中
+
+
+
+#+DOWNLOADED: screenshot @ 2024-12-04 21:53:53
+[[file:emacs_magit,org-mod/2024-12-04_21-53-53_screenshot.png]]
+alt+x,
+org-download-clipboard
+参考：
+https://blog.csdn.net/daerzei/article/details/104128992
+新建/编辑
+ctrl c,ctrl l
+tab
+
+
+https://blog.csdn.net/daerzei/article/details/104128992
+打开
+ctrl c ,ctrl o
+[[file:~/.emacs.d/init.el::5][配置第五行]]
+[[file:/docs/test.org::A][跳转到test.org文件的A锚点处]]
+
+ file:/docs/test.org::A
+
+ [[file:2015zongjie.org::维护工作，质量较低][2015总结orog]]
