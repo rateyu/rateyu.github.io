@@ -1,7 +1,6 @@
 #+OPTIONS: \n:t
 * emacs magit,org-mod
 好久没有更新了，今年看能坚持多久！
-
 ** magit使用
 + 此处需要梯子，否则安装很麻烦
 ps: 经过测试，发现如下配置也可以安装，修改源
@@ -53,6 +52,8 @@ ctrl y 粘贴
 - 链接
 C-c C-l	编辑链接（此处为小写L）
 C-c C-o	打开链接（相当有用）
+
+ctrl / 非常有用的撤销功能
 
 具体怎么改你得看org-structure-template-alist的文档（C-h v org-structure-template-alist）
 
@@ -354,3 +355,33 @@ ps: sudo -s 切换到root账号后
   tcpdump -n -X -r tt.pcap
 #+end_src
 总结下它们使用命令的联系和区别
+
+** DONE macbook截图工具
+:LOGBOOK:
+CLOCK: [2024-12-04 Wed 22:13]--[2024-12-04 Wed 22:13] =>  0:00
+:END:
+ctrl shift cmd 4 截图到剪贴板
+ctrl y 粘贴到org文档中
+
+
+
+#+DOWNLOADED: screenshot @ 2024-12-04 21:53:53
+[[file:emacs_magit,org-mod/2024-12-04_21-53-53_screenshot.png]]
+alt+x,
+org-download-clipboard
+参考：
+https://blog.csdn.net/daerzei/article/details/104128992
+新建/编辑
+ctrl c,ctrl l
+tab
+
+
+https://blog.csdn.net/daerzei/article/details/104128992
+打开
+ctrl c ,ctrl o
+[[file:~/.emacs.d/init.el::5][配置第五行]]
+[[file:/docs/test.org::A][跳转到test.org文件的A锚点处]]
+
+ file:/docs/test.org::A
+
+ [[file:2015zongjie.org::维护工作，质量较低][2015总结orog]]
