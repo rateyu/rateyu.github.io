@@ -22,3 +22,6 @@ git revert commit	还原某次提交	按 r 并选择 revert
 git cherry-pick commit	挑选某次提交到当前分支	按 C 并选择 cherry-pick
 git rebase -i	交互式变基	             按 r 并选择 rebase
 git tag	创建标签	                          按 t 并输入标签名称
+
+
+** 计划学习
