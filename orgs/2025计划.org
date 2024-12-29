@@ -1,0 +1,24 @@
+* magit git命令比较
+
+Magit 和 Git 命令对应关系
+Git 命令	Magit 操作	快捷键/描述
+git status	magit-status	快捷键: M-x magit-status 或 C-x g
+git add .	阶段所有更改	在 Magit 界面中按 s
+git add file	阶段单个文件	在文件上按 s
+git commit -m "message"	提交更改并添加消息	按 c c 开始提交，输入提交信息，按 C-c C-c 确认提交
+git push	推送到远程分支	按 P p 或 P 后再按 p
+git pull	拉取远程更改	             按 F u 或 F 后再按 u
+git fetch	获取远程更新	按 F f 或 F 后再按 f
+git branch	显示本地分支列表	按 b b 查看或切换分支
+git checkout branch	切换到指定分支	按 b b 并选择目标分支
+git checkout -b branch	创建并切换到新分支	按 b c 并输入新分支名称
+git merge branch	合并某个分支	按 m 并选择要合并的分支
+git stash	暂存当前更改	             按 z z 保存工作区更改到 stash
+git stash pop	应用最近的 stash	按 z p 恢复最近的 stash
+git reset file	撤销文件暂存	             在文件上按 u
+git log	查看提交历史	                          按 l l 或 L 后再按 l
+git diff	查看工作区和暂存区的区别	按 d 查看文件更改
+git revert commit	还原某次提交	按 r 并选择 revert
+git cherry-pick commit	挑选某次提交到当前分支	按 C 并选择 cherry-pick
+git rebase -i	交互式变基	             按 r 并选择 rebase
+git tag	创建标签	                          按 t 并输入标签名称
