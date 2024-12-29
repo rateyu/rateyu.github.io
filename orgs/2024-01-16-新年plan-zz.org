@@ -1,45 +1,6 @@
 #+OPTIONS: \n:t
 * emacs magit,org-mod
 好久没有更新了，今年看能坚持多久！
-** magit使用
-+ 此处需要梯子，否则安装很麻烦
-ps: 经过测试，发现如下配置也可以安装，修改源
-
-#+BEGIN_SRC shell
-(setq package-check-signature nil)
-(setq package-archives
-      '(("gnu"   . "https://elpa.gnu.org/packages/")
-        ("melpa" . "https://melpa.org/packages/")))
-#+END_SRC
-
-快速唤出方式
-mysrc + tab 键
-
-
-+ 进入magit界面，按以下键：
-s：add 增加
-cc：commit 添加注释
-ctrl c + ctrl c ：确认提交
-P p：push推送到远程
-帮助信息：ctrl h,m
-
-L head , 空格查看，光标不移动；回车查看，光标移动
-
-** magit 常用命令
-magit-status
-绑定的命令：ctrl x g
-s stage;u unstage
-c , c commit
-ctrl c,ctrl c 提交
-推送 push为 P,u 即可完成远程仓库的推送
-
-magit-find-file,我们可以比如绑定到C-x m f,它可以指定访问某个分支中某个文件，且是放到一个临时的 buffer，只能说极其好用
-
-
-h 显示帮助命令
-magit使用的文档，日文版本的，感觉还不错
-https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce
-
 ** emacs基本使用
 - 显示文件夹后，在另外窗口打开文件
 ctrl x 4 b
@@ -65,12 +26,6 @@ ctrl / 非常有用的撤销功能
 - find-dired, -iname "*学习*"，搜索所有文件名
 - 上面两个命令同时支持中文和 不区分大小写，爽了
 - 使用命令直接导出md文件，org-md-export-as-markdown命令
-
-** magit merge
-
-Magit 会高亮冲突的文件，显示 Unmerged 状态。
-按 e 打开冲突文件，手动解决冲突。
-冲突解决后，按 s 将文件标记为已解决。
 
 ** dired文件夹模式
 1. 选中文件后，在另外窗口打开，直接 按 o 即可; f 直接在当前缓冲区查看文件
@@ -171,6 +126,189 @@ ctrl c & ctrl n
 10. S   list
 11. s   switch buffer
 12. cmd ret 创建新buffer
+
+** emacs 帮助相关
+ctrl h ,m      mod模块帮助
+ctrl h ,f/v/k 查询命令、变量、快捷键
+** emacs搜索
+project-find-name 搜索文件名
+project-find-rgrep 搜索文件中的文本内容，linux和mac使用很爽
+
+另外两个搜索
+搜索参数定义
+搜索所有函数引用
+
+M-x xref-find-definitions：查找符号定义。
+M-x xref-find-references：查找符号引用。
+
+(global-set-key (kbd "C-c d") 'xref-find-definitions)  ;; 绑定到 C-c d
+(global-set-key (kbd "C-c r") 'xref-find-references)   ;; 绑定到 C-c r
+
+
+#+begin_src shell
+
+  generate_tags.sh; shell脚本生成tags文件
+
+  #!/bin/bash
+  # 生成 TAGS 文件，支持多种语言
+  find . \( -name "*.java" -o -name "*.js" -o -name "*.jsp" -o -name "*.html" -o -name "*.css" -o -name "*.cpp" -o -name "*.hpp" -o -name "*.go" -o -name "*.py" -o -name "*.php" -o -name "*.sh" -o -name "*.yaml" -o -name "*.yml" \) -print | etags -
+  echo "TAGS file generated successfully."
+
+
+  chmod +x generate_tags.sh
+  ./generate_tags.sh
+
+  自动加载
+  (setq tags-table-list '("~/project1/TAGS" "~/project2/TAGS"))
+
+  加载：M-x visit-tags-table。
+  查找定义：M-.。
+  查找引用：M-x xref-find-references。
+
+#+end_src
+
+*** windows说明
+windows系统文件使用gbk，emacs默认支持utf8
+用字符串递归搜索文件内容时，会遭遇不确定的乱码问题，目前无法解决
+换一种方式，使用“rg”的方式进行查询，它支持多种文件字符集格式的查找，
+需要再验证下，是否可以解决windows中使用emacs进行文本查询的问题
+
+注意，需要添加git的环境变量路径，因为它会使用习惯linux命令
+
+*** 变量定义和函数定义的方法
+
+*** emacs插件推荐
+[[https://www.liuhaihua.cn/archives/221888.html][emacs推荐插件10个]] ctrl-c,ctrl-l 插件
+
+*** emacs选择多行字符串，方便的方法
+mac使用 ctrl shift 上下，直接就可以选择文本了，这个真方便
+** emacs插件推荐ido和smex
+ido是文件夹提示
+smex是命令提示
+这两个插件很方便
+** eww 快捷键
+  w  拷贝当前页面 URL    
+  G     访问指定的url地址
+  g  刷新当前页面
+  q     退出
+  l  后退    
+  r  前进
+  H     历史查看
+  &     外部网页访问
+  v  查看网页源码    
+  b  添加当前网页到书签    
+  B  查看书签    
+  R  开启阅读模式    
+  n/p  自动跳转到下一页/上一页    
+  M-RET  在新 buffer 内打开链接    
+
+** emacs grep 命令
+
+grep --color=auto -nH --null -e "images" -r
+递归-r
+** emacs快速粘贴图片到org文件中
+
+html文件中应该是绝对路径
+/images/11.png
+**需要手工修改**，此处需要注意
+
+脚本要修改，copy的目标路径，html文件的png改为绝对路径
+
+显示与不显示图片的快捷键
+C-c C-x C-v：切换图片的内联显示（toggle inline images）。这个命令可以让你在显示和隐藏图片之间切换。
+
+#+DOWNLOADED: screenshot @ 2024-08-14 23:19:36
+-- #+ATTR_ORG: :width 60%
+[[file:emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png]]
+** 如何给shell添加书签
+emacs shell添加书签未成功，eshell尝试了下可以的
+eshell是emacs内置shell，完全emacs lisp编写，更集成与emacs环境
+注意要使用 cd /ssh:myu@192.168.1.13:/ 方式打开，没有cd 无法显示正常的文件颜色
+如下图示例
+
+M-x eshell: 启动 Emacs 自己的 shell 实现，它完全用 Emacs Lisp 写成，更加集成 Emacs 功能。
+M-x term: 这个命令提供了一个更接近传统终端的环境，支持复杂的文本界面，比如那些用于文本编辑器或音乐播放器的界面。
+M-x ansi-term: 类似于 term，但它更好地支持 ANSI 转义序列，更适合需要运行交互式程序的情况
+```
+(defun my-new-eshell ()
+  "Open a new uniquely named eshell instance."
+  (interactive)
+  (let ((eshell-buffer-index (1+ (length (seq-filter (lambda (buf)
+                                                       (string-prefix-p "*eshell*" (buffer-name buf)))
+                                                     (buffer-list))))))
+    (eshell eshell-buffer-index)))
+
+```
+将这个函数添加到书签中：
+首先，确保你已经安装并加载了 bookmark 模块。
+使用 M-x bookmark-set 命令创建一个新书签，当提示你命名书签时，你可以命名为 “New Eshell”。
+打开书签列表 (M-x bookmark-bmenu-list)，找到你刚才创建的书签，然后按 e 来编辑这个书签。
+将 filename 改为你的 Emacs Lisp 文件位置，并将 handler 设置为 my-new-eshell。
+
+- 打开新的eshell
+通过 C-u M-x eshell 完成。这样做会提示你输入一个缓冲区编号
+
+	    
+#+DOWNLOADED: screenshot @ 2024-08-18 06:46:51
+-- #+ATTR_ORG: :width 60%
+[[file:emacs_magit,org-mod/2024-08-18_06-46-51_screenshot.png]]
+** eshell 命令行ps -ef | grpe java后，无法显示全命令行参数
+
+```
+(add-hook 'eshell-mode-hook
+          (lambda ()
+            (setq truncate-lines nil)))
+
+ps -ef | grep java | less -S
+
+```
+
+ps: sudo -s 切换到root账号后
+再ps，可以显示全部命令，并且可以换行
+
+** magit使用
++ 此处需要梯子，否则安装很麻烦
+ps: 经过测试，发现如下配置也可以安装，修改源
+
+#+BEGIN_SRC shell
+(setq package-check-signature nil)
+(setq package-archives
+      '(("gnu"   . "https://elpa.gnu.org/packages/")
+        ("melpa" . "https://melpa.org/packages/")))
+#+END_SRC
+
+快速唤出方式
+mysrc + tab 键
+
+
++ 进入magit界面，按以下键：
+s：add 增加
+cc：commit 添加注释
+ctrl c + ctrl c ：确认提交
+P p：push推送到远程
+帮助信息：ctrl h,m
+
+L head , 空格查看，光标不移动；回车查看，光标移动
+** magit 常用命令
+magit-status
+绑定的命令：ctrl x g
+s stage;u unstage
+c , c commit
+ctrl c,ctrl c 提交
+推送 push为 P,u 即可完成远程仓库的推送
+
+magit-find-file,我们可以比如绑定到C-x m f,它可以指定访问某个分支中某个文件，且是放到一个临时的 buffer，只能说极其好用
+
+
+h 显示帮助命令
+magit使用的文档，日文版本的，感觉还不错
+https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce
+
+** magit merge
+
+Magit 会高亮冲突的文件，显示 Unmerged 状态。
+按 e 打开冲突文件，手动解决冲突。
+冲突解决后，按 s 将文件标记为已解决。
 
 ** vim emacs 快捷键比较
 #+BEGIN_SRC txt
@@ -278,73 +416,6 @@ github下载文件，zenburn-theme.el
 (load-theme 'zenburn t)
 
 ** 如何设计并实现一个百万并发的服务端程序架构
-
-** emacs grep 命令
-
-grep --color=auto -nH --null -e "images" -r
-递归-r
-
-** emacs快速粘贴图片到org文件中
-
-html文件中应该是绝对路径
-/images/11.png
-**需要手工修改**，此处需要注意
-
-脚本要修改，copy的目标路径，html文件的png改为绝对路径
-
-显示与不显示图片的快捷键
-C-c C-x C-v：切换图片的内联显示（toggle inline images）。这个命令可以让你在显示和隐藏图片之间切换。
-
-#+DOWNLOADED: screenshot @ 2024-08-14 23:19:36
--- #+ATTR_ORG: :width 60%
-[[file:emacs_magit,org-mod/2024-08-14_23-19-36_screenshot.png]]
-
-** 如何给shell添加书签
-emacs shell添加书签未成功，eshell尝试了下可以的
-eshell是emacs内置shell，完全emacs lisp编写，更集成与emacs环境
-注意要使用 cd /ssh:myu@192.168.1.13:/ 方式打开，没有cd 无法显示正常的文件颜色
-如下图示例
-
-M-x eshell: 启动 Emacs 自己的 shell 实现，它完全用 Emacs Lisp 写成，更加集成 Emacs 功能。
-M-x term: 这个命令提供了一个更接近传统终端的环境，支持复杂的文本界面，比如那些用于文本编辑器或音乐播放器的界面。
-M-x ansi-term: 类似于 term，但它更好地支持 ANSI 转义序列，更适合需要运行交互式程序的情况
-```
-(defun my-new-eshell ()
-  "Open a new uniquely named eshell instance."
-  (interactive)
-  (let ((eshell-buffer-index (1+ (length (seq-filter (lambda (buf)
-                                                       (string-prefix-p "*eshell*" (buffer-name buf)))
-                                                     (buffer-list))))))
-    (eshell eshell-buffer-index)))
-
-```
-将这个函数添加到书签中：
-首先，确保你已经安装并加载了 bookmark 模块。
-使用 M-x bookmark-set 命令创建一个新书签，当提示你命名书签时，你可以命名为 “New Eshell”。
-打开书签列表 (M-x bookmark-bmenu-list)，找到你刚才创建的书签，然后按 e 来编辑这个书签。
-将 filename 改为你的 Emacs Lisp 文件位置，并将 handler 设置为 my-new-eshell。
-
-- 打开新的eshell
-通过 C-u M-x eshell 完成。这样做会提示你输入一个缓冲区编号
-
-	    
-#+DOWNLOADED: screenshot @ 2024-08-18 06:46:51
--- #+ATTR_ORG: :width 60%
-[[file:emacs_magit,org-mod/2024-08-18_06-46-51_screenshot.png]]
-
-** eshell 命令行ps -ef | grpe java后，无法显示全命令行参数
-
-```
-(add-hook 'eshell-mode-hook
-          (lambda ()
-            (setq truncate-lines nil)))
-
-ps -ef | grep java | less -S
-
-```
-
-ps: sudo -s 切换到root账号后
-再ps，可以显示全部命令，并且可以换行
 
 ** tcpdump和wirdshark
 #+begin_src shell
