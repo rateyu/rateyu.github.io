@@ -1,7 +1,6 @@
 #+OPTIONS: \n:t
 * emacs magit,org-mod
 好久没有更新了，今年看能坚持多久！
-
 ** magit使用
 + 此处需要梯子，否则安装很麻烦
 ps: 经过测试，发现如下配置也可以安装，修改源
@@ -348,7 +347,6 @@ ps: sudo -s 切换到root账号后
   tcpdump -n -X -r tt.pcap
 #+end_src
 总结下它们使用命令的联系和区别
-
 
 ** DONE macbook截图工具
 :LOGBOOK:
