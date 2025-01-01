@@ -254,15 +254,13 @@ M-x ansi-term: 类似于 term，但它更好地支持 ANSI 转义序列，更适
 -- #+ATTR_ORG: :width 60%
 [[file:emacs_magit,org-mod/2024-08-18_06-46-51_screenshot.png]]
 ** eshell 命令行ps -ef | grpe java后，无法显示全命令行参数
-
-```
+#+begin_src
 (add-hook 'eshell-mode-hook
           (lambda ()
             (setq truncate-lines nil)))
 
 ps -ef | grep java | less -S
-
-```
+#+end_src
 
 ps: sudo -s 切换到root账号后
 再ps，可以显示全部命令，并且可以换行
@@ -294,6 +292,7 @@ L head , 空格查看，光标不移动；回车查看，光标移动
 magit-status
 绑定的命令：ctrl x g
 s stage;u unstage
+d , d 查看修改的内容
 c , c commit
 ctrl c,ctrl c 提交
 推送 push为 P,u 即可完成远程仓库的推送
@@ -310,6 +309,51 @@ https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce
 Magit 会高亮冲突的文件，显示 Unmerged 状态。
 按 e 打开冲突文件，手动解决冲突。
 冲突解决后，按 s 将文件标记为已解决。
+
+** emacs lsp-mod安装方法
+jdtls sever
+python3.11
+lsp-mode安装
+
+安装相关插件
+company
+yasnippet
+
+.emacs配置
+#+begin_src
+;;lsp-mode-20241231.1934 ,需要>python3.11,安装 lspmod，jdtls，
+(add-to-list 'load-path "~/.emacs.d/lsp-mode-20241231.1934/")
+(require 'lsp-mode)
+(add-hook 'java-mode-hook #'lsp) ;; 在 Java 模式中启用 lsp
+(setq lsp-java-server-install-dir "~/jdtls/") ;; 指定 jdtls 的安装路径
+
+
+
+;; 代码提示功能
+(add-to-list 'load-path "~/.emacs.d/company-mode-1.0.0/")
+(require 'company)
+(global-company-mode t) ;; 启用全局补全
+(setq company-minimum-prefix-length 1) ;; 输入1个字符后显示补全
+(setq company-idle-delay 0.0) ;; 补全菜单立即弹出
+
+
+;; (package-install 'yasnippet)
+(require 'yasnippet)
+(yas-global-mode 1)
+
+
+#+end_src
+
+** screen 踢掉原用户
+一般是Dttached ,表示没有用户登录；
+Attached代表有用户登录；
+可以用screen -D -r <screen_id> 踢掉前用户，进入 <screen_id> 界面
+
+ctrl a，d 回到主终端
+
+ctrl a , " 所有窗口列表
+ctrl a , ? 命令帮助
+ctrl a , A 给虚拟终端命名
 
 ** vim emacs 快捷键比较
 #+BEGIN_SRC txt
@@ -409,6 +453,31 @@ expand tab                                      :se et
                         
 原文链接：https://blog.csdn.net/hejinjing_tom_com/article/details/51700911
 #+END_src
+
+** docker 自动开启与关闭
+#+begin_src
+# docker update --restart=always 容器名或容器ID
+docker update --restart=always <CONTAINER ID>
+# 例如将tomcat设为自启动
+docker update --restart=always tomcat
+
+# docker update --restart=no 容器名或容器ID
+docker update --restart=no <CONTAINER ID>
+# 例如取消tomcat的自启动
+docker update --restart=no tomcat
+
+# 添加到docker用户组
+sudo usermod -aG docker myu
+#+end_src
+
+** windows 命令行睡眠
+休眠
+   shutdown /h
+睡眠
+rundll32.exe powrprof.dll,SetSuspendState Sleep
+
+ubuntu
+systemctl suspend
 
 ** 安装自定义的theme
 github下载文件，zenburn-theme.el
