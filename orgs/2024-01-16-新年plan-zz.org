@@ -310,6 +310,142 @@ Magit 会高亮冲突的文件，显示 Unmerged 状态。
 按 e 打开冲突文件，手动解决冲突。
 冲突解决后，按 s 将文件标记为已解决。
 
+** emacs leetcode-cn
+
+最近着迷emacs，刷leetcode题想也用下（可以排除干扰），
+下载了两个插件，一个是官方的插件，还有一个leetcode-cn改造版本，
+感觉第二个改动比较小，以前没有接触过lisp语言，临时抱佛脚了一把，
+居然被我调通了，特此记录下。
+
+1. 安装leetcode-cn，是手工下载的包，直接手工配置，参考如下：
+#+BEGIN_SRC lisp
+;; leetcode-cn.el-master  leetcode-20241115.527-elpa.bk emacs安装graphql插件
+(add-to-list 'load-path "~/.emacs.d/leetcode-cn.el-master/")
+(add-to-list 'exec-path "/home/myu/.local/bin/")
+;;(add-to-list 'exec-path "/home/myu/.local/bin")
+;;(add-to-list 'load-path "~/.emacs.d/leetcode-20241115.527-elpa.bk/")
+(require 'leetcode)
+(setq leetcode-prefer-language "java")
+(setq leetcode-display-results nil) ;; 禁用结果中的样式显示
+;;(setq leetcode-site "https://leetcode.cn/")
+;;(setq leetcode-site "https://leetcode-cn.com/")
+;; 其他设置，比如保存解答
+(setq leetcode-save-solutions t)
+(setq leetcode-directory "~/leetcode")
+(setq leetcode-prefer-sql "mysql")
+#+END_src
+
+2. 还手工安装了这几个插件
+#+BEGIN_SRC shell
+emacs package-install graphql
+spinner
+
+还有这些：
+ 1687  pip3 install graphql
+ 1871  pip3 install semgrep
+ 1874  sudo snap install semgrep
+ 1913  pip3 install jeepney
+ 1915  pip3 install browser-cookie3
+ 1917  pip3 install jeepney
+ 1918  pip3 install dbus-python
+#+END_src
+
+3. 到这里，更郁闷的来了，可以显示leetcode问题，总是提交失败，没办法硬着头皮调试leetcode.el代码，
+   最后找到这段代码后面没执行，(let* ((my-cookies (executable-find "my_cookies"))；直接
+   将路径写死，然后问题就解决了。
+
+   其中还在chrome中登录了leetcode-cn，并且在linux服务器chrome配置了三方程序可以访问cookie，
+   用emacs真是够折腾啊。
+
+#+BEGIN_SRC lisp
+
+(aio-defun leetcode--login ()
+  "Steal LeetCode login session from local browser.
+It also cleans LeetCode cookies in `url-cookie-file'."
+  ;;(debug)
+  (leetcode--loading-mode t)
+  (message "leetcode--login---")
+  (ignore-errors (url-cookie-delete-cookies leetcode--domain))
+  (message "leetcode--login---222")
+  (aio-await (leetcode--csrf-token))    ;knock knock, whisper me the mysterious information
+  (message "3333")
+  (message "exec-path: %s" exec-path)
+
+  ;;/home/myu/.local/bin/my_cookies
+  ;;/home/myu/.local/lib/python3.10/site-packages/my_cookies
+  ;;(message "Does my_cookies exist? %s" (file-exists-p "/home/myu/.local/lib/python3.10/site-packages/my_cookies"))
+  (message "my_cookies output: %s" (shell-command-to-string "/home/myu/.local/bin/my_cookies -d leetcode.cn"))
+  (let* (
+	 (message "444000")
+	 (my-cookies "/home/myu/.local/bin/my_cookies")
+  ;;(let* ((my-cookies (executable-find "my_cookies"))
+	 (message "444")
+	 ;;(debug)
+         (my-cookies-output (shell-command-to-string (concat (shell-quote-argument my-cookies) " -d leetcode.cn")))
+	 (message "555")
+	 ;;(debug)
+         (cookies-list (seq-filter
+                        (lambda (s) (not (string-empty-p s)))
+                        (split-string my-cookies-output "\n")))
+         (cookies-pairs (seq-map
+                         (lambda (s) (split-string s))
+                         cookies-list))
+         (leetcode-session (cadr (assoc "LEETCODE_SESSION" cookies-pairs)))
+         (leetcode-csrftoken (cadr (assoc "csrftoken" cookies-pairs))))
+    (leetcode--debug "login session: '%s'" leetcode-session)
+    (leetcode--debug "login csrftoken: '%s'" leetcode-csrftoken)
+    (url-cookie-store "LEETCODE_SESSION" leetcode-session nil leetcode--domain "/" t)
+    (url-cookie-store "csrftoken" leetcode-csrftoken nil leetcode--domain "/" t))
+  (aio-await (leetcode--csrf-token))    ;knock knock, whisper me the mysterious information
+  (leetcode--loading-mode -1))
+
+
+#+END_src
+4. 今天先到这里，后面再研究研究为什么
+
+** windows shell改为gitbash的方法
+#+BEGIN_SRC lisp
+;; 设置 Git Bash 为默认 shell
+(setq shell-file-name "C:/Program Files/Git/bin/bash.exe") ;; 确保路径正确
+(setq explicit-shell-file-name "C:/Program Files/Git/bin/bash.exe")
+
+;; 配置 Shell 参数
+(setq explicit-bash.exe-args '("--login" "-i")) ;; 启用交互式模式
+
+;; 设置环境变量，确保 Emacs 使用 UTF-8
+(setenv "LANG" "en_US.UTF-8")
+
+;; 设置 Shell 编码
+(add-hook 'shell-mode-hook
+          (lambda ()
+            (set-buffer-process-coding-system 'utf-8-unix 'utf-8-unix)))
+
+#+END_src
+** lisp语言if语法还和别的不一样
+#+BEGIN_SRC lisp
+
+(if CONDITION
+    THEN-BODY
+  ELSE-BODY)
+
+;;progn 用来包装多条语句
+(progn
+  STATEMENT-1
+  STATEMENT-2
+  ...)
+
+(if (not my-cookies)
+    (message "my_cookies not found! Please ensure it is installed and in exec-path.")
+  (progn
+    (message "my_cookies found: %s" my-cookies)))
+
+#+END_src
+
+重新格式化代码
+在 Emacs 中，将光标放在代码区域，按下以下快捷键：
+C-M-\（indent-region）：重新格式化选中的代码块。
+TAB：在单行上自动对齐当前行。
+
 ** vim emacs 快捷键比较
 #+BEGIN_SRC txt
 oemacs 与 vim 命令对比(网上摘录)
@@ -414,6 +550,9 @@ github下载文件，zenburn-theme.el
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'zenburn t)
+
+** windows休眠
+shutdown /h
 
 ** 如何设计并实现一个百万并发的服务端程序架构
 
