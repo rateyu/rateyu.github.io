@@ -355,6 +355,88 @@ ctrl a , " 所有窗口列表
 ctrl a , ? 命令帮助
 ctrl a , A 给虚拟终端命名
 
+** emacs leetcode-cn
+最近着迷emacs，刷leetcode题想也用下（可以排除干扰），  
+下载了两个插件，一个是官方的插件，还有一个leetcode-cn改造版本，  
+感觉第二个改动比较小，以前没有接触过lisp语言，临时抱佛脚了一把，  
+居然被我调通了，特此记录下。  
+1. 安装leetcode-cn，是否工下载的包，直接手工配置，参考如下：
+#+BEGIN_SRC lisp
+    ;; leetcode-cn.el-master  leetcode-20241115.527-elpa.bk emacs安装graphql插件
+    (add-to-list 'load-path "~/.emacs.d/leetcode-cn.el-master/")
+    (add-to-list 'exec-path "/home/myu/.local/bin/")
+    ;;(add-to-list 'exec-path "/home/myu/.local/bin")
+    ;;(add-to-list 'load-path "~/.emacs.d/leetcode-20241115.527-elpa.bk/")
+    (require 'leetcode)
+    (setq leetcode-prefer-language "java")
+    (setq leetcode-display-results nil) ;; 禁用结果中的样式显示
+    ;;(setq leetcode-site "https://leetcode.cn/")
+    ;;(setq leetcode-site "https://leetcode-cn.com/")
+    ;; 其他设置，比如保存解答
+    (setq leetcode-save-solutions t)
+    (setq leetcode-directory "~/leetcode")
+    (setq leetcode-prefer-sql "mysql")
+#+END_src
+2. 还手工安装了这几个插件
+#+BEGIN_SRC shell
+   emacs package-install graphql
+   spinner
+   还有这些：
+    1687  pip3 install graphql
+    1871  pip3 install semgrep
+    1874  sudo snap install semgrep
+    1913  pip3 install jeepney
+    1915  pip3 install browser-cookie3
+    1917  pip3 install jeepney
+    1918  pip3 install dbus-python
+#+END_src
+3. 到这里，更郁闷的来了，可以显示leetcode问题，总是提交失败，没办法硬着头皮调试leetcode.el代码，  
+   最后找到这段代码后面没执行，(let\* ((my-cookies (executable-find "my<sub>cookies</sub>"))；直接  
+   将路径写死，然后问题就解决了。
+   #+BEGIN_SRC lisp
+    (aio-defun leetcode--login ()
+      "Steal LeetCode login session from local browser.
+    It also cleans LeetCode cookies in `url-cookie-file'."
+      ;;(debug)
+      (leetcode--loading-mode t)
+      (message "leetcode--login---")
+      (ignore-errors (url-cookie-delete-cookies leetcode--domain))
+      (message "leetcode--login---222")
+      (aio-await (leetcode--csrf-token))    ;knock knock, whisper me the mysterious information
+      (message "3333")
+      (message "exec-path: %s" exec-path)
+    
+      ;;/home/myu/.local/bin/my_cookies
+      ;;/home/myu/.local/lib/python3.10/site-packages/my_cookies
+      ;;(message "Does my_cookies exist? %s" (file-exists-p "/home/myu/.local/lib/python3.10/site-packages/my_cookies"))
+      (message "my_cookies output: %s" (shell-command-to-string "/home/myu/.local/bin/my_cookies -d leetcode.cn"))
+      (let* (
+    	 (message "444000")
+    	 (my-cookies "/home/myu/.local/bin/my_cookies")
+      ;;(let* ((my-cookies (executable-find "my_cookies"))
+    	 (message "444")
+    	 ;;(debug)
+    	 (my-cookies-output (shell-command-to-string (concat (shell-quote-argument my-cookies) " -d leetcode.cn")))
+    	 (message "555")
+    	 ;;(debug)
+    	 (cookies-list (seq-filter
+    			(lambda (s) (not (string-empty-p s)))
+    			(split-string my-cookies-output "\n")))
+    	 (cookies-pairs (seq-map
+    			 (lambda (s) (split-string s))
+    			 cookies-list))
+    	 (leetcode-session (cadr (assoc "LEETCODE_SESSION" cookies-pairs)))
+    	 (leetcode-csrftoken (cadr (assoc "csrftoken" cookies-pairs))))
+        (leetcode--debug "login session: '%s'" leetcode-session)
+        (leetcode--debug "login csrftoken: '%s'" leetcode-csrftoken)
+        (url-cookie-store "LEETCODE_SESSION" leetcode-session nil leetcode--domain "/" t)
+        (url-cookie-store "csrftoken" leetcode-csrftoken nil leetcode--domain "/" t))
+      (aio-await (leetcode--csrf-token))    ;knock knock, whisper me the mysterious information
+      (leetcode--loading-mode -1))
+   #+END_src 
+4. 今天先到这里，后面再研究研究为什么
+
+** emacs 常用插件和命令
 ** vim emacs 快捷键比较
 #+BEGIN_SRC txt
 oemacs 与 vim 命令对比(网上摘录)
