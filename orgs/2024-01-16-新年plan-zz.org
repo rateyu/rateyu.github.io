@@ -436,7 +436,12 @@ ctrl a , A 给虚拟终端命名
    #+END_src 
 4. 今天先到这里，后面再研究研究为什么
 
-** emacs 常用插件和命令
+** TODO emacs 常用插件和命令
+leetcode-cn快捷键
+1. ctrl p 在另外一个窗口打开
+2. 切换不同语言 cpp golang python javascript
+
+** TODO emacs huge博客
 ** vim emacs 快捷键比较
 #+BEGIN_SRC txt
 oemacs 与 vim 命令对比(网上摘录)
