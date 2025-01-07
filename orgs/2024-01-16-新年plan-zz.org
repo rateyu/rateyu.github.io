@@ -440,6 +440,7 @@ ctrl a , A 给虚拟终端命名
 leetcode-cn快捷键
 1. ctrl p 在另外一个窗口打开
 2. 切换不同语言 cpp golang python javascript
+3. 代码中有中文提交不上去
 
 ** TODO emacs huge博客
 ** vim emacs 快捷键比较
