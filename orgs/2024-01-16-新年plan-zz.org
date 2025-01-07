@@ -583,6 +583,38 @@ github下载文件，zenburn-theme.el
 #+end_src
 总结下它们使用命令的联系和区别
 
+** conda
+conda env list
+conda create -n tts
+conda activate ChatTTS
+
+conda list
+
+conda activate ChatTTS
+pip install --force-reinstall --upgrade Pillow
+python -c "from PIL import Image; print('Pillow installed successfully')"
+
+
+conda activate chattts_env
+python -m pip list
+
+
+#+BEGIN_SRC python
+@echo off
+:: 激活 Anaconda 环境
+"C:\Users\<your_username>\anaconda3\Scripts\activate.bat" base
+
+:: 切换到程序所在目录
+cd /d "C:\path\to\your\python_script"
+
+:: 运行 Python 脚本
+python your_script.py
+#+END_src
+
+
+** 快捷键
+code .
+ctrl alt s ,正则表达式搜索
 ** DONE macbook截图工具
 :LOGBOOK:
 CLOCK: [2024-12-04 Wed 22:13]--[2024-12-04 Wed 22:13] =>  0:00
