@@ -71,7 +71,6 @@ ps:ctrl c + ctrl , => 快速调用引用 并选择要插入的内容
 ctrl c，ctrl l ；插入链接
 ctrl c，' ;插入代码??
 
-
 *** org文件导出为html文件
 1. org导出html文件
 2. 编辑完org，要导出ctrl c，ctrl e ，h导出html文件
@@ -437,10 +436,12 @@ ctrl a , A 给虚拟终端命名
 4. 今天先到这里，后面再研究研究为什么
 
 ** TODO emacs 常用插件和命令
-leetcode-cn快捷键
+*** leetcode-cn快捷键
 1. ctrl p 在另外一个窗口打开
-2. 切换不同语言 cpp golang python javascript
-3. 代码中有中文提交不上去
+2. l 切换不同语言 cpp golang python javascript
+3. 过滤：s regex，t tag，T toggle tag display，/ clear，g/G refresh
+4. o openproblem，v view ，b/B in browser，c/C solve problem
+5. 代码中有中文提交不上去？
 
 ** TODO emacs huge博客
 ** vim emacs 快捷键比较
@@ -612,7 +613,10 @@ cd /d "C:\path\to\your\python_script"
 python your_script.py
 #+END_src
 
-
+** ipad shell 中文
+ipad试了termius，blink shell和shellbean，都没有找到怎么切换中文输入法的。
+于是走了一条弯路，用iSH shell先访问terminal，然后安装openssh，最后用ssh访问远程服务器，
+这样做就可以切换中文输入发了，用起来还不错，推荐给大家。
 ** 快捷键
 code .
 ctrl alt s ,正则表达式搜索
