@@ -672,7 +672,6 @@ cmd h 隐藏窗口，cmd tab 调出
 
 cmd tab 切换程序
 cmd ～	切换相同程序，不同窗口
-
 cmd opt h 保留当前窗口，关闭其它
 fn ctrl f/r 保留状态栏的最大化
 cmd opt esc，查看卡死的程序，强制退出
@@ -696,3 +695,6 @@ cmd shift s，朗读选中单词
 cmd shift a，加入生词本
 opt 空格， 快速查词
 
+
+** emacs 使用chatgpt
+[[https://github.com/xenodium/chatgpt-shell][chat-gpt等使用方法]]
