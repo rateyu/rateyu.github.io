@@ -711,6 +711,19 @@ opt 空格， 快速查词
 lisp和java
 lisp一等公民是函数
 
+
+*** 常用快捷键
+Emacs 中有很多常用的快捷键用于执行和调试 Lisp 代码，以下是一些最常用的快捷键：
+M-x eval-expression：执行一个 Lisp 表达式。快捷键 M-:。
+M-x eval-buffer：执行当前 buffer 中的所有 Lisp 代码。
+M-x eval-region：执行选中的区域中的 Lisp 代码。
+M-x ielm：启动一个交互式的 Emacs Lisp 环境，方便测试和调试。
+M-x toggle-debug-on-error：开启错误调试模式，捕捉和调试错误。
+M-x debug：手动进入调试模式，跟踪代码执行。
+M-x edebug-defun：进入 edebug 调试模式，支持逐步执行和设置断点。
+C-x C-e：执行当前行或选定区域的 Lisp 表达式（常用于在代码中测试单行代码）。
+
+
 ** emacs search
 查找文件：使用 find-name-dired，支持文件名的通配符查找。
 查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
