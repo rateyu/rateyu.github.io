@@ -1,0 +1,11 @@
+#+hugo_base_dir: ~/my-blog
+#+hugo_section: posts
+
+* My First Post
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-first-post
+:EXPORT_HUGO_TAGS: Emacs, Hugo
+:EXPORT_HUGO_CATEGORIES: Blogging
+:END:
+
+Welcome to my first blog post. Hugo and Emacs make blogging so easy!
