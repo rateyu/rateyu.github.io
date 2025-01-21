@@ -698,3 +698,26 @@ opt 空格， 快速查词
 
 ** emacs 使用chatgpt
 [[https://github.com/xenodium/chatgpt-shell][chat-gpt等使用方法]]
+
+** emacs 调试lisp语言和lisp插件
+断点：(debug)
+下一步：n
+进入：s
+继续：c
+退出：q
+
+查看表达式：c h ，v 查看变量和表达式
+
+lisp和java
+lisp一等公民是函数
+
+** emacs search
+查找文件：使用 find-name-dired，支持文件名的通配符查找。
+查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
+
+** gpt问题答案备份
+pc7 
+C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
+
+** windows批量html转为pdf命令-windows转换失败
+for %f in (*.html) do wkhtmltopdf "%f" "%~nf.pdf"
