@@ -732,5 +732,18 @@ C-x C-e：执行当前行或选定区域的 Lisp 表达式（常用于在代码�
 pc7 
 C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
 
+** emacs 152 ubuntu 机器请求gpt方法
+安装 gptel插件
+服务器配置代理
+export https_proxy="http://192.168.1.14:7897"
+export http_proxy="http://192.168.1.14:7897"
+注意windows网络不通，无法使用
+
+使用curl -I google.com 进行测试
+
+消除环境变量
+unset http_proxy https_proxy ftp_proxy no_proxy
+
+
 ** windows批量html转为pdf命令-windows转换失败
 for %f in (*.html) do wkhtmltopdf "%f" "%~nf.pdf"
