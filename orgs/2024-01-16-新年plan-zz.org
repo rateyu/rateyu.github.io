@@ -727,6 +727,35 @@ C-x C-e：执行当前行或选定区域的 Lisp 表达式（常用于在代码�
 ** emacs search
 查找文件：使用 find-name-dired，支持文件名的通配符查找。
 查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
+** DONE emacs 开发与调试, 刷题还是用mac air直接上网站刷题
+
+lsp-mode
+组织导入  lspmod imports
+运行java run
+
+realgud
+realgud:pdb
+进行python调试
+b linenum
+c 继续
+n 下一步
+
+leetcode 网站刷题
+opt shit f 格式化代码
+运行代码 cmd '
+提交代码 cmd enter
+
+leetcode英文网站比中文网站更加易用
+notebook 记录更加易用
+
+
+** emacs预览html
+browse-url-of-file
+eww-open-file
+
+** emacs 数据库 调试
+ejc-sql
+realgud
 
 ** gpt问题答案备份
 pc7 
@@ -738,6 +767,10 @@ C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
 export https_proxy="http://192.168.1.14:7897"
 export http_proxy="http://192.168.1.14:7897"
 注意windows网络不通，无法使用
+
+修改参数
+gptel-menu
+-m 选择参数，选择gpt-40模型，并且标价了，完美
 
 使用curl -I google.com 进行测试
 
