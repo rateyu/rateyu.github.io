@@ -827,3 +827,10 @@ ea8bc70  default virtualbox running      C:/vms/centos8
 d2b1148  default virtualbox running      C:/vms/centos7
 fbdc1af  default virtualbox running      C:/vms/cdh52024
 1c6fa4d  default virtualbox poweroff     C:/vms/cdh62024
+
+
+** 2025跳槽准备-7天
+靶向式简历
+1. 架构微服务，docker和k8s容器
+2. 架构工作流，统计架构设计
+3. 架构高并发网络
