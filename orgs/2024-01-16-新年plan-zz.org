@@ -780,3 +780,50 @@ unset http_proxy https_proxy ftp_proxy no_proxy
 
 ** windows批量html转为pdf命令-windows转换失败
 for %f in (*.html) do wkhtmltopdf "%f" "%~nf.pdf"
+
+** 服务器清单
+192.168.1.13  
+
+
+192.168.1.153服务器：
+192.168.1.152 ubuntu测试环境，包括 emacs29+chatel(需要air的代理才能gpt), rbtmq
+eaf29ab  centos1   virtualbox poweroff /home/myu/vagrant/nien_24_L31
+b84417d  centos2   virtualbox poweroff /home/myu/vagrant/nien_24_L31
+ce59908  centos3   virtualbox poweroff /home/myu/vagrant/nien_24_L31
+f32a2fe  default   virtualbox poweroff /home/myu/vagrant/cdh15
+f736a42  default   virtualbox poweroff /home/myu/vagrant/test
+293e088  default   virtualbox poweroff /home/myu/vagrant/newos7
+ba6b7a2  mscdh1    virtualbox poweroff /home/myu/vagrant/nien_ms
+3220f33  mscdh2    virtualbox poweroff /home/myu/vagrant/nien_ms
+044eff2  mscdh3    virtualbox poweroff /home/myu/vagrant/nien_ms
+6163d17  msexpcdh1 virtualbox poweroff /home/myu/vagrant/nien_ms_exp
+c410073  msexpcdh2 virtualbox poweroff /home/myu/vagrant/nien_ms_exp
+4c2f147  msexpcdh3 virtualbox poweroff /home/myu/vagrant/nien_ms_exp
+1a59081  k8cdh1    virtualbox poweroff /home/myu/vagrant/nien_k8s
+4f34a1f  k8cdh2    virtualbox poweroff /home/myu/vagrant/nien_k8s
+65b1277  k8cdh3    virtualbox poweroff /home/myu/vagrant/nien_k8s
+1fe1e36  default   virtualbox poweroff /home/myu/vagrant/ubuntu20
+5450d9b  default   virtualbox running  /home/myu/vagrant/ubuntu_rbtmq
+e3e7bfb  default   virtualbox running  /home/myu/vagrant/ubuntu-desktop-2204lts
+f45c938  default   virtualbox running  /home/myu/vagrant/ubuntu-desktop-2204lts-oa8.2
+65eaf20  default   virtualbox poweroff /home/myu/vagrant/ubuntu-desktop-2404
+
+192.168.1.7服务器：
+6adfe2b  default virtualbox poweroff     C:/vms/cdh15
+3a0a6ed  cdh1    virtualbox running      C:/vms/nien
+ab000e1  cdh2    virtualbox poweroff     C:/vms/nien
+bd1e1db  cdh3    virtualbox poweroff     C:/vms/nien
+f348ada  default virtualbox running      C:/vms/kub8s
+b6906fa  default virtualbox running      C:/vms/k8s_ubuntu
+363cc28  default virtualbox running      C:/vms/win10
+0a52652  default virtualbox poweroff     C:/Users/myu/Documents/github/apple-ios
+dd2ceaa  default virtualbox running      C:/vms/macsos-amd
+5e69219  default virtualbox poweroff     C:/vms/macos
+55424ab  default virtualbox inaccessible C:/vms/ubuntu_nacos
+da932e1  default virtualbox running      C:/vms/macos-amd
+0f60c7a  default virtualbox running      C:/vms/ubuntu22
+af469d2  default virtualbox running      C:/vms/ubuntu20
+ea8bc70  default virtualbox running      C:/vms/centos8
+d2b1148  default virtualbox running      C:/vms/centos7
+fbdc1af  default virtualbox running      C:/vms/cdh52024
+1c6fa4d  default virtualbox poweroff     C:/vms/cdh62024
