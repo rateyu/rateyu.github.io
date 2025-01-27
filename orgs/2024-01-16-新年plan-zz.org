@@ -832,6 +832,38 @@ fbdc1af  default virtualbox running      C:/vms/cdh52024
 1c6fa4d  default virtualbox poweroff     C:/vms/cdh62024
 
 
+** emacs 启动idea64
+idea管理项目比较不方便
+结合emacs到书签功能
+达到管理电脑中全部项目的目的
+到达项目目录后，直接运行idea64 . ，
+实现快速启动项目的目的
+
+** 算法84 矩形最大区域
+vscode 代码拷贝出来样式会保留
+idea copy代码，需要 copy as plain txt选择，不能单独ctrl c
+macbook 先到处到html文件，在用浏览器打印功能转为pdf文件
+#+begin_src java
+  class Solution {
+      public int largestRectangleArea(int[] heights) {
+	  int max = 0;
+	  for (int i = 0; i < heights.length; i++) {
+	      int left = i;
+	      int right = i;
+	      while (left >= 0 && heights[left] >= heights[i]) {
+		  left--;
+	      }
+	      while (right < heights.length && heights[right] >= heights[i]) {
+		  right++;
+	      }
+	      int area = (right - left - 1) * heights[i];
+	      max = Math.max(max, area);
+	  }
+	  return max;
+      }
+  }
+#+end_src
+
 ** 2025跳槽准备-7天
 靶向式简历
 1. 架构微服务，docker和k8s容器
