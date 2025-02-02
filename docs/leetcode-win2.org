@@ -1,0 +1,34 @@
+#+LATEX_HEADER: \usepackage{fontspec}          % 使用 fontspec 支持现代字体
+#+LATEX_HEADER: \usepackage{xeCJK}            % 使用 xeCJK 支持中文
+#+LATEX_HEADER: \setCJKmainfont{WenQuanYi Zen Hei} % 设置中文字体为 WenQuanYi Zen Hei
+#+LATEX_HEADER: \setmainfont{DejaVu Sans}     % 设置英文字体为 DejaVu Sans
+#+LATEX_HEADER: \usepackage{geometry}         % 设置页面尺寸
+#+LATEX_HEADER: \geometry{a5paper}            % 设置A5纸张
+#+LATEX_HEADER: \pdfpagewidth=210mm           % 设置PDF宽度为210mm
+#+LATEX_HEADER: \pdfpageheight=148mm          % 设置PDF高度为148mm
+
+* 算法53 最大子数组和
+  :PROPERTIES:
+  :EXPORT_LATEX_HEADER: \usepackage{listings}
+  :END:
+  
+#+BEGIN_SRC java
+public int maxSubArray(int[] nums) {
+    int max = nums[0];
+    for(int i = 0; i < nums.length; i++) {
+        int tmpMax = nums[i];
+        if(tmpMax > max) {
+            max = tmpMax;
+        }
+        for(int j = i + 1; j < nums.length; j++) {
+            tmpMax += nums[j];
+            if(tmpMax > max) {
+                max = tmpMax;
+            }
+        }
+    }
+    System.out.println("max--" + max);
+    return max;
+}
+#+END_SRC
+
