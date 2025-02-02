@@ -1,0 +1,38 @@
+#+LATEX_HEADER: \usepackage{fontspec}          % 使用 fontspec 支持现代字体
+#+LATEX_HEADER: \usepackage{xeCJK}            % 使用 xeCJK 支持中文
+#+LATEX_HEADER: \usepackage[a5paper]{geometry} % 设置纸张大小为 A5
+#+LATEX_HEADER: \pdfpagewidth=210mm          % 设置页面宽度为 210mm
+#+LATEX_HEADER: \pdfpageheight=148mm         % 设置页面高度为 148mm
+
+% 根据操作系统自动选择中文字体
+#+LATEX_HEADER: \ifdefined\Windows
+#+LATEX_HEADER:   \setCJKmainfont{SimSun}     % Windows 上使用宋体
+#+LATEX_HEADER: \else
+#+LATEX_HEADER:   \ifdefined\Darwin
+#+LATEX_HEADER:     \setCJKmainfont{Songti SC} % macOS 上使用宋体
+#+LATEX_HEADER:   \else
+#+LATEX_HEADER:     \setCJKmainfont{WenQuanYi Zen Hei} % Ubuntu 上使用文泉驿正黑
+#+LATEX_HEADER:   \fi
+#+LATEX_HEADER: \fi
+
+* 算法53 最大子数组和
+#+begin_src java
+public int maxSubArray(int[] nums) {
+        int max = nums[0];
+        for(int i=0;i<nums.length;i++){
+            int tmpMax = nums[i];
+            if(tmpMax>max) {
+                max = tmpMax;
+            }
+         for(int j=i+1;j<nums.length;j++) {
+            tmpMax += nums[j];
+            if(tmpMax>max) {
+                max = tmpMax;
+            }
+         }
+        }
+        System.out.println("max--"+max);
+        return max;
+    }
+#+end_src
+
