@@ -1,4 +1,6 @@
-
+#+LATEX_HEADER: \usepackage[a5paper]{geometry}
+#+LATEX_HEADER: \pdfpagewidth=210mm
+#+LATEX_HEADER: \pdfpageheight=148mm
 
 ** 算法53 最大子数组和
 #+begin_src java
