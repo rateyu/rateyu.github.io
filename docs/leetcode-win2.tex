@@ -1,0 +1,59 @@
+% Created 2025-02-02 Sun 23:19
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{fontspec}          % 使用 fontspec 支持现代字体
+\usepackage{xeCJK}            % 使用 xeCJK 支持中文
+\setCJKmainfont{PingFang} % 设置中文字体为 WenQuanYi Zen Hei
+\setmainfont{DejaVu Sans}     % 设置英文字体为 DejaVu Sans
+\usepackage{geometry}         % 设置页面尺寸
+\geometry{a5paper}            % 设置A5纸张
+\pdfpagewidth=210mm           % 设置PDF宽度为210mm
+\pdfpageheight=148mm          % 设置PDF高度为148mm
+\author{myu}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={myu},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.5.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+
+\section{算法53 最大子数组和}
+\label{sec:org96fde17}
+\begin{verbatim}
+public int maxSubArray(int[] nums) {
+    int max = nums[0];
+    for(int i = 0; i < nums.length; i++) {
+	int tmpMax = nums[i];
+	if(tmpMax > max) {
+	    max = tmpMax;
+	}
+	for(int j = i + 1; j < nums.length; j++) {
+	    tmpMax += nums[j];
+	    if(tmpMax > max) {
+		max = tmpMax;
+	    }
+	}
+    }
+    System.out.println("max--" + max);
+    return max;
+}
+\end{verbatim}
+\end{document}

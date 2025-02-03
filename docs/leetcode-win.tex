@@ -1,0 +1,66 @@
+% Created 2025-02-02 Sun 22:47
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{fontspec}          % 使用 fontspec 支持现代字体
+\usepackage{xeCJK}            % 使用 xeCJK 支持中文
+\usepackage[a5paper]{geometry} % 设置纸张大小为 A5
+\pdfpagewidth=210mm          % 设置页面宽度为 210mm
+\pdfpageheight=148mm         % 设置页面高度为 148mm
+\ifdefined\Windows
+\setCJKmainfont{SimSun}     % Windows 上使用宋体
+\else
+\ifdefined\Darwin
+\setCJKmainfont{Songti SC} % macOS 上使用宋体
+\else
+\setCJKmainfont{WenQuanYi Zen Hei} % Ubuntu 上使用文泉驿正黑
+\fi
+\fi
+\author{myu}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={myu},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.5.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\% 根据操作系统自动选择中文字体
+
+\section{算法53 最大子数组和}
+\label{sec:org37bf6c5}
+\begin{verbatim}
+public int maxSubArray(int[] nums) {
+	int max = nums[0];
+	for(int i=0;i<nums.length;i++){
+	    int tmpMax = nums[i];
+	    if(tmpMax>max) {
+		max = tmpMax;
+	    }
+	 for(int j=i+1;j<nums.length;j++) {
+	    tmpMax += nums[j];
+	    if(tmpMax>max) {
+		max = tmpMax;
+	    }
+	 }
+	}
+	System.out.println("max--"+max);
+	return max;
+    }
+\end{verbatim}
+\end{document}

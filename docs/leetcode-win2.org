@@ -1,6 +1,6 @@
 #+LATEX_HEADER: \usepackage{fontspec}          % 使用 fontspec 支持现代字体
 #+LATEX_HEADER: \usepackage{xeCJK}            % 使用 xeCJK 支持中文
-#+LATEX_HEADER: \setCJKmainfont{WenQuanYi Zen Hei} % 设置中文字体为 WenQuanYi Zen Hei
+#+LATEX_HEADER: \setCJKmainfont{PingFang} % 设置中文字体为 WenQuanYi Zen Hei
 #+LATEX_HEADER: \setmainfont{DejaVu Sans}     % 设置英文字体为 DejaVu Sans
 #+LATEX_HEADER: \usepackage{geometry}         % 设置页面尺寸
 #+LATEX_HEADER: \geometry{a5paper}            % 设置A5纸张
