@@ -915,3 +915,26 @@ public int maxSubArray(int[] nums) {
 觅知网，下载doc文档模版， 
 
 文档模版下载收费网站好像还不错啊，比如小升初的模版
+** emacs magit 提交乱码问题
+windows和macbook 都会提交git仓库，但是windows提交的就是乱码，
+研究了 发现，需要几步设置就可以正常提交了，
+
+1. 强制使用 UTF-8 编码
+   (prefer-coding-system 'utf-8)
+   (set-language-environment "UTF-8")
+2. 设置git提交时的编码git config --global i18n.commitEncoding utf-8 
+
+操作完上面两步，实测就可以正常提交中文了
+
+说明：
+M-x describe-coding-system
+保存缓冲区的编码：undecided-unix，表示当前缓冲区的编码尚未明确设置。
+新文件的默认编码：chinese-gbk-dos，表示新文件将使用 GBK 编码进行保存，这通常是 Windows 系统上与中文相关的编码。
+键盘输入的编码：chinese-gbk-unix，表示键盘输入使用 GBK 编码。
+终端输出的编码：cp936（GBK 编码的别名），意味着终端输出使用的是 GBK 编码。
+客户端间剪切和粘贴的编码：utf-16le-dos，表示通过 Emacs 进行的剪切和粘贴操作会使用 UTF-16 编码。
+子进程的默认输入输出编码：undecided-dos 和 undecided-unix，表示子进程的输入输出编码尚未决定。
+
+M-x revert-buffer-with-coding-system RET utf-8
+
+
