@@ -940,6 +940,5 @@ M-x revert-buffer-with-coding-system RET utf-8
 
 
 
-**
-
-
+** emacs路径提示的插件
+启用 ido-mode 或 vertico-mode 来实现路径和文件名的补全
