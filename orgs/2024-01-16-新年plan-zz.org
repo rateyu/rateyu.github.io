@@ -942,3 +942,15 @@ M-x revert-buffer-with-coding-system RET utf-8
 
 ** emacs路径提示的插件
 启用 ido-mode 或 vertico-mode 来实现路径和文件名的补全
+
+** windows修改键位，修改后更加便于打字
+羡慕hhkb的键盘布局，网上找了相关的教程，研究了下。
+
+主要修改两个键，使得操作更加科学，手指移动的距离更短，
+譬如：
+caps <-> ctrl（left）
+|       <-> backspace
+
+windows环境使用的软件是，powertoys，后台占用内存15兆左右，
+开着也还好，今天改完试了下效果，果然很爽！
+省去了2000大洋
