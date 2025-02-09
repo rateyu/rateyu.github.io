@@ -954,3 +954,11 @@ caps <-> ctrl（left）
 windows环境使用的软件是，powertoys，后台占用内存15兆左右，
 开着也还好，今天改完试了下效果，果然很爽！
 省去了2000大洋
+
+补充macos修改键位的方法
+软件为 Karabiner Elements，
+下载地址为：https://karabiner-elements.pqrs.org
+同样修改键位如上，非常好用
+
+这个软件可以根据键盘进行设置，如果你同时用蓝牙键盘和苹果自带键盘，
+而且两个键位不同，这样也可以设置，设置完互不影响
