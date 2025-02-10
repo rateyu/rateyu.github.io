@@ -951,11 +951,16 @@ M-x revert-buffer-with-coding-system RET utf-8
 caps <-> ctrl（left）
 |       <-> backspace
 
+windows方法一：
 windows环境使用的软件是，powertoys，后台占用内存15兆左右，
 开着也还好，今天改完试了下效果，果然很爽！
 省去了2000大洋
 
-补充macos修改键位的方法
+windows方法二：
+当然可以手工修改注册表，这样感觉比较麻烦，找了个软件：sharpkeys
+这个软件设置完成后，可以直接写入注册表，提高了修改效率。
+
+macos方法：
 软件为 Karabiner Elements，
 下载地址为：https://karabiner-elements.pqrs.org
 同样修改键位如上，非常好用
@@ -965,3 +970,5 @@ windows环境使用的软件是，powertoys，后台占用内存15兆左右，
 
 另外windows注册表的方式进行修改，这种不用安装软件，有空可以试一下，
 参考网址，讲的还行：https://baijiahao.baidu.com/s?id=1780874465682567658
+
+
