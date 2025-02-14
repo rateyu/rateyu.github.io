@@ -438,7 +438,7 @@ ctrl a , A 给虚拟终端命名
    #+END_src 
 4. 今天先到这里，后面再研究研究为什么
 
-** TODO emacs 常用插件和命令
+** TODO emacs 常用插件和命令 leetcode-cn
 *** leetcode-cn快捷键
 1. ctrl p 在另外一个窗口打开
 2. l 切换不同语言 cpp golang python javascript
@@ -577,8 +577,6 @@ github下载文件，zenburn-theme.el
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'zenburn t)
 
-** 如何设计并实现一个百万并发的服务端程序架构
-
 ** tcpdump和wirdshark
 #+begin_src shell
   tcpdump -n -X -s 0 host 192.168.1.7 -w tt.pcap
@@ -588,7 +586,7 @@ github下载文件，zenburn-theme.el
 #+end_src
 总结下它们使用命令的联系和区别
 
-** conda
+** conda 虚拟环境创建
 conda env list
 conda create -n tts
 conda activate ChatTTS
@@ -620,8 +618,8 @@ python your_script.py
 ipad试了termius，blink shell和shellbean，都没有找到怎么切换中文输入法的。
 于是走了一条弯路，用iSH shell先访问terminal，然后安装openssh，最后用ssh访问远程服务器，
 这样做就可以切换中文输入发了，用起来还不错，推荐给大家。
-** 快捷键
-code .
+** emacs快捷键
+code . / idea64 .
 ctrl alt s ,正则表达式搜索
 ** DONE macbook截图工具
 :LOGBOOK:
@@ -653,11 +651,164 @@ ctrl c ,ctrl o
 
  [[file:2015zongjie.org::维护工作，质量较低][2015总结orog]]
 
-** esp32看店项目
-1. 有人进入范围内，系统提示欢迎光临，要有不同的声音选择
-2. 支持打开与关闭功能，使用按钮进行控制
-3. 早上第一次播放天气预报和新闻联播的主要内容
-4. 播放今天星期几多少号，农历多少号
+** emacs 使用chatgpt
+[[https://github.com/xenodium/chatgpt-shell][chat-gpt等使用方法]]
+
+** emacs 调试lisp语言和lisp插件
+断点：(debug)
+下一步：n
+进入：s
+继续：c
+退出：q
+
+查看表达式：c h ，v 查看变量和表达式
+
+lisp和java
+lisp一等公民是函数
+
+
+*** 常用快捷键
+Emacs 中有很多常用的快捷键用于执行和调试 Lisp 代码，以下是一些最常用的快捷键：
+M-x eval-expression：执行一个 Lisp 表达式。快捷键 M-:。
+M-x eval-buffer：执行当前 buffer 中的所有 Lisp 代码。
+M-x eval-region：执行选中的区域中的 Lisp 代码。
+M-x ielm：启动一个交互式的 Emacs Lisp 环境，方便测试和调试。
+M-x toggle-debug-on-error：开启错误调试模式，捕捉和调试错误。
+M-x debug：手动进入调试模式，跟踪代码执行。
+M-x edebug-defun：进入 edebug 调试模式，支持逐步执行和设置断点。
+C-x C-e：执行当前行或选定区域的 Lisp 表达式（常用于在代码中测试单行代码）。
+
+** emacs search
+查找文件：使用 find-name-dired，支持文件名的通配符查找。
+查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
+** DONE emacs 开发与调试, 刷题还是用mac air直接上网站刷题
+
+lsp-mode
+组织导入  lspmod imports
+运行java run
+
+realgud
+realgud:pdb
+进行python调试
+b linenum
+c 继续
+n 下一步
+
+leetcode 网站刷题
+opt shit f 格式化代码
+运行代码 cmd '
+提交代码 cmd enter
+
+leetcode英文网站比中文网站更加易用
+notebook 记录更加易用
+
+
+** emacs预览html
+browse-url-of-file
+eww-open-file
+
+** emacs 数据库 调试?
+ejc-sql
+realgud
+
+** gpt问题答案备份
+pc7 
+C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
+
+** emacs 152 ubuntu 机器请求gpt方法
+安装 gptel插件
+服务器配置代理
+export https_proxy="http://192.168.1.14:7897"
+export http_proxy="http://192.168.1.14:7897"
+注意windows网络不通，无法使用
+
+修改参数
+gptel-menu
+-m 选择参数，选择gpt-40模型，并且标价了，完美
+
+使用curl -I google.com 进行测试
+
+消除环境变量
+unset http_proxy https_proxy ftp_proxy no_proxy
+
+
+** windows批量html转为pdf命令-windows转换失败
+for %f in (*.html) do wkhtmltopdf "%f" "%~nf.pdf"
+
+** emacs 启动idea64
+idea管理项目比较不方便
+结合emacs到书签功能
+达到管理电脑中全部项目的目的
+到达项目目录后，直接运行idea64 . ，
+实现快速启动项目的目的
+
+** emacs magit 提交乱码问题
+windows和macbook 都会提交git仓库，但是windows提交的就是乱码，
+研究了 发现，需要几步设置就可以正常提交了，
+
+1. 强制使用 UTF-8 编码
+   (prefer-coding-system 'utf-8)
+   (set-language-environment "UTF-8")
+2. 设置git提交时的编码git config --global i18n.commitEncoding utf-8 
+
+操作完上面两步，实测就可以正常提交中文了
+
+说明：
+M-x describe-coding-system
+保存缓冲区的编码：undecided-unix，表示当前缓冲区的编码尚未明确设置。
+新文件的默认编码：chinese-gbk-dos，表示新文件将使用 GBK 编码进行保存，这通常是 Windows 系统上与中文相关的编码。
+键盘输入的编码：chinese-gbk-unix，表示键盘输入使用 GBK 编码。
+终端输出的编码：cp936（GBK 编码的别名），意味着终端输出使用的是 GBK 编码。
+客户端间剪切和粘贴的编码：utf-16le-dos，表示通过 Emacs 进行的剪切和粘贴操作会使用 UTF-16 编码。
+子进程的默认输入输出编码：undecided-dos 和 undecided-unix，表示子进程的输入输出编码尚未决定。
+
+M-x revert-buffer-with-coding-system RET utf-8
+
+
+
+** emacs路径提示的插件
+启用 ido-mode 或 vertico-mode 来实现路径和文件名的补全
+** windows修改键位，修改后更加便于打字
+羡慕hhkb的键盘布局，网上找了相关的教程，研究了下。
+
+主要修改两个键，使得操作更加科学，手指移动的距离更短，
+譬如：
+caps <-> ctrl（left）
+|       <-> backspace
+
+windows方法一：
+windows环境使用的软件是，powertoys，后台占用内存15兆左右，
+开着也还好，今天改完试了下效果，果然很爽！
+省去了2000大洋
+
+windows方法二：
+当然可以手工修改注册表，这样感觉比较麻烦，找了个软件：sharpkeys
+这个软件设置完成后，可以直接写入注册表，提高了修改效率。
+
+macos方法：
+软件为 Karabiner Elements，
+下载地址为：https://karabiner-elements.pqrs.org
+同样修改键位如上，非常好用
+
+这个软件可以根据键盘进行设置，如果你同时用蓝牙键盘和苹果自带键盘，
+而且两个键位不同，这样也可以设置，设置完互不影响
+
+另外windows注册表的方式进行修改，这种不用安装软件，有空可以试一下，
+参考网址，讲的还行：https://baijiahao.baidu.com/s?id=1780874465682567658
+
+
+可以想好主题，让gpt生成一个教程，并且生成图片，
+然后确认修改后发布到知乎论坛上去
+包括视频，文章等等
+
+我要找到自己的副业，创建自己第二份收入
+** emacs 插件小结-eyebrowse-desktop-winner
+最近emacs学习了不少插件的使用，总结下：
+
+eyebrowser, 创建不同的工作区，在工作区之间进行切换，工作区可以是不同的工作场景，这个和screen之间有什么样的区别？
+desktop-save-mode，对工作区进行保存，自带插件，很是完美
+winner-mode，对当前工作区的窗口进行前进和后退
+
 
 ** 苹果快捷键
 *** 基本快捷键
@@ -699,90 +850,51 @@ cmd shift a，加入生词本
 opt 空格， 快速查词
 
 
-** emacs 使用chatgpt
-[[https://github.com/xenodium/chatgpt-shell][chat-gpt等使用方法]]
+** 算法84 矩形最大区域
+vscode 代码拷贝出来样式会保留
+idea copy代码，需要 copy as plain txt选择，不能单独ctrl c
+macbook 先到处到html文件，在用浏览器打印功能转为pdf文件
+#+begin_src java
+  class Solution {
+      public int largestRectangleArea(int[] heights) {
+	  int max = 0;
+	  for (int i = 0; i < heights.length; i++) {
+	      int left = i;
+	      int right = i;
+	      while (left >= 0 && heights[left] >= heights[i]) {
+		  left--;
+	      }
+	      while (right < heights.length && heights[right] >= heights[i]) {
+		  right++;
+	      }
+	      int area = (right - left - 1) * heights[i];
+	      max = Math.max(max, area);
+	  }
+	  return max;
+      }
+  }
+#+end_src
 
-** emacs 调试lisp语言和lisp插件
-断点：(debug)
-下一步：n
-进入：s
-继续：c
-退出：q
-
-查看表达式：c h ，v 查看变量和表达式
-
-lisp和java
-lisp一等公民是函数
-
-
-*** 常用快捷键
-Emacs 中有很多常用的快捷键用于执行和调试 Lisp 代码，以下是一些最常用的快捷键：
-M-x eval-expression：执行一个 Lisp 表达式。快捷键 M-:。
-M-x eval-buffer：执行当前 buffer 中的所有 Lisp 代码。
-M-x eval-region：执行选中的区域中的 Lisp 代码。
-M-x ielm：启动一个交互式的 Emacs Lisp 环境，方便测试和调试。
-M-x toggle-debug-on-error：开启错误调试模式，捕捉和调试错误。
-M-x debug：手动进入调试模式，跟踪代码执行。
-M-x edebug-defun：进入 edebug 调试模式，支持逐步执行和设置断点。
-C-x C-e：执行当前行或选定区域的 Lisp 表达式（常用于在代码中测试单行代码）。
-
-
-** emacs search
-查找文件：使用 find-name-dired，支持文件名的通配符查找。
-查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
-** DONE emacs 开发与调试, 刷题还是用mac air直接上网站刷题
-
-lsp-mode
-组织导入  lspmod imports
-运行java run
-
-realgud
-realgud:pdb
-进行python调试
-b linenum
-c 继续
-n 下一步
-
-leetcode 网站刷题
-opt shit f 格式化代码
-运行代码 cmd '
-提交代码 cmd enter
-
-leetcode英文网站比中文网站更加易用
-notebook 记录更加易用
-
-
-** emacs预览html
-browse-url-of-file
-eww-open-file
-
-** emacs 数据库 调试
-ejc-sql
-realgud
-
-** gpt问题答案备份
-pc7 
-C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
-
-** emacs 152 ubuntu 机器请求gpt方法
-安装 gptel插件
-服务器配置代理
-export https_proxy="http://192.168.1.14:7897"
-export http_proxy="http://192.168.1.14:7897"
-注意windows网络不通，无法使用
-
-修改参数
-gptel-menu
--m 选择参数，选择gpt-40模型，并且标价了，完美
-
-使用curl -I google.com 进行测试
-
-消除环境变量
-unset http_proxy https_proxy ftp_proxy no_proxy
-
-
-** windows批量html转为pdf命令-windows转换失败
-for %f in (*.html) do wkhtmltopdf "%f" "%~nf.pdf"
+** 算法53 最大子数组和
+#+begin_src java
+public int maxSubArray(int[] nums) {
+        int max = nums[0];
+        for(int i=0;i<nums.length;i++){
+            int tmpMax = nums[i];
+            if(tmpMax>max) {
+                max = tmpMax;
+            }
+         for(int j=i+1;j<nums.length;j++) {
+            tmpMax += nums[j];
+            if(tmpMax>max) {
+                max = tmpMax;
+            }
+         }
+        }
+        System.out.println("max--"+max);
+        return max;
+    }
+#+end_src
 
 ** 服务器清单
 192.168.1.13  
@@ -832,60 +944,15 @@ fbdc1af  default virtualbox running      C:/vms/cdh52024
 1c6fa4d  default virtualbox poweroff     C:/vms/cdh62024
 
 
-** emacs 启动idea64
-idea管理项目比较不方便
-结合emacs到书签功能
-达到管理电脑中全部项目的目的
-到达项目目录后，直接运行idea64 . ，
-实现快速启动项目的目的
+** esp32看店项目
+1. 有人进入范围内，系统提示欢迎光临，要有不同的声音选择
+2. 支持打开与关闭功能，使用按钮进行控制
+3. 早上第一次播放天气预报和新闻联播的主要内容
+4. 播放今天星期几多少号，农历多少号
 
-** 算法84 矩形最大区域
-vscode 代码拷贝出来样式会保留
-idea copy代码，需要 copy as plain txt选择，不能单独ctrl c
-macbook 先到处到html文件，在用浏览器打印功能转为pdf文件
-#+begin_src java
-  class Solution {
-      public int largestRectangleArea(int[] heights) {
-	  int max = 0;
-	  for (int i = 0; i < heights.length; i++) {
-	      int left = i;
-	      int right = i;
-	      while (left >= 0 && heights[left] >= heights[i]) {
-		  left--;
-	      }
-	      while (right < heights.length && heights[right] >= heights[i]) {
-		  right++;
-	      }
-	      int area = (right - left - 1) * heights[i];
-	      max = Math.max(max, area);
-	  }
-	  return max;
-      }
-  }
-#+end_src
+** 如何设计并实现一个百万并发的服务端程序架构
 
-** 算法53 最大子数组和
-#+begin_src java
-public int maxSubArray(int[] nums) {
-        int max = nums[0];
-        for(int i=0;i<nums.length;i++){
-            int tmpMax = nums[i];
-            if(tmpMax>max) {
-                max = tmpMax;
-            }
-         for(int j=i+1;j<nums.length;j++) {
-            tmpMax += nums[j];
-            if(tmpMax>max) {
-                max = tmpMax;
-            }
-         }
-        }
-        System.out.println("max--"+max);
-        return max;
-    }
-#+end_src
-
-** 2025跳槽准备-7天
+** TODO 2025跳槽准备-7天
 靶向式简历
 1. 架构微服务，docker和k8s容器
 2. 架构工作流，统计架构设计
@@ -915,72 +982,3 @@ public int maxSubArray(int[] nums) {
 觅知网，下载doc文档模版， 
 
 文档模版下载收费网站好像还不错啊，比如小升初的模版
-** emacs magit 提交乱码问题
-windows和macbook 都会提交git仓库，但是windows提交的就是乱码，
-研究了 发现，需要几步设置就可以正常提交了，
-
-1. 强制使用 UTF-8 编码
-   (prefer-coding-system 'utf-8)
-   (set-language-environment "UTF-8")
-2. 设置git提交时的编码git config --global i18n.commitEncoding utf-8 
-
-操作完上面两步，实测就可以正常提交中文了
-
-说明：
-M-x describe-coding-system
-保存缓冲区的编码：undecided-unix，表示当前缓冲区的编码尚未明确设置。
-新文件的默认编码：chinese-gbk-dos，表示新文件将使用 GBK 编码进行保存，这通常是 Windows 系统上与中文相关的编码。
-键盘输入的编码：chinese-gbk-unix，表示键盘输入使用 GBK 编码。
-终端输出的编码：cp936（GBK 编码的别名），意味着终端输出使用的是 GBK 编码。
-客户端间剪切和粘贴的编码：utf-16le-dos，表示通过 Emacs 进行的剪切和粘贴操作会使用 UTF-16 编码。
-子进程的默认输入输出编码：undecided-dos 和 undecided-unix，表示子进程的输入输出编码尚未决定。
-
-M-x revert-buffer-with-coding-system RET utf-8
-
-
-
-
-** emacs路径提示的插件
-启用 ido-mode 或 vertico-mode 来实现路径和文件名的补全
-
-** windows修改键位，修改后更加便于打字
-羡慕hhkb的键盘布局，网上找了相关的教程，研究了下。
-
-主要修改两个键，使得操作更加科学，手指移动的距离更短，
-譬如：
-caps <-> ctrl（left）
-|       <-> backspace
-
-windows方法一：
-windows环境使用的软件是，powertoys，后台占用内存15兆左右，
-开着也还好，今天改完试了下效果，果然很爽！
-省去了2000大洋
-
-windows方法二：
-当然可以手工修改注册表，这样感觉比较麻烦，找了个软件：sharpkeys
-这个软件设置完成后，可以直接写入注册表，提高了修改效率。
-
-macos方法：
-软件为 Karabiner Elements，
-下载地址为：https://karabiner-elements.pqrs.org
-同样修改键位如上，非常好用
-
-这个软件可以根据键盘进行设置，如果你同时用蓝牙键盘和苹果自带键盘，
-而且两个键位不同，这样也可以设置，设置完互不影响
-
-另外windows注册表的方式进行修改，这种不用安装软件，有空可以试一下，
-参考网址，讲的还行：https://baijiahao.baidu.com/s?id=1780874465682567658
-
-
-可以想好主题，让gpt生成一个教程，并且生成图片，
-然后确认修改后发布到知乎论坛上去
-包括视频，文章等等
-
-我要找到自己的副业，创建自己第二份收入
-
-** emacs 插件小结
-最近emacs学习了不少插件的使用，总结下：
-
-eyebrowser, 创建不同的工作区，在工作区之间进行切换，工作区可以是不同的工作场景，这个和screen之间有什么样的区别？
-desktop-save-mode，对工作区进行保存，自带插件，很是完美
-winner-mode，对当前工作区的窗口进行前进和后退
