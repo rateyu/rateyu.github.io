@@ -715,23 +715,6 @@ realgud
 pc7 
 C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
 
-** emacs 152 ubuntu 机器请求gpt方法
-安装 gptel插件
-服务器配置代理
-export https_proxy="http://192.168.1.14:7897"
-export http_proxy="http://192.168.1.14:7897"
-注意windows网络不通，无法使用
-
-修改参数
-gptel-menu
--m 选择参数，选择gpt-40模型，并且标价了，完美
-
-使用curl -I google.com 进行测试
-
-消除环境变量
-unset http_proxy https_proxy ftp_proxy no_proxy
-
-
 ** windows批量html转为pdf命令-windows转换失败
 for %f in (*.html) do wkhtmltopdf "%f" "%~nf.pdf"
 
@@ -983,7 +966,7 @@ fbdc1af  default virtualbox running      C:/vms/cdh52024
 
 文档模版下载收费网站好像还不错啊，比如小升初的模版
 
-** 折腾了一天emacs如何调用gpt
+** emacs和vscode如何调用gpt
 :PROPERTIES:
 :ID:       ad253238-16e5-4b68-bad8-d3734ba8d7a3
 :END:
@@ -1025,3 +1008,20 @@ windows上使用org-download插入图片需要安装magick，
 windows下载地址，https://imagemagick.org/script/download.php#windows
 安装完后主要增加path地址，配置完后，命令行要可以使用
 然后，org-download就可以正常使用了, org-download-clipboard
+** emacs 152 ubuntu 机器请求gpt方法
+安装 gptel插件
+服务器配置代理
+export https_proxy="http://192.168.1.14:7897"
+export http_proxy="http://192.168.1.14:7897"
+注意windows网络不通，无法使用
+
+修改参数
+gptel-menu
+-m 选择参数，选择gpt-40模型，并且标价了，完美
+
+使用curl -I google.com 进行测试
+
+消除环境变量
+unset http_proxy https_proxy ftp_proxy no_proxy
+
+
