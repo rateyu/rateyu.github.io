@@ -982,3 +982,46 @@ fbdc1af  default virtualbox running      C:/vms/cdh52024
 觅知网，下载doc文档模版， 
 
 文档模版下载收费网站好像还不错啊，比如小升初的模版
+
+** 折腾了一天emacs如何调用gpt
+:PROPERTIES:
+:ID:       ad253238-16e5-4b68-bad8-d3734ba8d7a3
+:END:
+本想使用emacs调用 chatgpt，deepseek，ollama，但是程序没有调通，
+lisp语言有报错，懒得调试了，后面还是用python语言调用吧
+
+今天发现一个chatgpt推荐的一个插件，叫continue，可以在vscode和idea上调用
+
+#+DOWNLOADED: screenshot @ 2025-02-15 22:06:05
+[[file:emacs_magit,org-mod/2025-02-15_22-06-05_screenshot.png]]
+
+本地ollama服务上跑代码工具，14b模型跑起来有点吃力（4060ti），
+
+
+尝试了ollama restapi，
+
+#+begin_src markdown
+## 生成响应
+curl http://localhost:11434/api/generate -d '{
+  "model": "llama3.2",
+  "prompt":"Why is the sky blue?"
+}'
+## 与模型聊天
+curl http://localhost:11434/api/chat -d '{
+  "model": "llama3.2",
+  "messages": [
+    { "role": "user", "content": "why is the sky blue?" }
+  ]
+}'
+#+end_src
+
+ollama的快速入门写的还是挺不错的，最好的还是在官方的第一手资料哈
+
+中文文档地址：https://ollama.readthedocs.io/quickstart/#_14
+deepseek文档：https://api-docs.deepseek.com/zh-cn/
+本地运行continue示例：https://www.zzfly.net/ollama-deepseek-copilot/
+
+windows上使用org-download插入图片需要安装magick，
+windows下载地址，https://imagemagick.org/script/download.php#windows
+安装完后主要增加path地址，配置完后，命令行要可以使用
+然后，org-download就可以正常使用了, org-download-clipboard
