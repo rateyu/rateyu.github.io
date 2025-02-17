@@ -135,7 +135,7 @@ ctrl h ,f/v/k 查询命令、变量、快捷键
 eg: *ming* -> 找到文件 MingServer.java
 查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
 eg: find . -type f -exec grep  -nH --null "ming*" \{\} \;
-** emacs搜索 zz
+** emacs搜索 zz tag阅读代码 查找定义与引用
 提示选择项目，一般情况project根据git仓库作为默认项目进行查找
 如果没有，需要用命令 project-switch-project
 
