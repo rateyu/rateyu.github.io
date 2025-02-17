@@ -130,7 +130,12 @@ ctrl c & ctrl n
 ** emacs 帮助相关
 ctrl h ,m      mod模块帮助
 ctrl h ,f/v/k 查询命令、变量、快捷键
-** emacs搜索
+** *emacs search zz*
+查找文件：使用 find-name-dired，支持文件名的通配符查找。
+eg: *ming* -> 找到文件 MingServer.java
+查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
+eg: find . -type f -exec grep  -nH --null "ming*" \{\} \;
+** emacs搜索 zz
 提示选择项目，一般情况project根据git仓库作为默认项目进行查找
 如果没有，需要用命令 project-switch-project
 
@@ -678,9 +683,6 @@ M-x debug：手动进入调试模式，跟踪代码执行。
 M-x edebug-defun：进入 edebug 调试模式，支持逐步执行和设置断点。
 C-x C-e：执行当前行或选定区域的 Lisp 表达式（常用于在代码中测试单行代码）。
 
-** emacs search
-查找文件：使用 find-name-dired，支持文件名的通配符查找。
-查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
 ** DONE emacs 开发与调试, 刷题还是用mac air直接上网站刷题
 
 lsp-mode
