@@ -1113,5 +1113,5 @@ insert into CAP_FORM_DEFINITION
 2. 正则查找 ctrl alt r  public\|private
 3. 生成etag的命令:find . \( -name "*.java" -o -name "*.js" -o -name "*.jsp" -o -name "*.html" -o -name "*.css" -o -name "*.cpp" -o -name "*.hpp" -o -name "*.go" -o -name "*.py" -o -name "*.php" -o -name "*.sh" -o -name "*.yaml" -o -name "*.yml" \) -print | etags -
 4. 快速选择单词，alt shift f/b， 然后快速搜索 ctrl s/r
-5. etag快捷键， visit-tags-table、alt+. 到定义 、alt+, 到引用、 list-tags、 occur
+5. etag快捷键， visit-tags-table、alt+. 到定义 、alt+, 到引用、 list-tags、 occur、indent-region代码选中缩进
 6. org-download windows需要安装imagemagick软件才能使用
