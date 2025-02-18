@@ -1098,3 +1098,20 @@ ssh myu@192.168.1.7 -t "powershell"
 第40章：HBASE学习圣经：从0到1, 精通  HBASE的底层原理和实操
 第41章：Flink学习圣经：从0到1, 精通 Flink 的底层原理和实操
 第42-46章：尼恩Java硬核架构班4 微服务底座-讲义与源码
+
+** 信创oa mysql 表单4相关表
+ctp_app_log
+insert into CAP_SETTING_LOG
+insert into CAP_FORM_VIEW_INFO 
+insert into CAP_FORM_TABLE_INFO
+insert into FORM_OWNER
+insert into CAP_FORM_RESOURCE
+insert into CAP_FORM_DEFINITION
+
+** emacs 查找相关总结
+1. grep-find, find-name-dired
+2. 正则查找 ctrl alt r  public\|private
+3. 生成etag的命令:find . \( -name "*.java" -o -name "*.js" -o -name "*.jsp" -o -name "*.html" -o -name "*.css" -o -name "*.cpp" -o -name "*.hpp" -o -name "*.go" -o -name "*.py" -o -name "*.php" -o -name "*.sh" -o -name "*.yaml" -o -name "*.yml" \) -print | etags -
+4. 快速选择单词，alt shift f/b， 然后快速搜索 ctrl s/r
+5. etag快捷键， visit-tags-table、alt+. 到定义 、alt+, 到引用、 list-tags、 occur
+6. org-download windows需要安装imagemagick软件才能使用
