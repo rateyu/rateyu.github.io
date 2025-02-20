@@ -1135,3 +1135,10 @@ fn a 切换windows
 fn s 切换macos
 shift +fn = 为shift F12
 
+** intelj idea书签
+ctrl f11
+ctrl sift 数字快速跳转
+shift F11 查看
+ctrl enter 修改书签
+alt 上下   上下移动书签
+del          删除书签
