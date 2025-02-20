@@ -1115,3 +1115,18 @@ insert into CAP_FORM_DEFINITION
 4. 快速选择单词，alt shift f/b， 然后快速搜索 ctrl s/r
 5. etag快捷键， visit-tags-table、alt+. 到定义 、alt+, 到引用、 list-tags、 occur、indent-region代码选中缩进
 6. org-download windows需要安装imagemagick软件才能使用
+
+** rk65快捷键
+买了个新键盘，比较小巧，65键，能连3个蓝牙设备，
+键盘敲起来也还好，挪动很方便，感觉还不错。
+
+常用快捷键有：
+fn q w e 切换3个蓝牙设备
+fn del 为insert
+fn enter 查看电量
+fn \ 切换灯光
+fn 上 下，亮度与关闭灯光
+fn a 切换windows
+fn s 切换macos
+shift +fn = 为shift F12
+
