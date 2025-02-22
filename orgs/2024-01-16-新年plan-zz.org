@@ -38,17 +38,24 @@ ctrl / 非常有用的撤销功能
 
 = 比较文件
 v 查看文件
+
 D 删除文件
-C 拷贝
-R 重命名
+d删除文件标记/ x执行删除
+
+*m 标记/u 取消标记*
+*执行  C 拷贝/R 重命名*
+
 Z 压缩
-w 复制文件名
-m 标记
-u 取消标记
+*w 复制文件名*
+文件行时 拷贝的是文件名称
+路径行时，拷贝的是文件路径
+
 + 新建目录
 
 
 C-c *	将本行设置为标题/正文
+
+
 
 cmd shift &; 异步执行程序
 cmd shift ！；执行程序，命令行比较少
@@ -818,6 +825,8 @@ opt cmd f5，辅助功能快捷键
 色彩过滤 黑暗情况下减少蓝光，减轻用眼疲劳度
 放大与缩小，cmd opt +/-
 
+window 程序移动到另外显示器
+win shfit 左右
 
 *** 浏览器
 cmd y 历史记录
@@ -1138,8 +1147,46 @@ shift +fn = 为shift F12
 
 ** intelj idea书签
 ctrl f11
-ctrl sift 数字快速跳转
+
 shift F11 查看
 ctrl enter 修改书签
 alt 上下   上下移动书签
 del          删除书签
+alt shit f  添加到文件收藏
+alt shift M    编译当前项目
+
+ctrl shift 数字快速跳转,快速设置标记
+ctrl shift c    拷贝文件的绝对路径
+ctrl shift f9   重新编译模块
+ctrl shift f10 运行本类main方法
+
+ctrl alt g       到定义和实现的方法
+Ctrl + Alt + L: 格式化代码
+
+规律总结：
+Alt + Shift：文件操作，这类组合通常涉及对文件或项目操作的快捷键，便于快速访问、编译和跳转。
+Ctrl + Shift：编译与路径相关，这类组合通常与文件路径、编译、跳转相关，属于高级功能，更倾向于开发中的快速操作。
+Ctrl + Alt：代码跳转，这种组合通常用于代码的跳转操作，方便开发者快速查看方法定义等。
+
+** seeyon代码学习
+pc7，项目名称 seeyon ，idea 2021.1
+C:\Users\myu\Documents\PARA\2Areas\codes\xcoa_debug_srcs\xcoa-codes\v5\v5\apps-api
+
+seeyon架构代码分析
+问题1. 全量编译存在问题，
+   多次全量编译，提示堆内存不足
+   java命令排查：jstat -gcutil 11666 1000 3
+   发现E O 区占用百分之百，确认是内存问题
+   
+问题2. 设置idea 堆内存，没有生效，设置环境变量才生效，
+   生效还是报错，最后分析 idea 编译的内存 默认只有700m，增加后可以编译了。
+
+问题3. 但是继续报 模块循环依赖问题，没有办法，只能引入一个ctp-core单独编译，dsm单独分析，这样是可以了，
+   后面一个一个编译吧，用到了再引入这个模块就行。
+
+   两个核心类：（神奇的地方来了，emacs可以直接打开这个文件 ctrl x ctrl f）
+   C:\Users\myu\Documents\PARA\2Areas\codes\xcoa_debug_srcs\xcoa-codes\v5\v5\ctp-core\src\main\java\com\seeyon\ctp\common\AppContext.java
+   C:\Users\myu\Documents\PARA\2Areas\codes\xcoa_debug_srcs\xcoa-codes\v5\v5\ctp-core\src\main\java\com\seeyon\ctp\common\SystemEnvironment.java
+   
+
+   
