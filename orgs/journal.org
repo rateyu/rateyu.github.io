@@ -1,0 +1,7 @@
+
+* 2025
+** 2025-02 February
+*** 2025-02-23 Sunday
+**** [2025-02-23 Sun 09:00] test
+  
+  [[file:~/.emacs::"j" "Journal" entry (file+datetree "~/sources/rateyu.github.io/orgs/journal.org"]]

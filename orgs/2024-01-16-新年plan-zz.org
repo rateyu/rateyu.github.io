@@ -143,6 +143,7 @@ eg: *ming* -> 找到文件 MingServer.java
 查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
 eg: find . -type f -exec grep  -nH --null "ming*" \{\} \;
 ** emacs搜索 zz tag阅读代码 查找定义与引用
+*** 查找文件名或者字符串
 提示选择项目，一般情况project根据git仓库作为默认项目进行查找
 如果没有，需要用命令 project-switch-project
 
@@ -153,11 +154,20 @@ project-find-rgrep 搜索文件中的文本内容，linux和mac使用很爽
 搜索参数定义
 搜索所有函数引用
 
+*** 查找方法定义和引用
 M-x xref-find-definitions：查找符号定义。
 M-x xref-find-references：查找符号引用。
 
 (global-set-key (kbd "C-c d") 'xref-find-definitions)  ;; 绑定到 C-c d
-(global-set-key (kbd "C-c r") 'xref-find-references)   ;; 绑定到 C-c r
+(global-set-key (kbd "C-c f") 'xref-find-references)   ;; 绑定到 C-c f
+
+sudo port install ripgrep
+
+(insert-file-contents (expand-file-name "~/sources/nien-codes/01_SimpleCrayIM"))
+
+
+*** 生成etag文件
+find . -name "*.java" -exec etags {} +
 
 
 #+begin_src shell
@@ -181,6 +191,9 @@ M-x xref-find-references：查找符号引用。
   查找引用：M-x xref-find-references。
 
 #+end_src
+
+*** 返回上一个文件
+ctrl x 左右箭头或者 ctrl c 左右箭头
 
 *** windows说明
 windows系统文件使用gbk，emacs默认支持utf8
@@ -1145,6 +1158,9 @@ fn a 切换windows
 fn s 切换macos
 shift +fn = 为shift F12
 
+有一点不好，键盘手感不是很爽，说不出来，感觉还是红轴对我比较适合，
+开始下单买了克制化键盘，准备换成凯华的红轴，明天到了后，再试下感觉。
+
 ** intelj idea书签
 ctrl f11
 
@@ -1168,25 +1184,57 @@ Alt + Shift：文件操作，这类组合通常涉及对文件或项目操作的
 Ctrl + Shift：编译与路径相关，这类组合通常与文件路径、编译、跳转相关，属于高级功能，更倾向于开发中的快速操作。
 Ctrl + Alt：代码跳转，这种组合通常用于代码的跳转操作，方便开发者快速查看方法定义等。
 
-** TODO seeyon代码学习
-pc7，项目名称 seeyon ，idea 2021.1
-C:\Users\myu\Documents\PARA\2Areas\codes\xcoa_debug_srcs\xcoa-codes\v5\v5\apps-api
+** emacs灵感笔记配置和最近打开的文件
 
-seeyon架构代码分析
-问题1. 全量编译存在问题，
-   多次全量编译，提示堆内存不足
-   java命令排查：jstat -gcutil 11666 1000 3
-   发现E O 区占用百分之百，确认是内存问题
-   
-问题2. 设置idea 堆内存，没有生效，设置环境变量才生效，
-   生效还是报错，最后分析 idea 编译的内存 默认只有700m，增加后可以编译了。
+;; 使用capture获取灵感 记录待办 记录笔记
+(setq org-capture-templates
+      '(("t" "Task" entry (file+headline "~/sources/rateyu.github.io/orgs/tasks.org" "Tasks")
+         "* TODO %?\n  %U")
+        ("n" "Note" entry (file+headline "~/sources/rateyu.github.io/orgs/notes.org" "Notes")
+         "* %? :NOTE:\n  %U")
+        ("i" "Idea" entry (file+headline "~/sources/rateyu.github.io/orgs/ideas.org" "Ideas")
+         "* %U %?\n  %i\n  %a")
+        ("j" "Journal" entry (file+datetree "~/sources/rateyu.github.io/orgs/journal.org")
+         "* %U %?\n  %i\n  %a")))
+(global-set-key (kbd "C-c t") (lambda () (interactive) (org-capture nil "t")))
+(global-set-key (kbd "C-c n") (lambda () (interactive) (org-capture nil "n")))
+(global-set-key (kbd "C-c i") (lambda () (interactive) (org-capture nil "i")))
+(global-set-key (kbd "C-c j") (lambda () (interactive) (org-capture nil "j")))
 
-问题3. 但是继续报 模块循环依赖问题，没有办法，只能引入一个ctp-core单独编译，dsm单独分析，这样是可以了，
-   后面一个一个编译吧，用到了再引入这个模块就行。
 
-   两个核心类：（神奇的地方来了，emacs可以直接打开这个文件 ctrl x ctrl f）
-   C:\Users\myu\Documents\PARA\2Areas\codes\xcoa_debug_srcs\xcoa-codes\v5\v5\ctp-core\src\main\java\com\seeyon\ctp\common\AppContext.java
-   C:\Users\myu\Documents\PARA\2Areas\codes\xcoa_debug_srcs\xcoa-codes\v5\v5\ctp-core\src\main\java\com\seeyon\ctp\common\SystemEnvironment.java
-   
+;; 最近打开的文件
+(recentf-mode 1)
+(setq recentf-max-menu-items 500)  ;; 显示最近 25 个文件
+(global-set-key (kbd "C-c C-r") 'recentf-open-files)
 
-   
+
+*** 单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记录下
+方法1: 第一次可以，无法连续追加
+;; 自定义函数 快速插入org文件中
+;; (defun my/org-save-clipboard-to-file ()
+;;   "Save the clipboard contents to an org file."
+;;   (interactive)
+;;   (let ((content (current-kill 0)))
+;;     (with-temp-file "~/sources/rateyu.github.io/orgs/code-note.org" 
+;;       (insert "* New Entry\n")
+;;       (insert (format "%s\n" content)))))
+;; 每次按 C-c C-s 时，剪贴板中的内容就会保存到 notes.org 文件中
+;; (global-set-key (kbd "C-c C-s") 'my/org-save-clipboard-to-file) 
+
+方法2: 均不可以，不知道哪里有问题，还是避免造轮子吧
+;; 优化支持文件追加
+(defun my2/org-save-clipboard-to-file ()
+  "Append the clipboard contents to an org file."
+  (interactive)
+  (let ((content (current-kill 0))  ;; 获取剪贴板内容
+        (file-path "~/sources/rateyu.github.io/orgs/code2note.org"))  ;; 定义 Org 文件路径
+    (with-temp-buffer
+      ;; 将剪贴板内容以 Org 语法插入
+      ;;(insert "* New Entry\n")
+      (insert (format "** %U\n" (current-time-string)))  ;; 添加时间戳
+      (insert (format "%s\n\n" content))  ;; 添加剪贴板内容
+      ;; 将内容追加到文件末尾
+      (append-to-file (point-min) (point-max) file-path))))
+
+(global-set-key (kbd "C-c C-s") 'my2/org-save-clipboard-to-file)  ;; 绑定快捷键
+

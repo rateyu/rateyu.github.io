@@ -1,0 +1,4 @@
+* Ideas
+** [2025-02-23 Sun 08:59] test2
+  
+  [[file:~/.emacs::"j" "Journal" entry (file+datetree "~/sources/rateyu.github.io/orgs/journal.org"]]
