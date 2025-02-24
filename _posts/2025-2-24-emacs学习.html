@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-02-24 周一 22:44 -->
+<!-- 2025-02-24 一 22:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
+<meta name="author" content="myu" />
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -231,92 +232,92 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgcd90ecf">1. emacs常见问题2025-2-24</a>
+<li><a href="#orgc61aca9">1. emacs常见问题2025-2-24</a>
 <ul>
-<li><a href="#orgd1809c0">1.1. emacs基本使用</a></li>
-<li><a href="#org6154e47">1.2. emacs快捷键</a></li>
-<li><a href="#org360bd05">1.3. dired文件夹模式</a></li>
-<li><a href="#org7516ed7">1.4. org-mod</a>
+<li><a href="#org7dd1066">1.1. emacs基本使用</a></li>
+<li><a href="#orgdb8080b">1.2. emacs快捷键</a></li>
+<li><a href="#org17278dc">1.3. dired文件夹模式</a></li>
+<li><a href="#orgc73c603">1.4. org-mod</a>
 <ul>
-<li><a href="#org9076b1b">1.4.1. org文件导出为html文件</a></li>
-<li><a href="#orgd45ac20">1.4.2. 列表和checkbox使用</a></li>
-<li><a href="#org6fa4e44">1.4.3. 其它：</a></li>
-<li><a href="#org421b367">1.4.4. org中到处的文件如何自动把回车放进去</a></li>
+<li><a href="#orgd91439d">1.4.1. org文件导出为html文件</a></li>
+<li><a href="#org3d28126">1.4.2. 列表和checkbox使用</a></li>
+<li><a href="#org738291e">1.4.3. 其它：</a></li>
+<li><a href="#org43402b5">1.4.4. org中到处的文件如何自动把回车放进去</a></li>
 </ul>
 </li>
-<li><a href="#org0d02776">1.5. org-refile移动文件操作</a></li>
-<li><a href="#org45d3855">1.6. emacs灵感笔记配置和最近打开的文件</a>
+<li><a href="#org4637e40">1.5. org-refile移动文件操作</a></li>
+<li><a href="#org6b40082">1.6. emacs灵感笔记配置和最近打开的文件</a>
 <ul>
-<li><a href="#orgbd1cc11">1.6.1. 单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记录下</a></li>
+<li><a href="#org5a969c6">1.6.1. 单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记录下</a></li>
 </ul>
 </li>
-<li><a href="#org6127715">1.7. emacs 查找相关总结</a></li>
-<li><a href="#org77d8455">1.8. 标签搜索</a></li>
-<li><a href="#orge7d0cc3">1.9. yasnippet</a></li>
-<li><a href="#org66ea3eb">1.10. eww文本浏览器</a></li>
-<li><a href="#org0499b8e">1.11. emacs预览html</a></li>
-<li><a href="#orgfa2404a">1.12. emacs 帮助相关</a></li>
-<li><a href="#org31ed2f6">1.13. <b>emacs search zz</b></a></li>
-<li><a href="#orgad1ce2a">1.14. emacs grep 命令</a></li>
-<li><a href="#org9420e97">1.15. emacs搜索 zz tag阅读代码 查找定义与引用</a>
+<li><a href="#org2dd290e">1.7. emacs 查找相关总结</a></li>
+<li><a href="#org72783d8">1.8. 标签搜索</a></li>
+<li><a href="#org33c8521">1.9. yasnippet</a></li>
+<li><a href="#org0440de9">1.10. eww文本浏览器</a></li>
+<li><a href="#org311836e">1.11. emacs预览html</a></li>
+<li><a href="#org9270569">1.12. emacs 帮助相关</a></li>
+<li><a href="#org8a2db82">1.13. <b>emacs search zz</b></a></li>
+<li><a href="#org769725d">1.14. emacs grep 命令</a></li>
+<li><a href="#org65b3a1e">1.15. emacs搜索 zz tag阅读代码 查找定义与引用</a>
 <ul>
-<li><a href="#org3885f18">1.15.1. 查找文件名或者字符串</a></li>
-<li><a href="#orge7bccc9">1.15.2. 查找方法定义和引用</a></li>
-<li><a href="#org0d04d54">1.15.3. 生成etag文件</a></li>
-<li><a href="#org48bbeaf">1.15.4. 返回上一个文件</a></li>
-<li><a href="#orgef24586">1.15.5. windows说明</a></li>
-<li><a href="#org9be0a52">1.15.6. 变量定义和函数定义的方法</a></li>
-<li><a href="#orgf3b2c77">1.15.7. emacs插件推荐</a></li>
-<li><a href="#org2a96bdd">1.15.8. emacs选择多行字符串，方便的方法</a></li>
+<li><a href="#orge931344">1.15.1. 查找文件名或者字符串</a></li>
+<li><a href="#org673c207">1.15.2. 查找方法定义和引用</a></li>
+<li><a href="#org38f2194">1.15.3. 生成etag文件</a></li>
+<li><a href="#orga8e55f7">1.15.4. 返回上一个文件</a></li>
+<li><a href="#orgc3d1ff7">1.15.5. windows说明</a></li>
+<li><a href="#org974112a">1.15.6. 变量定义和函数定义的方法</a></li>
+<li><a href="#org9a50450">1.15.7. emacs插件推荐</a></li>
+<li><a href="#orgc241373">1.15.8. emacs选择多行字符串，方便的方法</a></li>
 </ul>
 </li>
-<li><a href="#orgbbb6a27">1.16. emacs插件推荐ido和smex</a></li>
-<li><a href="#orgfef689d">1.17. emacs快速粘贴图片到org文件中</a></li>
-<li><a href="#org657c267">1.18. eww 快捷键</a></li>
-<li><a href="#orgb28457b">1.19. 如何给shell添加书签</a></li>
-<li><a href="#org07646c4">1.20. eshell 命令行ps -ef | grpe java后，无法显示全命令行参数</a></li>
-<li><a href="#org2835794">1.21. magit使用</a></li>
-<li><a href="#org6e3c2d3">1.22. magit 常用命令</a></li>
-<li><a href="#org08a8f6a">1.23. magit merge</a></li>
-<li><a href="#org92f3280">1.24. emacs magit 提交乱码问题</a></li>
-<li><a href="#org8eb3128">1.25. emacs 使用chatgpt</a></li>
-<li><a href="#org9c73a3e">1.26. emacs 调试lisp语言和lisp插件</a>
+<li><a href="#orge50f9fb">1.16. emacs插件推荐ido和smex</a></li>
+<li><a href="#org90d6399">1.17. emacs快速粘贴图片到org文件中</a></li>
+<li><a href="#orgd6811e3">1.18. eww 快捷键</a></li>
+<li><a href="#orge1e8036">1.19. 如何给shell添加书签</a></li>
+<li><a href="#orga4fd0ca">1.20. eshell 命令行ps -ef | grpe java后，无法显示全命令行参数</a></li>
+<li><a href="#org85433f4">1.21. magit使用</a></li>
+<li><a href="#orgec05f9c">1.22. magit 常用命令</a></li>
+<li><a href="#org74e4ce2">1.23. magit merge</a></li>
+<li><a href="#org82616b2">1.24. emacs magit 提交乱码问题</a></li>
+<li><a href="#org3b17107">1.25. emacs 使用chatgpt</a></li>
+<li><a href="#org305bd78">1.26. emacs 调试lisp语言和lisp插件</a>
 <ul>
-<li><a href="#org9dc1844">1.26.1. 常用快捷键</a></li>
+<li><a href="#org9955649">1.26.1. 常用快捷键</a></li>
 </ul>
 </li>
-<li><a href="#org51f5195">1.27. emacs lsp-mod安装方法 &amp; 代码提示 &amp; 代码自动识别编译</a></li>
-<li><a href="#orgacd0cb4">1.28. emacs leetcode-cn</a></li>
-<li><a href="#org7c47b7f">1.29. emacs 常用插件和命令 leetcode-cn</a>
+<li><a href="#org2655112">1.27. emacs lsp-mod安装方法 &amp; 代码提示 &amp; 代码自动识别编译</a></li>
+<li><a href="#org8097519">1.28. emacs leetcode-cn</a></li>
+<li><a href="#org78ffb08">1.29. emacs 常用插件和命令 leetcode-cn</a>
 <ul>
-<li><a href="#orge2e51bc">1.29.1. leetcode-cn快捷键</a></li>
+<li><a href="#orgd379c4a">1.29.1. leetcode-cn快捷键</a></li>
 </ul>
 </li>
-<li><a href="#org52fe251">1.30. emacs 插件小结-eyebrowse-desktop-winner</a></li>
-<li><a href="#org82a3437">1.31. vim emacs 快捷键比较</a></li>
-<li><a href="#org6c222fb">1.32. emacs 开发与调试, 刷题还是用mac air直接上网站刷题</a></li>
-<li><a href="#orge68abc0">1.33. emacs huge博客</a></li>
-<li><a href="#org595e077">1.34. emacs 数据库 调试?</a></li>
-<li><a href="#org2ede72a">1.35. emacs 启动idea64</a></li>
-<li><a href="#org118ded2">1.36. emacs路径提示的插件</a></li>
-<li><a href="#orgaa5c3a3">1.37. emacs和vscode如何调用gpt</a></li>
-<li><a href="#org7292bb0">1.38. emacs 152 ubuntu 机器请求gpt方法</a></li>
-<li><a href="#org9901584">1.39. emacs windows上使用</a></li>
-<li><a href="#org666bc46">1.40. ssh登录远程windows服务器无法调用emacs配置的环境变量</a></li>
-<li><a href="#orgc13b0ca">1.41. windows修改键位，修改后更加便于打字</a></li>
-<li><a href="#org7d3660b">1.42. screen 踢掉原用户</a></li>
-<li><a href="#orgfb8d2e0">1.43. 安装自定义的theme</a></li>
+<li><a href="#orgb766cc2">1.30. emacs 插件小结-eyebrowse-desktop-winner</a></li>
+<li><a href="#org08c6854">1.31. vim emacs 快捷键比较</a></li>
+<li><a href="#org861a765">1.32. emacs 开发与调试, 刷题还是用mac air直接上网站刷题</a></li>
+<li><a href="#org329c26d">1.33. emacs huge博客</a></li>
+<li><a href="#orgcf8603b">1.34. emacs 数据库 调试?</a></li>
+<li><a href="#org79414ac">1.35. emacs 启动idea64</a></li>
+<li><a href="#org6c6f5c8">1.36. emacs路径提示的插件</a></li>
+<li><a href="#orgdbbccae">1.37. emacs和vscode如何调用gpt</a></li>
+<li><a href="#org9bc624a">1.38. emacs 152 ubuntu 机器请求gpt方法</a></li>
+<li><a href="#org3974a6c">1.39. emacs windows上使用</a></li>
+<li><a href="#org3efcf4b">1.40. ssh登录远程windows服务器无法调用emacs配置的环境变量</a></li>
+<li><a href="#orgc366dca">1.41. windows修改键位，修改后更加便于打字</a></li>
+<li><a href="#org17ca6af">1.42. screen 踢掉原用户</a></li>
+<li><a href="#org3368ace">1.43. 安装自定义的theme</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcd90ecf" class="outline-2">
-<h2 id="orgcd90ecf"><span class="section-number-2">1.</span> emacs常见问题2025-2-24</h2>
+<div id="outline-container-orgc61aca9" class="outline-2">
+<h2 id="orgc61aca9"><span class="section-number-2">1.</span> emacs常见问题2025-2-24</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgd1809c0" class="outline-3">
-<h3 id="orgd1809c0"><span class="section-number-3">1.1.</span> emacs基本使用</h3>
+<div id="outline-container-org7dd1066" class="outline-3">
+<h3 id="org7dd1066"><span class="section-number-3">1.1.</span> emacs基本使用</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>显示文件夹后，在另外窗口打开文件</li>
@@ -368,8 +369,8 @@ ctrl / 非常有用的撤销功能
 </div>
 </div>
 
-<div id="outline-container-org6154e47" class="outline-3">
-<h3 id="org6154e47"><span class="section-number-3">1.2.</span> emacs快捷键</h3>
+<div id="outline-container-orgdb8080b" class="outline-3">
+<h3 id="orgdb8080b"><span class="section-number-3">1.2.</span> emacs快捷键</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 code . / idea64 .
@@ -377,8 +378,8 @@ ctrl alt s ,正则表达式搜索
 </p>
 </div>
 </div>
-<div id="outline-container-org360bd05" class="outline-3">
-<h3 id="org360bd05"><span class="section-number-3">1.3.</span> dired文件夹模式</h3>
+<div id="outline-container-org17278dc" class="outline-3">
+<h3 id="org17278dc"><span class="section-number-3">1.3.</span> dired文件夹模式</h3>
 <div class="outline-text-3" id="text-1-3">
 <ol class="org-ol">
 <li>选中文件后，在另外窗口打开，直接 按 o 即可; f 直接在当前缓冲区查看文件</li>
@@ -431,8 +432,8 @@ cmd shift ！；执行程序，命令行比较少
 </div>
 </div>
 
-<div id="outline-container-org7516ed7" class="outline-3">
-<h3 id="org7516ed7"><span class="section-number-3">1.4.</span> org-mod</h3>
+<div id="outline-container-orgc73c603" class="outline-3">
+<h3 id="orgc73c603"><span class="section-number-3">1.4.</span> org-mod</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 <a href="https://www.cnblogs.com/GarfieldEr007/p/5588979.html">- org教程</a>
@@ -447,8 +448,8 @@ ctrl c，' ;插入代码??
 </div>
 
 
-<div id="outline-container-org9076b1b" class="outline-4">
-<h4 id="org9076b1b"><span class="section-number-4">1.4.1.</span> org文件导出为html文件</h4>
+<div id="outline-container-orgd91439d" class="outline-4">
+<h4 id="orgd91439d"><span class="section-number-4">1.4.1.</span> org文件导出为html文件</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <ol class="org-ol">
 <li>org导出html文件</li>
@@ -458,8 +459,8 @@ ctrl c，' ;插入代码??
 </div>
 </div>
 
-<div id="outline-container-orgd45ac20" class="outline-4">
-<h4 id="orgd45ac20"><span class="section-number-4">1.4.2.</span> 列表和checkbox使用</h4>
+<div id="outline-container-org3d28126" class="outline-4">
+<h4 id="org3d28126"><span class="section-number-4">1.4.2.</span> 列表和checkbox使用</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <ol class="org-ol">
 <li>cmd shift ret &#x2013; checkbox
@@ -480,8 +481,8 @@ ctrl c，' ;插入代码??
 </div>
 </div>
 
-<div id="outline-container-org6fa4e44" class="outline-4">
-<h4 id="org6fa4e44"><span class="section-number-4">1.4.3.</span> 其它：</h4>
+<div id="outline-container-org738291e" class="outline-4">
+<h4 id="org738291e"><span class="section-number-4">1.4.3.</span> 其它：</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <ol class="org-ol">
 <li>cmd 左右，升级降级标题</li>
@@ -501,8 +502,8 @@ ppp4. 标题间跳转
 </div>
 </div>
 
-<div id="outline-container-org421b367" class="outline-4">
-<h4 id="org421b367"><span class="section-number-4">1.4.4.</span> org中到处的文件如何自动把回车放进去</h4>
+<div id="outline-container-org43402b5" class="outline-4">
+<h4 id="org43402b5"><span class="section-number-4">1.4.4.</span> org中到处的文件如何自动把回车放进去</h4>
 <div class="outline-text-4" id="text-1-4-4">
 <blockquote>
 <p>
@@ -514,11 +515,11 @@ ppp4. 标题间跳转
 </div>
 </div>
 </div>
-<div id="outline-container-org0d02776" class="outline-3">
-<h3 id="org0d02776"><span class="section-number-3">1.5.</span> org-refile移动文件操作</h3>
+<div id="outline-container-org4637e40" class="outline-3">
+<h3 id="org4637e40"><span class="section-number-3">1.5.</span> org-refile移动文件操作</h3>
 </div>
-<div id="outline-container-org45d3855" class="outline-3">
-<h3 id="org45d3855"><span class="section-number-3">1.6.</span> emacs灵感笔记配置和最近打开的文件</h3>
+<div id="outline-container-org6b40082" class="outline-3">
+<h3 id="org6b40082"><span class="section-number-3">1.6.</span> emacs灵感笔记配置和最近打开的文件</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 ;; 使用capture获取灵感 记录待办 记录笔记
@@ -547,8 +548,8 @@ ppp4. 标题间跳转
 </div>
 
 
-<div id="outline-container-orgbd1cc11" class="outline-4">
-<h4 id="orgbd1cc11"><span class="section-number-4">1.6.1.</span> 单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记录下</h4>
+<div id="outline-container-org5a969c6" class="outline-4">
+<h4 id="org5a969c6"><span class="section-number-4">1.6.1.</span> 单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记录下</h4>
 <div class="outline-text-4" id="text-1-6-1">
 <p>
 方法1: 第一次可以，无法连续追加
@@ -588,8 +589,8 @@ ppp4. 标题间跳转
 </div>
 </div>
 
-<div id="outline-container-org6127715" class="outline-3">
-<h3 id="org6127715"><span class="section-number-3">1.7.</span> emacs 查找相关总结</h3>
+<div id="outline-container-org2dd290e" class="outline-3">
+<h3 id="org2dd290e"><span class="section-number-3">1.7.</span> emacs 查找相关总结</h3>
 <div class="outline-text-3" id="text-1-7">
 <ol class="org-ol">
 <li>grep-find, find-name-dired</li>
@@ -602,8 +603,8 @@ ppp4. 标题间跳转
 </div>
 </div>
 
-<div id="outline-container-org77d8455" class="outline-3">
-<h3 id="org77d8455"><span class="section-number-3">1.8.</span> 标签搜索</h3>
+<div id="outline-container-org72783d8" class="outline-3">
+<h3 id="org72783d8"><span class="section-number-3">1.8.</span> 标签搜索</h3>
 <div class="outline-text-3" id="text-1-8">
 <p>
 建立好了tag系统，可以将相关信息收集到一个表中
@@ -616,8 +617,8 @@ C-c a m 按标签搜索多个文件 需要把文件加入全局agenda
 </div>
 </div>
 
-<div id="outline-container-orge7d0cc3" class="outline-3">
-<h3 id="orge7d0cc3"><span class="section-number-3">1.9.</span> yasnippet</h3>
+<div id="outline-container-org33c8521" class="outline-3">
+<h3 id="org33c8521"><span class="section-number-3">1.9.</span> yasnippet</h3>
 <div class="outline-text-3" id="text-1-9">
 <p>
 支持新建templage
@@ -626,8 +627,8 @@ ctrl c &amp; ctrl n
 </div>
 </div>
 
-<div id="outline-container-org66ea3eb" class="outline-3">
-<h3 id="org66ea3eb"><span class="section-number-3">1.10.</span> eww文本浏览器</h3>
+<div id="outline-container-org0440de9" class="outline-3">
+<h3 id="org0440de9"><span class="section-number-3">1.10.</span> eww文本浏览器</h3>
 <div class="outline-text-3" id="text-1-10">
 <ol class="org-ol">
 <li>eww 提示输入浏览网址</li>
@@ -646,8 +647,8 @@ ctrl c &amp; ctrl n
 </div>
 </div>
 
-<div id="outline-container-org0499b8e" class="outline-3">
-<h3 id="org0499b8e"><span class="section-number-3">1.11.</span> emacs预览html</h3>
+<div id="outline-container-org311836e" class="outline-3">
+<h3 id="org311836e"><span class="section-number-3">1.11.</span> emacs预览html</h3>
 <div class="outline-text-3" id="text-1-11">
 <p>
 browse-url-of-file
@@ -656,8 +657,8 @@ eww-open-file
 </div>
 </div>
 
-<div id="outline-container-orgfa2404a" class="outline-3">
-<h3 id="orgfa2404a"><span class="section-number-3">1.12.</span> emacs 帮助相关</h3>
+<div id="outline-container-org9270569" class="outline-3">
+<h3 id="org9270569"><span class="section-number-3">1.12.</span> emacs 帮助相关</h3>
 <div class="outline-text-3" id="text-1-12">
 <p>
 ctrl h ,m      mod模块帮助
@@ -665,8 +666,8 @@ ctrl h ,f/v/k 查询命令、变量、快捷键
 </p>
 </div>
 </div>
-<div id="outline-container-org31ed2f6" class="outline-3">
-<h3 id="org31ed2f6"><span class="section-number-3">1.13.</span> <b>emacs search zz</b></h3>
+<div id="outline-container-org8a2db82" class="outline-3">
+<h3 id="org8a2db82"><span class="section-number-3">1.13.</span> <b>emacs search zz</b></h3>
 <div class="outline-text-3" id="text-1-13">
 <p>
 查找文件：使用 find-name-dired，支持文件名的通配符查找。
@@ -676,8 +677,8 @@ eg: find . -type f -exec grep  -nH &#x2013;null "ming*" \{\} \;
 </p>
 </div>
 </div>
-<div id="outline-container-orgad1ce2a" class="outline-3">
-<h3 id="orgad1ce2a"><span class="section-number-3">1.14.</span> emacs grep 命令</h3>
+<div id="outline-container-org769725d" class="outline-3">
+<h3 id="org769725d"><span class="section-number-3">1.14.</span> emacs grep 命令</h3>
 <div class="outline-text-3" id="text-1-14">
 <p>
 grep &#x2013;color=auto -nH &#x2013;null -e "images" -r
@@ -685,12 +686,12 @@ grep &#x2013;color=auto -nH &#x2013;null -e "images" -r
 </p>
 </div>
 </div>
-<div id="outline-container-org9420e97" class="outline-3">
-<h3 id="org9420e97"><span class="section-number-3">1.15.</span> emacs搜索 zz tag阅读代码 查找定义与引用</h3>
+<div id="outline-container-org65b3a1e" class="outline-3">
+<h3 id="org65b3a1e"><span class="section-number-3">1.15.</span> emacs搜索 zz tag阅读代码 查找定义与引用</h3>
 <div class="outline-text-3" id="text-1-15">
 </div>
-<div id="outline-container-org3885f18" class="outline-4">
-<h4 id="org3885f18"><span class="section-number-4">1.15.1.</span> 查找文件名或者字符串</h4>
+<div id="outline-container-orge931344" class="outline-4">
+<h4 id="orge931344"><span class="section-number-4">1.15.1.</span> 查找文件名或者字符串</h4>
 <div class="outline-text-4" id="text-1-15-1">
 <p>
 提示选择项目，一般情况project根据git仓库作为默认项目进行查找
@@ -710,8 +711,8 @@ project-find-rgrep 搜索文件中的文本内容，linux和mac使用很爽
 </div>
 </div>
 
-<div id="outline-container-orge7bccc9" class="outline-4">
-<h4 id="orge7bccc9"><span class="section-number-4">1.15.2.</span> 查找方法定义和引用</h4>
+<div id="outline-container-org673c207" class="outline-4">
+<h4 id="org673c207"><span class="section-number-4">1.15.2.</span> 查找方法定义和引用</h4>
 <div class="outline-text-4" id="text-1-15-2">
 <p>
 M-x xref-find-definitions：查找符号定义。
@@ -734,8 +735,8 @@ sudo port install ripgrep
 </div>
 
 
-<div id="outline-container-org0d04d54" class="outline-4">
-<h4 id="org0d04d54"><span class="section-number-4">1.15.3.</span> 生成etag文件</h4>
+<div id="outline-container-org38f2194" class="outline-4">
+<h4 id="org38f2194"><span class="section-number-4">1.15.3.</span> 生成etag文件</h4>
 <div class="outline-text-4" id="text-1-15-3">
 <p>
 find . -name "*.java" -exec etags {} +
@@ -767,8 +768,8 @@ chmod +x generate_tags.sh
 </div>
 </div>
 
-<div id="outline-container-org48bbeaf" class="outline-4">
-<h4 id="org48bbeaf"><span class="section-number-4">1.15.4.</span> 返回上一个文件</h4>
+<div id="outline-container-orga8e55f7" class="outline-4">
+<h4 id="orga8e55f7"><span class="section-number-4">1.15.4.</span> 返回上一个文件</h4>
 <div class="outline-text-4" id="text-1-15-4">
 <p>
 ctrl x 左右箭头或者 ctrl c 左右箭头
@@ -776,8 +777,8 @@ ctrl x 左右箭头或者 ctrl c 左右箭头
 </div>
 </div>
 
-<div id="outline-container-orgef24586" class="outline-4">
-<h4 id="orgef24586"><span class="section-number-4">1.15.5.</span> windows说明</h4>
+<div id="outline-container-orgc3d1ff7" class="outline-4">
+<h4 id="orgc3d1ff7"><span class="section-number-4">1.15.5.</span> windows说明</h4>
 <div class="outline-text-4" id="text-1-15-5">
 <p>
 windows系统文件使用gbk，emacs默认支持utf8
@@ -792,12 +793,12 @@ windows系统文件使用gbk，emacs默认支持utf8
 </div>
 </div>
 
-<div id="outline-container-org9be0a52" class="outline-4">
-<h4 id="org9be0a52"><span class="section-number-4">1.15.6.</span> 变量定义和函数定义的方法</h4>
+<div id="outline-container-org974112a" class="outline-4">
+<h4 id="org974112a"><span class="section-number-4">1.15.6.</span> 变量定义和函数定义的方法</h4>
 </div>
 
-<div id="outline-container-orgf3b2c77" class="outline-4">
-<h4 id="orgf3b2c77"><span class="section-number-4">1.15.7.</span> emacs插件推荐</h4>
+<div id="outline-container-org9a50450" class="outline-4">
+<h4 id="org9a50450"><span class="section-number-4">1.15.7.</span> emacs插件推荐</h4>
 <div class="outline-text-4" id="text-1-15-7">
 <p>
 <a href="https://www.liuhaihua.cn/archives/221888.html">emacs推荐插件10个</a> ctrl-c,ctrl-l 插件
@@ -805,8 +806,8 @@ windows系统文件使用gbk，emacs默认支持utf8
 </div>
 </div>
 
-<div id="outline-container-org2a96bdd" class="outline-4">
-<h4 id="org2a96bdd"><span class="section-number-4">1.15.8.</span> emacs选择多行字符串，方便的方法</h4>
+<div id="outline-container-orgc241373" class="outline-4">
+<h4 id="orgc241373"><span class="section-number-4">1.15.8.</span> emacs选择多行字符串，方便的方法</h4>
 <div class="outline-text-4" id="text-1-15-8">
 <p>
 mac使用 ctrl shift 上下，直接就可以选择文本了，这个真方便
@@ -814,8 +815,8 @@ mac使用 ctrl shift 上下，直接就可以选择文本了，这个真方便
 </div>
 </div>
 </div>
-<div id="outline-container-orgbbb6a27" class="outline-3">
-<h3 id="orgbbb6a27"><span class="section-number-3">1.16.</span> emacs插件推荐ido和smex</h3>
+<div id="outline-container-orge50f9fb" class="outline-3">
+<h3 id="orge50f9fb"><span class="section-number-3">1.16.</span> emacs插件推荐ido和smex</h3>
 <div class="outline-text-3" id="text-1-16">
 <p>
 ido是文件夹提示
@@ -824,8 +825,8 @@ smex是命令提示
 </p>
 </div>
 </div>
-<div id="outline-container-orgfef689d" class="outline-3">
-<h3 id="orgfef689d"><span class="section-number-3">1.17.</span> emacs快速粘贴图片到org文件中</h3>
+<div id="outline-container-org90d6399" class="outline-3">
+<h3 id="org90d6399"><span class="section-number-3">1.17.</span> emacs快速粘贴图片到org文件中</h3>
 <div class="outline-text-3" id="text-1-17">
 <p>
 html文件中应该是绝对路径
@@ -848,8 +849,8 @@ C-c C-x C-v：切换图片的内联显示（toggle inline images）。这个命�
 </p>
 </div>
 </div>
-<div id="outline-container-org657c267" class="outline-3">
-<h3 id="org657c267"><span class="section-number-3">1.18.</span> eww 快捷键</h3>
+<div id="outline-container-orgd6811e3" class="outline-3">
+<h3 id="orgd6811e3"><span class="section-number-3">1.18.</span> eww 快捷键</h3>
 <div class="outline-text-3" id="text-1-18">
 <p>
 w  拷贝当前页面 URL    
@@ -870,8 +871,8 @@ w  拷贝当前页面 URL
 </div>
 </div>
 
-<div id="outline-container-orgb28457b" class="outline-3">
-<h3 id="orgb28457b"><span class="section-number-3">1.19.</span> 如何给shell添加书签</h3>
+<div id="outline-container-orge1e8036" class="outline-3">
+<h3 id="orge1e8036"><span class="section-number-3">1.19.</span> 如何给shell添加书签</h3>
 <div class="outline-text-3" id="text-1-19">
 <p>
 emacs shell添加书签未成功，eshell尝试了下可以的
@@ -917,8 +918,8 @@ M-x ansi-term: 类似于 term，但它更好地支持 ANSI 转义序列，更适
 </p>
 </div>
 </div>
-<div id="outline-container-org07646c4" class="outline-3">
-<h3 id="org07646c4"><span class="section-number-3">1.20.</span> eshell 命令行ps -ef | grpe java后，无法显示全命令行参数</h3>
+<div id="outline-container-orga4fd0ca" class="outline-3">
+<h3 id="orga4fd0ca"><span class="section-number-3">1.20.</span> eshell 命令行ps -ef | grpe java后，无法显示全命令行参数</h3>
 <div class="outline-text-3" id="text-1-20">
 <pre class="example">
 (add-hook 'eshell-mode-hook
@@ -935,8 +936,8 @@ ps: sudo -s 切换到root账号后
 </div>
 </div>
 
-<div id="outline-container-org2835794" class="outline-3">
-<h3 id="org2835794"><span class="section-number-3">1.21.</span> magit使用</h3>
+<div id="outline-container-org85433f4" class="outline-3">
+<h3 id="org85433f4"><span class="section-number-3">1.21.</span> magit使用</h3>
 <div class="outline-text-3" id="text-1-21">
 <ul class="org-ul">
 <li>此处需要梯子，否则安装很麻烦</li>
@@ -975,8 +976,8 @@ L head , 空格查看，光标不移动；回车查看，光标移动
 </p>
 </div>
 </div>
-<div id="outline-container-org6e3c2d3" class="outline-3">
-<h3 id="org6e3c2d3"><span class="section-number-3">1.22.</span> magit 常用命令</h3>
+<div id="outline-container-orgec05f9c" class="outline-3">
+<h3 id="orgec05f9c"><span class="section-number-3">1.22.</span> magit 常用命令</h3>
 <div class="outline-text-3" id="text-1-22">
 <p>
 magit-status
@@ -1001,8 +1002,8 @@ magit使用的文档，日文版本的，感觉还不错
 </div>
 </div>
 
-<div id="outline-container-org08a8f6a" class="outline-3">
-<h3 id="org08a8f6a"><span class="section-number-3">1.23.</span> magit merge</h3>
+<div id="outline-container-org74e4ce2" class="outline-3">
+<h3 id="org74e4ce2"><span class="section-number-3">1.23.</span> magit merge</h3>
 <div class="outline-text-3" id="text-1-23">
 <p>
 Magit 会高亮冲突的文件，显示 Unmerged 状态。
@@ -1012,8 +1013,8 @@ Magit 会高亮冲突的文件，显示 Unmerged 状态。
 </div>
 </div>
 
-<div id="outline-container-org92f3280" class="outline-3">
-<h3 id="org92f3280"><span class="section-number-3">1.24.</span> emacs magit 提交乱码问题</h3>
+<div id="outline-container-org82616b2" class="outline-3">
+<h3 id="org82616b2"><span class="section-number-3">1.24.</span> emacs magit 提交乱码问题</h3>
 <div class="outline-text-3" id="text-1-24">
 <p>
 windows和macbook 都会提交git仓库，但是windows提交的就是乱码，
@@ -1048,8 +1049,8 @@ M-x revert-buffer-with-coding-system RET utf-8
 </div>
 </div>
 
-<div id="outline-container-org8eb3128" class="outline-3">
-<h3 id="org8eb3128"><span class="section-number-3">1.25.</span> emacs 使用chatgpt</h3>
+<div id="outline-container-org3b17107" class="outline-3">
+<h3 id="org3b17107"><span class="section-number-3">1.25.</span> emacs 使用chatgpt</h3>
 <div class="outline-text-3" id="text-1-25">
 <p>
 <a href="https://github.com/xenodium/chatgpt-shell">chat-gpt等使用方法</a>
@@ -1057,8 +1058,8 @@ M-x revert-buffer-with-coding-system RET utf-8
 </div>
 </div>
 
-<div id="outline-container-org9c73a3e" class="outline-3">
-<h3 id="org9c73a3e"><span class="section-number-3">1.26.</span> emacs 调试lisp语言和lisp插件</h3>
+<div id="outline-container-org305bd78" class="outline-3">
+<h3 id="org305bd78"><span class="section-number-3">1.26.</span> emacs 调试lisp语言和lisp插件</h3>
 <div class="outline-text-3" id="text-1-26">
 <p>
 断点：(debug)
@@ -1079,8 +1080,8 @@ lisp一等公民是函数
 </div>
 
 
-<div id="outline-container-org9dc1844" class="outline-4">
-<h4 id="org9dc1844"><span class="section-number-4">1.26.1.</span> 常用快捷键</h4>
+<div id="outline-container-org9955649" class="outline-4">
+<h4 id="org9955649"><span class="section-number-4">1.26.1.</span> 常用快捷键</h4>
 <div class="outline-text-4" id="text-1-26-1">
 <p>
 Emacs 中有很多常用的快捷键用于执行和调试 Lisp 代码，以下是一些最常用的快捷键：
@@ -1097,8 +1098,8 @@ C-x C-e：执行当前行或选定区域的 Lisp 表达式（常用于在代码�
 </div>
 </div>
 
-<div id="outline-container-org51f5195" class="outline-3">
-<h3 id="org51f5195"><span class="section-number-3">1.27.</span> emacs lsp-mod安装方法 &amp; 代码提示 &amp; 代码自动识别编译</h3>
+<div id="outline-container-org2655112" class="outline-3">
+<h3 id="org2655112"><span class="section-number-3">1.27.</span> emacs lsp-mod安装方法 &amp; 代码提示 &amp; 代码自动识别编译</h3>
 <div class="outline-text-3" id="text-1-27">
 <p>
 jdtls sever
@@ -1141,8 +1142,8 @@ yasnippet
 </div>
 </div>
 
-<div id="outline-container-orgacd0cb4" class="outline-3">
-<h3 id="orgacd0cb4"><span class="section-number-3">1.28.</span> emacs leetcode-cn</h3>
+<div id="outline-container-org8097519" class="outline-3">
+<h3 id="org8097519"><span class="section-number-3">1.28.</span> emacs leetcode-cn</h3>
 <div class="outline-text-3" id="text-1-28">
 <p>
 最近着迷emacs，刷leetcode题想也用下（可以排除干扰），  
@@ -1239,12 +1240,12 @@ It also cleans LeetCode cookies in `url-cookie-file'."
 </div>
 </div>
 
-<div id="outline-container-org7c47b7f" class="outline-3">
-<h3 id="org7c47b7f"><span class="section-number-3">1.29.</span> emacs 常用插件和命令 leetcode-cn</h3>
+<div id="outline-container-org78ffb08" class="outline-3">
+<h3 id="org78ffb08"><span class="section-number-3">1.29.</span> emacs 常用插件和命令 leetcode-cn</h3>
 <div class="outline-text-3" id="text-1-29">
 </div>
-<div id="outline-container-orge2e51bc" class="outline-4">
-<h4 id="orge2e51bc"><span class="section-number-4">1.29.1.</span> leetcode-cn快捷键</h4>
+<div id="outline-container-orgd379c4a" class="outline-4">
+<h4 id="orgd379c4a"><span class="section-number-4">1.29.1.</span> leetcode-cn快捷键</h4>
 <div class="outline-text-4" id="text-1-29-1">
 <ol class="org-ol">
 <li>ctrl p 在另外一个窗口打开</li>
@@ -1257,8 +1258,8 @@ It also cleans LeetCode cookies in `url-cookie-file'."
 </div>
 </div>
 
-<div id="outline-container-org52fe251" class="outline-3">
-<h3 id="org52fe251"><span class="section-number-3">1.30.</span> emacs 插件小结-eyebrowse-desktop-winner</h3>
+<div id="outline-container-orgb766cc2" class="outline-3">
+<h3 id="orgb766cc2"><span class="section-number-3">1.30.</span> emacs 插件小结-eyebrowse-desktop-winner</h3>
 <div class="outline-text-3" id="text-1-30">
 <p>
 最近emacs学习了不少插件的使用，总结下：
@@ -1272,8 +1273,8 @@ winner-mode，对当前工作区的窗口进行前进和后退
 </div>
 </div>
 
-<div id="outline-container-org82a3437" class="outline-3">
-<h3 id="org82a3437"><span class="section-number-3">1.31.</span> vim emacs 快捷键比较</h3>
+<div id="outline-container-org08c6854" class="outline-3">
+<h3 id="org08c6854"><span class="section-number-3">1.31.</span> vim emacs 快捷键比较</h3>
 <div class="outline-text-3" id="text-1-31">
 <div class="org-src-container">
 <pre class="src src-txt">oemacs 与 vim 命令对比(网上摘录)
@@ -1376,8 +1377,8 @@ expand tab                                      :se et
 </div>
 </div>
 
-<div id="outline-container-org6c222fb" class="outline-3">
-<h3 id="org6c222fb"><span class="section-number-3">1.32.</span> emacs 开发与调试, 刷题还是用mac air直接上网站刷题</h3>
+<div id="outline-container-org861a765" class="outline-3">
+<h3 id="org861a765"><span class="section-number-3">1.32.</span> emacs 开发与调试, 刷题还是用mac air直接上网站刷题</h3>
 <div class="outline-text-3" id="text-1-32">
 <p>
 lsp-mode
@@ -1408,11 +1409,11 @@ notebook 记录更加易用
 </div>
 </div>
 
-<div id="outline-container-orge68abc0" class="outline-3">
-<h3 id="orge68abc0"><span class="section-number-3">1.33.</span> emacs huge博客</h3>
+<div id="outline-container-org329c26d" class="outline-3">
+<h3 id="org329c26d"><span class="section-number-3">1.33.</span> emacs huge博客</h3>
 </div>
-<div id="outline-container-org595e077" class="outline-3">
-<h3 id="org595e077"><span class="section-number-3">1.34.</span> emacs 数据库 调试?</h3>
+<div id="outline-container-orgcf8603b" class="outline-3">
+<h3 id="orgcf8603b"><span class="section-number-3">1.34.</span> emacs 数据库 调试?</h3>
 <div class="outline-text-3" id="text-1-34">
 <p>
 ejc-sql
@@ -1421,8 +1422,8 @@ realgud
 </div>
 </div>
 
-<div id="outline-container-org2ede72a" class="outline-3">
-<h3 id="org2ede72a"><span class="section-number-3">1.35.</span> emacs 启动idea64</h3>
+<div id="outline-container-org79414ac" class="outline-3">
+<h3 id="org79414ac"><span class="section-number-3">1.35.</span> emacs 启动idea64</h3>
 <div class="outline-text-3" id="text-1-35">
 <p>
 idea管理项目比较不方便
@@ -1434,16 +1435,16 @@ idea管理项目比较不方便
 </div>
 </div>
 
-<div id="outline-container-org118ded2" class="outline-3">
-<h3 id="org118ded2"><span class="section-number-3">1.36.</span> emacs路径提示的插件</h3>
+<div id="outline-container-org6c6f5c8" class="outline-3">
+<h3 id="org6c6f5c8"><span class="section-number-3">1.36.</span> emacs路径提示的插件</h3>
 <div class="outline-text-3" id="text-1-36">
 <p>
 启用 ido-mode 或 vertico-mode 来实现路径和文件名的补全
 </p>
 </div>
 </div>
-<div id="outline-container-orgaa5c3a3" class="outline-3">
-<h3 id="orgaa5c3a3"><span class="section-number-3">1.37.</span> emacs和vscode如何调用gpt</h3>
+<div id="outline-container-orgdbbccae" class="outline-3">
+<h3 id="orgdbbccae"><span class="section-number-3">1.37.</span> emacs和vscode如何调用gpt</h3>
 <div class="outline-text-3" id="text-1-37">
 <p>
 本想使用emacs调用 chatgpt，deepseek，ollama，但是程序没有调通，
@@ -1455,7 +1456,7 @@ lisp语言有报错，懒得调试了，后面还是用python语言调用吧
 </p>
 
 
-<div id="org6d99b43" class="figure">
+<div id="orga671d01" class="figure">
 <p><img src="emacs_magit,org-mod/2025-02-15_22-06-05_screenshot.png" alt="2025-02-15_22-06-05_screenshot.png" />
 </p>
 </div>
@@ -1503,8 +1504,8 @@ windows下载地址，<a href="https://imagemagick.org/script/download.php#windo
 </p>
 </div>
 </div>
-<div id="outline-container-org7292bb0" class="outline-3">
-<h3 id="org7292bb0"><span class="section-number-3">1.38.</span> emacs 152 ubuntu 机器请求gpt方法</h3>
+<div id="outline-container-org9bc624a" class="outline-3">
+<h3 id="org9bc624a"><span class="section-number-3">1.38.</span> emacs 152 ubuntu 机器请求gpt方法</h3>
 <div class="outline-text-3" id="text-1-38">
 <p>
 安装 gptel插件
@@ -1531,8 +1532,8 @@ unset http<sub>proxy</sub> https<sub>proxy</sub> ftp<sub>proxy</sub> no<sub>prox
 </div>
 </div>
 
-<div id="outline-container-org9901584" class="outline-3">
-<h3 id="org9901584"><span class="section-number-3">1.39.</span> emacs windows上使用</h3>
+<div id="outline-container-org3974a6c" class="outline-3">
+<h3 id="org3974a6c"><span class="section-number-3">1.39.</span> emacs windows上使用</h3>
 <div class="outline-text-3" id="text-1-39">
 <ol class="org-ol">
 <li>使用git命令要用eshell方式，其它方式有乱码，没有找到方法如何修改</li>
@@ -1551,8 +1552,8 @@ ps:ctrl c + ctrl , =&gt; 快速调用引用 并选择要插入的内容
 </div>
 </div>
 
-<div id="outline-container-org666bc46" class="outline-3">
-<h3 id="org666bc46"><span class="section-number-3">1.40.</span> ssh登录远程windows服务器无法调用emacs配置的环境变量</h3>
+<div id="outline-container-org3efcf4b" class="outline-3">
+<h3 id="org3efcf4b"><span class="section-number-3">1.40.</span> ssh登录远程windows服务器无法调用emacs配置的环境变量</h3>
 <div class="outline-text-3" id="text-1-40">
 <p>
 需要手工指定HOME，指定.emacs路径后，就可以正常调用了
@@ -1570,8 +1571,8 @@ ssh myu@192.168.1.7 -t "powershell"
 </div>
 </div>
 
-<div id="outline-container-orgc13b0ca" class="outline-3">
-<h3 id="orgc13b0ca"><span class="section-number-3">1.41.</span> windows修改键位，修改后更加便于打字</h3>
+<div id="outline-container-orgc366dca" class="outline-3">
+<h3 id="orgc366dca"><span class="section-number-3">1.41.</span> windows修改键位，修改后更加便于打字</h3>
 <div class="outline-text-3" id="text-1-41">
 <p>
 羡慕hhkb的键盘布局，网上找了相关的教程，研究了下。
@@ -1637,8 +1638,8 @@ macos方法：
 </p>
 </div>
 </div>
-<div id="outline-container-org7d3660b" class="outline-3">
-<h3 id="org7d3660b"><span class="section-number-3">1.42.</span> screen 踢掉原用户</h3>
+<div id="outline-container-org17ca6af" class="outline-3">
+<h3 id="org17ca6af"><span class="section-number-3">1.42.</span> screen 踢掉原用户</h3>
 <div class="outline-text-3" id="text-1-42">
 <p>
 一般是Dttached ,表示没有用户登录；
@@ -1659,8 +1660,8 @@ ctrl a , A 给虚拟终端命名
 </div>
 
 
-<div id="outline-container-orgfb8d2e0" class="outline-3">
-<h3 id="orgfb8d2e0"><span class="section-number-3">1.43.</span> 安装自定义的theme</h3>
+<div id="outline-container-org3368ace" class="outline-3">
+<h3 id="org3368ace"><span class="section-number-3">1.43.</span> 安装自定义的theme</h3>
 <div class="outline-text-3" id="text-1-43">
 <p>
 github下载文件，zenburn-theme.el
@@ -1675,7 +1676,8 @@ github下载文件，zenburn-theme.el
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2025-02-24 周一 22:44</p>
+<p class="author">Author: myu</p>
+<p class="date">Created: 2025-02-24 一 22:56</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
