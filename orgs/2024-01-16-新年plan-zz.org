@@ -392,6 +392,7 @@ fbdc1af  default virtualbox running      C:/vms/cdh52024
 1c6fa4d  default virtualbox poweroff     C:/vms/cdh62024
 
 ** 信创oa mysql 表单4相关表
+
 ctp_app_log
 insert into CAP_SETTING_LOG
 insert into CAP_FORM_VIEW_INFO 
@@ -399,6 +400,12 @@ insert into CAP_FORM_TABLE_INFO
 insert into FORM_OWNER
 insert into CAP_FORM_RESOURCE
 insert into CAP_FORM_DEFINITION
+** emacs org-mode 文件跳转实现
+[[file:c:/path/to/YourJavaFile.java::methodName][Go to methodName]]
+[[file:/path/to/YourFile.txt::10][Go to line 10]]
+[[file:c:/path/to/YourFile.txt::*YourSearchString][Go to string "YourSearchString"]]
+
+
 
 
 
