@@ -84,28 +84,6 @@ fn 空格       电量查询
 
 和上一个rk65比，这款更加给力
 
-** intelj idea书签
-ctrl f11
-
-shift F11 查看
-ctrl enter 修改书签
-alt 上下   上下移动书签
-del          删除书签
-alt shit f  添加到文件收藏
-alt shift M    编译当前项目
-
-ctrl shift 数字快速跳转,快速设置标记
-ctrl shift c    拷贝文件的绝对路径
-ctrl shift f9   重新编译模块
-ctrl shift f10 运行本类main方法
-
-ctrl alt g       到定义和实现的方法
-Ctrl + Alt + L: 格式化代码
-
-规律总结：
-Alt + Shift：文件操作，这类组合通常涉及对文件或项目操作的快捷键，便于快速访问、编译和跳转。
-Ctrl + Shift：编译与路径相关，这类组合通常与文件路径、编译、跳转相关，属于高级功能，更倾向于开发中的快速操作。
-Ctrl + Alt：代码跳转，这种组合通常用于代码的跳转操作，方便开发者快速查看方法定义等。
 
 
 ** docker 自动开启与关闭
@@ -237,6 +215,22 @@ ctrl c ,ctrl o
 
  [[file:2015zongjie.org::维护工作，质量较低][2015总结orog]]
 
+** ubuntu 开机启动软件
+
+https://blog.csdn.net/sunyuhua_keyboard/article/details/141854543
+sudo nano /etc/rc.local
+
+#!/bin/sh -e
+/usr/bin/firefox &
+exit 0
+
+sudo chmod +x /etc/rc.local
+
+** linux命令搜索
+grep -rl "Hello World" /home/user/documents/ --不显示内容
+find /path/to/directory/ -type f -exec grep -l "搜索字符串" {} +
+find /path/to/directory/ -type f | xargs grep -l "搜索字符串"
+
 
 ** 创业
 *** esp32看店项目
@@ -247,6 +241,35 @@ ctrl c ,ctrl o
 
 
 * 求职
+** intelj idea书签
+ctrl f11
+
+shift F11 查看
+ctrl enter 修改书签
+alt 上下   上下移动书签
+del          删除书签
+alt shit f  添加到文件收藏
+alt shift M    编译当前项目
+
+ctrl shift 数字快速跳转,快速设置标记
+ctrl shift c    拷贝文件的绝对路径
+ctrl shift f9   重新编译模块
+ctrl shift f10 运行本类main方法
+
+ctrl alt g       到定义和实现的方法
+Ctrl + Alt + L: 格式化代码
+
+规律总结：
+Alt + Shift：文件操作，这类组合通常涉及对文件或项目操作的快捷键，便于快速访问、编译和跳转。
+Ctrl + Shift：编译与路径相关，这类组合通常与文件路径、编译、跳转相关，属于高级功能，更倾向于开发中的快速操作。
+Ctrl + Alt：代码跳转，这种组合通常用于代码的跳转操作，方便开发者快速查看方法定义等。
+
+*** emacs 与idea代码互动
+idea阅读代码，并拷贝绝对路径
+emacs  ctrl x,ctrl f 可以直接打开文件
+示例：
+C:\Users\myu\Documents\PARA\2Areas\codes\xcoa_debug_srcs\xcoa-codes\v5\v5\ctp-jdbcproxydriver\src\main\java\com\seeyon\ctp\monitor\perf\jdbcmonitor\proxyobj\JMSQLOperation.java
+[[sqltest][C:\Users\myu\Documents\PARA\2Areas\codes\xcoa_debug_srcs\xcoa-codes\v5\v5\ctp-jdbcproxydriver\src\main\java\com\seeyon\ctp\monitor\perf\jdbcmonitor\proxyobj\JMSQLOperation.java]]
 
 ** 如何设计并实现一个百万并发的服务端程序架构
 
@@ -376,5 +399,8 @@ insert into CAP_FORM_TABLE_INFO
 insert into FORM_OWNER
 insert into CAP_FORM_RESOURCE
 insert into CAP_FORM_DEFINITION
+
+
+
 
 
