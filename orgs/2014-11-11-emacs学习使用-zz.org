@@ -654,3 +654,4 @@ http://everet.org/thinking-of-emacs.html
 通过alt+`  或者 f10（仿真菜单 putty里面可以使用）
 ** putty使用 linux emacs 卡顿问题
 (set-language-environment "UTF-8")
+
