@@ -400,14 +400,66 @@ insert into CAP_FORM_TABLE_INFO
 insert into FORM_OWNER
 insert into CAP_FORM_RESOURCE
 insert into CAP_FORM_DEFINITION
+
+
 ** emacs org-mode 文件跳转实现
 [[file:c:/path/to/YourJavaFile.java::methodName][Go to methodName]]
 [[file:/path/to/YourFile.txt::10][Go to line 10]]
 [[file:c:/path/to/YourFile.txt::*YourSearchString][Go to string "YourSearchString"]]
 
+** 架构学习
+:PROPERTIES:
+:ID:       842629e4-e8ed-46e2-9fbc-0f680a1a07a6
+:END:
+
+#+DOWNLOADED: screenshot @ 2025-03-07 12:28:28
+[[file:求职/2025-03-07_12-28-28_screenshot.png]]
+
+** counsel-etags,ivy,company-ctags
+univisual ctags: ctags -e -R * , -e是ctags转emacs使用的格式 -R递归生成
+counsel-etags: 通过 ivy 提供更好的界面，支持标签的查找、跳转、排序等
+company-ctags 提供基于 tags 文件的代码自动补全功能，适用于大规模项目中符号的快速查找
+ivy 是一个多功能的模糊匹配和选择框架，广泛应用于文件查找、命令执行和历史记录搜索
+
+搜索时需要 rg.exe命令，在如下地址下载
+https://github.com/BurntSushi/ripgrep/releases
+注意：此处注释了 gitbash，配置的路径好些有点问题
+
+*** counsel 搜索类方法函数变量
+
+counsel-etags-find-tag 快速搜索方法
+counse-rg 搜索方法
+多个条件搜索，
+正则：public.*main
+
+如果你希望排除某些文件或目录，可以使用 -g 参数。例如，排除所有 test 目录下的文件：
+M-x counsel-rg RET "public.*class" RET "*.java" RET "-g '!test/'"
+
+查找包含 public 或 class 的行：public|class
+查找以 class 开头并且包含 public 的行：^class.*public
+
+忽略大小写： -i 参数可用于忽略大小写：
+M-x counsel-rg RET "public.*class" RET "*.java" RET "-i"
+
+限制文件大小或行数： -L 或 -n 可以限制返回的文件大小或行数。
+M-x counsel-rg RET "public.*class" RET "*.java" RET "--max-count=10"
+
+grep 和 rgrep 是 Emacs 自带的工具，rgrep 可以递归地搜索文件。虽然功能没有 ag 和 ripgrep 强大，但对于小型项目仍然非常有效。
+在当前项目中递归地搜索 public 和 class 的组合：
+M-x rgrep RET "public.*class" RET *.java RET ./
+
+在整个项目中排除某个目录（如 test）：
+M-x rgrep RET "public.*class" RET "*.java" RET ./
 
 
+** 其他搜索
+rgrep
+project-find
 
+** windows搜索  中文字符串终于可以了
+color-rg 搜索中文
+使用rg.exe
+[[https://emacs-china.org/t/counsel-rg-win10/12474/6][windows-emacs搜索中文字符串问题]]
 
-
-
+project-find-file 搜索文件还是
+counsel-rg搜索标签
