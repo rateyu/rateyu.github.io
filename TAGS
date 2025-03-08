@@ -1,0 +1,2452 @@
+
+blog2015.sublime-project,0
+
+blog2015.sublime-workspace,0
+
+bookmark/mybookmarks2015,0
+
+bookmarks,0
+
+ci_args.bat,0
+
+ci_args.sh,0
+
+docs/leetcode-win.org,0
+
+docs/leetcode-win.tex,120
+\section{算法53 最大子数组和}算法53 最大子数组和45,1189
+\label{sec:org37bf6c5}sec:org37bf6c546,1228
+
+docs/leetcode-win2.org,0
+
+docs/leetcode-win2.tex,120
+\section{算法53 最大子数组和}算法53 最大子数组和38,1073
+\label{sec:org96fde17}sec:org96fde1739,1112
+
+docs/leetcodes.org,0
+
+dot/example.dot,0
+
+Doxyfile,0
+
+gitpull.sh,0
+
+git_push.bat,0
+
+git_update.sh,0
+
+index.html,48
+<h2>{{ page.title }}</h2>{{ page.title }}6,51
+
+javascripts/main.js,0
+
+mew/.emacs,0
+
+mew/stunnel.conf,892
+sslVersion = SSLv3sslVersion2,47
+chroot = /var/lib/stunnel4/chroot5,144
+setuid = stunnel4setuid6,173
+setgid = stunnel4setgid7,192
+pid = /stunnel4.pidpid9,252
+socket = l:TCP_NODELAY=1socket12,303
+socket = r:TCP_NODELAY=1socket13,329
+debug = 7debug18,430
+output = /var/log/stunnel4/stunnel.logoutput19,441
+client = yesclient22,509
+[pop3s]pop3s26,558
+accept = 995accept27,567
+connect = 110connect28,581
+[imaps]imaps30,598
+accept = 993accept31,607
+connect = 143connect32,621
+[ssmtp]ssmtp34,638
+accept = 465accept35,647
+connect = 25connect36,661
+[gmail-pops]gmail-pops41,702
+accept = 9959accept42,716
+connect = imap.gmail.com:995connect43,731
+[gmail-imaps]gmail-imaps45,763
+accept = 9939accept46,778
+connect = imap.gmail.com:993connect47,793
+[gmail-ssmtp]gmail-ssmtp49,825
+accept = 4659accept50,840
+connect = imap.gmail.com:465connect51,855
+
+mv_html2post.sh,0
+
+myshell/test.sh,0
+
+njubbs.sh,0
+
+orgs/.emacs.desktop,0
+
+orgs/2014-08-03-发布github博客.org,465
+**** putty登陆编写 输入法很爽，基本功能可以使用 （排版不是很美观，但putty6,139
+*** git clone 一个版本出来 直接修改git clone 9,288
+*** git-emacs可以直接提交本地库，但是还要git push提交远程库（每次还要输git-emacs11,337
+*** git-status 不同的方式提交，注释怎么提交上去的？git-status 14,479
+*** git open-open 命令使用說明git open-open 16,552
+*** git push git push 21,722
+
+orgs/2014-11-10-ubuntu_setup.org,3257
+** android studio 开发登陆模块完成android studio 2,42
+** android studio 2android studio 28,215
+** apache 配置文件apache 15,345
+** ubuntu 修改文件夹用户组ubuntu 17,425
+** ubuntu命令行操作ubuntu20,486
+** win 10 安装sshd cygwinwin 10 25,614
+** win 10 tomcat servwin 10 tomcat serv31,785
+** nmap 探测主机nmap 52,1567
+192.168.1.15     0x1         0x2         1c:e6:2b:e2:82:b1     *        wlan0wlan064,2065
+192.168.1.119    0x1         0x2         9c:21:6a:05:1d:fe     *        wlan0wlan065,2144
+192.168.1.16     0x1         0x2         00:1f:d0:28:a3:3a     *        wlan0wlan066,2223
+192.168.1.100    0x1         0x2         70:73:cb:23:ec:61     *        wlan0wlan067,2302
+192.168.1.1      0x1         0x2         00:27:19:4e:e7:76     *        wlan0wlan068,2381
+192.168.1.66     0x1         0x2         00:1f:3b:c9:68:59     *        wlan0wlan069,2460
+192.168.1.18     0x1         0x2         74:d4:35:19:a0:9c     *        wlan0wlan070,2539
+192.168.1.2      0x1         0x2         58:44:98:b8:5b:6f     *        wlan0wlan071,2618
+192.168.1.10     0x1         0x2         00:18:de:80:14:3b     *        wlan0wlan072,2697
+192.168.1.4      0x1         0x2         74:51:ba:fb:cd:1b     *        wlan0wlan073,2776
+** ubuntu 挂载硬盘ubuntu 76,2859
+Units = cylinders of 16065 * 512 = 8225280 bytes512 = 8225280 bytes94,3324
+/dev/sda1   *           1        3251    26113626    7 HPFS/NTFS1        3251    26113626    7 HPFS/NTFS98,3468
+Units = cylinders of 16065 * 512 = 8225280 bytes512 = 8225280 bytes108,4036
+** ubuntu 非ｒｏｏｔ关机　不输入密码ubuntu 131,4960
+** ubuntu suse zsh oh autojump && fish 安装与使用；脚本灰常好用ubuntu suse zsh oh autojump && fish 170,6868
+** fish 设置fish 173,6987
+** ubuntu 修改端口和密码ubuntu 192,7556
+** emacs - w3m 重新安装 太难用了emacs - w3m 198,7694
+** grub配置 命令行模式启动grub201,7778
+** fbterm 搜狗输入法安装？fbterm 205,7904
+** yong快捷键使用yong206,7940
+** ubuntu 亮度调节方法ubuntu 212,8148
+** ubuntu 无线网络开关设置ubuntu 252,9307
+** yong ttyyong tty256,9388
+  ** yong拼音输入法搞定了，尝试了下还可以，这下可以强制不上网页了，yong257,9401
+                                                    * Apache Tomcat 8.0.32 发布下载         Apache Tomcat 8.0.32 295,10495
+用户名与密码都是www.linuxidc.com                    * Gitlab 8.4.4 发布下载，Git 代Gitlab 8.4.4 296,10593
+                                                    * Linux公社下载FTP资源的请到FTP服务Linux311,12078
+** w3m显示乱码问题处理w3m317,12519
+** arclinux gotarclinux got328,12879
+** telnet 乱码telnet 356,13751
+** emacs 插件emacs 363,13945
+** git环境安装git370,14203
+*** github 集成github 372,14225
+*** github 提交 rateyu@gmail.comgithub 373,14244
+*** Please tell me who you are.Please tell me who you are.421,16029
+** ubuntu 14 访问win7 ubuntu 14 472,18020
+** ubuntu 访问win7ubuntu 484,18344
+** win10 putty 访问ubuntuwin10 putty 490,18466
+** ubuntu shell fishubuntu shell fish495,18643
+* windows putty设置 自动登录ubuntuwindows putty509,19054
+
+orgs/2014-11-11-emacs学习使用-zz.org,4883
+* emacs学习emacs1,0
+** emacs rgrep 搜索命令使用emacs rgrep 2,15
+**  emacs 设置说明 非常有用的设置，完成左右窗口的切换emacs 3,50
+** emacs winner-mode使用emacs winner-mode12,389
+** emacs-w3m 集成不好的问题emacs-w3m 37,1113
+** emacs 帮助快捷键emacs 38,1149
+** emacs 远程调试emacs 58,2578
+** emacs ssh bwgemacs ssh bwg61,2674
+** emacs c_x c_f 远程登陆文件夹 a_x shell 执行 /bin/bash 远程命令开启终端 (ubunemacs c_x c_f 65,2764
+** emacs tramp sshemacs tramp ssh67,2899
+M_x eshell *执行远程机器的命令行* top命令无法执行?top74,3149
+** w3m 单独命令快捷键w3m 79,3292
+** DONE emacs w3m 操作步骤DONE emacs w3m 121,4298
+** w3m lynx比较  极客w3m lynx144,4943
+** yasnippets ant maven yasnippets ant maven 152,5233
+** git hub 更新代码git hub 155,5288
+** andoird keyboard  google is ok   bluetoothandoird keyboard  google is ok   bluetooth163,5656
+** emacs 24.3.1 + github rateyu starter-kit-masteremacs 24.3.1 + github rateyu starter-kit-master164,5703
+** emacs 检索代码emacs 167,5777
+** emacs markdown安装方法emacs markdown172,5979
+   * M-x magit-status switch to the status buffer of that repositoryM-x magit-status switch to the status buffer of that repository189,6394
+   * s to stage files 把untracked或者unstaged文件的状态改成stage模式，s to stage files 191,6541
+   * c to commit (type in your commit message then C-c C-c to savec to commit (type in your commit message then C-c C-c to save192,6626
+   * P P to do a git push Update remote refs along with associatedP P to do a git push Update remote refs along with associated194,6774
+   * F F to do a git pull Fetch from and merge with anotherF F to do a git pull Fetch from and merge with another196,6856
+   * TAB  Toggle hidden status of current section 用来转换显示当前文件TAB  Toggle hidden status of current section 198,6952
+   * i ignore file this will add the filename to the .gitignorei ignore file this will add the filename to the .gitignore200,7056
+   * I ignore file this will add the file to .git/infor/excludeI ignore file this will add the file to .git/infor/exclude202,7191
+   * C-h m Magit的使用帮助信息C-h m Magit203,7256
+** emacs org skillemacs org skill205,7297
+列表符号  - + * 1. 11. 1210,7349
+** emacs 多个shell创建emacs 220,7499
+** linux ctrl和 caps修改键位linux ctrl228,7707
+** emacs c_x b 快速新建缓冲区emacs c_x b 246,8355
+** emacs w3m　打开网页后 控制是否显示图片 (很好用哦)emacs w3m247,8393
+** emacs 隐藏工具栏的命令emacs 256,8683
+** emacs 使用书签emacs 269,8983
+** emacs 绘制流程图 yz 打开链接地址emacs 336,10105
+** emacs send email 配置？？ 替代方法 先使用 *雷鸟*emacs send email 349,10621
+** DONE 全局键位切换 ok  方法如下：DONE 351,10689
+** DONE 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码DONE 357,10997
+** DONE github 编写博客网站 git分支问题 这个问题终于搞定了DONE github 358,11095
+** DONE jde 常用方法总结 启动太慢，不好用DONE jde 375,11522
+** DONE emacs 插入java 代码DONE emacs 404,12904
+select * from tablename;from tablename;440,13557
+** DONE emacs 自动补全磁盘目录 牛人如Steve Purcell ---可以正常使用DONE emacs 443,13596
+** DONE emacs .eamcs.d init.el 配置文件DONE emacs .eamcs.d init.el 446,13782
+** DONE emacs 启动将 caps_lock <--> ctrl_R 放入 /etc/init.d/rc.local (具体参考effectiveDONE emacs 477,14939
+** DONE emacs 超级有效的DONE emacs 481,15172
+** emacs gtd 时间管理emacs gtd 489,15446
+** emacs mew 邮件管理emacs mew 495,15659
+** Emacs gnus 阅读新闻组Emacs gnus 498,15716
+** mew 问题＆常用命令快捷键 (重要)mew 503,15858
+** emacs 查看新闻组 rss  *雷鸟*emacs 544,17444
+** pdf emacspdf emacs545,17484
+** emacs yasnippetemacs yasnippet551,17686
+(* 0.36 3.7)0.36 3.7)565,18119
+** ubuntu latexubuntu latex571,18213
+** Ubuntu LaTex添加UTF8中文支持解决方法Ubuntu LaTex581,18535
+** latex 文献写作latex 589,18812
+** linux shell github项目linux shell github591,18889
+** intellij 快捷键intellij 608,19239
+** redis 非常简单，按照主页的说明就可以使用了redis 611,19369
+** emacs 另一个窗口操作emacs 612,19434
+** emacs org 换行设置emacs org 622,20235
+** emacs w3m设置 baidu主页emacs w3m624,20329
+** emacs 记录自己的工作区和恢复工作区emacs 627,20426
+** emacs 书签设置emacs 631,20615
+** emacs 快速补全emacs 636,20696
+** emacs 网址emacs 638,20726
+** eamcs 文件夹管理eamcs 645,20975
+** emacs 卡顿问题emacs 651,21096
+** emacs 快速调出菜单emacs 653,21167
+** putty使用 linux emacs 卡顿问题putty655,21263
+
+orgs/2015-04-16-es学习总结.org,26
+* es 学习总结es 1,0
+
+orgs/2015-06-14-markdown-11-form.md,85
+Markdown 11种基本语法Markdown 11种基本语法1,0
+[^hello]: hihello58,2333
+
+orgs/2015-06-29-my-think.md,770
+# 人生综合人生综合1,0
+# 团队管理团队管理27,791
+# 工作总结工作总结45,1267
+## 季度&周工作季度&周工作51,1374
+# 专业面试专业面试64,1818
+## 高性能架构高性能架构88,2337
+## 互联网框架互联网框架90,2359
+## 自我发展 互联网后端架构设计 php+enginx自我发展 互联网后端架构设计 php+enginx93,2386
+## 家里环境搭建家里环境搭建99,2548
+# 优秀资源优秀资源128,3614
+## uc存为文本,注意版本;多看导入 笔记阅读uc存为文本,注意版本;多看导入 笔记阅读130,3632
+# 身体是革命的本钱身体是革命的本钱140,3779
+# 经典读书笔记经典读书笔记145,3853
+# 2015 3季度 第一周总结2015 3季度 第一周总结149,3881
+
+orgs/2015-06-29-myjianli-2015.md,1744
+# 2015-06-29-今年下半年计划2015-06-29-今年下半年计划23,568
+## 高性能架构高性能架构28,667
+## 互联网框架互联网框架29,687
+## es集群 替换目前的solr&redis集群es集群 替换目前的solr&redis集群42,1035
+## elastic search 学习elastic search 学习46,1151
+## 海洋架构 和 业务海洋架构 和 业务50,1288
+### 问题2015问题201555,1378
+## 自动集成 海洋 持续 开发环境自动集成 海洋 持续 开发环境61,1504
+### 2015-06-14-系统持续集成2015-06-14-系统持续集成64,1576
+## 自我发展 互联网后端架构设计 php+enginx自我发展 互联网后端架构设计 php+enginx71,1723
+## 2015-06-29-用户行为2015-06-29-用户行为77,1885
+## 家里环境搭建家里环境搭建80,1917
+## 先讲讲怎样才是一份好的技术简历先讲讲怎样才是一份好的技术简历112,3021
+# 联系方式联系方式135,4998
+# 个人信息个人信息142,5088
+# 工作经历工作经历157,5416
+## ABC公司 （ 2012年9月 ~ 2014年9月 ）ABC公司 （ 2012年9月 ~ 2014年9月 ）160,5547
+### 内部项目内部项目163,5599
+### DEF项目DEF项目164,5617
+### GHI项目GHI项目168,5994
+### 其他项目其他项目172,6371
+## JKL公司 （ 2010年3月 ~ 2012年8月 ）JKL公司 （ 2010年3月 ~ 2012年8月 ）177,6580
+### MNO项目MNO项目179,6630
+### PQR项目PQR项目183,7007
+### 其他项目其他项目187,7384
+# 开源项目和作品开源项目和作品193,7598
+## 开源项目开源项目196,7702
+## 技术文章技术文章202,8024
+## 演讲和讲义演讲和讲义208,8457
+# 技能清单技能清单214,8764
+## 参考技能关键字参考技能关键字228,9381
+# 致谢致谢351,11163
+
+orgs/2015-06-29-yhxw.org,76
+* Ocean用户行为分析Ocean1,0
+** WFT客户端如何接入WFT24,1125
+
+orgs/2015-10-07-自动部署环境和代码管理.org,0
+
+orgs/2015-10-24-生活家庭.org,0
+
+orgs/2015-10-28-es环境搭建.org,26
+* es 环境搭建es 1,0
+
+orgs/2015-10-31-cpp编程与构建.org,32
+* cmake 编译入门cmake 1,0
+
+orgs/2015-10-31-java总结.org,622
+* java maven 项目编译技术总结java maven 1,0
+** java 环境变量java 2,39
+** java ant环境java ant10,234
+** java maven环境java maven20,490
+** maven pom.xml 文件maven pom.xml 30,969
+** git 更新代码的命令git 72,3064
+** java snippet java编写代码java snippet java83,3850
+** java 增加依赖的包  cmake使用java 84,3884
+** cmake 编译入门cmake 86,3927
+** mvn 构建java项目 插件quickstartmvn 90,4009
+** mvn 构建java和jetty web项目示例mvn 104,4622
+** mvn 命令使用mvn 107,4726
+*** mvn packagemvn package123,5074
+** java ant 工程编译 java ant 147,6083
+
+orgs/2015-10-31-大众目前说-演讲.org,0
+
+orgs/2015-11-02-es-集群与环境搭建.org,60
+** es 配置详解es 18,580
+** es 环境搭建es 22,942
+
+orgs/2015zongjie.org,263
+* 2015 总结　２０１５年１２月１３日2015 1,0
+** ubuntu jetbrain androidubuntu jetbrain android2,51
+** ubuntu 安装虚拟android设备ubuntu 4,81
+** jetbrain 创建android工程jetbrain 7,178
+*** 173ｍｑ　主站问题，邮件17374,2665
+
+orgs/2016-04-17-mlh-中文-输入与显示.org,0
+
+orgs/2016-5-28-代码的阅读.org,28
+* doxygen使用doxygen1,0
+
+orgs/2017-01-18-开始写博客了.org,188
+** ubuntu自带截图功能 s_printubuntu3,70
+** org导入图片说明功能org4,107
+** org自带绘图功能org5,139
+** emacs 帮助技巧emacs 6,165
+** emacs 技巧emacs 7,188
+
+orgs/2017-2-19-docker_study.org,228
+* docker 学习笔记docker 1,0
+** ubuntu16安装dockerubuntu162,23
+*** sudo apt intall docker.iosudo apt intall docker.io3,48
+*** docker 命令结构图docker 4,79
+*** docker 子命令分类 容器 镜像docker 5,107
+
+orgs/2017-2-20-python_study.org,363
+* python django学习python django1,0
+** *django 利用模板实现分离文档表现形式和内容**django 4,122
+** django 数据库支持提供统一多调用apidjango 5,187
+** django 表单post和get方法django 6,238
+** *django admin 管理工具 这个功能貌似可以研究下**django admin 7,272
+** emacs org mode 教程emacs org mode 9,340
+
+orgs/2017-2-4-resume-2017.org,116
+* resumeresume1,0
+** 2016总结201614,575
+*** springweb架构springweb52,2311
+*** docker架构docker53,2332
+
+orgs/2018-04-08-2018rateyu.org,475
+* 2018简历20181,0
+*** java虚拟机 visualvm_jstackjava5,147
+*** ES 1B树&倒排索引 2存储 termindex(trie)->termdiction->postingList(bitmap/skipLIst) 3分ES 1B8,449
+*** spring_bootspring_boot14,1026
+*** dockerdocker15,1043
+*** mybatis+前端界面mybatis+17,1131
+*** mysql数据库管理问题 性能优化mysql25,1538
+*** 1个人 做什么_路线 2团队 团队人数_分工_直接领导_背景 3部门 岗位要求138,2078
+*** 30天特训 3047,2633
+
+orgs/2018-09-07-学习markdown.md,44
+#是一级标题，是一级标题，3,18
+
+orgs/2018-09-07-开始写作.md,482
+# 开始我的安静写作开始我的安静写作1,0
+## 最近有什么要分享?最近有什么要分享?2,28
+## 为什么觉得这个观点有价值？为什么觉得这个观点有价值？3,58
+## 需要哪些基本概念？需要哪些基本概念？4,102
+## 该如何去做该如何去做5,134
+## 你的观点是什么，你为什么和我说这个？你的观点是什么，你为什么和我说这个？6,154
+# vimfx 快捷键操作vimfx 快捷键操作13,307
+
+orgs/2018-9-11-git学习.org,18
+* gitѧϰgit2,2
+
+orgs/2018-9-7-ansible学习.md,165
+# 功能特性：功能特性：1,0
+# 支持inventory支持inventory14,324
+# 支持ad-hoc命令支持ad-hoc命令20,522
+# 支持playbook支持playbook27,682
+
+orgs/2019-04-25求职.md,96
+# 找个工作找个工作1,0
+## 简历一直没写出来啊简历一直没写出来啊3,18
+
+orgs/2024-01-16-新年plan-zz.md,2111
+# Table of ContentsTable of Contents2,1
+# emacs magit,org-modemacs magit,org-mod43,1678
+## emacs基本使用emacs基本使用50,1782
+## dired文件夹模式dired文件夹模式83,2624
+## emacs windows上使用emacs windows上使用113,3380
+## org-modorg-mod126,3829
+### org文件导出为html文件org文件导出为html文件138,4144
+### 列表和checkbox使用列表和checkbox使用147,4333
+### 其它：其它：161,4599
+### org中到处的文件如何自动把回车放进去org中到处的文件如何自动把回车放进去178,4945
+## 标签搜索标签搜索187,5124
+## yasnippetyasnippet197,5369
+## eww文本浏览器eww文本浏览器205,5451
+## emacs 帮助相关emacs 帮助相关223,5802
+## emacs搜索emacs搜索231,5935
+### windows说明windows说明268,7104
+### 变量定义和函数定义的方法变量定义和函数定义的方法280,7588
+### emacs插件推荐emacs插件推荐285,7656
+### emacs选择多行字符串，方便的方法emacs选择多行字符串，方便的方法292,7801
+## emacs插件推荐ido和smexemacs插件推荐ido和smex299,7959
+## eww 快捷键eww 快捷键308,8091
+## emacs grep 命令emacs grep 命令328,8488
+## emacs快速粘贴图片到org文件中emacs快速粘贴图片到org文件中336,8606
+## 如何给shell添加书签如何给shell添加书签353,9144
+## eshell 命令行ps -ef | grpe java后，无法显示全命令行参数eshell 命令行ps -ef | grpe java后，无法显示全命令行参数389,10929
+## magit使用magit使用406,11271
+## magit 常用命令magit 常用命令433,11889
+## magit mergemagit merge451,12410
+## emacs leetcode-cnemacs leetcode-cn460,12622
+## vim emacs 快捷键比较vim emacs 快捷键比较548,16514
+## 安装自定义的theme安装自定义的theme649,21995
+## windows休眠windows休眠659,22178
+## 如何设计并实现一个百万并发的服务端程序架构如何设计并实现一个百万并发的服务端程序架构666,22237
+## tcpdump和wirdsharktcpdump和wirdshark671,22331
+## DONE macbook截图工具DONE macbook截图工具683,22574
+
+orgs/2024-01-16-新年plan-zz.org,912
+* emacs magit,org-modemacs magit,org-mod2,17
+** gpt问题答案备份gpt4,93
+** windows批量html转为pdf命令-windows转换失败windows8,186
+** windows 命令行睡眠windows 11,296
+** rk65快捷键rk6544,2050
+** docker 自动开启与关闭docker 89,3570
+** tcpdump和wirdsharktcpdump105,4028
+** conda 虚拟环境创建conda 114,4270
+** ipad shell 中文ipad shell 142,4837
+** DONE macbook截图工具DONE macbook188,6273
+** ubuntu 开机启动软件ubuntu 218,7008
+** linux命令搜索linux229,7209
+*** esp32看店项目esp32236,7449
+** intelj idea书签intelj idea244,7749
+*** emacs 与idea代码互动emacs 267,8647
+** TODO 2025跳槽准备-7天TODO 2025276,9219
+** *强制自己每天输出，倒逼自己硬性输出**283,9400
+** emacs org-mode 文件跳转实现emacs org-mode 405,16117
+** counsel-etags,ivy,company-ctagscounsel-etags,ivy,company-ctags418,16554
+
+orgs/2024-01-16-新年plan-zz.org.md,1446
+# Table of ContentsTable of Contents2,1
+# emacs magit,org-modemacs magit,org-mod31,1135
+## magit使用magit使用38,1239
+## magit 常用命令magit 常用命令65,1857
+## emacs基本使用emacs基本使用83,2378
+## dired文件夹模式dired文件夹模式113,3111
+## emacs windows上使用emacs windows上使用143,3867
+## org-modorg-mod156,4316
+### org文件导出为html文件org文件导出为html文件168,4631
+### 列表和checkbox使用列表和checkbox使用177,4820
+### 其它：其它：191,5086
+### org中到处的文件如何自动把回车放进去org中到处的文件如何自动把回车放进去208,5432
+## 标签搜索标签搜索217,5611
+## yasnippetyasnippet227,5856
+## eww文本浏览器eww文本浏览器235,5938
+## vim emacs 快捷键比较vim emacs 快捷键比较253,6289
+## 安装自定义的theme安装自定义的theme354,11770
+## 如何设计并实现一个百万并发的服务端程序架构如何设计并实现一个百万并发的服务端程序架构364,11953
+## emacs grep 命令emacs grep 命令369,12047
+## emacs快速粘贴图片到org文件中emacs快速粘贴图片到org文件中377,12165
+## 如何给shell添加书签如何给shell添加书签394,12703
+## eshell 命令行ps -ef | grpe java后，无法显示全命令行参数eshell 命令行ps -ef | grpe java后，无法显示全命令行参数430,14488
+## tcpdump和wirdsharktcpdump和wirdshark447,14830
+
+orgs/2024-01-16-新年plan-zz.tex,2663
+\section{emacs magit,org-mod}emacs magit,org-mod31,606
+\label{sec:org79667b1}sec:org79667b132,636
+\subsection{magit使用}magit使用35,714
+\label{sec:org30fb43e}sec:org30fb43e36,739
+\subsection{magit 常用命令}magit 常用命令64,1421
+\label{sec:orgc858967}sec:orgc85896765,1453
+\subsection{emacs基本使用}emacs基本使用80,1953
+\label{sec:org020c938}sec:org020c93881,1984
+\subsection{dired文件夹模式}dired文件夹模式114,2872
+\label{sec:org7d480d4}sec:org7d480d4115,2906
+\subsection{emacs windows上使用}emacs windows上使用144,3721
+\label{sec:org56ed6b3}sec:org56ed6b3145,3757
+\subsection{org-mod}org-mod157,4235
+\label{sec:orgb6696d2}sec:orgb6696d2158,4256
+\subsubsection{org文件导出为html文件}org文件导出为html文件167,4573
+\label{sec:orgbee1e9e}sec:orgbee1e9e168,4618
+\subsubsection{列表和checkbox使用}列表和checkbox使用175,4821
+\label{sec:org25fb057}sec:org25fb057176,4861
+\subsubsection{其它：}其它：194,5199
+\label{sec:org1f62735}sec:org1f62735195,5225
+\subsubsection{org中到处的文件如何自动把回车放进去}org中到处的文件如何自动把回车放进去210,5647
+\label{sec:orgb14d545}sec:orgb14d545211,5715
+\subsection{标签搜索}标签搜索217,5863
+\label{sec:orga21c378}sec:orga21c378218,5889
+\subsection{yasnippet}yasnippet225,6125
+\label{sec:org653986d}sec:org653986d226,6148
+\subsection{eww文本浏览器}eww文本浏览器230,6214
+\label{sec:org75cb17a}sec:org75cb17a231,6246
+\subsection{vim emacs 快捷键比较}vim emacs 快捷键比较247,6654
+\label{sec:org23b8337}sec:org23b8337248,6693
+\subsection{安装自定义的theme}安装自定义的theme347,11793
+\label{sec:org05050f6}sec:org05050f6348,11830
+\subsection{如何设计并实现一个百万并发的服务端程序架构}如何设计并实现一个百万并发的服务端程序架构354,11998
+\label{sec:org22e539c}sec:org22e539c355,12075
+\subsection{emacs grep 命令}emacs grep 命令357,12099
+\label{sec:org0a04430}sec:org0a04430358,12130
+\subsection{emacs快速粘贴图片到org文件中}emacs快速粘贴图片到org文件中363,12212
+\label{sec:org17254d1}sec:org17254d1364,12264
+\subsection{如何给shell添加书签}如何给shell添加书签380,12810
+\label{sec:orgef8c3f3}sec:orgef8c3f3381,12850
+\subsection{eshell 命令行ps -ef | grpe java后，无法显示全命令行参数}eshell 命令行ps -ef | grpe java后，无法显示全命令行参数417,14696
+\label{sec:org7062f8e}sec:org7062f8e418,14780
+\subsection{tcpdump和wirdshark}tcpdump和wirdshark432,15039
+\label{sec:orge9a4238}sec:orge9a4238433,15072
+
+orgs/2024-08-08-CEO架构知识.org,109
+*** ceoceo12,160
+** mac book air 体验mac book air 32,750
+** 2024已过去，2025新开始202476,3357
+
+orgs/2024-12-28-2025计划.org,0
+
+orgs/2025-1-5-my-first-blog.org,35
+* My First PostMy First Post4,53
+
+orgs/2025-2-22-web开发调试相关.md,434
+# Table of ContentsTable of Contents2,2
+# web开发调试技巧web开发调试技巧14,382
+## 抓包方法抓包方法17,411
+### fiddlefiddle20,432
+### wiresharkwireshark30,731
+## chrome dev工具chrome dev工具35,795
+## 抓包到idea http reqauest抓包到idea http reqauest91,3937
+### 如何实现局部变量的传递？如何实现局部变量的传递？99,4110
+## emacs 截图报错emacs 截图报错104,4183
+
+orgs/2025-2-22-web开发调试相关.org,162
+* web开发调试技巧web1,0
+*** fiddlefiddle8,116
+*** wiresharkwireshark17,460
+** chrome dev工具chrome dev21,522
+** emacs 截图报错emacs 63,3799
+
+orgs/2025-2-24-emacs学习.md,4290
+# Table of ContentsTable of Contents2,2
+# emacs常见问题2025-2-24emacs常见问题2025-2-2467,3269
+## emacs基本使用emacs基本使用72,3330
+## emacs快捷键emacs快捷键106,4242
+## dired文件夹模式dired文件夹模式114,4348
+## org-modorg-mod148,5248
+### org文件导出为html文件org文件导出为html文件160,5565
+### 列表和checkbox使用列表和checkbox使用169,5763
+### 其它：其它：183,6037
+### org中到处的文件如何自动把回车放进去org中到处的文件如何自动把回车放进去200,6398
+## org-refile移动文件操作org-refile移动文件操作209,6580
+## emacs灵感笔记配置和最近打开的文件emacs灵感笔记配置和最近打开的文件214,6644
+### 单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记录下239,7808
+## emacs 查找相关总结emacs 查找相关总结273,9325
+## 标签搜索标签搜索285,10006
+## yasnippetyasnippet295,10257
+## eww文本浏览器eww文本浏览器303,10343
+## emacs预览htmlemacs预览html321,10712
+## emacs 帮助相关emacs 帮助相关329,10800
+## **emacs search zz****emacs search zz**337,10937
+## emacs grep 命令emacs grep 命令347,11294
+## emacs搜索 zz tag阅读代码 查找定义与引用emacs搜索 zz tag阅读代码 查找定义与引用355,11416
+### 查找文件名或者字符串查找文件名或者字符串360,11504
+### 查找方法定义和引用查找方法定义和引用375,11897
+### 生成etag文件生成etag文件390,12339
+### 返回上一个文件返回上一个文件416,13139
+### windows说明windows说明423,13246
+### 变量定义和函数定义的方法变量定义和函数定义的方法435,13732
+### emacs插件推荐emacs插件推荐440,13805
+### emacs选择多行字符串，方便的方法emacs选择多行字符串，方便的方法447,13955
+## emacs插件推荐ido和smexemacs插件推荐ido和smex454,14118
+## emacs快速粘贴图片到org文件中emacs快速粘贴图片到org文件中463,14253
+## eww 快捷键eww 快捷键480,14792
+## 如何给shell添加书签如何给shell添加书签500,15239
+## eshell 命令行ps -ef | grpe java后，无法显示全命令行参数eshell 命令行ps -ef | grpe java后，无法显示全命令行参数536,17012
+## magit使用magit使用550,17357
+## magit 常用命令magit 常用命令577,17991
+## magit mergemagit merge596,18539
+## emacs magit 提交乱码问题emacs magit 提交乱码问题605,18754
+## emacs 使用chatgptemacs 使用chatgpt631,20014
+## emacs 调试lisp语言和lisp插件emacs 调试lisp语言和lisp插件638,20141
+### 常用快捷键常用快捷键654,20380
+## emacs lsp-mod安装方法 & 代码提示 & 代码自动识别编译emacs lsp-mod安装方法 & 代码提示 & 代码自动识别编译669,21165
+## emacs leetcode-cnemacs leetcode-cn704,22115
+## emacs 常用插件和命令 leetcode-cnemacs 常用插件和命令 leetcode-cn789,26344
+### leetcode-cn快捷键leetcode-cn快捷键794,26419
+## emacs 插件小结-eyebrowse-desktop-winneremacs 插件小结-eyebrowse-desktop-winner805,26758
+## vim emacs 快捷键比较vim emacs 快捷键比较816,27200
+## emacs 开发与调试, 刷题还是用mac air直接上网站刷题emacs 开发与调试, 刷题还是用mac air直接上网站刷题917,32839
+## emacs huge博客emacs huge博客941,33254
+## emacs 数据库 调试?emacs 数据库 调试?946,33306
+## emacs 启动idea64emacs 启动idea64954,33385
+## emacs路径提示的插件emacs路径提示的插件965,33631
+## emacs和vscode如何调用gptemacs和vscode如何调用gpt972,33766
+## emacs 152 ubuntu 机器请求gpt方法emacs 152 ubuntu 机器请求gpt方法1012,35223
+## emacs windows上使用emacs windows上使用1032,35746
+## ssh登录远程windows服务器无法调用emacs配置的环境变量ssh登录远程windows服务器无法调用emacs配置的环境变量1045,36202
+## windows修改键位，修改后更加便于打字windows修改键位，修改后更加便于打字1058,36496
+## screen 踢掉原用户screen 踢掉原用户1108,38124
+## 安装自定义的theme安装自定义的theme1123,38487
+
+orgs/2025-2-24-emacs学习.org,3184
+* emacs常见问题2025-2-24emacs1,0
+** emacs基本使用emacs2,30
+** emacs快捷键emacs29,885
+** dired文件夹模式dired32,958
+** org-modorg-mod64,1817
+*** org文件导出为html文件org73,2111
+*** org中到处的文件如何自动把回车放进去org98,2756
+** org-refile移动文件操作org-refile104,2926
+** emacs灵感笔记配置和最近打开的文件emacs105,2959
+         "* TODO %?\n  %U")TODO %?\n  %U")110,3193
+         "* %? :NOTE:\n  %U")%? :NOTE:\n  %U")112,3317
+         "* %U %?\n  %i\n  %a")%U %?\n  %i\n  %a")114,3443
+         "* %U %?\n  %i\n  %a")))%U %?\n  %i\n  %a")))116,3568
+;;       (insert "* New Entry\n")New Entry\n")137,4520
+      ;;(insert "* New Entry\n")New Entry\n")151,5205
+      (insert (format "** %U\n" (current-time-string)))  ;; 添加时间戳%U\n" (current-time-string)))  ;; 152,5239
+** emacs 查找相关总结emacs 159,5576
+** yasnippetyasnippet174,6442
+** eww文本浏览器eww178,6497
+** emacs预览htmlemacs192,6826
+** emacs 帮助相关emacs 196,6883
+** *emacs search zz**emacs search zz*199,6987
+eg: *ming* -> 找到文件 MingServer.java-> 201,7087
+** emacs grep 命令emacs grep 204,7297
+** emacs搜索 zz tag阅读代码 查找定义与引用emacs208,7376
+*** windows说明windows261,9028
+*** emacs插件推荐emacs271,9527
+*** emacs选择多行字符串，方便的方法emacs274,9648
+** emacs插件推荐ido和smexemacs276,9778
+** emacs快速粘贴图片到org文件中emacs280,9880
+** eww 快捷键eww 294,10417
+** eshell 命令行ps -ef | grpe java后，无法显示全命令行参数eshell 342,12601
+** magit使用magit354,12919
+** magit 常用命令magit 377,13528
+** magit mergemagit merge393,14045
+** emacs magit 提交乱码问题emacs magit 399,14231
+** emacs 使用chatgptemacs 421,15451
+** emacs 调试lisp语言和lisp插件emacs 424,15549
+** emacs lsp-mod安装方法 & 代码提示 & 代码自动识别编译emacs lsp-mod448,16513
+** emacs leetcode-cnemacs leetcode-cn482,17382
+   最后找到这段代码后面没执行，(let\* ((my-cookies (executable-find "my<sub>cookie((my-cookies (executable-find "my<sub>cookies</sub>"))518,19095
+      (let* ((537,20150
+      ;;(let* ((my-cookies (executable-find "my_cookies"))((my-cookies (executable-find "my_cookies"))540,20245
+** emacs 常用插件和命令 leetcode-cnemacs 563,21384
+*** leetcode-cn快捷键leetcode-cn564,21428
+** emacs 插件小结-eyebrowse-desktop-winneremacs 571,21731
+** vim emacs 快捷键比较vim emacs 578,22142
+** emacs 开发与调试, 刷题还是用mac air直接上网站刷题emacs 677,27422
+** emacs huge博客emacs huge698,27808
+** emacs 数据库 调试?emacs 699,27829
+** emacs 启动idea64emacs 703,27877
+** emacs路径提示的插件emacs710,28092
+** emacs和vscode如何调用gptemacs712,28194
+** emacs 152 ubuntu 机器请求gpt方法emacs 152 ubuntu 754,29716
+** emacs windows上使用emacs windows770,30144
+** ssh登录远程windows服务器无法调用emacs配置的环境变量ssh780,30585
+** windows修改键位，修改后更加便于打字windows789,30848
+** screen 踢掉原用户screen 823,32235
+
+orgs/2025计划.org,34
+* magit git����Ƚ�magit git1,0
+
+orgs/ideas.org,83
+* IdeasIdeas1,0
+** [2025-02-23 Sun 08:59] test2[2025-02-23 Sun 08:59] test22,9
+
+orgs/journal.org,169
+* 202520252,2
+** 2025-02 February2025-02 February3,10
+*** 2025-02-23 Sunday2025-02-23 Sunday4,31
+**** [2025-02-23 Sun 09:00] test[2025-02-23 Sun 09:00] test5,54
+
+orgs/notes.org,111
+* NotesNotes1,0
+** netty服务端代码                                                     :NOTE:netty2,9
+
+orgs/notes2.org,133
+* TasksTasks1,0
+** TODO         //连接监听线程组TODO         //2,9
+** TODO netty-server-codeTODO netty-server-code8,190
+
+orgs/tasks.org,28
+* 2025求职简历20251,0
+
+orgs/test_pdf.org,111
+* hellohello9,337
+** hello hello 10,346
+* hellohello11,357
+** helloworld 你好世界helloworld 12,366
+
+params.json,535
+{"name":"Rateyu.github.io","tagline":"hello","body":"### Welcome to GitHub Pages.\r\nThis automaname1,0
+{"name":"Rateyu.github.io","tagline":"hello","body":"### Welcome to GitHub Pages.\r\nThis automatagline1,0
+{"name":"Rateyu.github.io","tagline":"hello","body":"### Welcome to GitHub Pages.\r\nThis automabody1,0
+{"name":"Rateyu.github.io","tagline":"hello","body":"### Welcome to GitHub Pages.\r\nThis automagoogle1,0
+{"name":"Rateyu.github.io","tagline":"hello","body":"### Welcome to GitHub Pages.\r\nThis automanote1,0
+
+pm-suspend.t,0
+
+power_supply.sh,0
+
+rateyu.github.io.iml,0
+
+README.md,38
+rateyu.github.iorateyu.github.io1,0
+
+stylesheets/pygment_trac.css,6005
+.highlight .hll { background-color: #ffffcc }.highlight .hll1,0
+.highlight  { background: #f0f3f3; }.highlight2,47
+.highlight .c { color: #0099FF; font-style: italic } /* Comment */.highlight .c3,85
+.highlight .err { color: #AA0000; background-color: #FFAAAA } /* Error */.highlight .err4,153
+.highlight .k { color: #006699; font-weight: bold } /* Keyword */.highlight .k5,228
+.highlight .o { color: #555555 } /* Operator */.highlight .o6,295
+.highlight .cm { color: #0099FF; font-style: italic } /* Comment.Multiline */.highlight .cm7,344
+.highlight .cp { color: #009999 } /* Comment.Preproc */.highlight .cp8,423
+.highlight .c1 { color: #0099FF; font-style: italic } /* Comment.Single */.highlight .c19,480
+.highlight .cs { color: #0099FF; font-weight: bold; font-style: italic } /* Comment.Special */.highlight .cs10,556
+.highlight .gd { background-color: #FFCCCC; border: 1px solid #CC0000 } /* Generic.Deleted */.highlight .gd11,652
+.highlight .ge { font-style: italic } /* Generic.Emph */.highlight .ge12,747
+.highlight .gr { color: #FF0000 } /* Generic.Error */.highlight .gr13,805
+.highlight .gh { color: #003300; font-weight: bold } /* Generic.Heading */.highlight .gh14,860
+.highlight .gi { background-color: #CCFFCC; border: 1px solid #00CC00 } /* Generic.Inserted */.highlight .gi15,936
+.highlight .go { color: #AAAAAA } /* Generic.Output */.highlight .go16,1032
+.highlight .gp { color: #000099; font-weight: bold } /* Generic.Prompt */.highlight .gp17,1088
+.highlight .gs { font-weight: bold } /* Generic.Strong */.highlight .gs18,1163
+.highlight .gu { color: #003300; font-weight: bold } /* Generic.Subheading */.highlight .gu19,1222
+.highlight .gt { color: #99CC66 } /* Generic.Traceback */.highlight .gt20,1301
+.highlight .kc { color: #006699; font-weight: bold } /* Keyword.Constant */.highlight .kc21,1360
+.highlight .kd { color: #006699; font-weight: bold } /* Keyword.Declaration */.highlight .kd22,1437
+.highlight .kn { color: #006699; font-weight: bold } /* Keyword.Namespace */.highlight .kn23,1517
+.highlight .kp { color: #006699 } /* Keyword.Pseudo */.highlight .kp24,1595
+.highlight .kr { color: #006699; font-weight: bold } /* Keyword.Reserved */.highlight .kr25,1651
+.highlight .kt { color: #007788; font-weight: bold } /* Keyword.Type */.highlight .kt26,1728
+.highlight .m { color: #FF6600 } /* Literal.Number */.highlight .m27,1801
+.highlight .s { color: #CC3300 } /* Literal.String */.highlight .s28,1856
+.highlight .na { color: #330099 } /* Name.Attribute */.highlight .na29,1911
+.highlight .nb { color: #336666 } /* Name.Builtin */.highlight .nb30,1967
+.highlight .nc { color: #00AA88; font-weight: bold } /* Name.Class */.highlight .nc31,2021
+.highlight .no { color: #336600 } /* Name.Constant */.highlight .no32,2092
+.highlight .nd { color: #9999FF } /* Name.Decorator */.highlight .nd33,2147
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */.highlight .ni34,2203
+.highlight .ne { color: #CC0000; font-weight: bold } /* Name.Exception */.highlight .ne35,2275
+.highlight .nf { color: #CC00FF } /* Name.Function */.highlight .nf36,2350
+.highlight .nl { color: #9999FF } /* Name.Label */.highlight .nl37,2405
+.highlight .nn { color: #00CCFF; font-weight: bold } /* Name.Namespace */.highlight .nn38,2457
+.highlight .nt { color: #330099; font-weight: bold } /* Name.Tag */.highlight .nt39,2532
+.highlight .nv { color: #003333 } /* Name.Variable */.highlight .nv40,2601
+.highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */.highlight .ow41,2656
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */.highlight .w42,2730
+.highlight .mf { color: #FF6600 } /* Literal.Number.Float */.highlight .mf43,2786
+.highlight .mh { color: #FF6600 } /* Literal.Number.Hex */.highlight .mh44,2848
+.highlight .mi { color: #FF6600 } /* Literal.Number.Integer */.highlight .mi45,2908
+.highlight .mo { color: #FF6600 } /* Literal.Number.Oct */.highlight .mo46,2972
+.highlight .sb { color: #CC3300 } /* Literal.String.Backtick */.highlight .sb47,3032
+.highlight .sc { color: #CC3300 } /* Literal.String.Char */.highlight .sc48,3097
+.highlight .sd { color: #CC3300; font-style: italic } /* Literal.String.Doc */.highlight .sd49,3158
+.highlight .s2 { color: #CC3300 } /* Literal.String.Double */.highlight .s250,3238
+.highlight .se { color: #CC3300; font-weight: bold } /* Literal.String.Escape */.highlight .se51,3301
+.highlight .sh { color: #CC3300 } /* Literal.String.Heredoc */.highlight .sh52,3383
+.highlight .si { color: #AA0000 } /* Literal.String.Interpol */.highlight .si53,3447
+.highlight .sx { color: #CC3300 } /* Literal.String.Other */.highlight .sx54,3512
+.highlight .sr { color: #33AAAA } /* Literal.String.Regex */.highlight .sr55,3574
+.highlight .s1 { color: #CC3300 } /* Literal.String.Single */.highlight .s156,3636
+.highlight .ss { color: #FFCC33 } /* Literal.String.Symbol */.highlight .ss57,3699
+.highlight .bp { color: #336666 } /* Name.Builtin.Pseudo */.highlight .bp58,3762
+.highlight .vc { color: #003333 } /* Name.Variable.Class */.highlight .vc59,3823
+.highlight .vg { color: #003333 } /* Name.Variable.Global */.highlight .vg60,3884
+.highlight .vi { color: #003333 } /* Name.Variable.Instance */.highlight .vi61,3946
+.highlight .il { color: #FF6600 } /* Literal.Number.Integer.Long */.highlight .il62,4010
+.type-csharp .highlight .k { color: #0000FF }.type-csharp .highlight .k64,4081
+.type-csharp .highlight .kt { color: #0000FF }.type-csharp .highlight .kt65,4128
+.type-csharp .highlight .nf { color: #000000; font-weight: normal }.type-csharp .highlight .nf66,4176
+.type-csharp .highlight .nc { color: #2B91AF }.type-csharp .highlight .nc67,4245
+.type-csharp .highlight .nn { color: #000000 }.type-csharp .highlight .nn68,4293
+.type-csharp .highlight .s { color: #A31515 }.type-csharp .highlight .s69,4341
+.type-csharp .highlight .sc { color: #A31515 }.type-csharp .highlight .sc70,4388
+
+stylesheets/stylesheet.css,6906
+html, body, div, span, applet, object, iframe,html12,445
+html, body, div, span, applet, object, iframe,body12,445
+html, body, div, span, applet, object, iframe,div12,445
+html, body, div, span, applet, object, iframe,span12,445
+html, body, div, span, applet, object, iframe,applet12,445
+html, body, div, span, applet, object, iframe,object12,445
+html, body, div, span, applet, object, iframe,iframe12,445
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,h113,493
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,h213,493
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,h313,493
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,h413,493
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,h513,493
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,h613,493
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,p13,493
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,blockquote13,493
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,pre13,493
+a, abbr, acronym, address, big, cite, code,a14,538
+a, abbr, acronym, address, big, cite, code,abbr14,538
+a, abbr, acronym, address, big, cite, code,acronym14,538
+a, abbr, acronym, address, big, cite, code,address14,538
+a, abbr, acronym, address, big, cite, code,big14,538
+a, abbr, acronym, address, big, cite, code,cite14,538
+a, abbr, acronym, address, big, cite, code,code14,538
+del, dfn, em, img, ins, kbd, q, s, samp,del15,583
+del, dfn, em, img, ins, kbd, q, s, samp,dfn15,583
+del, dfn, em, img, ins, kbd, q, s, samp,em15,583
+del, dfn, em, img, ins, kbd, q, s, samp,img15,583
+del, dfn, em, img, ins, kbd, q, s, samp,ins15,583
+del, dfn, em, img, ins, kbd, q, s, samp,kbd15,583
+del, dfn, em, img, ins, kbd, q, s, samp,q15,583
+del, dfn, em, img, ins, kbd, q, s, samp,s15,583
+del, dfn, em, img, ins, kbd, q, s, samp,samp15,583
+small, strike, strong, sub, sup, tt, var,small16,625
+small, strike, strong, sub, sup, tt, var,strike16,625
+small, strike, strong, sub, sup, tt, var,strong16,625
+small, strike, strong, sub, sup, tt, var,sub16,625
+small, strike, strong, sub, sup, tt, var,sup16,625
+small, strike, strong, sub, sup, tt, var,tt16,625
+small, strike, strong, sub, sup, tt, var,var16,625
+b, u, i, center,b17,668
+b, u, i, center,u17,668
+b, u, i, center,i17,668
+b, u, i, center,center17,668
+dl, dt, dd, ol, ul, li,dl18,686
+dl, dt, dd, ol, ul, li,dt18,686
+dl, dt, dd, ol, ul, li,dd18,686
+dl, dt, dd, ol, ul, li,ol18,686
+dl, dt, dd, ol, ul, li,ul18,686
+dl, dt, dd, ol, ul, li,li18,686
+fieldset, form, label, legend,fieldset19,711
+fieldset, form, label, legend,form19,711
+fieldset, form, label, legend,label19,711
+fieldset, form, label, legend,legend19,711
+table, caption, tbody, tfoot, thead, tr, th, td,table20,743
+table, caption, tbody, tfoot, thead, tr, th, td,caption20,743
+table, caption, tbody, tfoot, thead, tr, th, td,tbody20,743
+table, caption, tbody, tfoot, thead, tr, th, td,tfoot20,743
+table, caption, tbody, tfoot, thead, tr, th, td,thead20,743
+table, caption, tbody, tfoot, thead, tr, th, td,tr20,743
+table, caption, tbody, tfoot, thead, tr, th, td,th20,743
+table, caption, tbody, tfoot, thead, tr, th, td,td20,743
+article, aside, canvas, details, embed,article21,793
+article, aside, canvas, details, embed,aside21,793
+article, aside, canvas, details, embed,canvas21,793
+article, aside, canvas, details, embed,details21,793
+article, aside, canvas, details, embed,embed21,793
+figure, figcaption, footer, header, hgroup,figure22,834
+figure, figcaption, footer, header, hgroup,figcaption22,834
+figure, figcaption, footer, header, hgroup,footer22,834
+figure, figcaption, footer, header, hgroup,header22,834
+figure, figcaption, footer, header, hgroup,hgroup22,834
+menu, nav, output, ruby, section, summary,menu23,879
+menu, nav, output, ruby, section, summary,nav23,879
+menu, nav, output, ruby, section, summary,output23,879
+menu, nav, output, ruby, section, summary,ruby23,879
+menu, nav, output, ruby, section, summary,section23,879
+menu, nav, output, ruby, section, summary,summary23,879
+time, mark, audio, video {time24,923
+time, mark, audio, video {mark24,923
+time, mark, audio, video {audio24,923
+time, mark, audio, video {video24,923
+article, aside, details, figcaption, figure,article33,1097
+article, aside, details, figcaption, figure,aside33,1097
+article, aside, details, figcaption, figure,details33,1097
+article, aside, details, figcaption, figure,figcaption33,1097
+article, aside, details, figcaption, figure,figure33,1097
+footer, header, hgroup, menu, nav, section {footer34,1143
+footer, header, hgroup, menu, nav, section {header34,1143
+footer, header, hgroup, menu, nav, section {hgroup34,1143
+footer, header, hgroup, menu, nav, section {menu34,1143
+footer, header, hgroup, menu, nav, section {nav34,1143
+footer, header, hgroup, menu, nav, section {section34,1143
+ol, ul {ol38,1213
+ol, ul {ul38,1213
+table {table42,1249
+body {body51,1495
+h1, h2, h3, h4, h5, h6 {h161,1727
+h1, h2, h3, h4, h5, h6 {h261,1727
+h1, h2, h3, h4, h5, h6 {h361,1727
+h1, h2, h3, h4, h5, h6 {h461,1727
+h1, h2, h3, h4, h5, h6 {h561,1727
+h1, h2, h3, h4, h5, h6 {h661,1727
+h1 {h169,1915
+h2 {h274,1967
+h3 {h380,2082
+h4 {h484,2113
+h5 {h588,2144
+h6 {h692,2175
+p {p96,2206
+footer p {footer p100,2242
+a {a104,2278
+a:hover, a:focus {text-decoration: underline;}a:hover121,2747
+a:hover, a:focus {text-decoration: underline;}a:focus121,2747
+footer a {footer a123,2797
+em {em128,2864
+strong {strong132,2898
+img {img136,2935
+p img {p img151,3265
+pre, code {pre160,3395
+pre, code {code160,3395
+pre {pre173,3669
+code {code180,3774
+pre code {pre code186,3862
+blockquote {blockquote191,3919
+ul, ol, dl {ul199,4036
+ul, ol, dl {ol199,4036
+ul, ol, dl {dl199,4036
+ul {ul203,4078
+ol {ol209,4165
+dl dt {dl dt215,4255
+dl dd {dl dd219,4291
+dl p {dl p224,4351
+hr {hr229,4410
+table {table236,4536
+th {th242,4626
+td {td249,4777
+form {form254,4837
+.outer {.outer263,5077
+.inner {.inner267,5108
+#forkme_banner {#forkme_banner274,5209
+#header_wrap {#header_wrap289,5571
+#header_wrap .inner {#header_wrap .inner298,5911
+#project_title {#project_title302,5972
+#project_tagline {#project_tagline310,6101
+#downloads {#downloads318,6239
+.zip_download_link {.zip_download_link328,6430
+.tar_download_link {.tar_download_link338,6644
+.zip_download_link:hover {.zip_download_link:hover349,6881
+.tar_download_link:hover {.tar_download_link:hover353,6984
+#main_content_wrap {#main_content_wrap357,7088
+#main_content {#main_content363,7204
+#footer_wrap {#footer_wrap367,7248
+  body {body378,7524
+  #downloads {#downloads382,7562
+  .inner {.inner386,7605
+  #project_title {#project_title391,7670
+  h1 {h1395,7717
+  h2 {h2399,7754
+  h3 {h3403,7791
+  h4 {h4407,7828
+  h5 {h5411,7865
+  h6 {h6415,7902
+  code, pre {code419,7939
+  code, pre {pre419,7939
+
+test.sh,0
+
+tex_chinese_ok.tex,0
+
+urltextmail/pop163.py,813
+def guess_charset(msg):guess_charset15,244
+def decode_str(s):decode_str26,630
+def print_info(msg, indent=0):print_info33,797
+email = 'y81212@163.com'email94,3262
+password = ''password95,3288
+pop3_server = 'pop.163.com'pop3_server96,3303
+server = poplib.POP3(pop3_server)server99,3361
+resp, mails, octets = server.list()resp110,3728
+resp, mails, octets = server.list()mails110,3728
+resp, mails, octets = server.list()octets110,3728
+index = len(mails)index114,3898
+    resp, lines, octets = server.retr(index)resp116,3936
+    resp, lines, octets = server.retr(index)lines116,3936
+    resp, lines, octets = server.retr(index)octets116,3936
+    msg_content = '\r\n'.join(lines)msg_content119,4086
+    msg = Parser().parsestr(msg_content)msg121,4154
+    index = index -1index123,4217
+
+urltextmail/readfile.py,254
+f = open("hello.txt","r")f4,38
+lines = f.readlines()#读取全部内容lines5,65
+pattern = re.compile(r'[\w ]*')pattern7,109
+zhPattern = re.compile(u'[\u4e00-\u9fa5]+')zhPattern9,144
+    match = zhPattern.search(line.decode('utf8'))match12,211
+
+urltextmail/request.py,247
+r = requests.get(url='https://m.baidu.com/from=1014571r/bd_page_type=1/ssid=0/uid=0/pu=usm%401%2r6,90
+soup = BeautifulSoup(r.content , "html.parser")soup8,1108
+f = codecs.open("hello.txt", "w", "utf-8")f10,1180
+li=soup.get_text()li11,1224
+
+urltextmail/smtp.py,307
+from_addr = 'y81212@163.com'from_addr13,376
+to_addr = 'y81212@163.com'to_addr14,406
+password = ''password15,434
+smtp_server = 'smtp.163.com'smtp_server16,449
+server = smtplib.SMTP()server21,606
+msg = MIMEMultipart()msg30,777
+    mime = MIMEBase('txt', 'txt', feilename='hello.txt')mime40,1059
+
+wake_pc15.sh,0
+
+wake_pc18.sh,0
+
+_config.yml,0
+
+_layouts/default.html,60
+     <title>{{ page.title }}</title>{{ page.title }}9,119
+
+_posts/.obsidian/app.json,165
+  "promptDelete": false,promptDelete2,3
+  "fileSortOrder": "byModifiedTimeReverse",fileSortOrder3,29
+  "attachmentFolderPath": "files"attachmentFolderPath4,74
+
+_posts/.obsidian/appearance.json,73
+  "baseFontSize": 16,baseFontSize2,3
+  "theme": "moonstone"theme3,26
+
+_posts/.obsidian/core-plugins.json,412
+  "file-explorer",02,3
+  "global-search",13,23
+  "switcher",24,43
+  "graph",35,58
+  "backlink",46,70
+  "page-preview",57,85
+  "note-composer",68,104
+  "command-palette",79,124
+  "markdown-importer",810,146
+  "zk-prefixer",911,170
+  "outline",1012,188
+  "word-count",1113,202
+  "slides",1214,219
+  "open-with-default-app",1315,232
+  "workspaces",1416,260
+  "file-recovery"1517,277
+
+_posts/.obsidian/hotkeys.json,153
+    {03,23
+        "Alt",05,52
+        "Mod"16,68
+      "modifiers": [modifiers4,30
+      "key": "Z"key8,93
+  "zk-prefixer": [zk-prefixer2,3
+
+_posts/.obsidian/workspace,0
+
+_posts/.obsidian/zk-prefixer.json,37
+  "format": "YYYY-MM-DD-"format2,3
+
+_posts/2012-08-25-hello-world.html,48
+<h2>{{ page.title }}</h2>{{ page.title }}6,53
+
+_posts/2014-08-03-发布github博客.html,2194
+<title>2014-08-03-发布github博客</title>2014-08-03-发布github博客12,302
+<div id="content">content76,2424
+<h1 class="title">2014-08-03-发布github博客</h1>2014-08-03-发布github博客78,2446
+<div id="table-of-contents">table-of-contents81,2504
+<h2>Table of Contents</h2>Table of Contents82,2534
+<div id="text-table-of-contents">text-table-of-contents83,2562
+<div id="outline-container-1" class="outline-2">outline-container-1100,3022
+<h2 id="sec-1"><span class="section-number-2">1</span> 准备用emacs-org发布github博客 </h2sec-1101,3072
+<h2 id="sec-1"><span class="section-number-2">1</span> 准备用emacs-org发布github博客 </h21 准备用emacs-org发布github博客101,3072
+<div class="outline-text-2" id="text-1">text-1102,3171
+<div id="outline-container-1.1" class="outline-3">outline-container-1.1107,3227
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> 准备开始啦 </h3>sec-1.1108,3279
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> 准备开始啦 </h3>1.1 准备开始啦108,3279
+<div class="outline-text-3" id="text-1.1">text-1.1109,3361
+<div id="outline-container-1.1.1" class="outline-4">outline-container-1.1.1114,3419
+<h4 id="sec-1.1.1"><span class="section-number-4">1.1.1</span> 两种登陆方式 </h4>sec-1.1.1115,3473
+<div class="outline-text-4" id="text-1.1.1">text-1.1.1116,3562
+<li id="sec-1.1.1.1">本机登陆编写 <br/>sec-1.1.1.1119,3616
+<li id="sec-1.1.1.2">putty登陆编写 <br/>sec-1.1.1.2121,3670
+<div id="outline-container-1.1.2" class="outline-4">outline-container-1.1.2130,3754
+<h4 id="sec-1.1.2"><span class="section-number-4">1.1.2</span> git-emacs可以直接提交本地sec-1.1.2131,3808
+<div class="outline-text-4" id="text-1.1.2">text-1.1.2132,3953
+<li id="sec-1.1.2.1">git-status 不同的方式提交，注释怎么提交上去的？ <br/>sec-1.1.2.1135,4007
+<div id="outline-container-1.1.3" class="outline-4">outline-container-1.1.3147,4225
+<h4 id="sec-1.1.3"><span class="section-number-4">1.1.3</span> 就是没有全屏 </h4>sec-1.1.3148,4279
+<div class="outline-text-4" id="text-1.1.3">text-1.1.3149,4368
+<div id="postamble">postamble155,4448
+
+_posts/2014-11-10-ubuntu_setup.html,15242
+<title>2014-11-10-ubuntu_setup</title>2014-11-10-ubuntu_setup6,229
+<div id="content">content180,6368
+<h1 class="title">2014-11-10-ubuntu_setup</h1>2014-11-10-ubuntu_setup181,6388
+<div id="table-of-contents">table-of-contents182,6436
+<h2>Table of Contents</h2>Table of Contents183,6466
+<div id="text-table-of-contents">text-table-of-contents184,6494
+<div id="outline-container-sec-1" class="outline-2">outline-container-sec-1237,9163
+<h2 id="sec-1"><span class="section-number-2">1</span> 安装ubuntu系统 &amp;&amp; git 环境安sec-1238,9217
+<h2 id="sec-1"><span class="section-number-2">1</span> 安装ubuntu系统 &amp;&amp; git 环境安1 安装ubuntu系统 &amp;&amp; git 环境安装238,9217
+<div class="outline-text-2" id="text-1">text-1239,9325
+</div><div id="outline-container-sec-1-1" class="outline-3">outline-container-sec-1-1240,9367
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> android studio 开发登陆模块完成sec-1-1241,9429
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> android studio 开发登陆模块完成1.1 android studio 开发登陆模块完成241,9429
+<div class="outline-text-3" id="text-1-1">text-1-1242,9534
+<div id="outline-container-sec-1-2" class="outline-3">outline-container-sec-1-2252,9794
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> android studio 2</h3>sec-1-2253,9850
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> android studio 2</h3>1.2 android studio 2253,9850
+<div class="outline-text-3" id="text-1-2">text-1-2254,9932
+<div id="outline-container-sec-1-3" class="outline-3">outline-container-sec-1-3267,10183
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> apache 配置文件</h3>sec-1-3268,10239
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> apache 配置文件</h3>1.3 apache 配置文件268,10239
+<div class="outline-text-3" id="text-1-3">text-1-3269,10324
+<div id="outline-container-sec-1-4" class="outline-3">outline-container-sec-1-4275,10520
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> ubuntu 修改文件夹用户组</h3>sec-1-4276,10576
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> ubuntu 修改文件夹用户组</h3>1.4 ubuntu 修改文件夹用户组276,10576
+<div class="outline-text-3" id="text-1-4">text-1-4277,10673
+<div id="outline-container-sec-1-5" class="outline-3">outline-container-sec-1-5284,10769
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> ubuntu命令行操作</h3>sec-1-5285,10825
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> ubuntu命令行操作</h3>1.5 ubuntu命令行操作285,10825
+<div class="outline-text-3" id="text-1-5">text-1-5286,10912
+<div id="outline-container-sec-1-6" class="outline-3">outline-container-sec-1-6295,11077
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> win 10 安装sshd cygwin</h3>sec-1-6296,11133
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> win 10 安装sshd cygwin</h3>1.6 win 10 安装sshd cygwin296,11133
+<div class="outline-text-3" id="text-1-6">text-1-6297,11223
+<div id="outline-container-sec-1-7" class="outline-3">outline-container-sec-1-7307,11514
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> win 10 tomcat serv</h3>sec-1-7308,11570
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> win 10 tomcat serv</h3>1.7 win 10 tomcat serv308,11570
+<div class="outline-text-3" id="text-1-7">text-1-7309,11654
+<div id="outline-container-sec-1-8" class="outline-3">outline-container-sec-1-8347,12708
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> nmap 探测主机</h3>sec-1-8348,12764
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> nmap 探测主机</h3>1.8 nmap 探测主机348,12764
+<div class="outline-text-3" id="text-1-8">text-1-8349,12847
+<div id="outline-container-sec-1-9" class="outline-3">outline-container-sec-1-9381,14279
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> ubuntu 挂载硬盘</h3>sec-1-9382,14335
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> ubuntu 挂载硬盘</h3>1.9 ubuntu 挂载硬盘382,14335
+<div class="outline-text-3" id="text-1-9">text-1-9383,14420
+<div id="outline-container-sec-1-10" class="outline-3">outline-container-sec-1-10461,16735
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> ubuntu 非ｒｏｏｔ关机　不输sec-1-10462,16792
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> ubuntu 非ｒｏｏｔ关机　不输1.10 ubuntu 非ｒｏｏｔ关机　不输入密码462,16792
+<div class="outline-text-3" id="text-1-10">text-1-10463,16906
+<div id="outline-container-sec-1-11" class="outline-3">outline-container-sec-1-11538,19124
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> ubuntu suse zsh oh autojump &amp;&asec-1-11539,19181
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> ubuntu suse zsh oh autojump &amp;&a1.11 ubuntu suse zsh oh autojump &amp;&amp; fish 安装与使用；脚本灰常好用539,19181
+<div class="outline-text-3" id="text-1-11">text-1-11540,19329
+<div id="outline-container-sec-1-12" class="outline-3">outline-container-sec-1-12547,19452
+<h3 id="sec-1-12"><span class="section-number-3">1.12</span> fish 设置</h3>sec-1-12548,19509
+<h3 id="sec-1-12"><span class="section-number-3">1.12</span> fish 设置</h3>1.12 fish 设置548,19509
+<div class="outline-text-3" id="text-1-12">text-1-12549,19588
+<div id="outline-container-sec-1-13" class="outline-3">outline-container-sec-1-13584,20366
+<h3 id="sec-1-13"><span class="section-number-3">1.13</span> ubuntu 修改端口和密码</h3>sec-1-13585,20423
+<h3 id="sec-1-13"><span class="section-number-3">1.13</span> ubuntu 修改端口和密码</h3>1.13 ubuntu 修改端口和密码585,20423
+<div class="outline-text-3" id="text-1-13">text-1-13586,20519
+<div id="outline-container-sec-1-14" class="outline-3">outline-container-sec-1-14601,20753
+<h3 id="sec-1-14"><span class="section-number-3">1.14</span> emacs - w3m 重新安装 太难用了sec-1-14602,20810
+<h3 id="sec-1-14"><span class="section-number-3">1.14</span> emacs - w3m 重新安装 太难用了1.14 emacs - w3m 重新安装 太难用了602,20810
+<div class="outline-text-3" id="text-1-14">text-1-14603,20915
+<div id="outline-container-sec-1-15" class="outline-3">outline-container-sec-1-15610,21049
+<h3 id="sec-1-15"><span class="section-number-3">1.15</span> grub配置 命令行模式启动</hsec-1-15611,21106
+<h3 id="sec-1-15"><span class="section-number-3">1.15</span> grub配置 命令行模式启动</h1.15 grub配置 命令行模式启动611,21106
+<div class="outline-text-3" id="text-1-15">text-1-15612,21206
+<div id="outline-container-sec-1-16" class="outline-3">outline-container-sec-1-16620,21358
+<h3 id="sec-1-16"><span class="section-number-3">1.16</span> fbterm 搜狗输入法安装？</h3sec-1-16621,21415
+<h3 id="sec-1-16"><span class="section-number-3">1.16</span> fbterm 搜狗输入法安装？</h31.16 fbterm 搜狗输入法安装？621,21415
+<div id="outline-container-sec-1-17" class="outline-3">outline-container-sec-1-17623,21522
+<h3 id="sec-1-17"><span class="section-number-3">1.17</span> yong快捷键使用</h3>sec-1-17624,21579
+<h3 id="sec-1-17"><span class="section-number-3">1.17</span> yong快捷键使用</h3>1.17 yong快捷键使用624,21579
+<div class="outline-text-3" id="text-1-17">text-1-17625,21666
+<div id="outline-container-sec-1-18" class="outline-3">outline-container-sec-1-18635,21937
+<h3 id="sec-1-18"><span class="section-number-3">1.18</span> ubuntu 亮度调节方法</h3>sec-1-18636,21994
+<h3 id="sec-1-18"><span class="section-number-3">1.18</span> ubuntu 亮度调节方法</h3>1.18 ubuntu 亮度调节方法636,21994
+<div class="outline-text-3" id="text-1-18">text-1-18637,22087
+<div id="outline-container-sec-1-19" class="outline-3">outline-container-sec-1-19669,22945
+<h3 id="sec-1-19"><span class="section-number-3">1.19</span> 查卡主机最大亮度</h3>sec-1-19670,23002
+<h3 id="sec-1-19"><span class="section-number-3">1.19</span> 查卡主机最大亮度</h3>1.19 查卡主机最大亮度670,23002
+<div class="outline-text-3" id="text-1-19">text-1-19671,23094
+<div id="outline-container-sec-1-20" class="outline-3">outline-container-sec-1-20716,23719
+<h3 id="sec-1-20"><span class="section-number-3">1.20</span> ubuntu 无线网络开关设置</h3sec-1-20717,23776
+<h3 id="sec-1-20"><span class="section-number-3">1.20</span> ubuntu 无线网络开关设置</h31.20 ubuntu 无线网络开关设置717,23776
+<div class="outline-text-3" id="text-1-20">text-1-20718,23875
+<div id="outline-container-sec-1-21" class="outline-3">outline-container-sec-1-21726,23992
+<h3 id="sec-1-21"><span class="section-number-3">1.21</span> yong tty</h3>sec-1-21727,24049
+<h3 id="sec-1-21"><span class="section-number-3">1.21</span> yong tty</h3>1.21 yong tty727,24049
+<div class="outline-text-3" id="text-1-21">text-1-21728,24125
+<div id="outline-container-sec-1-22" class="outline-3">outline-container-sec-1-22829,27289
+<h3 id="sec-1-22"><span class="section-number-3">1.22</span> w3m显示乱码问题处理</h3>sec-1-22830,27346
+<h3 id="sec-1-22"><span class="section-number-3">1.22</span> w3m显示乱码问题处理</h3>1.22 w3m显示乱码问题处理830,27346
+<div class="outline-text-3" id="text-1-22">text-1-22831,27441
+<div id="outline-container-sec-1-23" class="outline-3">outline-container-sec-1-23850,28186
+<h3 id="sec-1-23"><span class="section-number-3">1.23</span> arclinux got</h3>sec-1-23851,28243
+<h3 id="sec-1-23"><span class="section-number-3">1.23</span> arclinux got</h3>1.23 arclinux got851,28243
+<div class="outline-text-3" id="text-1-23">text-1-23852,28323
+<div id="outline-container-sec-1-24" class="outline-3">outline-container-sec-1-24859,28538
+<h3 id="sec-1-24"><span class="section-number-3">1.24</span> 安装中文语言包</h3>sec-1-24860,28595
+<h3 id="sec-1-24"><span class="section-number-3">1.24</span> 安装中文语言包</h3>1.24 安装中文语言包860,28595
+<div class="outline-text-3" id="text-1-24">text-1-24861,28684
+<div id="outline-container-sec-1-25" class="outline-3">outline-container-sec-1-25881,29214
+<h3 id="sec-1-25"><span class="section-number-3">1.25</span> 无线驱动无法使用 安装的两sec-1-25882,29271
+<h3 id="sec-1-25"><span class="section-number-3">1.25</span> 无线驱动无法使用 安装的两1.25 无线驱动无法使用 安装的两种方法：882,29271
+<div class="outline-text-3" id="text-1-25">text-1-25883,29388
+<div id="outline-container-sec-1-26" class="outline-3">outline-container-sec-1-26901,29791
+<h3 id="sec-1-26"><span class="section-number-3">1.26</span> 必装软件</h3>sec-1-26902,29848
+<h3 id="sec-1-26"><span class="section-number-3">1.26</span> 必装软件</h3>1.26 必装软件902,29848
+<div class="outline-text-3" id="text-1-26">text-1-26903,29928
+<div id="outline-container-sec-1-27" class="outline-3">outline-container-sec-1-27912,30107
+<h3 id="sec-1-27"><span class="section-number-3">1.27</span> telnet 乱码</h3>sec-1-27913,30164
+<h3 id="sec-1-27"><span class="section-number-3">1.27</span> telnet 乱码</h3>1.27 telnet 乱码913,30164
+<div class="outline-text-3" id="text-1-27">text-1-27914,30245
+<div id="outline-container-sec-1-28" class="outline-3">outline-container-sec-1-28929,30515
+<h3 id="sec-1-28"><span class="section-number-3">1.28</span> emacs 插件</h3>sec-1-28930,30572
+<h3 id="sec-1-28"><span class="section-number-3">1.28</span> emacs 插件</h3>1.28 emacs 插件930,30572
+<div class="outline-text-3" id="text-1-28">text-1-28931,30652
+<div id="outline-container-sec-1-29" class="outline-3">outline-container-sec-1-29941,30963
+<h3 id="sec-1-29"><span class="section-number-3">1.29</span> git环境安装</h3>sec-1-29942,31020
+<h3 id="sec-1-29"><span class="section-number-3">1.29</span> git环境安装</h3>1.29 git环境安装942,31020
+<div class="outline-text-3" id="text-1-29">text-1-29943,31103
+</div><div id="outline-container-sec-1-29-1" class="outline-4">outline-container-sec-1-29-1944,31148
+<h4 id="sec-1-29-1"><span class="section-number-4">1.29.1</span> github 集成</h4>sec-1-29-1945,31213
+<div id="outline-container-sec-1-29-2" class="outline-4">outline-container-sec-1-29-2947,31306
+<h4 id="sec-1-29-2"><span class="section-number-4">1.29.2</span> github 提交 rateyu@gmail.com<sec-1-29-2948,31365
+<div class="outline-text-4" id="text-1-29-2">text-1-29-2949,31467
+<div id="outline-container-sec-1-29-3" class="outline-4">outline-container-sec-1-29-31035,33716
+<h4 id="sec-1-29-3"><span class="section-number-4">1.29.3</span> Please tell me who you are.</h4sec-1-29-31036,33775
+<div class="outline-text-4" id="text-1-29-3">text-1-29-31037,33874
+<div id="outline-container-sec-1-30" class="outline-3">outline-container-sec-1-301116,35484
+<h3 id="sec-1-30"><span class="section-number-3">1.30</span> ubuntu 14 访问win7</h3>sec-1-301117,35541
+<h3 id="sec-1-30"><span class="section-number-3">1.30</span> ubuntu 14 访问win7</h3>1.30 ubuntu 14 访问win71117,35541
+<div class="outline-text-3" id="text-1-30">text-1-301118,35629
+<div id="outline-container-sec-1-31" class="outline-3">outline-container-sec-1-311136,36030
+<h3 id="sec-1-31"><span class="section-number-3">1.31</span> ubuntu 访问win7</h3>sec-1-311137,36087
+<h3 id="sec-1-31"><span class="section-number-3">1.31</span> ubuntu 访问win7</h3>1.31 ubuntu 访问win71137,36087
+<div class="outline-text-3" id="text-1-31">text-1-311138,36172
+<div id="outline-container-sec-1-32" class="outline-3">outline-container-sec-1-321148,36406
+<h3 id="sec-1-32"><span class="section-number-3">1.32</span> win10 putty 访问ubuntu</h3>sec-1-321149,36463
+<h3 id="sec-1-32"><span class="section-number-3">1.32</span> win10 putty 访问ubuntu</h3>1.32 win10 putty 访问ubuntu1149,36463
+<div class="outline-text-3" id="text-1-32">text-1-321150,36555
+<div id="outline-container-sec-2" class="outline-2">outline-container-sec-21162,36815
+<h2 id="sec-2"><span class="section-number-2">2</span> 未解决的问题</h2>sec-21163,36869
+<h2 id="sec-2"><span class="section-number-2">2</span> 未解决的问题</h2>2 未解决的问题1163,36869
+<div class="outline-text-2" id="text-2">text-21164,36949
+</div><div id="outline-container-sec-2-1" class="outline-3">outline-container-sec-2-11165,36991
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> ubuntu shell fish</h3>sec-2-11166,37053
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> ubuntu shell fish</h3>2.1 ubuntu shell fish1166,37053
+<div class="outline-text-3" id="text-2-1">text-2-11167,37136
+<div id="outline-container-sec-3" class="outline-2">outline-container-sec-31194,37724
+<h2 id="sec-3"><span class="section-number-2">3</span> windows putty设置 自动登录ubuntu</hsec-31195,37778
+<h2 id="sec-3"><span class="section-number-2">3</span> windows putty设置 自动登录ubuntu</h3 windows putty设置 自动登录ubuntu1195,37778
+<div class="outline-text-2" id="text-3">text-31196,37878
+<div id="postamble" class="status">postamble1214,38367
+
+_posts/2014-11-11-emacs学习使用-zz.html,28984
+<title>&lrm;</title>&lrm;9,402
+<div id="content" class="content">content198,7925
+<div id="table-of-contents" role="doc-toc">table-of-contents199,7961
+<h2>Table of Contents</h2>Table of Contents200,8006
+<div id="text-table-of-contents" role="doc-toc">text-table-of-contents201,8034
+<div id="outline-container-org1f0b39b" class="outline-2">outline-container-org1f0b39b286,13878
+<h2 id="org1f0b39b"><span class="section-number-2">1.</span> emacs学习</h2>org1f0b39b287,13937
+<h2 id="org1f0b39b"><span class="section-number-2">1.</span> emacs学习</h2>1. emacs学习287,13937
+<div class="outline-text-2" id="text-1">text-1288,14016
+<div id="outline-container-org975b427" class="outline-3">outline-container-org975b427290,14066
+<h3 id="org975b427"><span class="section-number-3">1.1.</span> emacs rgrep 搜索命令使用</horg975b427291,14125
+<h3 id="org975b427"><span class="section-number-3">1.1.</span> emacs rgrep 搜索命令使用</h1.1. emacs rgrep 搜索命令使用291,14125
+<div id="outline-container-org6022c61" class="outline-3">outline-container-org6022c61293,14233
+<h3 id="org6022c61"><span class="section-number-3">1.2.</span> emacs 设置说明 非常有用的org6022c61294,14292
+<h3 id="org6022c61"><span class="section-number-3">1.2.</span> emacs 设置说明 非常有用的1.2. emacs 设置说明 非常有用的设置，完成左右窗口的切换294,14292
+<div class="outline-text-3" id="text-1-2">text-1-2295,14432
+<div id="outline-container-org507c72d" class="outline-3">outline-container-org507c72d309,14866
+<h3 id="org507c72d"><span class="section-number-3">1.3.</span> emacs winner-mode使用</h3>org507c72d310,14925
+<h3 id="org507c72d"><span class="section-number-3">1.3.</span> emacs winner-mode使用</h3>1.3. emacs winner-mode使用310,14925
+<div class="outline-text-3" id="text-1-3">text-1-3311,15018
+<div id="outline-container-org205a619" class="outline-3">outline-container-org205a619356,15895
+<h3 id="org205a619"><span class="section-number-3">1.4.</span> emacs-w3m 集成不好的问题</org205a619357,15954
+<h3 id="org205a619"><span class="section-number-3">1.4.</span> emacs-w3m 集成不好的问题</1.4. emacs-w3m 集成不好的问题357,15954
+<div id="outline-container-org75cbb32" class="outline-3">outline-container-org75cbb32359,16063
+<h3 id="org75cbb32"><span class="section-number-3">1.5.</span> emacs 帮助快捷键</h3>org75cbb32360,16122
+<h3 id="org75cbb32"><span class="section-number-3">1.5.</span> emacs 帮助快捷键</h3>1.5. emacs 帮助快捷键360,16122
+<div class="outline-text-3" id="text-1-5">text-1-5361,16213
+<div id="outline-container-orge23b039" class="outline-3">outline-container-orge23b039385,17792
+<h3 id="orge23b039"><span class="section-number-3">1.6.</span> emacs 远程调试</h3>orge23b039386,17851
+<h3 id="orge23b039"><span class="section-number-3">1.6.</span> emacs 远程调试</h3>1.6. emacs 远程调试386,17851
+<div class="outline-text-3" id="text-1-6">text-1-6387,17939
+<div id="outline-container-org29025c1" class="outline-3">outline-container-org29025c1394,18167
+<h3 id="org29025c1"><span class="section-number-3">1.7.</span> emacs ssh bwg</h3>org29025c1395,18226
+<h3 id="org29025c1"><span class="section-number-3">1.7.</span> emacs ssh bwg</h3>1.7. emacs ssh bwg395,18226
+<div class="outline-text-3" id="text-1-7">text-1-7396,18309
+<div id="outline-container-orgcfa0239" class="outline-3">outline-container-orgcfa0239404,18457
+<h3 id="orgcfa0239"><span class="section-number-3">1.8.</span> emacs c<sub>x</sub> c<sub>f</sub>orgcfa0239405,18516
+<h3 id="orgcfa0239"><span class="section-number-3">1.8.</span> emacs c<sub>x</sub> c<sub>f</sub>1.8. emacs cx cf 远程登陆文件夹 ax shell 执行 /bin/bash 远程命令开启终端 (ubuntu 14亲测可用,windows未成功)405,18516
+<div id="outline-container-org873d5c7" class="outline-3">outline-container-org873d5c7408,18754
+<h3 id="org873d5c7"><span class="section-number-3">1.9.</span> emacs tramp ssh</h3>org873d5c7409,18813
+<h3 id="org873d5c7"><span class="section-number-3">1.9.</span> emacs tramp ssh</h3>1.9. emacs tramp ssh409,18813
+<div class="outline-text-3" id="text-1-9">text-1-9410,18898
+<div id="outline-container-orgde609b1" class="outline-3">outline-container-orgde609b1430,19491
+<h3 id="orgde609b1"><span class="section-number-3">1.10.</span> w3m 单独命令快捷键</h3>orgde609b1431,19550
+<h3 id="orgde609b1"><span class="section-number-3">1.10.</span> w3m 单独命令快捷键</h3>1.10. w3m 单独命令快捷键431,19550
+<div class="outline-text-3" id="text-1-10">text-1-10432,19646
+<div id="outline-container-orge6193b7" class="outline-3">outline-container-orge6193b7497,20967
+<h3 id="orge6193b7"><span class="section-number-3">1.11.</span> <span class="done DONE">DONE</sporge6193b7498,21026
+<h3 id="orge6193b7"><span class="section-number-3">1.11.</span> <span class="done DONE">DONE</sp1.11. DONE emacs w3m 操作步骤498,21026
+<div class="outline-text-3" id="text-1-11">text-1-11499,21155
+<div id="outline-container-org581ab66" class="outline-4">outline-container-org581ab66504,21376
+<h4 id="org581ab66"><span class="section-number-4">1.11.1.</span> 安装</h4>org581ab66505,21435
+<div class="outline-text-4" id="text-1-11-1">text-1-11-1506,21514
+<div id="outline-container-orgbdd97b2" class="outline-4">outline-container-orgbdd97b2513,21631
+<h4 id="orgbdd97b2"><span class="section-number-4">1.11.2.</span> 增加配置</h4>orgbdd97b2514,21690
+<div class="outline-text-4" id="text-1-11-2">text-1-11-2515,21775
+<div id="outline-container-orgb31b767" class="outline-4">outline-container-orgb31b767529,22194
+<h4 id="orgb31b767"><span class="section-number-4">1.11.3.</span> 常用命令</h4>orgb31b767530,22253
+<div class="outline-text-4" id="text-1-11-3">text-1-11-3531,22338
+<div id="outline-container-org88a26f3" class="outline-3">outline-container-org88a26f3543,22552
+<h3 id="org88a26f3"><span class="section-number-3">1.12.</span> w3m lynx比较  极客</h3>org88a26f3544,22611
+<h3 id="org88a26f3"><span class="section-number-3">1.12.</span> w3m lynx比较  极客</h3>1.12. w3m lynx比较 极客544,22611
+<div class="outline-text-3" id="text-1-12">text-1-12545,22704
+<div id="outline-container-orge371413" class="outline-3">outline-container-orge371413557,23224
+<h3 id="orge371413"><span class="section-number-3">1.13.</span> yasnippets ant maven</h3>orge371413558,23283
+<h3 id="orge371413"><span class="section-number-3">1.13.</span> yasnippets ant maven</h3>1.13. yasnippets ant maven558,23283
+<div class="outline-text-3" id="text-1-13">text-1-13559,23374
+<div id="outline-container-org1bae66b" class="outline-3">outline-container-org1bae66b566,23469
+<h3 id="org1bae66b"><span class="section-number-3">1.14.</span> git hub 更新代码</h3>org1bae66b567,23528
+<h3 id="org1bae66b"><span class="section-number-3">1.14.</span> git hub 更新代码</h3>1.14. git hub 更新代码567,23528
+<div class="outline-text-3" id="text-1-14">text-1-14568,23619
+<div id="outline-container-orgfa3d215" class="outline-3">outline-container-orgfa3d215580,24086
+<h3 id="orgfa3d215"><span class="section-number-3">1.15.</span> andoird keyboard  google is ok  orgfa3d215581,24145
+<h3 id="orgfa3d215"><span class="section-number-3">1.15.</span> andoird keyboard  google is ok  1.15. andoird keyboard google is ok bluetooth581,24145
+<div id="outline-container-orga79a8c3" class="outline-3">outline-container-orga79a8c3583,24266
+<h3 id="orga79a8c3"><span class="section-number-3">1.16.</span> emacs 24.3.1 + github rateyu staorga79a8c3584,24325
+<h3 id="orga79a8c3"><span class="section-number-3">1.16.</span> emacs 24.3.1 + github rateyu sta1.16. emacs 24.3.1 + github rateyu starter-kit-master584,24325
+<div class="outline-text-3" id="text-1-16">text-1-16585,24443
+<div id="outline-container-orgc62f90b" class="outline-3">outline-container-orgc62f90b592,24537
+<h3 id="orgc62f90b"><span class="section-number-3">1.17.</span> emacs 检索代码</h3>orgc62f90b593,24596
+<h3 id="orgc62f90b"><span class="section-number-3">1.17.</span> emacs 检索代码</h3>1.17. emacs 检索代码593,24596
+<div class="outline-text-3" id="text-1-17">text-1-17594,24685
+<div id="outline-container-orgc92bbd6" class="outline-3">outline-container-orgc92bbd6603,25025
+<h3 id="orgc92bbd6"><span class="section-number-3">1.18.</span> emacs markdown安装方法</h3>orgc92bbd6604,25084
+<h3 id="orgc92bbd6"><span class="section-number-3">1.18.</span> emacs markdown安装方法</h3>1.18. emacs markdown安装方法604,25084
+<div class="outline-text-3" id="text-1-18">text-1-18605,25181
+<div id="outline-container-orga9a45de" class="outline-4">outline-container-orga9a45de618,25486
+<h4 id="orga9a45de"><span class="section-number-4">1.18.1.</span> 问题无ｍａｇｉｔ包</horga9a45de619,25545
+<div class="outline-text-4" id="text-1-18-1">text-1-18-1620,25645
+<div id="outline-container-org79da422" class="outline-3">outline-container-org79da422654,26926
+<h3 id="org79da422"><span class="section-number-3">1.19.</span> emacs org skill</h3>org79da422655,26985
+<h3 id="org79da422"><span class="section-number-3">1.19.</span> emacs org skill</h3>1.19. emacs org skill655,26985
+<div class="outline-text-3" id="text-1-19">text-1-19656,27071
+<div id="outline-container-org342ede4" class="outline-3">outline-container-org342ede4684,27495
+<h3 id="org342ede4"><span class="section-number-3">1.20.</span> emacs 多个shell创建</h3>org342ede4685,27554
+<h3 id="org342ede4"><span class="section-number-3">1.20.</span> emacs 多个shell创建</h3>1.20. emacs 多个shell创建685,27554
+<div class="outline-text-3" id="text-1-20">text-1-20686,27648
+<div id="outline-container-orged4c659" class="outline-3">outline-container-orged4c659694,27834
+<h3 id="orged4c659"><span class="section-number-3">1.21.</span> 实用运维小技巧</h3>orged4c659695,27893
+<h3 id="orged4c659"><span class="section-number-3">1.21.</span> 实用运维小技巧</h3>1.21. 实用运维小技巧695,27893
+<div class="outline-text-3" id="text-1-21">text-1-21696,27985
+<div id="outline-container-org726472a" class="outline-3">outline-container-org726472a704,28170
+<h3 id="org726472a"><span class="section-number-3">1.22.</span> linux ctrl和 caps修改键位</org726472a705,28229
+<h3 id="org726472a"><span class="section-number-3">1.22.</span> linux ctrl和 caps修改键位</1.22. linux ctrl和 caps修改键位705,28229
+<div class="outline-text-3" id="text-1-22">text-1-22706,28330
+<div id="outline-container-org619a1aa" class="outline-3">outline-container-org619a1aa729,29107
+<h3 id="org619a1aa"><span class="section-number-3">1.23.</span> emacs c<sub>x</sub> b 快速新建org619a1aa730,29166
+<h3 id="org619a1aa"><span class="section-number-3">1.23.</span> emacs c<sub>x</sub> b 快速新建1.23. emacs cx b 快速新建缓冲区730,29166
+<div id="outline-container-org19a8377" class="outline-3">outline-container-org19a8377732,29288
+<h3 id="org19a8377"><span class="section-number-3">1.24.</span> emacs w3m　打开网页后 控制org19a8377733,29347
+<h3 id="org19a8377"><span class="section-number-3">1.24.</span> emacs w3m　打开网页后 控制1.24. emacs w3m　打开网页后 控制是否显示图片 (很好用哦)733,29347
+<div class="outline-text-3" id="text-1-24">text-1-24734,29485
+<div id="outline-container-orgc2f885b" class="outline-3">outline-container-orgc2f885b749,29796
+<h3 id="orgc2f885b"><span class="section-number-3">1.25.</span> emacs 隐藏工具栏的命令</orgc2f885b750,29855
+<h3 id="orgc2f885b"><span class="section-number-3">1.25.</span> emacs 隐藏工具栏的命令</1.25. emacs 隐藏工具栏的命令750,29855
+<div class="outline-text-3" id="text-1-25">text-1-25751,29956
+<div id="outline-container-orge62dc8d" class="outline-3">outline-container-orge62dc8d772,30382
+<h3 id="orge62dc8d"><span class="section-number-3">1.26.</span> emacs 使用书签</h3>orge62dc8d773,30441
+<h3 id="orge62dc8d"><span class="section-number-3">1.26.</span> emacs 使用书签</h3>1.26. emacs 使用书签773,30441
+<div class="outline-text-3" id="text-1-26">text-1-26774,30530
+<div id="outline-container-org68d8830" class="outline-3">outline-container-org68d8830859,31854
+<h3 id="org68d8830"><span class="section-number-3">1.27.</span> emacs 绘制流程图 yz 打开链org68d8830860,31913
+<h3 id="org68d8830"><span class="section-number-3">1.27.</span> emacs 绘制流程图 yz 打开链1.27. emacs 绘制流程图 yz 打开链接地址860,31913
+<div class="outline-text-3" id="text-1-27">text-1-27861,32027
+<div id="orgf2fa595" class="figure">orgf2fa595872,32409
+<div id="outline-container-org00ed8cf" class="outline-3">outline-container-org00ed8cf888,33080
+<h3 id="org00ed8cf"><span class="section-number-3">1.28.</span> emacs send email 配置？？ 替org00ed8cf889,33139
+<h3 id="org00ed8cf"><span class="section-number-3">1.28.</span> emacs send email 配置？？ 替1.28. emacs send email 配置？？ 替代方法 先使用 雷鸟889,33139
+<div id="outline-container-org5fe1e75" class="outline-3">outline-container-org5fe1e75892,33286
+<h3 id="org5fe1e75"><span class="section-number-3">1.29.</span> <span class="done DONE">DONE</sporg5fe1e75893,33345
+<h3 id="org5fe1e75"><span class="section-number-3">1.29.</span> <span class="done DONE">DONE</sp1.29. DONE 全局键位切换 ok 方法如下：893,33345
+<div class="outline-text-3" id="text-1-29">text-1-29894,33490
+<div id="outline-container-orgd5f8226" class="outline-3">outline-container-orgd5f8226905,33940
+<h3 id="orgd5f8226"><span class="section-number-3">1.30.</span> <span class="done DONE">DONE</sporgd5f8226906,33999
+<h3 id="orgd5f8226"><span class="section-number-3">1.30.</span> <span class="done DONE">DONE</sp1.30. DONE 今天使用了下redis 安装和测试成功 很简单，有所见可以看下源代码906,33999
+<div id="outline-container-orgaeb2736" class="outline-3">outline-container-orgaeb2736908,34202
+<h3 id="orgaeb2736"><span class="section-number-3">1.31.</span> <span class="done DONE">DONE</sporgaeb2736909,34261
+<h3 id="orgaeb2736"><span class="section-number-3">1.31.</span> <span class="done DONE">DONE</sp1.31. DONE github 编写博客网站 git分支问题 这个问题终于搞定了909,34261
+<div class="outline-text-3" id="text-1-31">text-1-31910,34437
+<div id="outline-container-org19f2caa" class="outline-3">outline-container-org19f2caa940,35081
+<h3 id="org19f2caa"><span class="section-number-3">1.32.</span> <span class="done DONE">DONE</sporg19f2caa941,35140
+<h3 id="org19f2caa"><span class="section-number-3">1.32.</span> <span class="done DONE">DONE</sp1.32. DONE jde 常用方法总结 启动太慢，不好用941,35140
+<div class="outline-text-3" id="text-1-32">text-1-32942,35294
+<div id="outline-container-org4f624b5" class="outline-3">outline-container-org4f624b5988,36955
+<h3 id="org4f624b5"><span class="section-number-3">1.33.</span> <span class="done DONE">DONE</sporg4f624b5989,37014
+<h3 id="org4f624b5"><span class="section-number-3">1.33.</span> <span class="done DONE">DONE</sp1.33. DONE emacs 插入java 代码989,37014
+<div class="outline-text-3" id="text-1-33">text-1-33990,37144
+<div id="outline-container-org2b6fc36" class="outline-3">outline-container-org2b6fc361039,38104
+<h3 id="org2b6fc36"><span class="section-number-3">1.34.</span> <span class="done DONE">DONE</sporg2b6fc361040,38163
+<h3 id="org2b6fc36"><span class="section-number-3">1.34.</span> <span class="done DONE">DONE</sp1.34. DONE emacs 自动补全磁盘目录 牛人如Steve Purcell &#x2014;可以正常使用1040,38163
+<div class="outline-text-3" id="text-1-34">text-1-341041,38350
+<div id="outline-container-org55f1064" class="outline-3">outline-container-org55f10641047,38579
+<h3 id="org55f1064"><span class="section-number-3">1.35.</span> <span class="done DONE">DONE</sporg55f10641048,38638
+<h3 id="org55f1064"><span class="section-number-3">1.35.</span> <span class="done DONE">DONE</sp1.35. DONE emacs .eamcs.d init.el 配置文件1048,38638
+<div class="outline-text-3" id="text-1-35">text-1-351049,38780
+<div id="outline-container-org215acf9" class="outline-3">outline-container-org215acf91084,40059
+<h3 id="org215acf9"><span class="section-number-3">1.36.</span> <span class="done DONE">DONE</sporg215acf91085,40118
+<h3 id="org215acf9"><span class="section-number-3">1.36.</span> <span class="done DONE">DONE</sp1.36. DONE emacs 启动将 capslock &lt;&#x2013;&gt; ctrlR 放入 /etc/init.d/rc.local (具体参考effective emacs)1085,40118
+<div class="outline-text-3" id="text-1-36">text-1-361086,40352
+<div id="outline-container-orga9ee7e8" class="outline-3">outline-container-orga9ee7e81095,40624
+<h3 id="orga9ee7e8"><span class="section-number-3">1.37.</span> <span class="done DONE">DONE</sporga9ee7e81096,40683
+<h3 id="orga9ee7e8"><span class="section-number-3">1.37.</span> <span class="done DONE">DONE</sp1.37. DONE emacs 超级有效的1096,40683
+<div class="outline-text-3" id="text-1-37">text-1-371097,40811
+<div id="outline-container-orgcce03ee" class="outline-3">outline-container-orgcce03ee1110,41190
+<h3 id="orgcce03ee"><span class="section-number-3">1.38.</span> emacs gtd 时间管理</h3>orgcce03ee1111,41249
+<h3 id="orgcce03ee"><span class="section-number-3">1.38.</span> emacs gtd 时间管理</h3>1.38. emacs gtd 时间管理1111,41249
+<div class="outline-text-3" id="text-1-38">text-1-381112,41342
+<div id="outline-container-org110d411" class="outline-3">outline-container-org110d4111119,41636
+<h3 id="org110d411"><span class="section-number-3">1.39.</span> 任务测试 GTD</h3>org110d4111120,41695
+<h3 id="org110d411"><span class="section-number-3">1.39.</span> 任务测试 GTD</h3>1.39. 任务测试 GTD1120,41695
+<div class="outline-text-3" id="text-1-39">text-1-391121,41782
+<div id="outline-container-orga33e54a" class="outline-3">outline-container-orga33e54a1128,41999
+<h3 id="orga33e54a"><span class="section-number-3">1.40.</span> emacs mew 邮件管理</h3>orga33e54a1129,42058
+<h3 id="orga33e54a"><span class="section-number-3">1.40.</span> emacs mew 邮件管理</h3>1.40. emacs mew 邮件管理1129,42058
+<div class="outline-text-3" id="text-1-40">text-1-401130,42151
+<div id="outline-container-org43353ab" class="outline-3">outline-container-org43353ab1137,42294
+<h3 id="org43353ab"><span class="section-number-3">1.41.</span> Emacs gnus 阅读新闻组</h3>org43353ab1138,42353
+<h3 id="org43353ab"><span class="section-number-3">1.41.</span> Emacs gnus 阅读新闻组</h3>1.41. Emacs gnus 阅读新闻组1138,42353
+<div class="outline-text-3" id="text-1-41">text-1-411139,42450
+<div id="outline-container-orgfe3d70d" class="outline-3">outline-container-orgfe3d70d1148,42633
+<h3 id="orgfe3d70d"><span class="section-number-3">1.42.</span> mew 问题＆常用命令快捷键orgfe3d70d1149,42692
+<h3 id="orgfe3d70d"><span class="section-number-3">1.42.</span> mew 问题＆常用命令快捷键1.42. mew 问题＆常用命令快捷键 (重要)1149,42692
+<div class="outline-text-3" id="text-1-42">text-1-421150,42806
+<div id="outline-container-org5ae8374" class="outline-3">outline-container-org5ae83741209,44637
+<h3 id="org5ae8374"><span class="section-number-3">1.43.</span> emacs 查看新闻组 rss  <b>雷org5ae83741210,44696
+<h3 id="org5ae8374"><span class="section-number-3">1.43.</span> emacs 查看新闻组 rss  <b>雷1.43. emacs 查看新闻组 rss 雷鸟1210,44696
+<div id="outline-container-orgc4552b5" class="outline-3">outline-container-orgc4552b51212,44815
+<h3 id="orgc4552b5"><span class="section-number-3">1.44.</span> pdf emacs</h3>orgc4552b51213,44874
+<h3 id="orgc4552b5"><span class="section-number-3">1.44.</span> pdf emacs</h3>1.44. pdf emacs1213,44874
+<div class="outline-text-3" id="text-1-44">text-1-441214,44954
+<div id="outline-container-org5fbf65e" class="outline-3">outline-container-org5fbf65e1226,45369
+<h3 id="org5fbf65e"><span class="section-number-3">1.45.</span> emacs yasnippet</h3>org5fbf65e1227,45428
+<h3 id="org5fbf65e"><span class="section-number-3">1.45.</span> emacs yasnippet</h3>1.45. emacs yasnippet1227,45428
+<div class="outline-text-3" id="text-1-45">text-1-451228,45514
+<div id="outline-container-org5adb0bb" class="outline-3">outline-container-org5adb0bb1234,45705
+<h3 id="org5adb0bb"><span class="section-number-3">1.46.</span> 乘法计算</h3>org5adb0bb1235,45764
+<h3 id="org5adb0bb"><span class="section-number-3">1.46.</span> 乘法计算</h3>1.46. 乘法计算1235,45764
+<div class="outline-text-3" id="text-1-46">text-1-461236,45847
+<div id="outline-container-orgc3e1723" class="outline-3">outline-container-orgc3e17231249,46054
+<h3 id="orgc3e1723"><span class="section-number-3">1.47.</span> ubuntu latex</h3>orgc3e17231250,46113
+<h3 id="orgc3e1723"><span class="section-number-3">1.47.</span> ubuntu latex</h3>1.47. ubuntu latex1250,46113
+<div class="outline-text-3" id="text-1-47">text-1-471251,46196
+<div id="outline-container-orgcbe4f25" class="outline-3">outline-container-orgcbe4f251259,46402
+<h3 id="orgcbe4f25"><span class="section-number-3">1.48.</span> 已经可以导出　但是中文orgcbe4f251260,46461
+<h3 id="orgcbe4f25"><span class="section-number-3">1.48.</span> 已经可以导出　但是中文1.48. 已经可以导出　但是中文无法导出？1260,46461
+<div class="outline-text-3" id="text-1-48">text-1-481261,46580
+<div id="outline-container-org2cccf1c" class="outline-3">outline-container-org2cccf1c1273,46971
+<h3 id="org2cccf1c"><span class="section-number-3">1.49.</span> Ubuntu LaTex添加UTF8中文支持org2cccf1c1274,47030
+<h3 id="org2cccf1c"><span class="section-number-3">1.49.</span> Ubuntu LaTex添加UTF8中文支持1.49. Ubuntu LaTex添加UTF8中文支持解决方法1274,47030
+<div class="outline-text-3" id="text-1-49">text-1-491275,47147
+<div id="outline-container-orgd9f20ac" class="outline-3">outline-container-orgd9f20ac1287,47592
+<h3 id="orgd9f20ac"><span class="section-number-3">1.50.</span> latex 文献写作</h3>orgd9f20ac1288,47651
+<h3 id="orgd9f20ac"><span class="section-number-3">1.50.</span> latex 文献写作</h3>1.50. latex 文献写作1288,47651
+<div class="outline-text-3" id="text-1-50">text-1-501289,47740
+<div id="outline-container-org9827c87" class="outline-3">outline-container-org9827c871295,47933
+<h3 id="org9827c87"><span class="section-number-3">1.51.</span> linux shell github项目</h3>org9827c871296,47992
+<h3 id="org9827c87"><span class="section-number-3">1.51.</span> linux shell github项目</h3>1.51. linux shell github项目1296,47992
+<div class="outline-text-3" id="text-1-51">text-1-511297,48087
+<div id="outline-container-org05badd7" class="outline-3">outline-container-org05badd71308,48563
+<h3 id="org05badd7"><span class="section-number-3">1.52.</span> 网站收集</h3>org05badd71309,48622
+<h3 id="org05badd7"><span class="section-number-3">1.52.</span> 网站收集</h3>1.52. 网站收集1309,48622
+<div class="outline-text-3" id="text-1-52">text-1-521310,48705
+<div id="outline-container-orgb970baf" class="outline-3">outline-container-orgb970baf1324,48903
+<h3 id="orgb970baf"><span class="section-number-3">1.53.</span> intellij 快捷键</h3>orgb970baf1325,48962
+<h3 id="orgb970baf"><span class="section-number-3">1.53.</span> intellij 快捷键</h3>1.53. intellij 快捷键1325,48962
+<div class="outline-text-3" id="text-1-53">text-1-531326,49051
+<div id="outline-container-org6e4d160" class="outline-3">outline-container-org6e4d1601333,49309
+<h3 id="org6e4d160"><span class="section-number-3">1.54.</span> redis 非常简单，按照主页org6e4d1601334,49368
+<h3 id="org6e4d160"><span class="section-number-3">1.54.</span> redis 非常简单，按照主页1.54. redis 非常简单，按照主页的说明就可以使用了1334,49368
+<div id="outline-container-orgd4e7965" class="outline-3">outline-container-orgd4e79651336,49507
+<h3 id="orgd4e7965"><span class="section-number-3">1.55.</span> emacs 另一个窗口操作</h3>orgd4e79651337,49566
+<h3 id="orgd4e7965"><span class="section-number-3">1.55.</span> emacs 另一个窗口操作</h3>1.55. emacs 另一个窗口操作1337,49566
+<div class="outline-text-3" id="text-1-55">text-1-551338,49664
+<div id="outline-container-org0944351" class="outline-3">outline-container-org09443511352,50505
+<h3 id="org0944351"><span class="section-number-3">1.56.</span> emacs org 换行设置</h3>org09443511353,50564
+<h3 id="org0944351"><span class="section-number-3">1.56.</span> emacs org 换行设置</h3>1.56. emacs org 换行设置1353,50564
+<div class="outline-text-3" id="text-1-56">text-1-561354,50657
+<div id="outline-container-org37ed861" class="outline-3">outline-container-org37ed8611360,50820
+<h3 id="org37ed861"><span class="section-number-3">1.57.</span> emacs w3m设置 baidu主页</h3>org37ed8611361,50879
+<h3 id="org37ed861"><span class="section-number-3">1.57.</span> emacs w3m设置 baidu主页</h3>1.57. emacs w3m设置 baidu主页1361,50879
+<div class="outline-text-3" id="text-1-57">text-1-571362,50977
+<div id="outline-container-org127c2c8" class="outline-3">outline-container-org127c2c81369,51149
+<h3 id="org127c2c8"><span class="section-number-3">1.58.</span> emacs 记录自己的工作区和org127c2c81370,51208
+<h3 id="org127c2c8"><span class="section-number-3">1.58.</span> emacs 记录自己的工作区和1.58. emacs 记录自己的工作区和恢复工作区1370,51208
+<div class="outline-text-3" id="text-1-58">text-1-581371,51327
+<div id="outline-container-orgbced807" class="outline-3">outline-container-orgbced8071381,51619
+<h3 id="orgbced807"><span class="section-number-3">1.59.</span> emacs 书签设置</h3>orgbced8071382,51678
+<h3 id="orgbced807"><span class="section-number-3">1.59.</span> emacs 书签设置</h3>1.59. emacs 书签设置1382,51678
+<div class="outline-text-3" id="text-1-59">text-1-591383,51767
+<div id="outline-container-orgdc5f0fb" class="outline-3">outline-container-orgdc5f0fb1392,51948
+<h3 id="orgdc5f0fb"><span class="section-number-3">1.60.</span> emacs 快速补全</h3>orgdc5f0fb1393,52007
+<h3 id="orgdc5f0fb"><span class="section-number-3">1.60.</span> emacs 快速补全</h3>1.60. emacs 快速补全1393,52007
+<div class="outline-text-3" id="text-1-60">text-1-601394,52096
+<div id="outline-container-orgf5d2180" class="outline-3">outline-container-orgf5d21801400,52199
+<h3 id="orgf5d2180"><span class="section-number-3">1.61.</span> emacs 网址</h3>orgf5d21801401,52258
+<h3 id="orgf5d2180"><span class="section-number-3">1.61.</span> emacs 网址</h3>1.61. emacs 网址1401,52258
+<div class="outline-text-3" id="text-1-61">text-1-611402,52341
+<div id="outline-container-orga9c46ae" class="outline-3">outline-container-orga9c46ae1409,52512
+<h3 id="orga9c46ae"><span class="section-number-3">1.62.</span> 在另一个窗口操作</h3>orga9c46ae1410,52571
+<h3 id="orga9c46ae"><span class="section-number-3">1.62.</span> 在另一个窗口操作</h3>1.62. 在另一个窗口操作1410,52571
+<div class="outline-text-3" id="text-1-62">text-1-621411,52666
+<div id="outline-container-orgf1547e2" class="outline-3">outline-container-orgf1547e21419,52975
+<h3 id="orgf1547e2"><span class="section-number-3">1.63.</span> eamcs 文件夹管理</h3>orgf1547e21420,53034
+<h3 id="orgf1547e2"><span class="section-number-3">1.63.</span> eamcs 文件夹管理</h3>1.63. eamcs 文件夹管理1420,53034
+<div class="outline-text-3" id="text-1-63">text-1-631421,53126
+<div id="outline-container-org8db5e38" class="outline-3">outline-container-org8db5e381431,53338
+<h3 id="org8db5e38"><span class="section-number-3">1.64.</span> emacs 卡顿问题</h3>org8db5e381432,53397
+<h3 id="org8db5e38"><span class="section-number-3">1.64.</span> emacs 卡顿问题</h3>1.64. emacs 卡顿问题1432,53397
+<div class="outline-text-3" id="text-1-64">text-1-641433,53486
+<div id="outline-container-org1a3214a" class="outline-3">outline-container-org1a3214a1439,53606
+<h3 id="org1a3214a"><span class="section-number-3">1.65.</span> emacs 快速调出菜单</h3>org1a3214a1440,53665
+<h3 id="org1a3214a"><span class="section-number-3">1.65.</span> emacs 快速调出菜单</h3>1.65. emacs 快速调出菜单1440,53665
+<div class="outline-text-3" id="text-1-65">text-1-651441,53760
+<div id="outline-container-org942734f" class="outline-3">outline-container-org942734f1447,53899
+<h3 id="org942734f"><span class="section-number-3">1.66.</span> putty使用 linux emacs 卡顿问org942734f1448,53958
+<h3 id="org942734f"><span class="section-number-3">1.66.</span> putty使用 linux emacs 卡顿问1.66. putty使用 linux emacs 卡顿问题1448,53958
+<div class="outline-text-3" id="text-1-66">text-1-661449,54065
+<div id="postamble" class="status">postamble1457,54189
+
+_posts/2015-06-14-markdown-11-form.md,85
+Markdown 11种基本语法Markdown 11种基本语法1,0
+[^hello]: hihello58,2333
+
+_posts/2015-06-29-my-think.md,770
+# 人生综合人生综合1,0
+# 团队管理团队管理27,791
+# 工作总结工作总结45,1267
+## 季度&周工作季度&周工作51,1374
+# 专业面试专业面试64,1818
+## 高性能架构高性能架构88,2337
+## 互联网框架互联网框架90,2359
+## 自我发展 互联网后端架构设计 php+enginx自我发展 互联网后端架构设计 php+enginx93,2386
+## 家里环境搭建家里环境搭建99,2548
+# 优秀资源优秀资源128,3614
+## uc存为文本,注意版本;多看导入 笔记阅读uc存为文本,注意版本;多看导入 笔记阅读130,3632
+# 身体是革命的本钱身体是革命的本钱140,3779
+# 经典读书笔记经典读书笔记145,3853
+# 2015 3季度 第一周总结2015 3季度 第一周总结149,3881
+
+_posts/2015-06-29-myjianli-2015.md,1744
+# 2015-06-29-今年下半年计划2015-06-29-今年下半年计划23,568
+## 高性能架构高性能架构28,667
+## 互联网框架互联网框架29,687
+## es集群 替换目前的solr&redis集群es集群 替换目前的solr&redis集群42,1035
+## elastic search 学习elastic search 学习46,1151
+## 海洋架构 和 业务海洋架构 和 业务50,1288
+### 问题2015问题201555,1378
+## 自动集成 海洋 持续 开发环境自动集成 海洋 持续 开发环境61,1504
+### 2015-06-14-系统持续集成2015-06-14-系统持续集成64,1576
+## 自我发展 互联网后端架构设计 php+enginx自我发展 互联网后端架构设计 php+enginx71,1723
+## 2015-06-29-用户行为2015-06-29-用户行为77,1885
+## 家里环境搭建家里环境搭建80,1917
+## 先讲讲怎样才是一份好的技术简历先讲讲怎样才是一份好的技术简历112,3021
+# 联系方式联系方式135,4998
+# 个人信息个人信息142,5088
+# 工作经历工作经历157,5416
+## ABC公司 （ 2012年9月 ~ 2014年9月 ）ABC公司 （ 2012年9月 ~ 2014年9月 ）160,5547
+### 内部项目内部项目163,5599
+### DEF项目DEF项目164,5617
+### GHI项目GHI项目168,5994
+### 其他项目其他项目172,6371
+## JKL公司 （ 2010年3月 ~ 2012年8月 ）JKL公司 （ 2010年3月 ~ 2012年8月 ）177,6580
+### MNO项目MNO项目179,6630
+### PQR项目PQR项目183,7007
+### 其他项目其他项目187,7384
+# 开源项目和作品开源项目和作品193,7598
+## 开源项目开源项目196,7702
+## 技术文章技术文章202,8024
+## 演讲和讲义演讲和讲义208,8457
+# 技能清单技能清单214,8764
+## 参考技能关键字参考技能关键字228,9381
+# 致谢致谢351,11163
+
+_posts/2015-06-29-yhxw.html,4429
+<title>2015-06-29-yhxw</title>2015-06-29-yhxw4,231
+<div id="preamble">preamble111,3981
+<div id="content">content115,4014
+<h1 class="title">2015-06-29-yhxw</h1>2015-06-29-yhxw116,4034
+<div id="table-of-contents">table-of-contents119,4078
+<h2>Table of Contents</h2>Table of Contents120,4108
+<div id="text-table-of-contents">text-table-of-contents121,4136
+<div id="outline-container-1" class="outline-2">outline-container-1152,4994
+<h2 id="sec-1"><span class="section-number-2">1</span> Ocean用户行为分析</h2>sec-1153,5044
+<h2 id="sec-1"><span class="section-number-2">1</span> Ocean用户行为分析</h2>1 Ocean用户行为分析153,5044
+<div class="outline-text-2" id="text-1">text-1154,5129
+<div id="outline-container-1-1" class="outline-3">outline-container-1-1159,5185
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 导语</h3>sec-1-1160,5237
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 导语</h3>1.1 导语160,5237
+<div class="outline-text-3" id="text-1-1">text-1-1161,5309
+<div id="outline-container-1-2" class="outline-3">outline-container-1-2171,5614
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 目标是什么</h3>sec-1-2172,5666
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 目标是什么</h3>1.2 目标是什么172,5666
+<div class="outline-text-3" id="text-1-2">text-1-2173,5747
+<div id="outline-container-1-3" class="outline-3">outline-container-1-3203,6659
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 接入数据模型</h3>sec-1-3204,6711
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 接入数据模型</h3>1.3 接入数据模型204,6711
+<div class="outline-text-3" id="text-1-3">text-1-3205,6795
+<div id="outline-container-1-3-1" class="outline-4">outline-container-1-3-1210,6853
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> 数据模型</h4>sec-1-3-1211,6907
+<div class="outline-text-4" id="text-1-3-1">text-1-3-1212,6989
+<div id="outline-container-1-3-2" class="outline-4">outline-container-1-3-2218,7057
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> 报文格式定义</h4>sec-1-3-2219,7111
+<div class="outline-text-4" id="text-1-3-2">text-1-3-2220,7199
+<div id="outline-container-1-3-3" class="outline-4">outline-container-1-3-3226,7267
+<h4 id="sec-1-3-3"><span class="section-number-4">1.3.3</span> 参数定义与规范</h4>sec-1-3-3227,7321
+<div class="outline-text-4" id="text-1-3-3">text-1-3-3228,7412
+<div id="outline-container-1-4" class="outline-3">outline-container-1-4236,7490
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> WFT客户端如何接入</h3>sec-1-4237,7542
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> WFT客户端如何接入</h3>1.4 WFT客户端如何接入237,7542
+<div class="outline-text-3" id="text-1-4">text-1-4238,7632
+<div id="outline-container-1-4-1" class="outline-4">outline-container-1-4-1244,7692
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> 正文请求</h4>sec-1-4-1245,7746
+<div class="outline-text-4" id="text-1-4-1">text-1-4-1246,7828
+<div id="outline-container-1-4-2" class="outline-4">outline-container-1-4-2252,7896
+<h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> 列表请求</h4>sec-1-4-2253,7950
+<div class="outline-text-4" id="text-1-4-2">text-1-4-2254,8032
+<div id="outline-container-1-5" class="outline-3">outline-container-1-5262,8110
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 手机客户端如何接入</h3>sec-1-5263,8162
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 手机客户端如何接入</h3>1.5 手机客户端如何接入263,8162
+<div class="outline-text-3" id="text-1-5">text-1-5264,8255
+<div id="outline-container-1-5-1" class="outline-4">outline-container-1-5-1270,8315
+<h4 id="sec-1-5-1"><span class="section-number-4">1.5.1</span> 正文请求</h4>sec-1-5-1271,8369
+<div class="outline-text-4" id="text-1-5-1">text-1-5-1272,8451
+<div id="outline-container-1-6" class="outline-3">outline-container-1-6280,8529
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> 相关参数定义</h3>sec-1-6281,8581
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> 相关参数定义</h3>1.6 相关参数定义281,8581
+<div class="outline-text-3" id="text-1-6">text-1-6282,8665
+<div id="postamble">postamble289,8745
+
+_posts/2017-01-18-开始写博客了.html,2789
+<title>2017-01-18-开始写博客了</title>2017-01-18-开始写博客了6,229
+<div id="content">content138,4819
+<h1 class="title">2017-01-18-开始写博客了</h1>2017-01-18-开始写博客了139,4839
+<div id="table-of-contents">table-of-contents140,4893
+<h2>Table of Contents</h2>Table of Contents141,4923
+<div id="text-table-of-contents">text-table-of-contents142,4951
+<div id="outline-container-sec-1" class="outline-2">outline-container-sec-1157,5480
+<h2 id="sec-1"><span class="section-number-2">1</span> 写博客技巧</h2>sec-1158,5534
+<h2 id="sec-1"><span class="section-number-2">1</span> 写博客技巧</h2>1 写博客技巧158,5534
+<div class="outline-text-2" id="text-1">text-1159,5611
+</div><div id="outline-container-sec-1-1" class="outline-3">outline-container-sec-1-1160,5653
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 微星主板 f12自选择多操作系sec-1-1161,5715
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 微星主板 f12自选择多操作系1.1 微星主板 f12自选择多操作系统启动161,5715
+<div id="outline-container-sec-1-2" class="outline-3">outline-container-sec-1-2163,5835
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> ubuntu自带截图功能 s<sub>print<sec-1-2164,5891
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> ubuntu自带截图功能 s<sub>print<1.2 ubuntu自带截图功能 sprint164,5891
+<div id="outline-container-sec-1-3" class="outline-3">outline-container-sec-1-3166,6007
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> org导入图片说明功能</h3>sec-1-3167,6063
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> org导入图片说明功能</h3>1.3 org导入图片说明功能167,6063
+<div id="outline-container-sec-1-4" class="outline-3">outline-container-sec-1-4169,6164
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> org自带绘图功能</h3>sec-1-4170,6220
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> org自带绘图功能</h3>1.4 org自带绘图功能170,6220
+<div id="outline-container-sec-1-5" class="outline-3">outline-container-sec-1-5172,6315
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> emacs 帮助技巧</h3>sec-1-5173,6371
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> emacs 帮助技巧</h3>1.5 emacs 帮助技巧173,6371
+<div id="outline-container-sec-1-6" class="outline-3">outline-container-sec-1-6175,6463
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> emacs 技巧</h3>sec-1-6176,6519
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> emacs 技巧</h3>1.6 emacs 技巧176,6519
+<div class="outline-text-3" id="text-1-6">text-1-6177,6597
+<div id="postamble" class="status">postamble186,6768
+
+_posts/2017-2-20-python_study.html,3012
+<title>2017-2-20-python_study</title>2017-2-20-python_study6,229
+<div id="content">content138,4812
+<h1 class="title">2017-2-20-python_study</h1>2017-2-20-python_study139,4832
+<div id="table-of-contents">table-of-contents140,4879
+<h2>Table of Contents</h2>Table of Contents141,4909
+<div id="text-table-of-contents">text-table-of-contents142,4937
+<div id="outline-container-sec-1" class="outline-2">outline-container-sec-1157,5573
+<h2 id="sec-1"><span class="section-number-2">1</span> python django学习</h2>sec-1158,5627
+<h2 id="sec-1"><span class="section-number-2">1</span> python django学习</h2>1 python django学习158,5627
+<div class="outline-text-2" id="text-1">text-1159,5708
+</div><div id="outline-container-sec-1-1" class="outline-3">outline-container-sec-1-1160,5750
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 简单的helloworld -创建第一个项sec-1-1161,5812
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 简单的helloworld -创建第一个项1.1 简单的helloworld -创建第一个项目161,5812
+<div class="outline-text-3" id="text-1-1">text-1-1162,5920
+<div id="outline-container-sec-1-2" class="outline-3">outline-container-sec-1-2168,6108
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> <b>django 利用模板实现分离文sec-1-2169,6164
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> <b>django 利用模板实现分离文1.2 django 利用模板实现分离文档表现形式和内容169,6164
+<div id="outline-container-sec-1-3" class="outline-3">outline-container-sec-1-3171,6303
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> django 数据库支持提供统一多sec-1-3172,6359
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> django 数据库支持提供统一多1.3 django 数据库支持提供统一多调用api172,6359
+<div id="outline-container-sec-1-4" class="outline-3">outline-container-sec-1-4174,6479
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> django 表单post和get方法</h3>sec-1-4175,6535
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> django 表单post和get方法</h3>1.4 django 表单post和get方法175,6535
+<div id="outline-container-sec-1-5" class="outline-3">outline-container-sec-1-5177,6638
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> <b>django admin 管理工具 这个功sec-1-5178,6694
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> <b>django admin 管理工具 这个功1.5 django admin 管理工具 这个功能貌似可以研究下178,6694
+<div id="outline-container-sec-1-6" class="outline-3">outline-container-sec-1-6181,6836
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> emacs org mode 教程</h3>sec-1-6182,6892
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> emacs org mode 教程</h3>1.6 emacs org mode 教程182,6892
+<div class="outline-text-3" id="text-1-6">text-1-6183,6979
+<div id="postamble" class="status">postamble192,7362
+
+_posts/2017-2-4-resume-2017.html,4603
+<title>2017-2-4-resume-2017</title>2017-2-4-resume-20176,229
+<div id="content">content138,4812
+<h1 class="title">2017-2-4-resume-2017</h1>2017-2-4-resume-2017139,4832
+<div id="table-of-contents">table-of-contents140,4877
+<h2>Table of Contents</h2>Table of Contents141,4907
+<div id="text-table-of-contents">text-table-of-contents142,4935
+<div id="outline-container-sec-1" class="outline-2">outline-container-sec-1171,6145
+<h2 id="sec-1"><span class="section-number-2">1</span> resume</h2>sec-1172,6199
+<h2 id="sec-1"><span class="section-number-2">1</span> resume</h2>1 resume172,6199
+<div class="outline-text-2" id="text-1">text-1173,6267
+</div><div id="outline-container-sec-1-1" class="outline-3">outline-container-sec-1-1174,6309
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 四个牛人的经验中学习到的人sec-1-1175,6371
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 四个牛人的经验中学习到的人1.1 四个牛人的经验中学习到的人生可贵品质175,6371
+<div class="outline-text-3" id="text-1-1">text-1-1176,6491
+</div><div id="outline-container-sec-1-1-1" class="outline-4">outline-container-sec-1-1-1177,6535
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> 每天累砖头，盖不出宫殿sec-1-1-1178,6599
+<div id="outline-container-sec-1-1-2" class="outline-4">outline-container-sec-1-1-2180,6781
+<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> 遇到问题解决问题的积极sec-1-1-2181,6839
+<div id="outline-container-sec-1-1-3" class="outline-4">outline-container-sec-1-1-3183,6988
+<h4 id="sec-1-1-3"><span class="section-number-4">1.1.3</span> 对一个领域的本质有精深sec-1-1-3184,7046
+<div class="outline-text-4" id="text-1-1-3">text-1-1-3185,7195
+<div id="outline-container-sec-1-1-4" class="outline-4">outline-container-sec-1-1-4192,7358
+<h4 id="sec-1-1-4"><span class="section-number-4">1.1.4</span> 上帝喜欢笨人</h4>sec-1-1-4193,7416
+<div class="outline-text-4" id="text-1-1-4">text-1-1-4194,7504
+<div id="outline-container-sec-1-2" class="outline-3">outline-container-sec-1-2206,7714
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 2016总结</h3>sec-1-2207,7770
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 2016总结</h3>1.2 2016总结207,7770
+<div class="outline-text-3" id="text-1-2">text-1-2208,7846
+<div id="outline-container-sec-1-3" class="outline-3">outline-container-sec-1-3233,8892
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 我有什么牛x的能力？</h3>sec-1-3234,8948
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 我有什么牛x的能力？</h3>1.3 我有什么牛x的能力？234,8948
+<div class="outline-text-3" id="text-1-3">text-1-3235,9042
+<div id="outline-container-sec-1-4" class="outline-3">outline-container-sec-1-4299,10262
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 专业技术能力</h3>sec-1-4300,10318
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 专业技术能力</h3>1.4 专业技术能力300,10318
+<div class="outline-text-3" id="text-1-4">text-1-4301,10402
+</div><div id="outline-container-sec-1-4-1" class="outline-4">outline-container-sec-1-4-1302,10446
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> 网络编程能力</h4>sec-1-4-1303,10510
+<div id="outline-container-sec-1-4-2" class="outline-4">outline-container-sec-1-4-2305,10606
+<h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> springweb架构</h4>sec-1-4-2306,10664
+<div id="outline-container-sec-1-4-3" class="outline-4">outline-container-sec-1-4-3308,10757
+<h4 id="sec-1-4-3"><span class="section-number-4">1.4.3</span> docker架构</h4>sec-1-4-3309,10815
+<div id="outline-container-sec-1-4-4" class="outline-4">outline-container-sec-1-4-4311,10905
+<h4 id="sec-1-4-4"><span class="section-number-4">1.4.4</span> 新技术架构</h4>sec-1-4-4312,10963
+<div id="outline-container-sec-1-4-5" class="outline-4">outline-container-sec-1-4-5314,11056
+<h4 id="sec-1-4-5"><span class="section-number-4">1.4.5</span> 爬虫搜索引擎</h4>sec-1-4-5315,11114
+<div id="outline-container-sec-1-5" class="outline-3">outline-container-sec-1-5318,11218
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 需要哪些能力</h3>sec-1-5319,11274
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 需要哪些能力</h3>1.5 需要哪些能力319,11274
+<div class="outline-text-3" id="text-1-5">text-1-5320,11358
+<div id="postamble" class="status">postamble387,12487
+
+_posts/2018-04-08-2018rateyu.html,11859
+<title>2018-04-08-2018rateyu</title>2018-04-08-2018rateyu6,229
+<div id="content">content138,4813
+<h1 class="title">2018-04-08-2018rateyu</h1>2018-04-08-2018rateyu139,4833
+<div id="table-of-contents">table-of-contents140,4879
+<h2>Table of Contents</h2>Table of Contents141,4909
+<div id="text-table-of-contents">text-table-of-contents142,4937
+<div id="outline-container-sec-1" class="outline-2">outline-container-sec-1217,9829
+<h2 id="sec-1"><span class="section-number-2">1</span> 2018简历</h2>sec-1218,9883
+<h2 id="sec-1"><span class="section-number-2">1</span> 2018简历</h2>1 2018简历218,9883
+<div class="outline-text-2" id="text-1">text-1219,9955
+</div><div id="outline-container-sec-1-1" class="outline-3">outline-container-sec-1-1220,9997
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 架构能力</h3>sec-1-1221,10059
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 架构能力</h3>1.1 架构能力221,10059
+<div class="outline-text-3" id="text-1-1">text-1-1222,10137
+</div><div id="outline-container-sec-1-1-1" class="outline-4">outline-container-sec-1-1-1223,10181
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> 设计了什么软件 有哪些深sec-1-1-1224,10245
+<div id="outline-container-sec-1-1-2" class="outline-4">outline-container-sec-1-1-2226,10369
+<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> 多线程 锁&amp;分布式锁&amsec-1-1-2227,10427
+<div id="outline-container-sec-1-1-3" class="outline-4">outline-container-sec-1-1-3229,10571
+<h4 id="sec-1-1-3"><span class="section-number-4">1.1.3</span> java虚拟机 visualvm<sub>jstacksec-1-1-3230,10629
+<div id="outline-container-sec-1-1-4" class="outline-4">outline-container-sec-1-1-4232,10746
+<h4 id="sec-1-1-4"><span class="section-number-4">1.1.4</span> 高性能网络 1传输selector模sec-1-1-4233,10804
+<div id="outline-container-sec-1-1-5" class="outline-4">outline-container-sec-1-1-5235,11097
+<h4 id="sec-1-1-5"><span class="section-number-4">1.1.5</span> 开源软件  ES &amp;netty &amp;sec-1-1-5236,11155
+<div id="outline-container-sec-1-1-6" class="outline-4">outline-container-sec-1-1-6238,11339
+<h4 id="sec-1-1-6"><span class="section-number-4">1.1.6</span> ES 1B树&amp;倒排索引 2存储sec-1-1-6239,11397
+<div id="outline-container-sec-1-1-7" class="outline-4">outline-container-sec-1-1-7241,11699
+<h4 id="sec-1-1-7"><span class="section-number-4">1.1.7</span> 数据结构、算法&amp;数学 sec-1-1-7242,11757
+<div id="outline-container-sec-1-1-8" class="outline-4">outline-container-sec-1-1-8244,12052
+<h4 id="sec-1-1-8"><span class="section-number-4">1.1.8</span> 死磕源码  map&amp; 高效map遍sec-1-1-8245,12110
+<div id="outline-container-sec-1-1-9" class="outline-4">outline-container-sec-1-1-9247,12226
+<h4 id="sec-1-1-9"><span class="section-number-4">1.1.9</span> 别人的10倍 提升一个量级sec-1-1-9248,12284
+<div id="outline-container-sec-1-1-10" class="outline-4">outline-container-sec-1-1-10250,12395
+<h4 id="sec-1-1-10"><span class="section-number-4">1.1.10</span> 目前系统架构 agentserver sec-1-1-10251,12454
+<div id="outline-container-sec-1-1-11" class="outline-4">outline-container-sec-1-1-11253,12578
+<h4 id="sec-1-1-11"><span class="section-number-4">1.1.11</span> 业务监控问题 业务监控sec-1-1-11254,12637
+<div id="outline-container-sec-1-1-12" class="outline-4">outline-container-sec-1-1-12256,12788
+<h4 id="sec-1-1-12"><span class="section-number-4">1.1.12</span> spring<sub>boot</sub></h4>sec-1-1-12257,12847
+<div id="outline-container-sec-1-1-13" class="outline-4">outline-container-sec-1-1-13259,12948
+<h4 id="sec-1-1-13"><span class="section-number-4">1.1.13</span> docker</h4>sec-1-1-13260,13007
+<div id="outline-container-sec-1-1-14" class="outline-4">outline-container-sec-1-1-14262,13093
+<h4 id="sec-1-1-14"><span class="section-number-4">1.1.14</span> 错误排查 500服务器错误sec-1-1-14263,13152
+<div id="outline-container-sec-1-1-15" class="outline-4">outline-container-sec-1-1-15265,13302
+<h4 id="sec-1-1-15"><span class="section-number-4">1.1.15</span> mybatis+前端界面</h4>sec-1-1-15266,13361
+<div id="outline-container-sec-1-1-16" class="outline-4">outline-container-sec-1-1-16268,13461
+<h4 id="sec-1-1-16"><span class="section-number-4">1.1.16</span> 沟通</h4>sec-1-1-16269,13520
+<div id="outline-container-sec-1-2" class="outline-3">outline-container-sec-1-2272,13614
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 工作问题</h3>sec-1-2273,13670
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 工作问题</h3>1.2 工作问题273,13670
+<div class="outline-text-3" id="text-1-2">text-1-2274,13748
+</div><div id="outline-container-sec-1-2-1" class="outline-4">outline-container-sec-1-2-1275,13792
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> 汇报本周三个问题 本月惊sec-1-2-1276,13856
+<div class="outline-text-4" id="text-1-2-1">text-1-2-1277,13963
+<div id="outline-container-sec-1-2-2" class="outline-4">outline-container-sec-1-2-2283,14203
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> 拒绝算法（灯亮） 问题本sec-1-2-2284,14261
+<div id="outline-container-sec-1-2-3" class="outline-4">outline-container-sec-1-2-3286,14428
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> 服务器的升级问题</h4>sec-1-2-3287,14486
+<div id="outline-container-sec-1-2-4" class="outline-4">outline-container-sec-1-2-4289,14588
+<h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> 服务器的管理问题</h4>sec-1-2-4290,14646
+<div id="outline-container-sec-1-2-5" class="outline-4">outline-container-sec-1-2-5292,14748
+<h4 id="sec-1-2-5"><span class="section-number-4">1.2.5</span> mysql数据库管理问题 性能sec-1-2-5293,14806
+<div id="outline-container-sec-1-2-6" class="outline-4">outline-container-sec-1-2-6295,14923
+<h4 id="sec-1-2-6"><span class="section-number-4">1.2.6</span> 云主机的管理问题</h4>sec-1-2-6296,14981
+<div id="outline-container-sec-1-2-7" class="outline-4">outline-container-sec-1-2-7298,15083
+<h4 id="sec-1-2-7"><span class="section-number-4">1.2.7</span> 云主机的升级问题 下载自sec-1-2-7299,15141
+<div id="outline-container-sec-1-3" class="outline-3">outline-container-sec-1-3304,15277
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 其他特长</h3>sec-1-3305,15333
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 其他特长</h3>1.3 其他特长305,15333
+<div class="outline-text-3" id="text-1-3">text-1-3306,15411
+</div><div id="outline-container-sec-1-3-1" class="outline-4">outline-container-sec-1-3-1307,15455
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> 团队管理 先行动在思考&asec-1-3-1308,15519
+<div id="outline-container-sec-1-3-2" class="outline-4">outline-container-sec-1-3-2310,15682
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> 项目经验 项目看板管理</sec-1-3-2311,15740
+<div id="outline-container-sec-1-3-3" class="outline-4">outline-container-sec-1-3-3313,15849
+<h4 id="sec-1-3-3"><span class="section-number-4">1.3.3</span> 谈判能力 屈服于事实 不被sec-1-3-3314,15907
+<div id="outline-container-sec-1-3-4" class="outline-4">outline-container-sec-1-3-4316,16137
+<h4 id="sec-1-3-4"><span class="section-number-4">1.3.4</span> 话生比产 嘴巴战斗状态&asec-1-3-4317,16195
+<div id="outline-container-sec-1-3-5" class="outline-4">outline-container-sec-1-3-5319,16337
+<h4 id="sec-1-3-5"><span class="section-number-4">1.3.5</span> 落实产品 遇到问题解决问sec-1-3-5320,16395
+<div id="outline-container-sec-1-4" class="outline-3">outline-container-sec-1-4324,16523
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 面试问题</h3>sec-1-4325,16579
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 面试问题</h3>1.4 面试问题325,16579
+<div class="outline-text-3" id="text-1-4">text-1-4326,16657
+</div><div id="outline-container-sec-1-4-1" class="outline-4">outline-container-sec-1-4-1327,16701
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> 1个人 做什么<sub>路线</subsec-1-4-1328,16765
+<div id="outline-container-sec-1-5" class="outline-3">outline-container-sec-1-5332,17176
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 新学习</h3>sec-1-5333,17232
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 新学习</h3>1.5 新学习333,17232
+<div class="outline-text-3" id="text-1-5">text-1-5334,17307
+</div><div id="outline-container-sec-1-5-1" class="outline-4">outline-container-sec-1-5-1335,17351
+<h4 id="sec-1-5-1"><span class="section-number-4">1.5.1</span> 理财 月线买入&amp;净收益sec-1-5-1336,17415
+<div id="outline-container-sec-1-5-2" class="outline-4">outline-container-sec-1-5-2338,17538
+<h4 id="sec-1-5-2"><span class="section-number-4">1.5.2</span> 吴军 笨慢 数据结构算法<sec-1-5-2339,17596
+<div class="outline-text-4" id="text-1-5-2">text-1-5-2340,17698
+<div id="outline-container-sec-1-5-3" class="outline-4">outline-container-sec-1-5-3346,17936
+<h4 id="sec-1-5-3"><span class="section-number-4">1.5.3</span> 数学之美</h4>sec-1-5-3347,17994
+<div id="outline-container-sec-1-5-4" class="outline-4">outline-container-sec-1-5-4349,18084
+<h4 id="sec-1-5-4"><span class="section-number-4">1.5.4</span> 简单数学基础</h4>sec-1-5-4350,18142
+<div id="outline-container-sec-1-5-5" class="outline-4">outline-container-sec-1-5-5352,18238
+<h4 id="sec-1-5-5"><span class="section-number-4">1.5.5</span> 超个 比早上聪明些</h4>sec-1-5-5353,18296
+<div id="outline-container-sec-1-5-6" class="outline-4">outline-container-sec-1-5-6355,18399
+<h4 id="sec-1-5-6"><span class="section-number-4">1.5.6</span> 30天特训</h4>sec-1-5-6356,18457
+<div id="outline-container-sec-1-5-7" class="outline-4">outline-container-sec-1-5-7358,18546
+<h4 id="sec-1-5-7"><span class="section-number-4">1.5.7</span> 元认知 笑来</h4>sec-1-5-7359,18604
+<div id="outline-container-sec-1-5-8" class="outline-4">outline-container-sec-1-5-8361,18698
+<h4 id="sec-1-5-8"><span class="section-number-4">1.5.8</span> 原则 目标 算法</h4>sec-1-5-8362,18756
+<div id="outline-container-sec-1-5-9" class="outline-4">outline-container-sec-1-5-9364,18854
+<h4 id="sec-1-5-9"><span class="section-number-4">1.5.9</span> 逻辑思维 不断扩大自己的sec-1-5-9365,18912
+<div id="outline-container-sec-1-5-10" class="outline-4">outline-container-sec-1-5-10367,19079
+<h4 id="sec-1-5-10"><span class="section-number-4">1.5.10</span> 提高职场价值 信任 大局sec-1-5-10368,19138
+<div class="outline-text-4" id="text-1-5-10">text-1-5-10369,19258
+<div id="outline-container-sec-1-6" class="outline-3">outline-container-sec-1-6376,19883
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> 运动锻炼 李笑来</h3>sec-1-6377,19939
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> 运动锻炼 李笑来</h3>1.6 运动锻炼 李笑来377,19939
+<div class="outline-text-3" id="text-1-6">text-1-6378,20027
+</div><div id="outline-container-sec-1-6-1" class="outline-4">outline-container-sec-1-6-1379,20071
+<h4 id="sec-1-6-1"><span class="section-number-4">1.6.1</span> 俯卧撑</h4>sec-1-6-1380,20135
+<div id="outline-container-sec-1-6-2" class="outline-4">outline-container-sec-1-6-2382,20222
+<h4 id="sec-1-6-2"><span class="section-number-4">1.6.2</span> 跑步</h4>sec-1-6-2383,20280
+<div id="outline-container-sec-1-6-3" class="outline-4">outline-container-sec-1-6-3385,20364
+<h4 id="sec-1-6-3"><span class="section-number-4">1.6.3</span> 仰卧起坐</h4>sec-1-6-3386,20422
+<div id="postamble" class="status">postamble391,20536
+
+_posts/2018-09-07-学习markdown.md,44
+#是一级标题，是一级标题，3,18
+
+_posts/2018-09-07-开始写作.md,482
+# 开始我的安静写作开始我的安静写作1,0
+## 最近有什么要分享?最近有什么要分享?2,28
+## 为什么觉得这个观点有价值？为什么觉得这个观点有价值？3,58
+## 需要哪些基本概念？需要哪些基本概念？4,102
+## 该如何去做该如何去做5,134
+## 你的观点是什么，你为什么和我说这个？你的观点是什么，你为什么和我说这个？6,154
+# vimfx 快捷键操作vimfx 快捷键操作13,307
+
+_posts/2018-9-7-ansible学习.md,165
+# 功能特性：功能特性：1,0
+# 支持inventory支持inventory14,324
+# 支持ad-hoc命令支持ad-hoc命令20,522
+# 支持playbook支持playbook27,682
+
+_posts/2019-04-25求职.md,96
+# 找个工作找个工作1,0
+## 简历一直没写出来啊简历一直没写出来啊3,18
+
+_posts/2021-10-27-大数据大纲.md,185
+## 目标是提供大学生群体目标是提供大学生群体1,0
+## 实战环境实战环境6,89
+## 原理原理7,106
+## 创业目标创业目标9,119
+## 模块模块16,253
+
+_posts/2021-10-27-大数据论文学习-gfs1-读取.md,640
+## 三驾马车三驾马车1,0
+### 两个基础两个基础7,236
+## gfs-master的3个身份gfs-master的3个身份12,371
+### 对于chunkserver,目录服务对于chunkserver,目录服务14,469
+#### master 里面会存放三种主要的元数据（metadata）master 里面会存放三种主要的元数据（metadata）15,505
+#### 读取文件的流程?读取文件的流程?20,993
+### 对于backupmaster,同步复制主从架构的主节点对于backupmaster,同步复制主从架构的主节点26,1833
+### 对于shadowmaster,异步复制到主从架构主节点对于shadowmaster,异步复制到主从架构主节点33,2958
+
+_posts/2021-10-28-大数据节点论文学习-导读.md,221
+## 论文的意义论文的意义1,0
+## 课程设计课程设计8,983
+## 什么是大数据什么是大数据19,2542
+## 三驾马车和基础设施三驾马车和基础设施26,2974
+## olap oltpolap oltp36,3914
+
+_posts/2021-9-25-如何架构设计秒杀系统.md,3176
+# 亿级秒杀系统亿级秒杀系统1,0
+## 场景场景7,73
+### 用户用户9,86
+### 秒杀点击秒杀点击11,100
+### 付款付款13,120
+## 几个维度分析几个维度分析17,138
+# 三高设计三高设计21,167
+# 秒杀实战 核心秒杀实战 核心50,578
+## 功能分离功能分离52,603
+# 秒杀环境启动秒杀环境启动64,938
+## 体验步骤体验步骤75,1128
+## openrestry日志openrestry日志138,2464
+#user  nobody;user144,2636
+#开发环境开发环境147,2676
+## lua远程调试lua远程调试152,2732
+# 秒杀设计核心秒杀设计核心172,2949
+## 业务解耦业务解耦174,2973
+## 系统分层系统分层176,2992
+### 常见互联网分层架构常见互联网分层架构178,3011
+## 异地多活异地多活214,3838
+## 流量架构流量架构218,3876
+### 流量预估流量预估220,3895
+### 十万 百万 千万 亿级压力评估十万 百万 千万 亿级压力评估226,4030
+### 各个组件并发能力参考值各个组件并发能力参考值228,4077
+### 流量规划!!流量规划!!230,4118
+## 存储架构存储架构232,4140
+## 实操服务层实操服务层242,4387
+## 思考思考246,4413
+## ddd设计秒杀ddd设计秒杀248,4426
+# nginx和lua开发调试nginx和lua开发调试262,4565
+## lua操作redislua操作redis270,5284
+## lua操作redis命令lua操作redis命令286,5529
+##  首先要增加秒杀商品库存首先要增加秒杀商品库存290,5578
+## 1. 复杂流程 使用swagger暴露秒杀成功 (091)1. 复杂流程 使用swagger暴露秒杀成功 (091)298,5919
+## 2. 依据用户id和 exposedkey 获取令牌2. 依据用户id和 exposedkey 获取令牌314,6324
+## 3. 开始秒杀3. 开始秒杀318,6379
+## jpa自动建表jpa自动建表322,6405
+## 数据结构数据结构328,6435
+# 简历简历344,6736
+## 专业技能成功案例专业技能成功案例346,6748
+## 项目经验成功案例项目经验成功案例352,6993
+## 学习项目学习项目362,7258
+## **一定要实操****一定要实操**370,7598
+## 对技术性能 有自己追求对技术性能 有自己追求374,7731
+## 简历模板简历模板384,8122
+# 能像写代码一样写PPT?能像写代码一样写PPT?394,8398
+# 快捷键快捷键400,8506
+# 分布式事务分布式事务406,8556
+# nginx lua redis 环境(093)nginx lua redis 环境(093)410,8581
+### centos 安装 openrestry环境centos 安装 openrestry环境412,8614
+### 开发环境 idea emmylua开发环境 idea emmylua420,9338
+### 启动openrestry启动openrestry422,9371
+## lua redis 令牌发放 库存预减(094)lua redis 令牌发放 库存预减(094)426,9502
+## rocketmq 进行削峰(095)rocketmq 进行削峰(095)428,9549
+## id生成算法(096)  核心编程卷1 13.4id生成算法(096)  核心编程卷1 13.4430,9582
+## jedis+lua 分布式分段锁 博文(097)jedis+lua 分布式分段锁 博文(097)444,10061
+#### 问题问题458,10350
+## redis分段锁(098)redis分段锁(098)464,10476
+## 高并发 mysql热点行 更新问题应对高并发 mysql热点行 更新问题应对470,10613
+# github watch star fork作用github watch star fork作用480,10885
+
+_posts/2021-9-25-学习系统.md,82
+# 让学习更有趣,让你爱上学习让学习更有趣,让你爱上学习1,0
+
+_posts/2022-01-09-图床打造.md,182
+## github图床打造-picgo 配置github图床打造-picgo 配置1,0
+## vscode 对应的piggo配置vscode 对应的piggo配置5,160
+## gitee配置成功gitee配置成功12,425
+
+_posts/2022-01-10-springcloud微服务.md,182
+## 组件环境组件环境1,0
+## 搭建eureka服务端，没想到第一步就被卡住了搭建eureka服务端，没想到第一步就被卡住了9,151
+## 问题问题14,356
+
+_posts/2022-01-11-2021总结.md,21
+## 总结总结1,0
+
+_posts/2022-01-19-订餐小程序开发.md,137
+## 小程序订餐系统小程序订餐系统1,0
+### 菜单列表 返回菜单列表 返回5,32
+### 商品返回商品返回11,805
+
+_posts/2022-01-20-linux安装https证书.md,0
+
+_posts/2024-01-16-新年plan-zz.html,8555
+<title>&lrm;</title>&lrm;9,394
+<div id="content" class="content">content219,8443
+<div id="table-of-contents" role="doc-toc">table-of-contents220,8478
+<h2>Table of Contents</h2>Table of Contents221,8522
+<div id="text-table-of-contents" role="doc-toc">text-table-of-contents222,8549
+<div id="outline-container-orgda8b99a" class="outline-2">outline-container-orgda8b99a255,10108
+<h2 id="orgda8b99a"><span class="section-number-2">1.</span> emacs magit,org-mod</h2>orgda8b99a256,10166
+<h2 id="orgda8b99a"><span class="section-number-2">1.</span> emacs magit,org-mod</h2>1. emacs magit,org-mod256,10166
+<div class="outline-text-2" id="text-1">text-1257,10252
+<div id="outline-container-org3cb4d40" class="outline-3">outline-container-org3cb4d40263,10368
+<h3 id="org3cb4d40"><span class="section-number-3">1.1.</span> magit使用</h3>org3cb4d40264,10426
+<h3 id="org3cb4d40"><span class="section-number-3">1.1.</span> magit使用</h3>1.1. magit使用264,10426
+<div class="outline-text-3" id="text-1-1">text-1-1265,10506
+<div id="outline-container-org1befdc1" class="outline-3">outline-container-org1befdc1304,11341
+<h3 id="org1befdc1"><span class="section-number-3">1.2.</span> magit 常用命令</h3>org1befdc1305,11399
+<h3 id="org1befdc1"><span class="section-number-3">1.2.</span> magit 常用命令</h3>1.2. magit 常用命令305,11399
+<div class="outline-text-3" id="text-1-2">text-1-2306,11486
+<div id="outline-container-orgeaba066" class="outline-3">outline-container-orgeaba066329,12158
+<h3 id="orgeaba066"><span class="section-number-3">1.3.</span> emacs基本使用</h3>orgeaba066330,12216
+<h3 id="orgeaba066"><span class="section-number-3">1.3.</span> emacs基本使用</h3>1.3. emacs基本使用330,12216
+<div class="outline-text-3" id="text-1-3">text-1-3331,12302
+<div id="outline-container-org1b88942" class="outline-3">outline-container-org1b88942376,13328
+<h3 id="org1b88942"><span class="section-number-3">1.4.</span> dired文件夹模式</h3>org1b88942377,13386
+<h3 id="org1b88942"><span class="section-number-3">1.4.</span> dired文件夹模式</h3>1.4. dired文件夹模式377,13386
+<div class="outline-text-3" id="text-1-4">text-1-4378,13475
+<div id="outline-container-org9dc53b7" class="outline-3">outline-container-org9dc53b7417,14445
+<h3 id="org9dc53b7"><span class="section-number-3">1.5.</span> emacs windows上使用</h3>org9dc53b7418,14503
+<h3 id="org9dc53b7"><span class="section-number-3">1.5.</span> emacs windows上使用</h3>1.5. emacs windows上使用418,14503
+<div class="outline-text-3" id="text-1-5">text-1-5419,14594
+<div id="outline-container-org4876770" class="outline-3">outline-container-org4876770437,15148
+<h3 id="org4876770"><span class="section-number-3">1.6.</span> org-mod</h3>org4876770438,15206
+<h3 id="org4876770"><span class="section-number-3">1.6.</span> org-mod</h3>1.6. org-mod438,15206
+<div class="outline-text-3" id="text-1-6">text-1-6439,15282
+<div id="outline-container-orgc39120a" class="outline-4">outline-container-orgc39120a453,15681
+<h4 id="orgc39120a"><span class="section-number-4">1.6.1.</span> org文件导出为html文件</horgc39120a454,15739
+<div class="outline-text-4" id="text-1-6-1">text-1-6-1455,15838
+<div id="outline-container-org8337ab9" class="outline-4">outline-container-org8337ab9464,16085
+<h4 id="org8337ab9"><span class="section-number-4">1.6.2.</span> 列表和checkbox使用</h4>org8337ab9465,16143
+<div class="outline-text-4" id="text-1-6-2">text-1-6-2466,16237
+<div id="outline-container-orge018bb3" class="outline-4">outline-container-orge018bb3486,16685
+<h4 id="orge018bb3"><span class="section-number-4">1.6.3.</span> 其它：</h4>orge018bb3487,16743
+<div class="outline-text-4" id="text-1-6-3">text-1-6-3488,16823
+<div id="outline-container-org66f6a7f" class="outline-4">outline-container-org66f6a7f507,17338
+<h4 id="org66f6a7f"><span class="section-number-4">1.6.4.</span> org中到处的文件如何自动org66f6a7f508,17396
+<div class="outline-text-4" id="text-1-6-4">text-1-6-4509,17518
+<div id="outline-container-orgda84fb3" class="outline-3">outline-container-orgda84fb3520,17720
+<h3 id="orgda84fb3"><span class="section-number-3">1.7.</span> 标签搜索</h3>orgda84fb3521,17778
+<h3 id="orgda84fb3"><span class="section-number-3">1.7.</span> 标签搜索</h3>1.7. 标签搜索521,17778
+<div class="outline-text-3" id="text-1-7">text-1-7522,17859
+<div id="outline-container-org080edd5" class="outline-3">outline-container-org080edd5534,18147
+<h3 id="org080edd5"><span class="section-number-3">1.8.</span> yasnippet</h3>org080edd5535,18205
+<h3 id="org080edd5"><span class="section-number-3">1.8.</span> yasnippet</h3>1.8. yasnippet535,18205
+<div class="outline-text-3" id="text-1-8">text-1-8536,18283
+<div id="outline-container-org457c52b" class="outline-3">outline-container-org457c52b544,18403
+<h3 id="org457c52b"><span class="section-number-3">1.9.</span> eww文本浏览器</h3>org457c52b545,18461
+<h3 id="org457c52b"><span class="section-number-3">1.9.</span> eww文本浏览器</h3>1.9. eww文本浏览器545,18461
+<div class="outline-text-3" id="text-1-9">text-1-9546,18548
+<div id="outline-container-org7b252fd" class="outline-3">outline-container-org7b252fd564,19075
+<h3 id="org7b252fd"><span class="section-number-3">1.10.</span> vim emacs 快捷键比较</h3>org7b252fd565,19133
+<h3 id="org7b252fd"><span class="section-number-3">1.10.</span> vim emacs 快捷键比较</h3>1.10. vim emacs 快捷键比较565,19133
+<div class="outline-text-3" id="text-1-10">text-1-10566,19228
+<div id="outline-container-orgf3b743d" class="outline-3">outline-container-orgf3b743d668,24424
+<h3 id="orgf3b743d"><span class="section-number-3">1.11.</span> 安装自定义的theme</h3>orgf3b743d669,24482
+<h3 id="orgf3b743d"><span class="section-number-3">1.11.</span> 安装自定义的theme</h3>1.11. 安装自定义的theme669,24482
+<div class="outline-text-3" id="text-1-11">text-1-11670,24575
+<div id="outline-container-org2e44e9e" class="outline-3">outline-container-org2e44e9e682,24792
+<h3 id="org2e44e9e"><span class="section-number-3">1.12.</span> 如何设计并实现一个百万org2e44e9e683,24850
+<h3 id="org2e44e9e"><span class="section-number-3">1.12.</span> 如何设计并实现一个百万1.12. 如何设计并实现一个百万并发的服务端程序架构683,24850
+<div id="outline-container-org60db604" class="outline-3">outline-container-org60db604686,24991
+<h3 id="org60db604"><span class="section-number-3">1.13.</span> emacs grep 命令</h3>org60db604687,25049
+<h3 id="org60db604"><span class="section-number-3">1.13.</span> emacs grep 命令</h3>1.13. emacs grep 命令687,25049
+<div class="outline-text-3" id="text-1-13">text-1-13688,25136
+<div id="outline-container-org98ae0d2" class="outline-3">outline-container-org98ae0d2696,25281
+<h3 id="org98ae0d2"><span class="section-number-3">1.14.</span> emacs快速粘贴图片到org文org98ae0d2697,25339
+<h3 id="org98ae0d2"><span class="section-number-3">1.14.</span> emacs快速粘贴图片到org文1.14. emacs快速粘贴图片到org文件中697,25339
+<div class="outline-text-3" id="text-1-14">text-1-14698,25447
+<div id="outline-container-org07b0491" class="outline-3">outline-container-org07b0491721,26086
+<h3 id="org07b0491"><span class="section-number-3">1.15.</span> 如何给shell添加书签</h3>org07b0491722,26144
+<h3 id="org07b0491"><span class="section-number-3">1.15.</span> 如何给shell添加书签</h3>1.15. 如何给shell添加书签722,26144
+<div class="outline-text-3" id="text-1-15">text-1-15723,26240
+<div id="outline-container-org8dbce00" class="outline-3">outline-container-org8dbce00769,28254
+<h3 id="org8dbce00"><span class="section-number-3">1.16.</span> eshell 命令行ps -ef | grpe jaorg8dbce00770,28312
+<h3 id="org8dbce00"><span class="section-number-3">1.16.</span> eshell 命令行ps -ef | grpe ja1.16. eshell 命令行ps -ef | grpe java后，无法显示全命令行参数770,28312
+<div class="outline-text-3" id="text-1-16">text-1-16771,28452
+<div id="outline-container-orgdbf7e99" class="outline-3">outline-container-orgdbf7e99794,28813
+<h3 id="orgdbf7e99"><span class="section-number-3">1.17.</span> tcpdump和wirdshark</h3>orgdbf7e99795,28871
+<h3 id="orgdbf7e99"><span class="section-number-3">1.17.</span> tcpdump和wirdshark</h3>1.17. tcpdump和wirdshark795,28871
+<div class="outline-text-3" id="text-1-17">text-1-17796,28960
+<div id="postamble" class="status">postamble811,29293
+
+_posts/2024-01-16-新年plan-zz.md,2111
+# Table of ContentsTable of Contents2,1
+# emacs magit,org-modemacs magit,org-mod43,1678
+## emacs基本使用emacs基本使用50,1782
+## dired文件夹模式dired文件夹模式83,2624
+## emacs windows上使用emacs windows上使用113,3380
+## org-modorg-mod126,3829
+### org文件导出为html文件org文件导出为html文件138,4144
+### 列表和checkbox使用列表和checkbox使用147,4333
+### 其它：其它：161,4599
+### org中到处的文件如何自动把回车放进去org中到处的文件如何自动把回车放进去178,4945
+## 标签搜索标签搜索187,5124
+## yasnippetyasnippet197,5369
+## eww文本浏览器eww文本浏览器205,5451
+## emacs 帮助相关emacs 帮助相关223,5802
+## emacs搜索emacs搜索231,5935
+### windows说明windows说明268,7104
+### 变量定义和函数定义的方法变量定义和函数定义的方法280,7588
+### emacs插件推荐emacs插件推荐285,7656
+### emacs选择多行字符串，方便的方法emacs选择多行字符串，方便的方法292,7801
+## emacs插件推荐ido和smexemacs插件推荐ido和smex299,7959
+## eww 快捷键eww 快捷键308,8091
+## emacs grep 命令emacs grep 命令328,8488
+## emacs快速粘贴图片到org文件中emacs快速粘贴图片到org文件中336,8606
+## 如何给shell添加书签如何给shell添加书签353,9144
+## eshell 命令行ps -ef | grpe java后，无法显示全命令行参数eshell 命令行ps -ef | grpe java后，无法显示全命令行参数389,10929
+## magit使用magit使用406,11271
+## magit 常用命令magit 常用命令433,11889
+## magit mergemagit merge451,12410
+## emacs leetcode-cnemacs leetcode-cn460,12622
+## vim emacs 快捷键比较vim emacs 快捷键比较548,16514
+## 安装自定义的theme安装自定义的theme649,21995
+## windows休眠windows休眠659,22178
+## 如何设计并实现一个百万并发的服务端程序架构如何设计并实现一个百万并发的服务端程序架构666,22237
+## tcpdump和wirdsharktcpdump和wirdshark671,22331
+## DONE macbook截图工具DONE macbook截图工具683,22574
+
+_posts/2024-01-16-新年plan-zz.org.md,1446
+# Table of ContentsTable of Contents2,1
+# emacs magit,org-modemacs magit,org-mod31,1135
+## magit使用magit使用38,1239
+## magit 常用命令magit 常用命令65,1857
+## emacs基本使用emacs基本使用83,2378
+## dired文件夹模式dired文件夹模式113,3111
+## emacs windows上使用emacs windows上使用143,3867
+## org-modorg-mod156,4316
+### org文件导出为html文件org文件导出为html文件168,4631
+### 列表和checkbox使用列表和checkbox使用177,4820
+### 其它：其它：191,5086
+### org中到处的文件如何自动把回车放进去org中到处的文件如何自动把回车放进去208,5432
+## 标签搜索标签搜索217,5611
+## yasnippetyasnippet227,5856
+## eww文本浏览器eww文本浏览器235,5938
+## vim emacs 快捷键比较vim emacs 快捷键比较253,6289
+## 安装自定义的theme安装自定义的theme354,11770
+## 如何设计并实现一个百万并发的服务端程序架构如何设计并实现一个百万并发的服务端程序架构364,11953
+## emacs grep 命令emacs grep 命令369,12047
+## emacs快速粘贴图片到org文件中emacs快速粘贴图片到org文件中377,12165
+## 如何给shell添加书签如何给shell添加书签394,12703
+## eshell 命令行ps -ef | grpe java后，无法显示全命令行参数eshell 命令行ps -ef | grpe java后，无法显示全命令行参数430,14488
+## tcpdump和wirdsharktcpdump和wirdshark447,14830
+
+_posts/2025-2-22-web开发调试相关.md,434
+# Table of ContentsTable of Contents2,2
+# web开发调试技巧web开发调试技巧14,382
+## 抓包方法抓包方法17,411
+### fiddlefiddle20,432
+### wiresharkwireshark30,731
+## chrome dev工具chrome dev工具35,795
+## 抓包到idea http reqauest抓包到idea http reqauest91,3937
+### 如何实现局部变量的传递？如何实现局部变量的传递？99,4110
+## emacs 截图报错emacs 截图报错104,4183
+
+_posts/2025-2-24-emacs学习.html,22516
+<title>&lrm;</title>&lrm;9,402
+  id="MathJax-script"MathJax-script224,8398
+<div id="content" class="content">content230,8528
+<div id="table-of-contents" role="doc-toc">table-of-contents231,8564
+<h2>Table of Contents</h2>Table of Contents232,8609
+<div id="text-table-of-contents" role="doc-toc">text-table-of-contents233,8637
+<div id="outline-container-orgc61aca9" class="outline-2">outline-container-orgc61aca9315,13049
+<h2 id="orgc61aca9"><span class="section-number-2">1.</span> emacs常见问题2025-2-24</h2>orgc61aca9316,13108
+<h2 id="orgc61aca9"><span class="section-number-2">1.</span> emacs常见问题2025-2-24</h2>1. emacs常见问题2025-2-24316,13108
+<div class="outline-text-2" id="text-1">text-1317,13202
+<div id="outline-container-org7dd1066" class="outline-3">outline-container-org7dd1066319,13252
+<h3 id="org7dd1066"><span class="section-number-3">1.1.</span> emacs基本使用</h3>org7dd1066320,13311
+<h3 id="org7dd1066"><span class="section-number-3">1.1.</span> emacs基本使用</h3>1.1. emacs基本使用320,13311
+<div class="outline-text-3" id="text-1-1">text-1-1321,13398
+<div id="outline-container-orgdb8080b" class="outline-3">outline-container-orgdb8080b372,14565
+<h3 id="orgdb8080b"><span class="section-number-3">1.2.</span> emacs快捷键</h3>orgdb8080b373,14624
+<h3 id="orgdb8080b"><span class="section-number-3">1.2.</span> emacs快捷键</h3>1.2. emacs快捷键373,14624
+<div class="outline-text-3" id="text-1-2">text-1-2374,14708
+<div id="outline-container-org17278dc" class="outline-3">outline-container-org17278dc381,14833
+<h3 id="org17278dc"><span class="section-number-3">1.3.</span> dired文件夹模式</h3>org17278dc382,14892
+<h3 id="org17278dc"><span class="section-number-3">1.3.</span> dired文件夹模式</h3>1.3. dired文件夹模式382,14892
+<div class="outline-text-3" id="text-1-3">text-1-3383,14982
+<div id="outline-container-orgc73c603" class="outline-3">outline-container-orgc73c603435,16065
+<h3 id="orgc73c603"><span class="section-number-3">1.4.</span> org-mod</h3>orgc73c603436,16124
+<h3 id="orgc73c603"><span class="section-number-3">1.4.</span> org-mod</h3>1.4. org-mod436,16124
+<div class="outline-text-3" id="text-1-4">text-1-4437,16201
+<div id="outline-container-orgd91439d" class="outline-4">outline-container-orgd91439d451,16584
+<h4 id="orgd91439d"><span class="section-number-4">1.4.1.</span> org文件导出为html文件</horgd91439d452,16643
+<div class="outline-text-4" id="text-1-4-1">text-1-4-1453,16743
+<div id="outline-container-org3d28126" class="outline-4">outline-container-org3d28126462,16981
+<h4 id="org3d28126"><span class="section-number-4">1.4.2.</span> 列表和checkbox使用</h4>org3d28126463,17040
+<div class="outline-text-4" id="text-1-4-2">text-1-4-2464,17135
+<div id="outline-container-org738291e" class="outline-4">outline-container-org738291e484,17573
+<h4 id="org738291e"><span class="section-number-4">1.4.3.</span> 其它：</h4>org738291e485,17632
+<div class="outline-text-4" id="text-1-4-3">text-1-4-3486,17713
+<div id="outline-container-org43402b5" class="outline-4">outline-container-org43402b5505,18193
+<h4 id="org43402b5"><span class="section-number-4">1.4.4.</span> org中到处的文件如何自动org43402b5506,18252
+<div class="outline-text-4" id="text-1-4-4">text-1-4-4507,18375
+<div id="outline-container-org4637e40" class="outline-3">outline-container-org4637e40518,18570
+<h3 id="org4637e40"><span class="section-number-3">1.5.</span> org-refile移动文件操作</h3>org4637e40519,18629
+<h3 id="org4637e40"><span class="section-number-3">1.5.</span> org-refile移动文件操作</h3>1.5. org-refile移动文件操作519,18629
+<div id="outline-container-org6b40082" class="outline-3">outline-container-org6b40082521,18735
+<h3 id="org6b40082"><span class="section-number-3">1.6.</span> emacs灵感笔记配置和最近打org6b40082522,18794
+<h3 id="org6b40082"><span class="section-number-3">1.6.</span> emacs灵感笔记配置和最近打1.6. emacs灵感笔记配置和最近打开的文件522,18794
+<div class="outline-text-3" id="text-1-6">text-1-6523,18911
+<div id="outline-container-org5a969c6" class="outline-4">outline-container-org5a969c6551,20066
+<h4 id="org5a969c6"><span class="section-number-4">1.6.1.</span> 单独自己实现了一个方法org5a969c6552,20125
+<div class="outline-text-4" id="text-1-6-1">text-1-6-1553,20296
+<div id="outline-container-org2dd290e" class="outline-3">outline-container-org2dd290e592,21776
+<h3 id="org2dd290e"><span class="section-number-3">1.7.</span> emacs 查找相关总结</h3>org2dd290e593,21835
+<h3 id="org2dd290e"><span class="section-number-3">1.7.</span> emacs 查找相关总结</h3>1.7. emacs 查找相关总结593,21835
+<div class="outline-text-3" id="text-1-7">text-1-7594,21929
+<div id="outline-container-org72783d8" class="outline-3">outline-container-org72783d8606,22669
+<h3 id="org72783d8"><span class="section-number-3">1.8.</span> 标签搜索</h3>org72783d8607,22728
+<h3 id="org72783d8"><span class="section-number-3">1.8.</span> 标签搜索</h3>1.8. 标签搜索607,22728
+<div class="outline-text-3" id="text-1-8">text-1-8608,22810
+<div id="outline-container-org33c8521" class="outline-3">outline-container-org33c8521620,23094
+<h3 id="org33c8521"><span class="section-number-3">1.9.</span> yasnippet</h3>org33c8521621,23153
+<h3 id="org33c8521"><span class="section-number-3">1.9.</span> yasnippet</h3>1.9. yasnippet621,23153
+<div class="outline-text-3" id="text-1-9">text-1-9622,23232
+<div id="outline-container-org0440de9" class="outline-3">outline-container-org0440de9630,23348
+<h3 id="org0440de9"><span class="section-number-3">1.10.</span> eww文本浏览器</h3>org0440de9631,23407
+<h3 id="org0440de9"><span class="section-number-3">1.10.</span> eww文本浏览器</h3>1.10. eww文本浏览器631,23407
+<div class="outline-text-3" id="text-1-10">text-1-10632,23496
+<div id="outline-container-org311836e" class="outline-3">outline-container-org311836e650,23970
+<h3 id="org311836e"><span class="section-number-3">1.11.</span> emacs预览html</h3>org311836e651,24029
+<h3 id="org311836e"><span class="section-number-3">1.11.</span> emacs预览html</h3>1.11. emacs预览html651,24029
+<div class="outline-text-3" id="text-1-11">text-1-11652,24115
+<div id="outline-container-org9270569" class="outline-3">outline-container-org9270569660,24224
+<h3 id="org9270569"><span class="section-number-3">1.12.</span> emacs 帮助相关</h3>org9270569661,24283
+<h3 id="org9270569"><span class="section-number-3">1.12.</span> emacs 帮助相关</h3>1.12. emacs 帮助相关661,24283
+<div class="outline-text-3" id="text-1-12">text-1-12662,24372
+<div id="outline-container-org8a2db82" class="outline-3">outline-container-org8a2db82669,24525
+<h3 id="org8a2db82"><span class="section-number-3">1.13.</span> <b>emacs search zz</b></h3>org8a2db82670,24584
+<h3 id="org8a2db82"><span class="section-number-3">1.13.</span> <b>emacs search zz</b></h3>1.13. emacs search zz670,24584
+<div class="outline-text-3" id="text-1-13">text-1-13671,24677
+<div id="outline-container-org769725d" class="outline-3">outline-container-org769725d680,25051
+<h3 id="org769725d"><span class="section-number-3">1.14.</span> emacs grep 命令</h3>org769725d681,25110
+<h3 id="org769725d"><span class="section-number-3">1.14.</span> emacs grep 命令</h3>1.14. emacs grep 命令681,25110
+<div class="outline-text-3" id="text-1-14">text-1-14682,25198
+<div id="outline-container-org65b3a1e" class="outline-3">outline-container-org65b3a1e689,25337
+<h3 id="org65b3a1e"><span class="section-number-3">1.15.</span> emacs搜索 zz tag阅读代码 查org65b3a1e690,25396
+<h3 id="org65b3a1e"><span class="section-number-3">1.15.</span> emacs搜索 zz tag阅读代码 查1.15. emacs搜索 zz tag阅读代码 查找定义与引用690,25396
+<div class="outline-text-3" id="text-1-15">text-1-15691,25519
+<div id="outline-container-orge931344" class="outline-4">outline-container-orge931344693,25572
+<h4 id="orge931344"><span class="section-number-4">1.15.1.</span> 查找文件名或者字符串orge931344694,25631
+<div class="outline-text-4" id="text-1-15-1">text-1-15-1695,25734
+<div id="outline-container-org673c207" class="outline-4">outline-container-org673c207714,26156
+<h4 id="org673c207"><span class="section-number-4">1.15.2.</span> 查找方法定义和引用</horg673c207715,26215
+<div class="outline-text-4" id="text-1-15-2">text-1-15-2716,26315
+<div id="outline-container-org38f2194" class="outline-4">outline-container-org38f2194738,26802
+<h4 id="org38f2194"><span class="section-number-4">1.15.3.</span> 生成etag文件</h4>org38f2194739,26861
+<div class="outline-text-4" id="text-1-15-3">text-1-15-3740,26950
+<div id="outline-container-orga8e55f7" class="outline-4">outline-container-orga8e55f7771,27778
+<h4 id="orga8e55f7"><span class="section-number-4">1.15.4.</span> 返回上一个文件</h4>orga8e55f7772,27837
+<div class="outline-text-4" id="text-1-15-4">text-1-15-4773,27931
+<div id="outline-container-orgc3d1ff7" class="outline-4">outline-container-orgc3d1ff7780,28054
+<h4 id="orgc3d1ff7"><span class="section-number-4">1.15.5.</span> windows说明</h4>orgc3d1ff7781,28113
+<div class="outline-text-4" id="text-1-15-5">text-1-15-5782,28199
+<div id="outline-container-org974112a" class="outline-4">outline-container-org974112a796,28720
+<h4 id="org974112a"><span class="section-number-4">1.15.6.</span> 变量定义和函数定义的org974112a797,28779
+<div id="outline-container-org9a50450" class="outline-4">outline-container-org9a50450800,28898
+<h4 id="org9a50450"><span class="section-number-4">1.15.7.</span> emacs插件推荐</h4>org9a50450801,28957
+<div class="outline-text-4" id="text-1-15-7">text-1-15-7802,29047
+<div id="outline-container-orgc241373" class="outline-4">outline-container-orgc241373809,29228
+<h4 id="orgc241373"><span class="section-number-4">1.15.8.</span> emacs选择多行字符串，方orgc241373810,29287
+<div class="outline-text-4" id="text-1-15-8">text-1-15-8811,29404
+<div id="outline-container-orge50f9fb" class="outline-3">outline-container-orge50f9fb818,29566
+<h3 id="orge50f9fb"><span class="section-number-3">1.16.</span> emacs插件推荐ido和smex</h3>orge50f9fb819,29625
+<h3 id="orge50f9fb"><span class="section-number-3">1.16.</span> emacs插件推荐ido和smex</h3>1.16. emacs插件推荐ido和smex819,29625
+<div class="outline-text-3" id="text-1-16">text-1-16820,29723
+<div id="outline-container-org90d6399" class="outline-3">outline-container-org90d6399828,29865
+<h3 id="org90d6399"><span class="section-number-3">1.17.</span> emacs快速粘贴图片到org文org90d6399829,29924
+<h3 id="org90d6399"><span class="section-number-3">1.17.</span> emacs快速粘贴图片到org文1.17. emacs快速粘贴图片到org文件中829,29924
+<div class="outline-text-3" id="text-1-17">text-1-17830,30033
+<div id="outline-container-orgd6811e3" class="outline-3">outline-container-orgd6811e3852,30644
+<h3 id="orgd6811e3"><span class="section-number-3">1.18.</span> eww 快捷键</h3>orgd6811e3853,30703
+<h3 id="orgd6811e3"><span class="section-number-3">1.18.</span> eww 快捷键</h3>1.18. eww 快捷键853,30703
+<div class="outline-text-3" id="text-1-18">text-1-18854,30787
+<div id="outline-container-orge1e8036" class="outline-3">outline-container-orge1e8036874,31261
+<h3 id="orge1e8036"><span class="section-number-3">1.19.</span> 如何给shell添加书签</h3>orge1e8036875,31320
+<h3 id="orge1e8036"><span class="section-number-3">1.19.</span> 如何给shell添加书签</h3>1.19. 如何给shell添加书签875,31320
+<div class="outline-text-3" id="text-1-19">text-1-19876,31417
+<div id="outline-container-orga4fd0ca" class="outline-3">outline-container-orga4fd0ca921,33324
+<h3 id="orga4fd0ca"><span class="section-number-3">1.20.</span> eshell 命令行ps -ef | grpe jaorga4fd0ca922,33383
+<h3 id="orga4fd0ca"><span class="section-number-3">1.20.</span> eshell 命令行ps -ef | grpe ja1.20. eshell 命令行ps -ef | grpe java后，无法显示全命令行参数922,33383
+<div class="outline-text-3" id="text-1-20">text-1-20923,33524
+<div id="outline-container-org85433f4" class="outline-3">outline-container-org85433f4939,33846
+<h3 id="org85433f4"><span class="section-number-3">1.21.</span> magit使用</h3>org85433f4940,33905
+<h3 id="org85433f4"><span class="section-number-3">1.21.</span> magit使用</h3>1.21. magit使用940,33905
+<div class="outline-text-3" id="text-1-21">text-1-21941,33987
+<div id="outline-container-orgec05f9c" class="outline-3">outline-container-orgec05f9c979,34801
+<h3 id="orgec05f9c"><span class="section-number-3">1.22.</span> magit 常用命令</h3>orgec05f9c980,34860
+<h3 id="orgec05f9c"><span class="section-number-3">1.22.</span> magit 常用命令</h3>1.22. magit 常用命令980,34860
+<div class="outline-text-3" id="text-1-22">text-1-22981,34949
+<div id="outline-container-org74e4ce2" class="outline-3">outline-container-org74e4ce21005,35614
+<h3 id="org74e4ce2"><span class="section-number-3">1.23.</span> magit merge</h3>org74e4ce21006,35673
+<h3 id="org74e4ce2"><span class="section-number-3">1.23.</span> magit merge</h3>1.23. magit merge1006,35673
+<div class="outline-text-3" id="text-1-23">text-1-231007,35755
+<div id="outline-container-org82616b2" class="outline-3">outline-container-org82616b21016,35995
+<h3 id="org82616b2"><span class="section-number-3">1.24.</span> emacs magit 提交乱码问题</org82616b21017,36054
+<h3 id="org82616b2"><span class="section-number-3">1.24.</span> emacs magit 提交乱码问题</1.24. emacs magit 提交乱码问题1017,36054
+<div class="outline-text-3" id="text-1-24">text-1-241018,36155
+<div id="outline-container-org3b17107" class="outline-3">outline-container-org3b171071052,37484
+<h3 id="org3b17107"><span class="section-number-3">1.25.</span> emacs 使用chatgpt</h3>org3b171071053,37543
+<h3 id="org3b17107"><span class="section-number-3">1.25.</span> emacs 使用chatgpt</h3>1.25. emacs 使用chatgpt1053,37543
+<div class="outline-text-3" id="text-1-25">text-1-251054,37633
+<div id="outline-container-org305bd78" class="outline-3">outline-container-org305bd781061,37788
+<h3 id="org305bd78"><span class="section-number-3">1.26.</span> emacs 调试lisp语言和lisp插org305bd781062,37847
+<h3 id="org305bd78"><span class="section-number-3">1.26.</span> emacs 调试lisp语言和lisp插1.26. emacs 调试lisp语言和lisp插件1062,37847
+<div class="outline-text-3" id="text-1-26">text-1-261063,37953
+<div id="outline-container-org9955649" class="outline-4">outline-container-org99556491083,38209
+<h4 id="org9955649"><span class="section-number-4">1.26.1.</span> 常用快捷键</h4>org99556491084,38268
+<div class="outline-text-4" id="text-1-26-1">text-1-26-11085,38356
+<div id="outline-container-org2655112" class="outline-3">outline-container-org26551121101,39171
+<h3 id="org2655112"><span class="section-number-3">1.27.</span> emacs lsp-mod安装方法 &amp; org26551121102,39230
+<h3 id="org2655112"><span class="section-number-3">1.27.</span> emacs lsp-mod安装方法 &amp; 1.27. emacs lsp-mod安装方法 &amp; 代码提示 &amp; 代码自动识别编译1102,39230
+<div class="outline-text-3" id="text-1-27">text-1-271103,39376
+<div id="outline-container-org8097519" class="outline-3">outline-container-org80975191145,40277
+<h3 id="org8097519"><span class="section-number-3">1.28.</span> emacs leetcode-cn</h3>org80975191146,40336
+<h3 id="org8097519"><span class="section-number-3">1.28.</span> emacs leetcode-cn</h3>1.28. emacs leetcode-cn1146,40336
+<div class="outline-text-3" id="text-1-28">text-1-281147,40424
+<div id="outline-container-org78ffb08" class="outline-3">outline-container-org78ffb081243,44591
+<h3 id="org78ffb08"><span class="section-number-3">1.29.</span> emacs 常用插件和命令 leetorg78ffb081244,44650
+<h3 id="org78ffb08"><span class="section-number-3">1.29.</span> emacs 常用插件和命令 leet1.29. emacs 常用插件和命令 leetcode-cn1244,44650
+<div class="outline-text-3" id="text-1-29">text-1-291245,44760
+<div id="outline-container-orgd379c4a" class="outline-4">outline-container-orgd379c4a1247,44813
+<h4 id="orgd379c4a"><span class="section-number-4">1.29.1.</span> leetcode-cn快捷键</h4>orgd379c4a1248,44872
+<div class="outline-text-4" id="text-1-29-1">text-1-29-11249,44965
+<div id="outline-container-orgb766cc2" class="outline-3">outline-container-orgb766cc21261,45371
+<h3 id="orgb766cc2"><span class="section-number-3">1.30.</span> emacs 插件小结-eyebrowse-desorgb766cc21262,45430
+<h3 id="orgb766cc2"><span class="section-number-3">1.30.</span> emacs 插件小结-eyebrowse-des1.30. emacs 插件小结-eyebrowse-desktop-winner1262,45430
+<div class="outline-text-3" id="text-1-30">text-1-301263,45544
+<div id="outline-container-org08c6854" class="outline-3">outline-container-org08c68541276,45990
+<h3 id="org08c6854"><span class="section-number-3">1.31.</span> vim emacs 快捷键比较</h3>org08c68541277,46049
+<h3 id="org08c6854"><span class="section-number-3">1.31.</span> vim emacs 快捷键比较</h3>1.31. vim emacs 快捷键比较1277,46049
+<div class="outline-text-3" id="text-1-31">text-1-311278,46145
+<div id="outline-container-org861a765" class="outline-3">outline-container-org861a7651380,51500
+<h3 id="org861a765"><span class="section-number-3">1.32.</span> emacs 开发与调试, 刷题还org861a7651381,51559
+<h3 id="org861a765"><span class="section-number-3">1.32.</span> emacs 开发与调试, 刷题还1.32. emacs 开发与调试, 刷题还是用mac air直接上网站刷题1381,51559
+<div class="outline-text-3" id="text-1-32">text-1-321382,51696
+<div id="outline-container-org329c26d" class="outline-3">outline-container-org329c26d1412,52114
+<h3 id="org329c26d"><span class="section-number-3">1.33.</span> emacs huge博客</h3>org329c26d1413,52173
+<h3 id="org329c26d"><span class="section-number-3">1.33.</span> emacs huge博客</h3>1.33. emacs huge博客1413,52173
+<div id="outline-container-orgcf8603b" class="outline-3">outline-container-orgcf8603b1415,52268
+<h3 id="orgcf8603b"><span class="section-number-3">1.34.</span> emacs 数据库 调试?</h3>orgcf8603b1416,52327
+<h3 id="orgcf8603b"><span class="section-number-3">1.34.</span> emacs 数据库 调试?</h3>1.34. emacs 数据库 调试?1416,52327
+<div class="outline-text-3" id="text-1-34">text-1-341417,52421
+<div id="outline-container-org79414ac" class="outline-3">outline-container-org79414ac1425,52513
+<h3 id="org79414ac"><span class="section-number-3">1.35.</span> emacs 启动idea64</h3>org79414ac1426,52572
+<h3 id="org79414ac"><span class="section-number-3">1.35.</span> emacs 启动idea64</h3>1.35. emacs 启动idea641426,52572
+<div class="outline-text-3" id="text-1-35">text-1-351427,52661
+<div id="outline-container-org6c6f5c8" class="outline-3">outline-container-org6c6f5c81438,52925
+<h3 id="org6c6f5c8"><span class="section-number-3">1.36.</span> emacs路径提示的插件</h3>org6c6f5c81439,52984
+<h3 id="org6c6f5c8"><span class="section-number-3">1.36.</span> emacs路径提示的插件</h3>1.36. emacs路径提示的插件1439,52984
+<div class="outline-text-3" id="text-1-36">text-1-361440,53081
+<div id="outline-container-orgdbbccae" class="outline-3">outline-container-orgdbbccae1446,53224
+<h3 id="orgdbbccae"><span class="section-number-3">1.37.</span> emacs和vscode如何调用gpt</horgdbbccae1447,53283
+<h3 id="orgdbbccae"><span class="section-number-3">1.37.</span> emacs和vscode如何调用gpt</h1.37. emacs和vscode如何调用gpt1447,53283
+<div class="outline-text-3" id="text-1-37">text-1-371448,53383
+<div id="orga671d01" class="figure">orga671d011459,53713
+<div id="outline-container-org9bc624a" class="outline-3">outline-container-org9bc624a1507,55278
+<h3 id="org9bc624a"><span class="section-number-3">1.38.</span> emacs 152 ubuntu 机器请求gptorg9bc624a1508,55337
+<h3 id="org9bc624a"><span class="section-number-3">1.38.</span> emacs 152 ubuntu 机器请求gpt1.38. emacs 152 ubuntu 机器请求gpt方法1508,55337
+<div class="outline-text-3" id="text-1-38">text-1-381509,55446
+<div id="outline-container-org3974a6c" class="outline-3">outline-container-org3974a6c1535,56074
+<h3 id="org3974a6c"><span class="section-number-3">1.39.</span> emacs windows上使用</h3>org3974a6c1536,56133
+<h3 id="org3974a6c"><span class="section-number-3">1.39.</span> emacs windows上使用</h3>1.39. emacs windows上使用1536,56133
+<div class="outline-text-3" id="text-1-39">text-1-391537,56226
+<div id="outline-container-org3efcf4b" class="outline-3">outline-container-org3efcf4b1555,56769
+<h3 id="org3efcf4b"><span class="section-number-3">1.40.</span> ssh登录远程windows服务器无org3efcf4b1556,56828
+<h3 id="org3efcf4b"><span class="section-number-3">1.40.</span> ssh登录远程windows服务器无1.40. ssh登录远程windows服务器无法调用emacs配置的环境变量1556,56828
+<div class="outline-text-3" id="text-1-40">text-1-401557,56968
+<div id="outline-container-orgc366dca" class="outline-3">outline-container-orgc366dca1574,57251
+<h3 id="orgc366dca"><span class="section-number-3">1.41.</span> windows修改键位，修改后更orgc366dca1575,57310
+<h3 id="orgc366dca"><span class="section-number-3">1.41.</span> windows修改键位，修改后更1.41. windows修改键位，修改后更加便于打字1575,57310
+<div class="outline-text-3" id="text-1-41">text-1-411576,57430
+<div id="outline-container-org17ca6af" class="outline-3">outline-container-org17ca6af1641,59250
+<h3 id="org17ca6af"><span class="section-number-3">1.42.</span> screen 踢掉原用户</h3>org17ca6af1642,59309
+<h3 id="org17ca6af"><span class="section-number-3">1.42.</span> screen 踢掉原用户</h3>1.42. screen 踢掉原用户1642,59309
+<div class="outline-text-3" id="text-1-42">text-1-421643,59402
+<div id="outline-container-org3368ace" class="outline-3">outline-container-org3368ace1663,59815
+<h3 id="org3368ace"><span class="section-number-3">1.43.</span> 安装自定义的theme</h3>org3368ace1664,59874
+<h3 id="org3368ace"><span class="section-number-3">1.43.</span> 安装自定义的theme</h3>1.43. 安装自定义的theme1664,59874
+<div class="outline-text-3" id="text-1-43">text-1-431665,59968
+<div id="postamble" class="status">postamble1678,60193
+
+_posts/2025-2-24-emacs学习.md,4290
+# Table of ContentsTable of Contents2,2
+# emacs常见问题2025-2-24emacs常见问题2025-2-2467,3269
+## emacs基本使用emacs基本使用72,3330
+## emacs快捷键emacs快捷键106,4242
+## dired文件夹模式dired文件夹模式114,4348
+## org-modorg-mod148,5248
+### org文件导出为html文件org文件导出为html文件160,5565
+### 列表和checkbox使用列表和checkbox使用169,5763
+### 其它：其它：183,6037
+### org中到处的文件如何自动把回车放进去org中到处的文件如何自动把回车放进去200,6398
+## org-refile移动文件操作org-refile移动文件操作209,6580
+## emacs灵感笔记配置和最近打开的文件emacs灵感笔记配置和最近打开的文件214,6644
+### 单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记单独自己实现了一个方法，但是无法正常追加，不知道哪里有问题，记录下239,7808
+## emacs 查找相关总结emacs 查找相关总结273,9325
+## 标签搜索标签搜索285,10006
+## yasnippetyasnippet295,10257
+## eww文本浏览器eww文本浏览器303,10343
+## emacs预览htmlemacs预览html321,10712
+## emacs 帮助相关emacs 帮助相关329,10800
+## **emacs search zz****emacs search zz**337,10937
+## emacs grep 命令emacs grep 命令347,11294
+## emacs搜索 zz tag阅读代码 查找定义与引用emacs搜索 zz tag阅读代码 查找定义与引用355,11416
+### 查找文件名或者字符串查找文件名或者字符串360,11504
+### 查找方法定义和引用查找方法定义和引用375,11897
+### 生成etag文件生成etag文件390,12339
+### 返回上一个文件返回上一个文件416,13139
+### windows说明windows说明423,13246
+### 变量定义和函数定义的方法变量定义和函数定义的方法435,13732
+### emacs插件推荐emacs插件推荐440,13805
+### emacs选择多行字符串，方便的方法emacs选择多行字符串，方便的方法447,13955
+## emacs插件推荐ido和smexemacs插件推荐ido和smex454,14118
+## emacs快速粘贴图片到org文件中emacs快速粘贴图片到org文件中463,14253
+## eww 快捷键eww 快捷键480,14792
+## 如何给shell添加书签如何给shell添加书签500,15239
+## eshell 命令行ps -ef | grpe java后，无法显示全命令行参数eshell 命令行ps -ef | grpe java后，无法显示全命令行参数536,17012
+## magit使用magit使用550,17357
+## magit 常用命令magit 常用命令577,17991
+## magit mergemagit merge596,18539
+## emacs magit 提交乱码问题emacs magit 提交乱码问题605,18754
+## emacs 使用chatgptemacs 使用chatgpt631,20014
+## emacs 调试lisp语言和lisp插件emacs 调试lisp语言和lisp插件638,20141
+### 常用快捷键常用快捷键654,20380
+## emacs lsp-mod安装方法 & 代码提示 & 代码自动识别编译emacs lsp-mod安装方法 & 代码提示 & 代码自动识别编译669,21165
+## emacs leetcode-cnemacs leetcode-cn704,22115
+## emacs 常用插件和命令 leetcode-cnemacs 常用插件和命令 leetcode-cn789,26344
+### leetcode-cn快捷键leetcode-cn快捷键794,26419
+## emacs 插件小结-eyebrowse-desktop-winneremacs 插件小结-eyebrowse-desktop-winner805,26758
+## vim emacs 快捷键比较vim emacs 快捷键比较816,27200
+## emacs 开发与调试, 刷题还是用mac air直接上网站刷题emacs 开发与调试, 刷题还是用mac air直接上网站刷题917,32839
+## emacs huge博客emacs huge博客941,33254
+## emacs 数据库 调试?emacs 数据库 调试?946,33306
+## emacs 启动idea64emacs 启动idea64954,33385
+## emacs路径提示的插件emacs路径提示的插件965,33631
+## emacs和vscode如何调用gptemacs和vscode如何调用gpt972,33766
+## emacs 152 ubuntu 机器请求gpt方法emacs 152 ubuntu 机器请求gpt方法1012,35223
+## emacs windows上使用emacs windows上使用1032,35746
+## ssh登录远程windows服务器无法调用emacs配置的环境变量ssh登录远程windows服务器无法调用emacs配置的环境变量1045,36202
+## windows修改键位，修改后更加便于打字windows修改键位，修改后更加便于打字1058,36496
+## screen 踢掉原用户screen 踢掉原用户1108,38124
+## 安装自定义的theme安装自定义的theme1123,38487
