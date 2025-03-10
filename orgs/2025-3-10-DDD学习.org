@@ -1,0 +1,25 @@
+* ddd学习
+[[https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/DDD%E5%AE%9E%E6%88%98%E8%AF%BE/18%20%20%E7%9F%A5%E8%AF%86%E7%82%B9%E4%B8%B2%E8%AE%B2%EF%BC%9A%E5%9F%BA%E4%BA%8EDDD%E7%9A%84%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1%E5%AE%9E%E4%BE%8B.md][ddd学习总结2025]]
+
+** 产品愿景
+为了满足内外部人员，他们的在线请假、自动考勤统计和外部人员管理的需求，我们建设这个在线请假考勤系统，它是一个在线请假平台，可以自动考勤统计。它可以同时支持内外网请假，同时管理内外部人员请假和定期考勤分析，而不像 HR 系统，只管理内部人员，且只能内网使用。我们的产品内外网皆可使用，可实现内外部人员无差异管理。
+![](https://ming-pics-2025.oss-cn-nanjing.aliyuncs.com/pics2025/20250310224648.png)
+
+** 场景分析
+![](https://ming-pics-2025.oss-cn-nanjing.aliyuncs.com/pics2025/20250310224739.png)
+
+** 领域建模
+第一步找出领域实体和值对象等领域对象；
+![](https://ming-pics-2025.oss-cn-nanjing.aliyuncs.com/pics2025/20250310224838.png)
+第二步找出聚合根，根据实体、值对象与聚合根的依赖关系，建立聚合；
+![](https://ming-pics-2025.oss-cn-nanjing.aliyuncs.com/pics2025/20250310224851.png)
+第三步根据业务及语义边界等因素，定义限界上下文。
+
+** 战术设计
+对象清单
+![](https://ming-pics-2025.oss-cn-nanjing.aliyuncs.com/pics2025/20250310224937.png)
+
+统一语言 DSL
+
+** 微服务架构
+![](https://ming-pics-2025.oss-cn-nanjing.aliyuncs.com/pics2025/20250310225409.png)

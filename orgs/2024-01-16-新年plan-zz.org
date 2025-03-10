@@ -1,5 +1,5 @@
 #+OPTIONS: \n:t
-* emacs magit,org-mod
+>* emacs magit,org-mod
 好久没有更新了，今年看能坚持多久！
 ** gpt问题答案备份
 pc7 
@@ -456,10 +456,25 @@ M-x rgrep RET "public.*class" RET "*.java" RET ./
 rgrep
 project-find
 
-** windows搜索  中文字符串终于可以了
-color-rg 搜索中文
+** windows搜索  中文字符串终于可以了 搜索标签 搜索文件
+两个windows程序要单独下载
+rg.exe
+ctags.exe
+ctages -e -R *
+
+color-rg 搜索中文 ctrl c s s
 使用rg.exe
 [[https://emacs-china.org/t/counsel-rg-win10/12474/6][windows-emacs搜索中文字符串问题]]
 
-project-find-file 搜索文件还是
 counsel-rg搜索标签
+project-find-file 搜索文件还是
+
+;; 绑定快捷键
+(global-set-key (kbd "C-c s f") 'project-find-file)
+(global-set-key (kbd "C-c s v") 'counsel-rg)
+(global-set-key (kbd "C-c s s") 'color-rg-search-input)
+
+*** xref emacs 内置的功能
+M . 找定义
+M ? 找引用
+M ,  返回
