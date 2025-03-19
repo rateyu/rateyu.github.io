@@ -478,3 +478,18 @@ project-find-file 搜索文件还是
 M . 找定义
 M ? 找引用
 M ,  返回
+
+** chrome devtools调试技巧
+fetch复制粘贴后，可以将结果转化为json
+.then(response => response.json())
+
+^\s*\d+\s*
+正则表达式说明
+^：匹配行首。
+\s*：匹配零个或多个空格。 
+\d+：匹配一个或多个数字。 
+\s*：匹配零个或多个空格
+
+** tcpdump命令
+673:5:    tcpdump -n -X -s 0 host 192.168.1.7 -w tt.pcap
+676:5:    tcpdump -n -X -r tt.pcap
