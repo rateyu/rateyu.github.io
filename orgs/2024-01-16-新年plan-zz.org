@@ -220,6 +220,7 @@ ctrl c ,ctrl o
 https://blog.csdn.net/sunyuhua_keyboard/article/details/141854543
 sudo nano /etc/rc.local
 
+
 #!/bin/sh -e
 /usr/bin/firefox &
 exit 0
