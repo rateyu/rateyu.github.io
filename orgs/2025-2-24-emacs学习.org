@@ -29,6 +29,15 @@ ctrl / 非常有用的撤销功能
 ** emacs快捷键
 code . / idea64 .
 ctrl alt s ,正则表达式搜索
+** emacs检查快捷键绑定
+检查当前的快捷键绑定
+ctrl h b
+describe-mode 查看当前模式是什么
+org-insert-structure-template 插入代码块
+
+如果还是不行就重新设置快捷键
+(define-key org-mode-map (kbd "C-c C-,") 'your-org-command)
+
 ** dired文件夹模式
 1. 选中文件后，在另外窗口打开，直接 按 o 即可; f 直接在当前缓冲区查看文件
 2. 焦点不过去，直接查看， ctrl o
@@ -102,6 +111,15 @@ ppp4. 标题间跳转
 或者 (setq org-export-preserve-breaks t)
 #+end_quote
 ** org-refile移动文件操作
+edit structure
+copy/cut/paste subtree
+refile copy subtree
+
+** 插件smartparens
+快速选择匹配括号
+快速剪切括号内的区域
+非常有用，让代码成为块状的区域，进行快捷操作
+
 ** emacs灵感笔记配置和最近打开的文件
 
 ;; 使用capture获取灵感 记录待办 记录笔记

@@ -55,3 +55,59 @@
     }
 
   [2025-02-23 Sun 10:14]
+** go python javascript常用代码list和map                               :NOTE:
+#+begin_src go
+    list := []string{"apple", "banana", "cherry"}
+    // 遍历
+    for _, item := range list {
+        fmt.Println(item)
+    }
+      m := map[string]int{"apple": 1, "banana": 2, "cherry": 3}
+    // 获取值
+    fmt.Println(m["banana"])
+    // 遍历
+    for key, value := range m {
+        fmt.Println(key, value)
+    }
+#+end_src
+
+#+begin_src python
+list = ["apple", "banana", "cherry"]
+# 遍历
+for item in list:
+    print(item)
+
+d = {"apple": 1, "banana": 2, "cherry": 3}
+# 获取值
+print(d["banana"])
+# 遍历
+for key, value in d.items():
+    print(key, value)
+#+end_src
+
+#+begin_src js
+let list = ["apple", "banana", "cherry"];
+// 遍历
+list.forEach(item => {
+    console.log(item);
+});
+
+let map = new Map();
+map.set("apple", 1);
+map.set("banana", 2);
+map.set("cherry", 3);
+// 获取值
+console.log(map.get("banana"));
+// 遍历
+map.forEach((value, key) => {
+    console.log(key, value);
+});
+#+end_src
+
+  [2025-04-04 周五 08:35]
+**                                  MCP 支持两种通信方式                                 :NOTE:
+
+MCP 支持两种通信方式：
+标准输入输出（Standard Input/Output, stdio）：客户端通过启动服务器子进程并使用标准输入（stdin）和标准输出（stdout）建立双向通信，一个服务器进程只能与启动它的客户端通信（1:1 关系）。stdio 适用于本地快速集成的场景，在本文中，我们将使用这种方式来编写 MCP 客户端。
+服务器发送事件（Server-Sent Events, SSE）：服务器作为独立进程运行，客户端和服务器代码完全解耦，支持多个客户端随时连接和断开。这种方式将在后续的系列文章中单独进行介绍。
+  [2025-04-04 周五 15:58]

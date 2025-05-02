@@ -494,3 +494,11 @@ fetch复制粘贴后，可以将结果转化为json
 ** tcpdump命令
 673:5:    tcpdump -n -X -s 0 host 192.168.1.7 -w tt.pcap
 676:5:    tcpdump -n -X -r tt.pcap
+
+
+** 代码学习
+pdf2txt
+C:\Users\myu\Documents\PARA\2Areas\codes\nien_codes\cola-java11\xunheng-cloud-cola\demo-web\demo-web-app\src\main\java\com\alibaba\demo\PDFToText.java
+
+python 向量数据库与操作
+C:\Users\myu\Documents\github\aiProject\aitest3-ok.py
