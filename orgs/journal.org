@@ -5,3 +5,5 @@
 **** [2025-02-23 Sun 09:00] test
   
   [[file:~/.emacs::"j" "Journal" entry (file+datetree "~/sources/rateyu.github.io/orgs/journal.org"]]
+
+** 我的日记<2025-05-15 Thu>

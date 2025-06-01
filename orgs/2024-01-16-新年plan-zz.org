@@ -503,6 +503,17 @@ C:\Users\myu\Documents\PARA\2Areas\codes\nien_codes\cola-java11\xunheng-cloud-co
 python 向量数据库与操作
 C:\Users\myu\Documents\github\aiProject\aitest3-ok.py
 
+** 反响代理解决跨域问题, 解决跨域问题的方案比较
 
+** debug调试综合解决方案
 
+** 跟踪技术,http sql语句 socket抓包
 
+** 团队管理反思
+一件事情反反复复做,就是做不完,有尾巴,不断擦屁股
+
+** 纳瓦尔宝典
+如何实现wealth
+1. 自己的专长,做自己喜爱和擅长的事情
+2. 筛选高价值的事情,犹豫的事情不做,优先做长期困难的事情
+3. 使用杠杆,代码和媒体 边际成本几乎为0

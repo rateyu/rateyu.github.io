@@ -855,3 +855,14 @@ github下载文件，zenburn-theme.el
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'zenburn t)
+
+** 安装dify
+下载dify
+启动dify
+运行dify
+
+1. windows环境要首先启动docker服务,可以使用命令 docker info验证服务状态
+2. 依赖的镜像包需要科学上网才能下载
+
+
+** 单点登录中如何解决跨域问题
