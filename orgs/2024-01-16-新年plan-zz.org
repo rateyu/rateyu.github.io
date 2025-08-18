@@ -517,3 +517,8 @@ C:\Users\myu\Documents\github\aiProject\aitest3-ok.py
 1. 自己的专长,做自己喜爱和擅长的事情
 2. 筛选高价值的事情,犹豫的事情不做,优先做长期困难的事情
 3. 使用杠杆,代码和媒体 边际成本几乎为0
+
+
+** 20250818
+牛b了,远程访问windows后, 可以启动 python manage.py runserver 0.0.0.0:8088 服务
+这下可以 linux windows 通吃了,哈哈哈
