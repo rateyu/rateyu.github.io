@@ -522,3 +522,11 @@ C:\Users\myu\Documents\github\aiProject\aitest3-ok.py
 ** 20250818
 牛b了,远程访问windows后, 可以启动 python manage.py runserver 0.0.0.0:8088 服务
 这下可以 linux windows 通吃了,哈哈哈
+
+windows 开启sshserver服务后, 执行wsl 非常完美的使用 windows上的linux,很爽
+iterm
+cmd d 快速分屏使用
+cmd t 快速创建页签
+cmd 1 -9 快速切换页签
+cmd w 关闭页签
+
