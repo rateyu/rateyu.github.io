@@ -530,3 +530,19 @@ cmd t 快速创建页签
 cmd 1 -9 快速切换页签
 cmd w 关闭页签
 
+windows cmd 切换换其他命令行
+
+activate 切换到conda,deactivate
+ws       切换到wsl
+powershell 切换
+查看 wsl的版本,wsl --list --verbose
+
+我的另外一个windows机器也有了用武之处!
+
+命令后记录文件夹路径的方法
+1. alias
+   alias go_project='cd /home/user/my_project'
+2. 使用pushd 加目录,pop的弹出
+dirs 查看哪些目录
+popd +2 会返回栈中倒数第三个目录（从 0 开始计算）
+
