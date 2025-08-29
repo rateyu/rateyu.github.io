@@ -1,6 +1,7 @@
 #+OPTIONS: \n:t
 >* emacs magit,org-mod
-好久没有更新了，今年看能坚持多久！
+
+* 好久没有更新了，今年看能坚持多久！
 ** gpt问题答案备份
 pc7 
 C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
@@ -519,7 +520,7 @@ C:\Users\myu\Documents\github\aiProject\aitest3-ok.py
 3. 使用杠杆,代码和媒体 边际成本几乎为0
 
 
-** 20250818
+** 20250818 iterm快捷键 alias
 牛b了,远程访问windows后, 可以启动 python manage.py runserver 0.0.0.0:8088 服务
 这下可以 linux windows 通吃了,哈哈哈
 
@@ -546,3 +547,8 @@ powershell 切换
 dirs 查看哪些目录
 popd +2 会返回栈中倒数第三个目录（从 0 开始计算）
 
+** 2025-8-29 段永平 现金流折现
+段永平3点
+1. 唯一投资，估算未来现金流折现，未来能赚多少钱
+2. 不借钱，时间问题，有价值的好公司
+3. 做长线投资 寿命长
