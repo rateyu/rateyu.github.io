@@ -566,4 +566,7 @@ claude code api 解决方法
 在运行复杂的终端应用时（例如带有颜色的输出或终端控件的程序），希望有更好的兼容性和体验。
 在 Emacs 中嵌入一个终端环境，而不需要频繁切换模式。
 
+todo 
 txt或者md转换为pdf
+macos 修改主机名
+scutil --set HostName xxx
