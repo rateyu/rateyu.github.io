@@ -214,7 +214,7 @@ eww-open-file
 ** emacs 帮助相关
 ctrl h ,m      mod模块帮助
 ctrl h ,f/v/k 查询命令、变量、快捷键
-** *emacs search zz*
+** *emacs search zz find-name-dired*
 查找文件：使用 find-name-dired，支持文件名的通配符查找。
 eg: *ming* -> 找到文件 MingServer.java
 查找字符串：使用 grep、find-grep 或 rgrep，支持递归地在多个文件中搜索字符串。
