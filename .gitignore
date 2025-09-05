@@ -28,3 +28,4 @@ Thumbs.db
 
 # 忽略编译过程中产生的缓存文件
 *.synctex.gz
+tags
