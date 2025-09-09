@@ -1,5 +1,5 @@
 #+OPTIONS: \n:t
->* emacs magit,org-mod
+* emacs magit,org-mod
 
 * 好久没有更新了，今年看能坚持多久！
 ** gpt问题答案备份
@@ -507,7 +507,6 @@ C:\Users\myu\Documents\github\aiProject\aitest3-ok.py
 ** 反响代理解决跨域问题, 解决跨域问题的方案比较
 
 ** debug调试综合解决方案
-
 ** 跟踪技术,http sql语句 socket抓包
 
 ** 团队管理反思
@@ -518,7 +517,6 @@ C:\Users\myu\Documents\github\aiProject\aitest3-ok.py
 1. 自己的专长,做自己喜爱和擅长的事情
 2. 筛选高价值的事情,犹豫的事情不做,优先做长期困难的事情
 3. 使用杠杆,代码和媒体 边际成本几乎为0
-
 
 ** 20250818 iterm快捷键 alias
 牛b了,远程访问windows后, 可以启动 python manage.py runserver 0.0.0.0:8088 服务
@@ -547,14 +545,15 @@ powershell 切换
 dirs 查看哪些目录
 popd +2 会返回栈中倒数第三个目录（从 0 开始计算）
 
-** 2025-8-29 段永平 现金流折现 ansi-term find-name-dird搜索文件名支持通配符,grep-find字符串
+** 2025-8-29 段永平 现金流折现 
 段永平3点
 1. 唯一投资，估算未来现金流折现，未来能赚多少钱
 2. 不借钱，时间问题，有价值的好公司
 3. 做长线投资 寿命长
 
+** claude使用技巧 ansi-term find-name-dird搜索文件名支持通配符,grep-find字符串
 emacs 中 使用claude,老师滚动,用起来很不爽,
-可以使用 term命令,解决这个问题
+可以使用 term命令,解决这个问题(153可以,其它不可用)
 
 claude code api 解决方法
 使用 term 的场景：
@@ -571,7 +570,73 @@ txt或者md转换为pdf
 macos 修改主机名
 scutil --set HostName xxx
 
-** 20250905 测试
+windows和emacs的复制粘贴不要混用，否则用一个
 
 ** 20250906 合并冲突测试
+1. magit 操作 merge 基本命令
+2. 吴军,凡事要系统的进行学习,零碎的学习没有什么用,而且容易忘记
+
+*** todo清单
+1. 公司的信创oa软件架构,yapi迁移到13
+2. 进一步编写求职简历
+3. 上海的项目 跟踪下
+4. 和会街房子清理一下,制定买房计划,大事
+5. 晚上6点,户部街房子里面的杂物搬出来
+
+*** 信创oa团队优化计划
+效率低,一个人在那里反复做
+有的忙有的闲死
+
+*** 使用yapi进行统一管理所有oa的接口
+1. 优先处理rest请求的接口
+2. 优先处理rest请求的接口自动获取token,自动带上token
+3. 如何让其支持swagger？
+
+家中创建一个工程，单独重构oa项目
+C:\Users\myu\Documents\github\seeyon.8_0-proj\seeyon
+
+HP_13 github seeyon 80 这个是swaggerui改造
+
+*** mac技巧
+iterm2中复制多行记录
+选择后,按住shift选到最后
+cmd c 复制内容
+
+vim 复制
+v 选择 y复制 p粘贴
+
+org-agenda
+v w v选择查看哪种视图
+v m
+v R 报告时间
+r 刷新
+v N 现实所有待做到事情
+
+需要到agendafile中去编辑日程
+
+
+*** 帮领导提高,升级到更高级别
+
+** 文档架构
+ideas.org 思路
+notes.org 笔记
+tasks.org 待办清单
+journal.org 日程规划
+
+
+notes2.org
+test_pdf.org
+todo.org
+
+** 250909 维护自己的知识树
+org-refile支持文件夹模式,可以将标题重新导入到不同文件中
+随时让自己到笔记,挂到知识树上去
+
+org-agenda 相关功能
+
+今天买的洗碗机,终于到货了,安装上后,洗了几个碗感觉还行,以后可以解放双手了
+
+*** emacs magit相关学习
+c c , c c c a --amend相关
+切换到主分支后,移动其他分支,将某次提交 cherry-pick到主分支, 如何修改提交时间?
 

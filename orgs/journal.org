@@ -2,8 +2,16 @@
 * 2025
 ** 2025-02 February
 *** 2025-02-23 Sunday
-**** [2025-02-23 Sun 09:00] test
+**** DONE [2025-02-23 Sun 09:00] test
   
   [[file:~/.emacs::"j" "Journal" entry (file+datetree "~/sources/rateyu.github.io/orgs/journal.org"]]
 
 ** 我的日记<2025-05-15 Thu>
+
+** 2025-09 September
+*** 2025-09-09 Tuesday
+**** DONE [2025-09-09 Tue 06:46] 写日记
+DEADLINE: <2025-09-10 Wed> SCHEDULED: <2025-09-09 Tue>
+  
+  [[file:~/github/rateyu.github.io/orgs/2024-01-16-新年plan-zz.org::*250908][250908]]
+
