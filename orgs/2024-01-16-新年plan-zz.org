@@ -639,4 +639,21 @@ org-agenda 相关功能
 *** emacs magit相关学习
 c c , c c c a --amend相关
 切换到主分支后,移动其他分支,将某次提交 cherry-pick到主分支, 如何修改提交时间?
+z 添加note笔记,如何显示? D包含日记
+到指定到日期后, i 插入日记; D输出日程
+t 改变状态
+显示tag, 设置tag :
+设置优先级 ; 优先级 shift 上下键 ;shift + -
+插入时间 I
 
+设置时间 左右
+/ 过滤,
+= 模式过滤
+| 取消过滤
+
+m mark当前日程
+u 取消mark
+
+q 退出
+x 退出并包含所有打开到buffer
+[[https://www.jianshu.com/p/0d1c26abb7e6][emacs magit学习]]

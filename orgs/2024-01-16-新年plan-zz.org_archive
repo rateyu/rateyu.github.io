@@ -1,0 +1,16 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/myu/github/rateyu.github.io/orgs/2024-01-16-新年plan-zz.org
+
+
+* emacs magit相关学习
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-09-09 Tue 21:52
+:ARCHIVE_FILE: ~/github/rateyu.github.io/orgs/2024-01-16-新年plan-zz.org
+:ARCHIVE_OLPATH: 求职/250909 维护自己的知识树
+:ARCHIVE_CATEGORY: 2024-01-16-新年plan-zz
+:END:
+c c , c c c a --amend相关
+切换到主分支后,移动其他分支,将某次提交 cherry-pick到主分支, 如何修改提交时间?
+z 添加note笔记,如何显示?
