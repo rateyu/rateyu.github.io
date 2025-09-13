@@ -636,10 +636,13 @@ org-agenda 相关功能
 
 今天买的洗碗机,终于到货了,安装上后,洗了几个碗感觉还行,以后可以解放双手了
 
-*** emacs magit相关学习
+*** emacs magit相关学习 -agenda
 c c , c c c a --amend相关
 切换到主分支后,移动其他分支,将某次提交 cherry-pick到主分支, 如何修改提交时间?
-z 添加note笔记,如何显示? D包含日记
+c-c p k projectile是神器，通过这个办法可以一下子删除掉所有buffer，并且是改动的会让你确认
+
+
+z 添加note笔记,如何显示? D包含日记 note适用标题；diary适用日期，不要混了
 到指定到日期后, i 插入日记; D输出日程
 t 改变状态
 显示tag, 设置tag :
@@ -648,8 +651,30 @@ t 改变状态
 
 设置时间 左右
 / 过滤,
+
 = 模式过滤
 | 取消过滤
+
+使用命令 ctrl h m 查看快捷键
+! 关闭deadline
+!		org-agenda-toggle-deadlines
+D		org-agenda-toggle-diary
+
+;		org-timer-set-timer
+I		org-agenda-clock-in
+O		org-agenda-clock-out
+J		org-agenda-clock-goto
+L		org-agenda-recenter
+X		org-agenda-clock-cancel
+M		org-agenda-phases-of-moon
+T		org-agenda-show-tags
+
+b		org-agenda-earlier
+c		org-agenda-goto-calendar
+d		org-agenda-day-view
+e		org-agenda-set-effort
+f		org-agenda-later
+
 
 m mark当前日程
 u 取消mark

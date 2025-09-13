@@ -1,4 +1,9 @@
 * emacs常见问题2025-2-24
+** emacs 帮助相关
+ctrl h ,m      mod模块帮助
+ctrl h ,f/v/k 查询命令、变量、快捷键
+
+
 ** emacs基本使用
 - 显示文件夹后，在另外窗口打开文件
 ctrl x 4 b
@@ -413,6 +418,18 @@ https://joppot.info/posts/f2721fb2-0942-4c4e-90e2-0dbdbb329bce
 Magit 会高亮冲突的文件，显示 Unmerged 状态。
 按 e 打开冲突文件，手动解决冲突。
 冲突解决后，按 s 将文件标记为已解决。
+
+** magit 
+q 向上一级
+F 拉取
+M 合并分支
+r   重置操作
+s   git add 暂存
+u   取消暂存
+x    暂存并提交
+d   比较差异,文件内容差异
+D   与远程差异 diff origin/banchname
+v    查看文件内容差异
 
 ** emacs magit 提交乱码问题
 windows和macbook 都会提交git仓库，但是windows提交的就是乱码，
