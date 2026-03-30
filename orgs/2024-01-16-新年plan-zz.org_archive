@@ -14,3 +14,75 @@ Archived entries from file /Users/myu/github/rateyu.github.io/orgs/2024-01-16-�
 c c , c c c a --amend相关
 切换到主分支后,移动其他分支,将某次提交 cherry-pick到主分支, 如何修改提交时间?
 z 添加note笔记,如何显示?
+
+* conda 虚拟环境创建
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-01-17 Sat 22:04
+:ARCHIVE_FILE: ~/github/rateyu.github.io/orgs/2024-01-16-新年plan-zz.org
+:ARCHIVE_OLPATH: 好久没有更新了，今年看能坚持多久！
+:ARCHIVE_CATEGORY: 2024-01-16-新年plan-zz
+:END:
+conda env list
+conda create -n tts
+conda activate ChatTTS
+
+conda list
+
+conda activate ChatTTS
+pip install --force-reinstall --upgrade Pillow
+python -c "from PIL import Image; print('Pillow installed successfully')"
+
+
+conda activate chattts_env
+python -m pip list
+
+
+#+BEGIN_SRC python
+@echo off
+:: 激活 Anaconda 环境
+"C:\Users\<your_username>\anaconda3\Scripts\activate.bat" base
+
+:: 切换到程序所在目录
+cd /d "C:\path\to\your\python_script"
+
+:: 运行 Python 脚本
+python your_script.py
+#+END_src
+
+
+* gpt问题答案备份
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-01-20 Tue 21:45
+:ARCHIVE_FILE: ~/github/rateyu.github.io/orgs/2024-01-16-新年plan-zz.org
+:ARCHIVE_OLPATH: 好久没有更新了，今年看能坚持多久！
+:ARCHIVE_CATEGORY: 2024-01-16-新年plan-zz
+:END:
+pc7 
+C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
+
+
+* windows批量html转为pdf命令-windows转换失败
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-01-20 Tue 21:45
+:ARCHIVE_FILE: ~/github/rateyu.github.io/orgs/2024-01-16-新年plan-zz.org
+:ARCHIVE_OLPATH: 好久没有更新了，今年看能坚持多久！
+:ARCHIVE_CATEGORY: 2024-01-16-新年plan-zz
+:END:
+for %f in (*.html) do wkhtmltopdf "%f" "%~nf.pdf"
+
+
+* windows 命令行睡眠
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-01-20 Tue 21:45
+:ARCHIVE_FILE: ~/github/rateyu.github.io/orgs/2024-01-16-新年plan-zz.org
+:ARCHIVE_OLPATH: 好久没有更新了，今年看能坚持多久！
+:ARCHIVE_CATEGORY: 2024-01-16-新年plan-zz
+:END:
+休眠
+   shutdown /h
+睡眠
+rundll32.exe powrprof.dll,SetSuspendState Sleep
+
+ubuntu
+systemctl suspend
+

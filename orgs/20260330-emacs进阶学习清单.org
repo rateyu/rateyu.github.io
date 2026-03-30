@@ -1,0 +1,191 @@
+#+TITLE: Emacs 进阶学习清单（待学习后合并入知识库）
+#+DATE: 2026-03-30
+#+OPTIONS: toc:2 num:nil
+
+* 第一优先级：每天都会用到，先搞定这四项
+
+** 1. 键盘宏（Keyboard Macro）—— Emacs 最强杀器
+
+| 快捷键       | 功能                     |
+|--------------+--------------------------|
+| F3           | 开始录制                 |
+| F4           | 结束录制 / 执行上一次宏  |
+| C-u 50 F4    | 重复执行50次             |
+| C-x C-k e    | 编辑宏（可命名保存）     |
+
+说明：批量重复操作的核心工具，这是 Emacs 区别于其他编辑器的核心竞争力，没用过等于没学 Emacs。
+
+** 2. 现代补全框架（目前配置是2014年水平）
+
+需要安装的四件套：
+- *Vertico*    — minibuffer 候选列表（替代 ido）
+- *Orderless*  — 模糊匹配（输入词语任意顺序都能匹配）
+- *Marginalia* — 候选项旁边显示说明
+- *Consult*    — 强化版 M-x、buffer切换、grep
+
+效果：相当于 VS Code 的 Command Palette，体验质变。
+
+** 3. LSP（语言服务器）—— Java 开发必须
+
+#+begin_src emacs-lisp
+;; eglot（Emacs 29+ 内置，推荐）
+(add-hook 'java-mode-hook 'eglot-ensure)
+
+;; 或 lsp-mode（功能更全）
+(use-package lsp-mode
+  :hook (java-mode . lsp))
+#+end_src
+
+提供能力：自动补全、跳转定义、错误提示、重构、hover 文档
+
+#+begin_quote
+注意：文档里的 JDE 已过时10年，不要再用。
+#+end_quote
+
+** 4. which-key —— 解决"记不住快捷键"问题
+
+#+begin_src emacs-lisp
+(which-key-mode)
+#+end_src
+
+用法：按下 =C-x= 等待1秒，自动弹出所有 =C-x= 开头的快捷键列表，从此不需要死记快捷键。
+
+* 第二优先级：高频使用，显著提升效率
+
+** 5. expand-region —— 智能选择区域
+
+| 快捷键 | 功能                                         |
+|--------+----------------------------------------------|
+| C-=    | 逐步扩大选择范围（单词 → 语句 → 函数 → 文件）|
+
+说明：选代码块不再需要精确定位，按几下就选中想要的范围。
+
+** 6. avy —— 光标瞬间跳转
+
+#+begin_src emacs-lisp
+(global-set-key (kbd "C-;") 'avy-goto-char-2)
+#+end_src
+
+用法：按 =C-;= 然后输入目标位置的两个字符，屏幕上所有匹配处显示跳转提示字母，一键跳过去。
+
+效果：彻底替代方向键移动，大幅减少手部移动。
+
+** 7. Narrowing —— 聚焦编辑
+
+| 快捷键    | 功能                           |
+|-----------+--------------------------------|
+| C-x n n   | narrowing 到当前选区           |
+| C-x n d   | narrowing 到当前函数           |
+| C-x n w   | 取消 narrowing，恢复全文       |
+
+说明：处理大文件时，先 narrow 到目标函数，专注编辑不受干扰。
+
+** 8. 标记环（Mark Ring）—— 跳转历史
+
+| 快捷键        | 功能                             |
+|---------------+----------------------------------|
+| C-SPC C-SPC   | 设置标记（不激活选区）           |
+| C-u C-SPC     | 回到上一个标记位置（可反复跳转） |
+
+说明：跳到某处查看代码后，=C-u C-SPC= 直接跳回来，比 xref 更通用。
+
+** 9. 矩形操作（Rectangle）
+
+| 快捷键    | 功能               |
+|-----------+--------------------|
+| C-x r k   | 剪切矩形区域       |
+| C-x r y   | 粘贴矩形           |
+| C-x r t   | 用字符串替换每行   |
+| C-x r o   | 插入空白矩形       |
+
+说明：批量处理列数据、对齐代码的神器。
+
+* 第三优先级：进阶提升
+
+** 10. use-package —— 现代配置管理
+
+#+begin_src emacs-lisp
+(use-package magit
+  :bind ("C-x g" . magit-status)
+  :config
+  (setq magit-display-buffer-function
+        #'magit-display-buffer-fullframe-status-v1))
+#+end_src
+
+说明：统一管理安装、绑定、配置、延迟加载，init.el 可读性提升10倍。
+
+** 11. Org-babel —— 文学编程（把 org 当 Jupyter 用）
+
+在 org 文件中的代码块按 =C-c C-c= 直接执行，结果写回文件：
+
+#+begin_src python
+print(1 + 1)
+#+end_src
+
+#+RESULTS:
+: 2
+
+支持语言：Python / Shell / Java / SQL / R 等
+
+** 12. Org-agenda —— GTD 核心
+
+#+begin_src emacs-lisp
+(setq org-agenda-files '("~/orgs/tasks.org" "~/orgs/diary.org"))
+(global-set-key (kbd "C-c a") 'org-agenda)
+#+end_src
+
+| 快捷键    | 功能           |
+|-----------+----------------|
+| C-c a a   | 今日 agenda    |
+| C-c a t   | 所有 TODO 列表 |
+| C-c a m   | 按 tag 过滤    |
+
+** 13. Emacs Daemon —— 解决启动慢的根本问题
+
+#+begin_src shell
+# 启动守护进程（加入开机启动）
+emacs --daemon
+
+# 之后用 emacsclient 打开，瞬间响应
+emacsclient -c filename
+alias e='emacsclient -c'
+#+end_src
+
+** 14. Ediff —— 文件对比
+
+| 操作                  | 功能             |
+|-----------------------+------------------|
+| M-x ediff-files       | 对比两个文件     |
+| M-x ediff-buffers     | 对比两个 buffer  |
+| n / p                 | 下/上一个差异    |
+| a / b                 | 用 A/B 覆盖对方  |
+
+* 学习路线建议
+
+#+begin_example
+当前水平（基础操作）
+        |
+        v
+第1步：装 which-key + Vertico + Orderless（约1天）
+        |
+        v
+第2步：练键盘宏 + expand-region + avy（约1周）
+        |
+        v
+第3步：配置 LSP/eglot 用于 Java 开发（约1周）
+        |
+        v
+第4步：用 use-package 重写 init.el（1-2周）
+        |
+        v
+第5步：Org-agenda + Org-babel 工作流（持续使用）
+        |
+        v
+高手水平（自定义 Emacs Lisp 解决特定问题）
+#+end_example
+
+#+begin_quote
+一句话总结：目前掌握的是 Emacs 的"操作"，还缺"现代工具链"
+（LSP/Vertico/use-package）和"效率杀手锏"（键盘宏/avy/expand-region）。
+把第一优先级的4项装好，效率立刻翻倍。
+#+end_quote

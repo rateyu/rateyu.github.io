@@ -1,23 +1,81 @@
 #+OPTIONS: \n:t
 * emacs magit,org-mod
+** emacs refile和归档设置技巧
+(setq org-agenda-files '("d:/01/org_notes/gtd/" "d:/01/org_notes/areas/"))
+(defvar my-org-dir "d:/01/org_notes/")
+
+(setq org-refile-targets
+      `(
+        ;; 1. 包含收件箱和所有领域项目 (Agenda 文件)
+        ;; 注意：确保你之前已经 (setq org-agenda-files ...)
+        (org-agenda-files :maxlevel . 3)
+        ;; 2. 知识库 (Wiki)：扫描 wiki 文件夹
+        ;; Windows 修复：directory-files 在某些版本下对正则表达式敏感，且需确保路径存在
+        (,(when (file-directory-p (concat my-org-dir "wiki/"))
+            (directory-files (concat my-org-dir "wiki/") t "\\.org$")) :maxlevel . 1)
+
+        ;; 3. 归档文件
+        (,(concat my-org-dir "archive.org") :level . 1)
+        ))
+
+;; 3. 增强补全效率（可选但推荐）
+(setq org-refile-use-outline-path 'file)    ; 显示文件路径
+(setq org-outline-path-complete-in-steps nil) ; 一步补全路径
+** emacs agenda相关
+z 添加note笔记,如何显示? D包含日记 note适用标题；diary适用日期，不要混了
+到指定到日期后, i 插入日记; D输出日程
+t 改变状态
+显示tag, 设置tag :
+设置优先级 ; 优先级 shift 上下键 ;shift + -
+插入时间 I
+
+v
+
+org设置计划
+c c ,c d
+支持统计时间
+
+
+设置时间 左右
+/ 过滤,
+
+= 模式过滤
+| 取消过滤
+
+使用命令 ctrl h m 查看快捷键
+! 关闭deadline
+!		org-agenda-toggle-deadlines
+D		org-agenda-toggle-diary
+
+;		org-timer-set-timer
+I		org-agenda-clock-in
+O		org-agenda-clock-out
+**此处开始后会标记黄色高亮,并且统计耗费时间,精确记录时间**
+J		org-agenda-clock-goto
+L		org-agenda-recenter
+X		org-agenda-clock-cancel
+M		org-agenda-phases-of-moon
+T		org-agenda-show-tags
+
+b		org-agenda-earlier
+f		org-agenda-later
+c		org-agenda-goto-calendar
+d		org-agenda-day-view
+e		org-agenda-set-effort
+
+
+m mark当前日程
+u 取消mark
+
+q 退出
+x 退出并包含所有打开到buffer
+[[https://www.jianshu.com/p/0d1c26abb7e6][emacs magit学习]]
+
+** emacs vterm
+https://github.com/manzaltu/claude-code-ide.el
+vterm
 
 * 好久没有更新了，今年看能坚持多久！
-** gpt问题答案备份
-pc7 
-C:\Users\myu\Documents\PARA\1Projects\2025-1-21-gpt问题
-
-** windows批量html转为pdf命令-windows转换失败
-for %f in (*.html) do wkhtmltopdf "%f" "%~nf.pdf"
-
-** windows 命令行睡眠
-休眠
-   shutdown /h
-睡眠
-rundll32.exe powrprof.dll,SetSuspendState Sleep
-
-ubuntu
-systemctl suspend
-
 ** 整理算法笔记时，用word很麻烦，每次都要鼠标弄来弄去，很浪费时间
 希望整理一个文档，学习一个算法题目后，将其打印到a5点活页本书，用于以后到学习和复习
 但是整理了几个题目后，发现每次都要用鼠标进行操作，无法让自己更加专注于算法本身，
@@ -85,8 +143,6 @@ fn 空格       电量查询
 
 和上一个rk65比，这款更加给力
 
-
-
 ** docker 自动开启与关闭
 #+begin_src
 # docker update --restart=always 容器名或容器ID
@@ -145,7 +201,7 @@ ipad试了termius，blink shell和shellbean，都没有找到怎么切换中文�
 于是走了一条弯路，用iSH shell先访问terminal，然后安装openssh，最后用ssh访问远程服务器，
 这样做就可以切换中文输入发了，用起来还不错，推荐给大家。
 
-** 苹果快捷键
+** macos苹果快捷键
 *** 基本快捷键
 fn q，进入快速备忘录
 fn f6 ，勿扰模式
@@ -153,7 +209,6 @@ fn fn ，听写模式
 cmd 空格， 聚焦搜索
 opt cmd 空格，访达，搜索所有文件
 cmd z/cmd shift z对撤销再撤销
-
 
 *** 窗口快捷键
 ctrl <-/-> 两个虚拟窗口切换
@@ -186,7 +241,7 @@ cmd shift s，朗读选中单词
 cmd shift a，加入生词本
 opt 空格， 快速查词
 
-** DONE macbook截图工具
+** macbook截图工具
 :LOGBOOK:
 CLOCK: [2024-12-04 Wed 22:13]--[2024-12-04 Wed 22:13] =>  0:00
 :END:
@@ -233,14 +288,12 @@ grep -rl "Hello World" /home/user/documents/ --不显示内容
 find /path/to/directory/ -type f -exec grep -l "搜索字符串" {} +
 find /path/to/directory/ -type f | xargs grep -l "搜索字符串"
 
-
 ** 创业
 *** esp32看店项目
 1. 有人进入范围内，系统提示欢迎光临，要有不同的声音选择
 2. 支持打开与关闭功能，使用按钮进行控制
 3. 早上第一次播放天气预报和新闻联播的主要内容
 4. 播放今天星期几多少号，农历多少号
-
 
 * 求职
 ** intelj idea书签
@@ -403,7 +456,6 @@ insert into FORM_OWNER
 insert into CAP_FORM_RESOURCE
 insert into CAP_FORM_DEFINITION
 
-
 ** emacs org-mode 文件跳转实现
 [[file:c:/path/to/YourJavaFile.java::methodName][Go to methodName]]
 [[file:/path/to/YourFile.txt::10][Go to line 10]]
@@ -453,7 +505,6 @@ M-x rgrep RET "public.*class" RET *.java RET ./
 在整个项目中排除某个目录（如 test）：
 M-x rgrep RET "public.*class" RET "*.java" RET ./
 
-
 ** 其他搜索
 rgrep
 project-find
@@ -495,7 +546,6 @@ fetch复制粘贴后，可以将结果转化为json
 ** tcpdump命令
 673:5:    tcpdump -n -X -s 0 host 192.168.1.7 -w tt.pcap
 676:5:    tcpdump -n -X -r tt.pcap
-
 
 ** 代码学习
 pdf2txt
@@ -632,8 +682,6 @@ todo.org
 org-refile支持文件夹模式,可以将标题重新导入到不同文件中
 随时让自己到笔记,挂到知识树上去
 
-org-agenda 相关功能
-
 今天买的洗碗机,终于到货了,安装上后,洗了几个碗感觉还行,以后可以解放双手了
 
 *** emacs magit相关学习 -agenda
@@ -641,44 +689,16 @@ c c , c c c a --amend相关
 切换到主分支后,移动其他分支,将某次提交 cherry-pick到主分支, 如何修改提交时间?
 c-c p k projectile是神器，通过这个办法可以一下子删除掉所有buffer，并且是改动的会让你确认
 
+** macos 手机镜像操作
+c fn c 上下左右 局中显示
+cmd +- 放大于缩小显示
 
-z 添加note笔记,如何显示? D包含日记 note适用标题；diary适用日期，不要混了
-到指定到日期后, i 插入日记; D输出日程
-t 改变状态
-显示tag, 设置tag :
-设置优先级 ; 优先级 shift 上下键 ;shift + -
-插入时间 I
+** idea 断点居然可以分类
+才发现这个功能,下次还要多多尝试不同的方式
 
-设置时间 左右
-/ 过滤,
-
-= 模式过滤
-| 取消过滤
-
-使用命令 ctrl h m 查看快捷键
-! 关闭deadline
-!		org-agenda-toggle-deadlines
-D		org-agenda-toggle-diary
-
-;		org-timer-set-timer
-I		org-agenda-clock-in
-O		org-agenda-clock-out
-J		org-agenda-clock-goto
-L		org-agenda-recenter
-X		org-agenda-clock-cancel
-M		org-agenda-phases-of-moon
-T		org-agenda-show-tags
-
-b		org-agenda-earlier
-c		org-agenda-goto-calendar
-d		org-agenda-day-view
-e		org-agenda-set-effort
-f		org-agenda-later
+** 新的时代还得是电子写作,否则跟不上时代,日记可以用纸和笔么
+在目前的“牛人”群体（顶级创作者、企业家、思想家）中，主流并不是“二选一”，而是采用“双系统混合模式”（Hybrid System）。
+- **思考、复盘、创意阶段**：首选 **纸笔**。
+- **存储、检索、输出阶段**：首选 **电子笔记**。
 
 
-m mark当前日程
-u 取消mark
-
-q 退出
-x 退出并包含所有打开到buffer
-[[https://www.jianshu.com/p/0d1c26abb7e6][emacs magit学习]]
