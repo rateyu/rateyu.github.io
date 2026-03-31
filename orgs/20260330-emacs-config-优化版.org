@@ -1,0 +1,372 @@
+#+TITLE: Emacs 配置优化版（对比学习用）
+#+DATE: 2026-03-30
+#+OPTIONS: toc:2 num:nil
+
+* 当前配置存在的问题总览
+
+** 严重问题
+1. *API Key 硬编码* — =.emacs= 第189行有 OpenAI 密钥明文，如果此文件被 git 追踪会泄漏
+2. *快捷键冲突*（共3处）：
+   - =C-c n=：eyebrowse-next 和 org-capture "n" 互相覆盖
+   - =C-c p=：eyebrowse-prev 和 projectile-command-map 互相覆盖
+   - =C-c t=：注释里的 toggle-truncate-lines 和 org-capture "t" 冲突
+
+** 冗余/重复问题
+- =find-file-in-project= 和 =projectile= 功能重叠，保留 projectile 即可
+- =ido= + =smex= 已被安装的 vertico/orderless/consult 替代，但新的还没配置
+- =company= 和 vertico 生态可以共存，但 company 配置不完整
+
+** 调试配置遗留（应删除）
+#+begin_src emacs-lisp
+(setq debug-on-error t)      ; 日常使用不需要
+(setq tramp-verbose 10)      ; 会导致 TRAMP 极慢，日常应为 1 或注释掉
+#+end_src
+
+** 缺失（进阶清单里的）
+- =which-key= — 已装但未配置
+- =expand-region= — 已装但未配置
+- =vertico= / =orderless= / =marginalia= / =consult= — 已装但未配置
+
+-----
+
+* 优化版配置（可直接使用）
+
+将下面内容保存为 =~/.emacs= 或 =~/.emacs.d/init.el=
+
+#+begin_src emacs-lisp
+;;; ============================================================
+;;; 0. 基础：包管理源
+;;; ============================================================
+(setq package-archives
+      '(("gnu"   . "https://elpa.gnu.org/packages/")
+        ("melpa" . "https://melpa.org/packages/")))
+(package-initialize)
+
+;;; use-package 是基础，确保安装
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
+(setq use-package-always-ensure t)  ; 自动安装未安装的包
+
+
+;;; ============================================================
+;;; 1. 编码：统一 UTF-8
+;;; ============================================================
+(prefer-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-language-environment "UTF-8")
+
+
+;;; ============================================================
+;;; 2. UI：外观与基础行为
+;;; ============================================================
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(global-visual-line-mode 1)          ; 自动折行
+(setq dired-use-ls-dired nil)
+
+;; 字体（Monaco 130，可按需修改）
+(set-face-attribute 'default nil
+                    :family "Monaco"
+                    :height 130)
+
+;; 显示行号（编程模式下）
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+
+
+;;; ============================================================
+;;; 3. which-key：快捷键提示（新增，强烈推荐）
+;;; ============================================================
+(use-package which-key
+  :config
+  (which-key-mode)
+  (setq which-key-idle-delay 1.0))
+
+
+;;; ============================================================
+;;; 4. 现代补全框架：Vertico + Orderless + Marginalia + Consult
+;;;    替代旧的 ido + smex
+;;; ============================================================
+(use-package vertico
+  :init (vertico-mode))
+
+(use-package orderless
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-defaults nil))
+
+(use-package marginalia
+  :init (marginalia-mode))
+
+(use-package consult
+  :bind
+  ("C-s"     . consult-line)          ; 替代 isearch，支持预览
+  ("C-x b"   . consult-buffer)        ; 替代 switch-to-buffer
+  ("M-y"     . consult-yank-pop)      ; 替代 yank-pop
+  ("C-c p s" . consult-ripgrep))      ; 项目内容搜索
+
+
+;;; ============================================================
+;;; 5. 编辑增强
+;;; ============================================================
+
+;; expand-region：智能扩展选区（新增）
+(use-package expand-region
+  :bind ("C-=" . er/expand-region))
+
+;; smartparens：括号自动配对
+(use-package smartparens
+  :hook (prog-mode . smartparens-mode))
+
+;; 代码补全
+(use-package company
+  :hook (prog-mode . company-mode)
+  :config
+  (setq company-idle-delay 0.2
+        company-minimum-prefix-length 1
+        company-selection-wrap-around t))
+
+;; yasnippet：代码片段
+(use-package yasnippet
+  :config (yas-global-mode 1))
+
+;; 选中后直接替换（内置）
+(delete-selection-mode 1)
+
+
+;;; ============================================================
+;;; 6. 导航与跳转
+;;; ============================================================
+
+;; avy：光标瞬间跳转
+(use-package avy
+  :bind
+  ("C-;"   . avy-goto-char-2)    ; 两字符跳转（最常用）
+  ("M-g g" . avy-goto-line)      ; 行跳转
+  ("M-g w" . avy-goto-word-0))   ; 单词跳转
+
+;; 标记环：跳转历史（内置）
+;; C-SPC C-SPC 设置标记，C-u C-SPC 跳回上一个位置
+
+;; xref：代码定义和引用跳转（内置）
+(global-set-key (kbd "C-c d") 'xref-find-definitions)
+(global-set-key (kbd "C-c f") 'xref-find-references)
+
+
+;;; ============================================================
+;;; 7. 文件与项目管理
+;;; ============================================================
+
+;; projectile：项目管理（保留，移除 find-file-in-project）
+(use-package projectile
+  :bind-keymap ("C-c p" . projectile-command-map)
+  :config
+  (projectile-mode +1)
+  (setq projectile-completion-system 'default))
+
+;; recentf：最近打开的文件
+(recentf-mode 1)
+(setq recentf-max-menu-items 500)
+(global-set-key (kbd "C-c r") 'recentf-open-files)
+
+;; ripgrep 搜索配置
+(setq grep-find-template
+      "rg --vimgrep --no-heading --color=never --encoding auto <R>")
+
+
+;;; ============================================================
+;;; 8. 窗口管理
+;;; ============================================================
+
+;; winner-mode：窗口布局历史（内置）
+(winner-mode 1)
+(global-set-key (kbd "C-c <left>")  'winner-undo)
+(global-set-key (kbd "C-c <right>") 'winner-redo)
+
+;; windmove：方向键切换窗口
+(global-set-key (kbd "C-<left>")  'windmove-left)
+(global-set-key (kbd "C-<right>") 'windmove-right)
+(global-set-key (kbd "C-<up>")    'windmove-up)
+(global-set-key (kbd "C-<down>")  'windmove-down)
+
+;; eyebrowse：工作区管理
+(use-package eyebrowse
+  :config
+  (eyebrowse-mode t)
+  ;; 注意：C-c 1~9 不与 org-capture 冲突
+  (global-set-key (kbd "C-c 1") 'eyebrowse-switch-to-window-config-1)
+  (global-set-key (kbd "C-c 2") 'eyebrowse-switch-to-window-config-2)
+  (global-set-key (kbd "C-c 3") 'eyebrowse-switch-to-window-config-3)
+  (global-set-key (kbd "C-c 4") 'eyebrowse-switch-to-window-config-4)
+  (global-set-key (kbd "C-c 5") 'eyebrowse-switch-to-window-config-5)
+  ;; 改用 [ ] 切换上下工作区，避免与 org-capture 的 C-c n/p 冲突
+  (global-set-key (kbd "C-c [") 'eyebrowse-prev-window-config)
+  (global-set-key (kbd "C-c ]") 'eyebrowse-next-window-config)
+  (global-set-key (kbd "C-c w") 'eyebrowse-save-window-config)
+  (global-set-key (kbd "C-c e") 'eyebrowse-rename-window-config))
+
+;; desktop：保存会话
+(desktop-save-mode t)
+(setq desktop-dirname        "~/.emacs.d/desktop/"
+      desktop-base-file-name "desktop"
+      desktop-load-locked-desktop t)
+
+;; Narrowing（内置，无需配置，记住快捷键）
+;; C-x n n  narrow to region
+;; C-x n d  narrow to defun
+;; C-x n w  widen（恢复）
+
+
+;;; ============================================================
+;;; 9. Org-mode 全家桶
+;;; ============================================================
+
+;; org-agenda 文件
+(setq org-agenda-files
+      (list "/Users/myu/github/rateyu.github.io/orgs/tasks.org"))
+(global-set-key (kbd "C-c a") 'org-agenda)
+
+;; org-capture 模板
+;; 注意：C-c t/n/i/j，与 eyebrowse 的 C-c n/p 原冲突已修复
+(setq org-capture-templates
+      '(("t" "Task" entry
+         (file+headline "/Users/myu/github/rateyu.github.io/orgs/tasks.org" "Tasks")
+         "* TODO %?\n  %U")
+        ("n" "Note" entry
+         (file+headline "/Users/myu/github/rateyu.github.io/orgs/notes.org" "Notes")
+         "* %? :NOTE:\n  %U")
+        ("i" "Idea" entry
+         (file+headline "/Users/myu/github/rateyu.github.io/orgs/ideas.org" "Ideas")
+         "* %U %?\n  %i\n  %a")
+        ("j" "Journal" entry
+         (file+datetree "/Users/myu/github/rateyu.github.io/orgs/journal.org")
+         "* %U %?\n  %i\n  %a")))
+(global-set-key (kbd "C-c t") (lambda () (interactive) (org-capture nil "t")))
+(global-set-key (kbd "C-c n") (lambda () (interactive) (org-capture nil "n")))
+(global-set-key (kbd "C-c i") (lambda () (interactive) (org-capture nil "i")))
+(global-set-key (kbd "C-c j") (lambda () (interactive) (org-capture nil "j")))
+
+;; org-refile
+(setq org-refile-targets
+      '(("/Users/myu/github/rateyu.github.io/orgs/tasks.org"  :maxlevel . 3)
+        ("/Users/myu/github/rateyu.github.io/orgs/ideas.org"  :maxlevel . 3)
+        ("/Users/myu/github/rateyu.github.io/orgs/journal.org" :maxlevel . 3)
+        ("/Users/myu/github/rateyu.github.io/orgs/notes.org"  :maxlevel . 2)
+        ("/Users/myu/github/rateyu.github.io/orgs/jiagou/001jiagou.org" :maxlevel . 3)))
+
+;; diary
+(setq diary-file "/Users/myu/github/rateyu.github.io/orgs/diary.org")
+
+;; org-download：图片粘贴
+(add-to-list 'load-path "~/.emacs.d/elpa/org-download/")
+(require 'org-download)
+(defun my/org-image-width-percentage (percent)
+  (let ((width (round (* (display-pixel-width) (/ percent 100.0)))))
+    (setq org-image-actual-width (list width))))
+(my/org-image-width-percentage 50)
+
+;; org LaTeX 导出
+(setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"))
+
+;; org-mode 换行
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+
+
+;;; ============================================================
+;;; 10. Git：Magit
+;;; ============================================================
+(use-package magit
+  :bind
+  ("C-x g"   . magit-status)
+  ("C-x M-g" . magit-dispatch)
+  :config
+  (defun mu-magit-kill-buffers ()
+    "Restore window configuration and kill all Magit buffers."
+    (interactive)
+    (let ((buffers (magit-mode-get-buffers)))
+      (magit-restore-window-configuration)
+      (mapc #'kill-buffer buffers)))
+  (bind-key "q" #'mu-magit-kill-buffers magit-status-mode-map))
+
+
+;;; ============================================================
+;;; 11. 开发工具
+;;; ============================================================
+
+;; LeetCode
+(add-to-list 'load-path "~/.emacs.d/leetcode-cn.el-master/")
+(require 'leetcode)
+(setq leetcode-prefer-language "java"
+      leetcode-save-solutions t
+      leetcode-directory "~/leetcode"
+      leetcode-prefer-sql "mysql")
+
+;; claude-code-ide
+(add-to-list 'load-path "~/.emacs.d/claude-code-ide.el")
+(require 'claude-code-ide)
+
+;; eshell
+(setq eshell-buffer-maximum-lines 10000
+      eshell-scroll-to-bottom-on-output 'all
+      eshell-scroll-show-maximum-output t)
+
+;; clipboard 与系统共享
+(setq select-enable-clipboard t)
+
+
+;;; ============================================================
+;;; 12. 敏感配置（从独立文件加载，不提交到 git）
+;;; ============================================================
+;; 把 API key 等敏感信息放到 ~/.emacs.d/secrets.el，加入 .gitignore
+(let ((secrets "~/.emacs.d/secrets.el"))
+  (when (file-exists-p secrets)
+    (load secrets)))
+
+;; secrets.el 内容示例（不要提交此文件）：
+;; (setq chatgpt-shell-openai-key "sk-proj-...")
+;; (setq chatgpt-shell-proxy "http://localhost:7897")
+#+end_src
+
+-----
+
+* 优化对比说明
+
+| 项目               | 原配置                        | 优化后                              |
+|--------------------+-------------------------------+-------------------------------------|
+| 快捷键冲突         | C-c n/p 三处冲突              | eyebrowse 改用 C-c [ ]，冲突消除    |
+| 补全框架           | ido+smex（已装vertico但未用） | vertico+orderless+marginalia+consult |
+| 文件搜索           | find-file-in-project+projectile（重复）| 只保留 projectile              |
+| API Key            | 明文硬编码在配置文件          | 独立 secrets.el，加入 .gitignore    |
+| 调试配置           | debug-on-error/tramp-verbose 常驻 | 移除，按需临时开启               |
+| 包加载方式         | require/use-package 混用      | 统一 use-package                    |
+| 新增               | 无 which-key / expand-region  | 已加入并配置                        |
+| 代码组织           | 随意散落                      | 12个分区，按功能归类                |
+
+* 立刻要做的3件事
+
+1. *修复 API Key 泄漏风险*
+   #+begin_src shell
+   # 在博客仓库根目录检查 .emacs 是否被追踪
+   git ls-files .emacs
+   # 如果有输出，立刻把 .emacs 从 git 追踪中移除
+   git rm --cached .emacs
+   echo ".emacs" >> .gitignore
+   #+end_src
+
+2. *创建 secrets.el*
+   #+begin_src shell
+   cat >> ~/.emacs.d/secrets.el << 'EOF'
+   (setq chatgpt-shell-openai-key "你的key放这里")
+   (setq chatgpt-shell-proxy "http://localhost:7897")
+   EOF
+   echo "secrets.el" >> ~/.emacs.d/.gitignore
+   #+end_src
+
+3. *验证快捷键冲突是否存在*
+   #+begin_src
+   M-x describe-key  然后按 C-c n  看到底绑定了哪个命令
+   #+end_src
