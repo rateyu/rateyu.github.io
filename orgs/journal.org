@@ -14,4 +14,18 @@
 DEADLINE: <2025-09-10 Wed> SCHEDULED: <2025-09-09 Tue>
   
   [[file:~/github/rateyu.github.io/orgs/2024-01-16-新年plan-zz.org::*250908][250908]]
-
+* 2026
+** 2026-03 March
+*** 2026-03-31 Tuesday
+**** [2026-03-31 Tue 21:47] 
+  
+  [[file:~/github/rateyu.github.io/blog2015.sublime-project]]
+**** [2026-03-31 Tue 21:53] 
+  
+  [[file:~/github/rateyu.github.io/orgs/20260330-emacs-config-优化版.org::*emacs key][emacs key]]
+**** [2026-03-31 Tue 21:54] 
+  
+  [[file:~/.emacs:::config]]
+**** [2026-03-31 Tue 21:56] 
+  
+  [[file:~/.emacs::("M-g c" . avy-goto-char-timer) ; 定时模式，输入拼音首字母]]

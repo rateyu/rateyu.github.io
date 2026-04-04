@@ -370,3 +370,14 @@
    #+begin_src
    M-x describe-key  然后按 C-c n  看到底绑定了哪个命令
    #+end_src
+
+
+* emacs key
+'  ;  ,  . 这些符号加 Ctrl 终端一律传不了，直接把符号本身发给 Emacs。
+
+(use-package avy
+  :bind
+  (("C-c j" . avy-goto-char-2)
+   ("C-c l" . avy-goto-line)
+   ("C-c w" . avy-goto-word-1)
+   ("C-c c" . my/avy-goto-chinese-word)))
